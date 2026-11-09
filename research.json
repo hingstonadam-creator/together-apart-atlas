@@ -4,7 +4,7 @@
     "number": 101,
     "title": "Charles House",
     "author": "Austin Maynard Architects",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Define",
     "lenses": [
       0,
@@ -20,14 +20,25 @@
     "interpretation": "Use XL as a home with two credible daily routines, rather than a large apartment with an extra bedroom.",
     "question": "Can two generations each keep their own daily routine in the XL dwelling?",
     "implication": "Draw XL in three states: young family; grandparent co-residence; adult-child independence.",
-    "url": "https://andrew-maynard-mref.squarespace.com/iii/"
+    "url": "https://andrew-maynard-mref.squarespace.com/iii/",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "Use XL as a home with two credible daily routines, rather than a large apartment with an extra bedroom.",
+    "answers": [
+      "Charles House, Austin Maynard Architects. Kew, Melbourne, Australia; 2017. One adaptable family house. Shared home / future grandparent suite.",
+      "Use XL as a home with two credible daily routines, rather than a large apartment with an extra bedroom.",
+      "Linked house-like volumes accommodate a growing family. A ground-floor music/living room can become a grandparent apartment with its own bathroom and wheelchair-friendly garden access.\n\nConnection: Shared family rooms connect differentiated domestic zones. Rooms can open together or close as needs change.\n\nPrivacy reading: A separable ground-floor suite offers retreat within the larger home; the degree of independent cooking and entry requires further plan checking.",
+      "Adaptable rooms alone do not establish two fully autonomous dwellings. Test services, entry and acoustic separation in each state.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to S–M and XL domestic arrangements.",
+      "Draw XL in three states: young family; grandparent co-residence; adult-child independence."
+    ]
   },
   {
     "id": "p102",
     "number": 102,
     "title": "Mahogany House",
     "author": "R ARCHITECTURE",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Extend",
     "lenses": [
       1,
@@ -42,14 +53,25 @@
     "interpretation": "A shared threshold can connect two homes while their living rooms remain distinct.",
     "question": "Can either household pass the shared threshold and withdraw to its own living room?",
     "implication": "Compare direct-facing and offset living-room windows around an S–M shared front yard.",
-    "url": "https://rarchitecture.com.au/projects/mahogany-house/"
+    "url": "https://rarchitecture.com.au/projects/mahogany-house/",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "A shared threshold can connect two homes while their living rooms remain distinct.",
+    "answers": [
+      "Mahogany House, R ARCHITECTURE. Mount Waverley, Melbourne, Australia; 2023. One house / two domestic pods. Related households with a shared centre.",
+      "A shared threshold can connect two homes while their living rooms remain distinct.",
+      "A two-storey main pod and single-storey grandparents' pod sit either side of a courtyard. The grandparents have two bedrooms, a bathroom, lounge and kitchenette.\n\nConnection: A common entrance and lounge join the two pods; the courtyard provides a shared outlook.\n\nPrivacy reading: Dedicated living and service spaces allow grandparents to withdraw without occupying the main household's rooms.",
+      "Courtyard-facing windows can still expose private life. Separation of mass does not prove visual or acoustic privacy.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to S–M and XL domestic arrangements.",
+      "Compare direct-facing and offset living-room windows around an S–M shared front yard."
+    ]
   },
   {
     "id": "p103",
     "number": 103,
     "title": "3 Generation House",
     "author": "BETA office for architecture and the city",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Define",
     "lenses": [
       0,
@@ -65,14 +87,25 @@
     "interpretation": "This is the closest match to the S-above-L rule: vertical proximity needs an independent accessible route.",
     "question": "Can a grandparent visit family one floor below by lift and return through their own front door?",
     "implication": "Draw S-above-L with the lift route, optional family link and a closed-link state.",
-    "url": "https://beta-office.com/project/3-generation-house/"
+    "url": "https://beta-office.com/project/3-generation-house/",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "This is the closest match to your S-above-L rule: vertical proximity needs an independent accessible route.",
+    "answers": [
+      "3 Generation House, BETA office for architecture and the city. Buiksloterham, Amsterdam, Netherlands; 2018. Two stacked apartments / 450 m². Independent family homes with future reallocation.",
+      "This is the closest match to your S-above-L rule: vertical proximity needs an independent accessible route.",
+      "Two apartments share an entrance. The upper grandparents' apartment has a lift, level floors and wider doors. A room can transfer between apartments; future studios are anticipated.\n\nConnection: Shared arrival and short vertical proximity support contact without a compulsory shared living room.\n\nPrivacy reading: Separate apartment boundaries preserve daily autonomy. The circulation arrangement permits future changes to the division of space.",
+      "A private stair alone would not offer equivalent access. Adaptation must preserve independent entrances and services.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Directly tests S above L.",
+      "Draw S-above-L with the lift route, optional family link and a closed-link state."
+    ]
   },
   {
     "id": "p104",
     "number": 104,
     "title": "Veil + Co. House",
     "author": "Kirsten Johnstone Architecture",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Extend",
     "lenses": [
       1,
@@ -87,14 +120,25 @@
     "interpretation": "Translate the covered street into a sheltered gallery with distinct front doors and places to pause.",
     "question": "Can someone stop at an entry without blocking the sheltered route?",
     "implication": "Draw a gallery-to-front-yard section in open and screened states, including rain cover and a clear bypass.",
-    "url": "https://good-design.org/projects/veil-co-house/"
+    "url": "https://good-design.org/projects/veil-co-house/",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "Translate the covered street into a sheltered gallery with distinct front doors and places to pause.",
+    "answers": [
+      "Veil + Co. House, Kirsten Johnstone Architecture. Currimundi, Sunshine Coast, Australia; Built; documented in 2025 award. Main home + secondary dwelling on one lot. Detached family accommodation along a covered route.",
+      "Translate the covered street into a sheltered gallery with distinct front doors and places to pause.",
+      "A secondary dwelling, garage and main home are joined by a covered walkway. The secondary accommodation can serve grandparents, adult children or work uses; offset battens address shade and overlooking.\n\nConnection: The covered route acts as a small domestic street linking separate volumes.\n\nPrivacy reading: Physical separation and screened edges distinguish homes while preserving a route between them.",
+      "Do not copy the garage into your no-carparking brief. Screens require orientation-specific testing; they do not establish acoustic separation.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to S–M and XL domestic arrangements.",
+      "Draw a gallery-to-front-yard section in open and screened states, including rain cover and a clear bypass."
+    ]
   },
   {
     "id": "p105",
     "number": 105,
     "title": "La Borda",
     "author": "Lacol",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Mediate",
     "lenses": [
       2,
@@ -109,14 +153,25 @@
     "interpretation": "Make shared laundry a useful, accessible destination; do not require a resident to socialise to perform a necessary task.",
     "question": "Can a resident collect washing without joining a gathering?",
     "implication": "Locate laundry on an everyday route with a quiet bypass, seating and a management note.",
-    "url": "https://lacol.coop/en/projectes/la-borda/"
+    "url": "https://lacol.coop/en/projectes/la-borda/",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "Make shared laundry a useful, accessible destination; do not require a resident to socialise to perform a necessary task.",
+    "answers": [
+      "La Borda, Lacol. Barcelona, Spain; 2018. 28 cooperative homes. Mixed-household community / shared domestic facilities.",
+      "Make shared laundry a useful, accessible destination; do not require a resident to socialise to perform a necessary task.",
+      "Homes of 40, 60 and 75 m² are combined with collective kitchen-dining, laundry, guest, care and outdoor spaces organised around a central courtyard.\n\nConnection: Daily facilities and courtyard circulation extend domestic activity beyond individual homes.\n\nPrivacy reading: Private dwelling interiors remain distinguishable from the communal programme. Courtyard-facing access introduces a privacy condition to examine, not a proven privacy outcome.",
+      "Cooperative governance is part of the model. Shared provision cannot be credited with cost or care benefits without operational evidence.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
+      "Locate laundry on an everyday route with a quiet bypass, seating and a management note."
+    ]
   },
   {
     "id": "p106",
     "number": 106,
     "title": "Marmalade Lane",
     "author": "Mole Architects; TOWN / Trivselhus",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Extend",
     "lenses": [
       2,
@@ -131,14 +186,25 @@
     "interpretation": "Give the cluster a recognisable shared address, but retain each home's own door and outdoor retreat.",
     "question": "Where can a household sit outside while choosing how much contact to have?",
     "implication": "Test the same four-home cluster with related families and unrelated households.",
-    "url": "https://www.archdaily.com/918201/marmalade-lane-cohousing-development-mole-architects"
+    "url": "https://www.archdaily.com/918201/marmalade-lane-cohousing-development-mole-architects",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "Give the cluster a recognisable shared address, but retain each home's own door and outdoor retreat.",
+    "answers": [
+      "Marmalade Lane, Mole Architects; TOWN / Trivselhus. Cambridge, United Kingdom; 2018. 42 houses and apartments. Intergenerational cohousing neighbourhood.",
+      "Give the cluster a recognisable shared address, but retain each home's own door and outdoor retreat.",
+      "Terraces and apartments frame shared gardens. A common house provides dining, guest rooms, laundry and other facilities. Residents include young families, retired people and households of different ages.\n\nConnection: The lane, garden and common house offer encounters at different levels of commitment.\n\nPrivacy reading: Self-contained homes retain domestic retreat while collective functions occupy identifiable separate places.",
+      "A self-selecting cohousing group is not equivalent to all future residents. Translate the spatial options without assuming universal participation.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
+      "Test the same four-home cluster with related families and unrelated households."
+    ]
   },
   {
     "id": "p107",
     "number": 107,
     "title": "Giesserei",
     "author": "Galli Rudolf Architekten; Gesewo",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Mediate",
     "lenses": [
       0,
@@ -154,14 +220,25 @@
     "interpretation": "A large building can contain several small neighbourhoods. Group S/M/L around a legible landing rather than one anonymous corridor.",
     "question": "How many front doors share a landing, and who can see into them?",
     "implication": "Compare a cluster landing and long gallery for homes served, route length and sightlines.",
-    "url": "https://galli-rudolf.ch/de/projects/Mehrgenerationenhaus-Giesserei"
+    "url": "https://galli-rudolf.ch/de/projects/Mehrgenerationenhaus-Giesserei",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "A large building can contain several small neighbourhoods. Group S/M/L around a legible landing rather than one anonymous corridor.",
+    "answers": [
+      "Giesserei, Galli Rudolf Architekten; Gesewo. Winterthur, Switzerland; 2013. 155 apartments / six-storey courtyard block. Mixed-generation cooperative with varied dwelling types.",
+      "A large building can contain several small neighbourhoods. Group S/M/L around a legible landing rather than one anonymous corridor.",
+      "Two long six-storey wings and lower links enclose a courtyard. Eight stairwells serve 155 apartments; varied dwelling types, rentable extra rooms and loggias support different living arrangements.\n\nConnection: Small access groups sit within a larger collective courtyard and ground-floor programme.\n\nPrivacy reading: Dwelling boundaries and loggia layers mediate contact; screens and depth give the edge more than one condition.",
+      "Continuous exterior layers can also create overlooking. Room variety needs allocation rules and management.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
+      "Compare a cluster landing and long gallery for homes served, route length and sightlines."
+    ]
   },
   {
     "id": "p108",
     "number": 108,
     "title": "Generationernes Hus",
     "author": "RUM and ERIK Arkitekter; Sweco engineering",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Define",
     "lenses": [
       1,
@@ -176,14 +253,25 @@
     "interpretation": "Distinguish informal neighbourly help from professional care. Your family cluster can support proximity without becoming an aged-care facility.",
     "question": "Do visitors and care workers reach the intended home directly?",
     "implication": "Map voluntary family contact separately from deliveries, visitors and any future care visit.",
-    "url": "https://www.swecogroup.com/portfolio/buildings-and-urban-areas/house-of-generations/"
+    "url": "https://www.swecogroup.com/portfolio/buildings-and-urban-areas/house-of-generations/",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "Distinguish informal neighbourly help from professional care. Your family cluster can support proximity without becoming an aged-care facility.",
+    "answers": [
+      "Generationernes Hus, RUM and ERIK Arkitekter; Sweco engineering. Aarhus, Denmark; 2020. 304 homes plus care and childcare. Mixed-generation housing with staffed care.",
+      "Distinguish informal neighbourly help from professional care. Your family cluster can support proximity without becoming an aged-care facility.",
+      "Youth, family, disability, senior and nursing-home dwellings share a development with childcare and common facilities. Care homes are grouped in smaller clusters with staff support.\n\nConnection: Common activities link different populations while smaller neighbourhoods organise everyday life.\n\nPrivacy reading: Individual homes and care clusters create nested territories; private retreat and staff access must coexist.",
+      "Co-location does not prove interaction. Operational staffing cannot be replaced by architecture or unpaid family labour.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
+      "Map voluntary family contact separately from deliveries, visitors and any future care visit."
+    ]
   },
   {
     "id": "p109",
     "number": 109,
     "title": "Hunziker Areal / mehr als wohnen",
     "author": "Futurafrosch + Duplex masterplan; five architecture teams",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Mediate",
     "lenses": [
       2,
@@ -198,14 +286,25 @@
     "interpretation": "Offer several degrees of connection: independent home, family cluster, shared building and public street.",
     "question": "Who can enter each shared space, and who looks after it?",
     "implication": "Assign each shared space a user group, catchment and responsible manager; remove redundant facilities.",
-    "url": "https://www.mehralswohnen.ch/hunziker-areal/das-areal"
+    "url": "https://www.mehralswohnen.ch/hunziker-areal/das-areal",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "Offer several degrees of connection: independent home, family cluster, shared building and public street.",
+    "answers": [
+      "Hunziker Areal / mehr als wohnen, Futurafrosch + Duplex masterplan; five architecture teams. Zurich, Switzerland; 2014–2015. 13 buildings / approximately 1,200 residents. Mixed-age cooperative neighbourhood.",
+      "Offer several degrees of connection: independent home, family cluster, shared building and public street.",
+      "The neighbourhood combines different housing forms, shared facilities, rentable extra rooms and workspaces. The cooperative describes age and social diversity as part of everyday life.\n\nConnection: Shared rooms and outdoor spaces distribute collective life across the neighbourhood instead of relying on one social centre.\n\nPrivacy reading: A range of dwelling forms allows different degrees of sharing; ordinary private homes remain part of the mix.",
+      "Do not transfer the resources of a 13-building cooperative directly to one six-storey project.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
+      "Assign each shared space a user group, catchment and responsible manager; remove redundant facilities."
+    ]
   },
   {
     "id": "p110",
     "number": 110,
     "title": "Strandeiland M3",
     "author": "BETA with LEVS, MEESVISSER and DELVA; client AM",
-    "type": "Project study",
+    "type": "Project",
     "driver": "Define",
     "lenses": [
       1,
@@ -220,7 +319,18 @@
     "interpretation": "The spatial cluster also needs an occupancy strategy if adjacent S and M homes are intended for related households.",
     "question": "How could related households secure adjacent dwellings over time?",
     "implication": "Test allocation, turnover and unrelated occupancy without changing the architectural shell.",
-    "url": "https://beta-office.com/project/strandeiland-m3/"
+    "url": "https://beta-office.com/project/strandeiland-m3/",
+    "method": "Precedent analysis",
+    "reliability": "Medium",
+    "insight": "Your spatial cluster also needs an occupancy strategy if adjacent S and M homes are intended for related households.",
+    "answers": [
+      "Strandeiland M3, BETA with LEVS, MEESVISSER and DELVA; client AM. Amsterdam, Netherlands; Definitive design; programme 2023–2027. Part of a 344-home collaborative development. Planned intergenerational block / managed age mix.",
+      "Your spatial cluster also needs an occupancy strategy if adjacent S and M homes are intended for related households.",
+      "BETA's block proposes flexible homes, generous arcades, a planted courtyard and health facilities. De Alliantie is to manage the generational mix in part of the rental housing.\n\nConnection: Arcades and shared landscape are designed to support encounters near homes.\n\nPrivacy reading: Flexible dwelling plans retain private interiors; detailed privacy performance is not established by the published account.",
+      "This is design-intent evidence, not a completed or post-occupancy precedent. The 344 figure covers the collaborative development, not BETA's block alone.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
+      "Test allocation, turnover and unrelated occupancy without changing the architectural shell."
+    ]
   },
   {
     "id": "source-1",

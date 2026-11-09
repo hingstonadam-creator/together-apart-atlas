@@ -29,9 +29,31 @@ Use [100 Points of Research in Notion](https://app.notion.com/p/d7491c0a79fa4720
 
 Prioritise substantive Australian papers, reports and documented built projects. Use international precedents where they clarify a design decision. Keep the earlier T1 façade research centre available for the exegesis history. Keep ARCH 5004 documentation separate.
 
+## Home and Research
+
+Retain the opening title, project question and courtyard image on Home. Below it, present a continuous illustrated exegesis in the manuscript’s chapter order: Position, Research, Design approach, Development, Proposal and Reflection. Chapter links should scroll to the relevant passage. Keep the six-question framework, interactive dashboard and searchable data points on the separate Research page.
+
+## Website drawing files
+
+Use the existing university OneDrive folder under `Architecture/1. PROJECTS/(M) Graduate Project/HousingResearchAtlas` as the asset workspace. Keep these subfolders directly inside that folder.
+
+| OneDrive subfolder | Contents | Website destination |
+| --- | --- | --- |
+| Plans | Site, level, dwelling and roof plans | `assets/plans/` |
+| Sections | Building, cluster and threshold sections | `assets/sections/` |
+| Elevations | External and courtyard elevations | `assets/elevations/` |
+| Diagrams | Parti overlays, household routes and diagrams | `assets/diagrams/` |
+| Renders | Interior, exterior and courtyard views | `assets/renders/` |
+| Exegesis | Manuscript and figure captions used for Home | Adapt the selected text in `index.html` |
+| Archive | Superseded exports grouped by issue date | Reference only |
+
+Keep editable Revit, Rhino and InDesign originals in their existing project locations. Put the current website export in its category folder, with a stable descriptive filename such as `ground-floor-plan.svg`, `section-aa.svg` or `courtyard.webp`. Archive a superseded export before replacing it. Retain scale, north point or section direction where they matter to the reading.
+
+For an update, copy the selected export to its matching repository destination and replace the file at the same relative path. For a new figure, add its reference, caption and alt text to the relevant chapter. Check the rendered figure at desktop and mobile widths before publishing. The four established paths are `assets/renders/courtyard.webp` and `assets/diagrams/{define,extend,mediate}.webp`. The website reads the committed files. OneDrive changes require a corresponding repository update.
+
 ## Six-question framework
 
-Show all six questions on the main page in their original order, with a short explanation of how each evaluates a data point. Use the same headings for the answers in every entry. The headings come from the [6 Question Template](https://app.notion.com/p/3bb501e23466803a81a8ee00e0ed63b4). For housing entries, frame relevance around proximity, household independence and control over daily contact.
+Show all six questions on the Research page in their original order, with a short explanation of how each evaluates a data point. Use the same headings for the answers in every entry. The headings come from the [6 Question Template](https://app.notion.com/p/3bb501e23466803a81a8ee00e0ed63b4). For housing entries, frame relevance around proximity, household independence and control over daily contact.
 
 | Question | What the answer should establish |
 | --- | --- |
