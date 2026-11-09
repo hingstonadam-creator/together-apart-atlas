@@ -29,9 +29,13 @@ Use [100 Points of Research in Notion](https://app.notion.com/p/d7491c0a79fa4720
 
 Prioritise substantive Australian papers, reports and documented built projects. Use international precedents where they clarify a design decision. Keep the earlier T1 façade research centre available for the exegesis history. Keep ARCH 5004 documentation separate.
 
-## Home and Research
+## Site navigation and exegesis
 
-Retain the opening title, project question and courtyard image on Home. Below it, present a continuous illustrated exegesis in the manuscript’s chapter order: Position, Research, Design approach, Development, Proposal and Reflection. Chapter links should scroll to the relevant passage. Keep the six-question framework, interactive dashboard and searchable data points on the separate Research page.
+Use four main pages in this order: Home, Exegesis, Research and About. Home keeps its opening title, question and courtyard image, followed by the scrollable illustrated overview. Each chapter heading and contents item links to the corresponding chapter subpage.
+
+Exegesis presents the complete public-facing manuscript as one continuous read. Provide individually addressable chapters in the same order: Position, Research, Design approach, Development, Proposal and Reflection. Keep each chapter consistent with its passage in the continuous version. Include relevant project images, captions and further reading drawn from the atlas. Keep draft production notes and private source links out of the public document.
+
+Research retains its dashboard, six-question framework and source filters. Place architectural implications inside their research entries. About holds Adam’s short profile and verified social links. Add further accounts when Adam supplies the URLs.
 
 ## Website drawing files
 
@@ -79,10 +83,10 @@ Selecting a slice or its keyboard-accessible legend item filters the list by tha
 ## Atlas content and publishing
 
 - Organise browsing around adaptable layouts, relationships between dwelling sizes, shared circulation, and independence within shared territory.
-- In comparisons, show location, documented dwelling mix, access strategy, shared spaces, evidence quality and the architectural implication. Mark missing facts as “Unknown” and keep each citation attached to its finding.
+- In research entries, show location, documented dwelling mix, access strategy, shared spaces, evidence quality and the architectural implication. Mark missing facts as “Unknown” and keep each citation attached to its finding.
 - Distinguish **confirmed evidence**, **tentative interpretation** and **open question**. A landing drawn beside two doors establishes proximity. A claim about residents regularly meeting there needs evidence of use.
-- In the synthesis view, connect a finding to DEFINE, EXTEND or MEDIATE and a specific Southwark design test. Use a shared dataset for browsing, comparisons and synthesis so a correction carries through all views.
-- Keep the site compatible with static hosting on GitHub Pages and its repository subpath. Use a curated snapshot for publication. Check navigation, assets, filters and comparisons from the deployed base path when changing them. Keep unpublished research and credentials out of public assets.
+- Relate findings to DEFINE, EXTEND or MEDIATE and link the design argument to its supporting sources in the Exegesis.
+- Keep the site compatible with static hosting on GitHub Pages and its repository subpath. Use a curated snapshot for publication. Check navigation, assets, filters and chapter links from the deployed base path when changing them. Keep unpublished research and credentials out of public assets.
 
 ## Drawings and editorial work
 

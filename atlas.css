@@ -7,3 +7,18 @@
 .chapter h2{max-width:22ch}.chapter p{font-size:clamp(1rem,1.4vw,1.24rem);line-height:1.65;max-width:58ch}.chapter .cards{margin-top:1.5rem}.chapter .card{display:block}.chapter .card strong,.chapter .card span{display:block}
 .dashboard,.framework{padding:1.5rem 0;border-top:1px solid var(--line);margin-top:1.5rem}.dashboard select{padding:.5rem;margin:.5rem;font:inherit}.plot{display:flex;gap:2rem;align-items:center;margin:1em 0}.plot svg{width:min(38%,230px);height:auto}.plot path,#legend button,#clearMetric{cursor:pointer}#legend button,#clearMetric{display:block;text-align:left;padding:.55rem .8rem;border:1px solid var(--line);background:transparent;color:inherit;font:inherit;margin:.3rem 0}#legend button[aria-pressed=true]{outline:2px solid var(--ink)}.swatch{display:inline-block;width:.8rem;height:.8rem;margin-right:.5rem}.framework ol{columns:2;padding-left:1.5rem}.framework li{break-inside:avoid;padding:.4rem}.framework li span{display:block;font-size:.9em;line-height:1.45}.answers li{margin-bottom:1rem}.answers p{white-space:pre-line;margin:.25rem 0}.entry blockquote{border-left:3px solid var(--clay);padding-left:1rem}
 @media(max-width:760px){.contents,.chapter{grid-template-columns:1fr;gap:.7rem;padding:2rem 0}.framework ol{columns:1}.plot{gap:.75rem}.chapter .card{display:grid}.chapter .card img{width:100%}}
+
+.chapter h2 a,.contents h2 a {text-decoration:none}
+.chapter h2 a:hover,.contents h2 a:hover{text-decoration:underline;text-decoration-thickness:1px}
+.reading,.chapter-page,.about,.book{margin:0 auto;max-width:900px}
+.book,.chapter-page,.about{padding:clamp(32px,6vw,80px) 0}
+.reading{padding:clamp(30px,5vw,70px) 0;border-top:1px solid var(--line);scroll-margin-top:24px}
+.reading h2{max-width:21ch}.reading h3,.about h2{margin-top:2rem}
+.reading>p,.reading>h3,.reading aside,.about p{max-width:65ch}
+.reading>p{font-size:1.08rem}.reading .standfirst{font-size:1.3rem;line-height:1.45}
+.plates{display:flex;flex-wrap:wrap;gap:1rem;margin:2rem 0}
+.plates figure{flex:1 1 200px;margin:0}.plates img{display:block;width:100%;max-height:430px;object-fit:contain;background:var(--light)}
+.plates figcaption{margin-top:.5rem;line-height:1.6}.source-note,.reading .source-note{font-size:.88rem;color:#5a584e}
+.chapter-links{columns:2;margin:2rem 0;padding-left:1.6rem}.chapter-links li,.reading aside li{padding:.4rem 0}
+.chapter-nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+@media(max-width:650px){.plates{display:grid}.chapter-links{columns:1}}
