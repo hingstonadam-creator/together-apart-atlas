@@ -39,21 +39,35 @@ Research retains its dashboard, six-question framework and source filters. Place
 
 ## Website drawing files
 
-Use the existing university OneDrive folder under `Architecture/1. PROJECTS/(M) Graduate Project/HousingResearchAtlas` as the asset workspace. Keep these subfolders directly inside that folder.
+The published website is maintained in `hingstonadam/together-apart-atlas` on GitHub. Its static structure (`index.html`, `atlas.css`, `atlas.js`, chapter directories and `assets/`) is the authority for website code.
 
-| OneDrive subfolder | Contents | Website destination |
+The local asset workspace is `C:\Users\adamh\OneDrive - University of Adelaide\Architecture\1. PROJECTS\(M) Graduate Project\HousingResearchAtlas\Website`.
+
+```text
+Website/
+  Images/
+    Home/                 Original PNG masters for Home
+      Optimized/          Generated JPEG copies for publication
+    Exegesis/
+      Introduction/
+      Full Exegesis/      Position, Research, Design-Approach,
+                          Development, Proposal, Reflection
+  Publish/                Prepared files from the latest repository update
+  image-map.json          Source filenames, destinations and placements
+  README.md               Local update workflow
+```
+
+| Home master in Images/Home | Website destination | Placement |
 | --- | --- | --- |
-| Plans | Site, level, dwelling and roof plans | `assets/plans/` |
-| Sections | Building, cluster and threshold sections | `assets/sections/` |
-| Elevations | External and courtyard elevations | `assets/elevations/` |
-| Diagrams | Parti overlays, household routes and diagrams | `assets/diagrams/` |
-| Renders | Interior, exterior and courtyard views | `assets/renders/` |
-| Exegesis | Manuscript and figure captions used for Home | Adapt the selected text in `index.html` |
-| Archive | Superseded exports grouped by issue date | Reference only |
+| Cover Image.png | assets/renders/home-cover.jpg | Home hero |
+| 01_Position.png | assets/renders/home-position.jpg | Home Position section |
+| 04_Development.png | assets/diagrams/home-development.jpg | Home Development section |
 
-Keep editable Revit, Rhino and InDesign originals in their existing project locations. Put the current website export in its category folder, with a stable descriptive filename such as `ground-floor-plan.svg`, `section-aa.svg` or `courtyard.webp`. Archive a superseded export before replacing it. Retain scale, north point or section direction where they matter to the reading.
+Regenerate the matching JPEG under `Images/Home/Optimized/` whenever a master changes. Keep the complete image proportions for chapter figures. The Research, Design approach, Proposal and Reflection PNGs currently contain placeholder instructions; replace those masters with final artwork before publishing them.
 
-For an update, copy the selected export to its matching repository destination and replace the file at the same relative path. For a new figure, add its reference, caption and alt text to the relevant chapter. Check the rendered figure at desktop and mobile widths before publishing. The four established paths are `assets/renders/courtyard.webp` and `assets/diagrams/{define,extend,mediate}.webp`. The website reads the committed files. OneDrive changes require a corresponding repository update.
+Keep source masters in OneDrive and publish optimised copies to the existing repository asset directories. Fetch the latest repository files before preparing an update; `Publish/` is a partial update package, not a complete checkout. Record source-to-destination mappings in `Website/image-map.json`. Update image references, captions and alt text in the relevant pages. Keep relative paths compatible with the GitHub Pages repository subpath. OneDrive changes require a corresponding GitHub commit before they appear online.
+
+The local `HousingResearchAtlas/src/`, `build.mjs` and `dist/` belong to the separate research workspace prototype. Changes there do not update this public website. Retain editable Revit, Rhino and InDesign originals in their existing project locations. Keep the established diagram paths `assets/diagrams/{define,extend,mediate}.webp` available to existing pages.
 
 ## Six-question framework
 

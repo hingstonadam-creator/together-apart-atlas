@@ -82,3 +82,6 @@
 @media(max-width:480px){.heat-row{grid-template-columns:1fr auto;gap:.35rem .6rem}.heat-row>span{font-size:.82rem}.heat-row>strong{font-size:.85rem}.dc-metrics strong{font-size:1.4rem}.energy-balance{justify-content:space-between}.energy-balance span{font-size:1.2rem}}
 
 .proposal-data-link{border-top:2px solid var(--clay);margin:2rem 0 1rem;padding-top:1.2rem}.proposal-data-link .action{margin:.4rem 0}
+
+/* Home chapter figures retain the full drawing and image proportions. */
+.chapter-body .chapter-image{width:min(100%,400px);margin:0}.chapter-image img{display:block;width:100%;height:auto}.chapter-image figcaption{margin-top:.55rem;line-height:1.4}
