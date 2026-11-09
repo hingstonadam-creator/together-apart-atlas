@@ -20,8 +20,58 @@ const questions = [
 byId('framework').innerHTML = questions.map(([q,hint])=>'<li><strong>'+q+'</strong><span>'+hint+'</span></li>').join('');
 const colours = ['#a95d46','#687f70','#516f8c','#aa8a48','#796981','#766c5d','#547c82','#93706a','#716f40','#9c8278'];
 let chartFilter = '';
+function categoryMatches(record, metric, category) {
+  if (metric === 'matrix') {
+    const [driver, lens] = category.split('|');
+    return record.driver === driver && record.lenses.includes(Number(lens));
+  }
+  return (record[metric] || 'Unrecorded') === category;
+}
+function matrixView(rows) {
+  const cells = lenses.map((lens, index) => {
+    const values = drivers.map(driver => {
+      const key = driver+'|'+index;
+      const count = rows.filter(r=>categoryMatches(r,'matrix',key)).length;
+      return {key,driver,count};
+    });
+    return {lens,values};
+  });
+  const max = Math.max(1,...cells.flatMap(row=>row.values.map(cell=>cell.count)));
+  const headers = drivers.map(d=>'<th scope="col">'+d+'</th>').join('');
+  const body = cells.map(({lens,values}) => '<tr><th scope="row">'+lens+'</th>'+values.map(({key,driver,count})=>
+    '<td><button data-category="'+key+'" aria-label="'+driver+' and '+lens+', '+count+' sources" aria-pressed="'+(chartFilter===key)+'" style="--shade:'+count/max*.55+'" '+(!count?'disabled':'')+'>'+count+'</button></td>'
+  ).join('')+'</tr>').join('');
+  return '<p>Select a cell to find sources addressing both a design driver and a research lens. A source can appear under several lenses.</p><div class="matrix-frame"><table class="lens-matrix"><thead><tr><th>Research lens</th>'+headers+'</tr></thead><tbody>'+body+'</tbody></table></div>';
+}
+function countryView(rows) {
+  const counts = new Map();
+  for (const r of rows) {
+    const country = r.country || 'Unrecorded';
+    counts.set(country,(counts.get(country)||0)+1);
+  }
+  const ranked = [...counts].sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0]));
+  const bars = ranked.map(([country,count])=>'<button data-category="'+esc(country)+'" aria-pressed="'+(chartFilter===country)+'"><span>'+esc(country)+'</span><span class="track"><i style="width:'+100*count/ranked[0][1]+'%"></i></span><strong>'+count+'</strong></button>').join('');
+  return '<p>Select a country to see the projects and publications recorded there. Bar length shows the number of sources in this collection.</p><div class="country-bars">'+(bars || 'No countries match the current filters.')+'</div>';
+}
 function drawChart(rows) {
   const metric = byId('metric').value;
+  const explorer = byId('explorer');
+  const special = metric==='matrix' || metric==='country';
+  explorer.hidden = !special;
+  document.querySelector('.plot').classList.toggle('explore-plot',special);
+  byId('chart').style.display = special ? 'none' : '';
+  byId('legend').hidden = special;
+  byId('clearMetric').hidden = !chartFilter;
+  let label = chartFilter;
+  if (metric==='matrix' && chartFilter) {
+    const [driver,index] = chartFilter.split('|');
+    label = driver+' / '+lenses[Number(index)];
+  }
+  byId('clearMetric').textContent='Clear filter · '+label;
+  if (special) {
+    explorer.innerHTML = metric==='matrix' ? matrixView(rows) : countryView(rows);
+    return;
+  }
   const groups = new Map();
   for (const row of rows) {
     const key = row[metric] || 'Unrecorded';
@@ -41,15 +91,14 @@ function drawChart(rows) {
   }
   byId('chart').innerHTML=slices.join('');
   byId('legend').innerHTML=legend.join('');
-  byId('clearMetric').hidden=!chartFilter;
-  byId('clearMetric').textContent='Clear filter'+(chartFilter?' · '+chartFilter:'');
+
 }
 document.querySelector('.plot').addEventListener('click',event=>{
   const item=event.target.closest('[data-category]');
   if (!item && event.target.id!=='clearMetric') return;
   chartFilter=item && chartFilter!==item.dataset.category ? item.dataset.category : '';
   research();
-  if(item?.tagName==='BUTTON') [...byId('legend').children].find(b=>b.dataset.category===item.dataset.category)?.focus();
+  if(item?.tagName==='BUTTON') [...document.querySelectorAll('.plot button[data-category]')].find(b=>b.dataset.category===item.dataset.category)?.focus();
 });
 byId('metric').onchange=()=>{chartFilter='';research()};
 
@@ -69,7 +118,9 @@ function research() {
     (!byId('kind').value || byId('kind').value === r.type) &&
     Object.values(r).join(' ').toLowerCase().includes(term));
   drawChart(base);
-  const rows = base.filter(r=>!chartFilter || (r[byId('metric').value]||'Unrecorded')===chartFilter);
+  const rows = base.filter(r=>!chartFilter || categoryMatches(r,byId('metric').value,chartFilter));
+  byId('showMatches').hidden = !chartFilter;
+  byId('showMatches').textContent = 'View '+rows.length+' matching '+(rows.length===1?'source':'sources')+' ↓';
   byId('results').innerHTML = rows.map(entry).join('');
   byId('count').textContent = rows.length ? rows.length+' of '+records.length+' sources' : 'No matches. Change the search or filters.';
 }

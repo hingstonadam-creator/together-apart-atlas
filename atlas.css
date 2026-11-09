@@ -22,3 +22,17 @@
 .chapter-links{columns:2;margin:2rem 0;padding-left:1.6rem}.chapter-links li,.reading aside li{padding:.4rem 0}
 .chapter-nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
 @media(max-width:650px){.plates{display:grid}.chapter-links{columns:1}}
+
+.plot.explore-plot {display:block}
+.matrix-frame {overflow-x:auto}
+.lens-matrix {border-collapse:collapse;width:min(100%,680px);table-layout:fixed}
+.lens-matrix th,.lens-matrix td {min-width:0;border:0;padding:3px;text-align:center;font-size:.9rem;background:transparent}
+.lens-matrix th:first-child {width:36%;text-align:left}
+.lens-matrix button {width:100%;min-height:42px;cursor:pointer;background:rgba(169,93,70,var(--shade));color:var(--ink);border:1px solid var(--line);font:inherit}
+.country-bars {max-width:640px}
+.country-bars button {background:transparent;color:var(--ink);border:1px solid transparent;padding:7px 5px;display:grid;align-items:center;gap:12px;grid-template-columns:minmax(6rem,1fr) 2fr 2ch;width:100%;cursor:pointer;text-align:left;font:inherit}
+.country-bars .track {height:.75rem;background:var(--light)}
+.country-bars i {height:100%;display:block;background:#687f70}
+#explorer button[aria-pressed=true] {outline:2px solid var(--ink);outline-offset:-2px}
+#explorer button:disabled {cursor:default;opacity:.55}
+#showMatches {display:inline-block;padding:.6rem 0}

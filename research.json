@@ -31,7 +31,8 @@
       "Adaptable rooms alone do not establish two fully autonomous dwellings. Test services, entry and acoustic separation in each state.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to S–M and XL domestic arrangements.",
       "Draw XL in three states: young family; grandparent co-residence; adult-child independence."
-    ]
+    ],
+    "country": "Australia"
   },
   {
     "id": "p102",
@@ -64,7 +65,8 @@
       "Courtyard-facing windows can still expose private life. Separation of mass does not prove visual or acoustic privacy.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to S–M and XL domestic arrangements.",
       "Compare direct-facing and offset living-room windows around an S–M shared front yard."
-    ]
+    ],
+    "country": "Australia"
   },
   {
     "id": "p103",
@@ -98,7 +100,8 @@
       "A private stair alone would not offer equivalent access. Adaptation must preserve independent entrances and services.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Directly tests S above L.",
       "Draw S-above-L with the lift route, optional family link and a closed-link state."
-    ]
+    ],
+    "country": "Netherlands"
   },
   {
     "id": "p104",
@@ -131,7 +134,8 @@
       "Do not copy the garage into your no-carparking brief. Screens require orientation-specific testing; they do not establish acoustic separation.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to S–M and XL domestic arrangements.",
       "Draw a gallery-to-front-yard section in open and screened states, including rain cover and a clear bypass."
-    ]
+    ],
+    "country": "Australia"
   },
   {
     "id": "p105",
@@ -164,7 +168,8 @@
       "Cooperative governance is part of the model. Shared provision cannot be credited with cost or care benefits without operational evidence.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
       "Locate laundry on an everyday route with a quiet bypass, seating and a management note."
-    ]
+    ],
+    "country": "Spain"
   },
   {
     "id": "p106",
@@ -197,7 +202,8 @@
       "A self-selecting cohousing group is not equivalent to all future residents. Translate the spatial options without assuming universal participation.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
       "Test the same four-home cluster with related families and unrelated households."
-    ]
+    ],
+    "country": "United Kingdom"
   },
   {
     "id": "p107",
@@ -231,7 +237,8 @@
       "Continuous exterior layers can also create overlooking. Room variety needs allocation rules and management.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
       "Compare a cluster landing and long gallery for homes served, route length and sightlines."
-    ]
+    ],
+    "country": "Switzerland"
   },
   {
     "id": "p108",
@@ -264,7 +271,8 @@
       "Co-location does not prove interaction. Operational staffing cannot be replaced by architecture or unpaid family labour.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
       "Map voluntary family contact separately from deliveries, visitors and any future care visit."
-    ]
+    ],
+    "country": "Denmark"
   },
   {
     "id": "p109",
@@ -297,7 +305,8 @@
       "Do not transfer the resources of a 13-building cooperative directly to one six-storey project.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
       "Assign each shared space a user group, catchment and responsible manager; remove redundant facilities."
-    ]
+    ],
+    "country": "Switzerland"
   },
   {
     "id": "p110",
@@ -330,7 +339,8 @@
       "This is design-intent evidence, not a completed or post-occupancy precedent. The 344 figure covers the collaborative development, not BETA's block alone.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
       "Test allocation, turnover and unrelated occupancy without changing the architectural shell."
-    ]
+    ],
+    "country": "Netherlands"
   },
   {
     "id": "source-1",
@@ -352,7 +362,8 @@
       2,
       3
     ],
-    "driver": "Define"
+    "driver": "Define",
+    "country": "Australia"
   },
   {
     "id": "source-2",
@@ -374,7 +385,8 @@
       1,
       2
     ],
-    "driver": "Define"
+    "driver": "Define",
+    "country": "Australia"
   },
   {
     "id": "source-3",
@@ -396,7 +408,8 @@
       2,
       3
     ],
-    "driver": "Mediate"
+    "driver": "Mediate",
+    "country": "Australia"
   },
   {
     "id": "source-4",
@@ -417,7 +430,8 @@
       3,
       1
     ],
-    "driver": "Define"
+    "driver": "Define",
+    "country": "Australia"
   },
   {
     "id": "source-5",
@@ -438,7 +452,8 @@
       2,
       3
     ],
-    "driver": "Mediate"
+    "driver": "Mediate",
+    "country": "Australia"
   },
   {
     "id": "source-6",
@@ -459,7 +474,8 @@
       1,
       3
     ],
-    "driver": "Define"
+    "driver": "Define",
+    "country": "Australia"
   },
   {
     "id": "source-7",
@@ -481,6 +497,7 @@
       2,
       3
     ],
-    "driver": "Extend"
+    "driver": "Extend",
+    "country": "Australia"
   }
 ]
