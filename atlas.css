@@ -36,3 +36,17 @@
 #explorer button[aria-pressed=true] {outline:2px solid var(--ink);outline-offset:-2px}
 #explorer button:disabled {cursor:default;opacity:.55}
 #showMatches {display:inline-block;padding:.6rem 0}
+
+#collection-summary {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.25rem;margin:2rem 0}
+#collection-summary div{border-top:2px solid var(--clay);padding-top:.75rem}
+#collection-summary dt{font-size:.9rem}#collection-summary dd strong{display:block;font-size:clamp(2.3rem,4vw,4rem);line-height:1.15;letter-spacing:-.055em}
+#collection-summary dd span{display:block;font-size:.83rem;margin-top:.3rem;color:#56574e}
+.exploration {display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,3vw,3rem);border-top:1px solid var(--line)}
+.exploration section{min-width:0;padding:1.5rem 0}.exploration h2{font-size:clamp(1.4rem,2.5vw,2.1rem)}
+#keyword-cloud {padding:1.15rem .8rem;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.2rem .5rem;background:#eeebe2}
+#keyword-cloud button {font:inherit;font-size:calc(.75rem + 1.15rem * var(--weight));font-weight:600;letter-spacing:-.04em;border:0;background:transparent;color:#405347;padding:.2em;cursor:pointer}
+#keyword-cloud small{font:500 .65rem/1 Arial;color:inherit;vertical-align:super}
+#keyword-cloud button:hover,#keyword-cloud button[aria-pressed=true]{color:#83472e;text-decoration:underline}
+#driver-matrix button[aria-pressed=true]{outline:2px solid var(--ink);outline-offset:-2px}
+.explorer-status button{font:inherit;padding:.4em .75em;background:transparent;border:1px solid var(--line);cursor:pointer}
+@media(max-width:800px){.exploration{grid-template-columns:1fr}#collection-summary{grid-template-columns:1fr 1fr}}

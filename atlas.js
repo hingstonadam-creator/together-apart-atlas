@@ -27,6 +27,74 @@ function categoryMatches(record, metric, category) {
   }
   return (record[metric] || 'Unrecorded') === category;
 }
+// Group common grammatical forms of the same architectural term.
+const vocabulary = [
+  ['Access', /\baccess(?:ible|ibility)?\b/i],
+  ['Adaptability', /\badapt(?:able|ation|ability|ive)?\b/i],
+  ['Balcony', /\bbalcon(?:y|ies)\b/i],
+  ['Care', /\bcare(?:rs?|giving)?\b/i],
+  ['Circulation', /\bcirculation\b/i],
+  ['Cluster', /\bclusters?\b/i],
+  ['Cohousing', /\bco-?housing\b/i],
+  ['Community', /\bcommunit(?:y|ies)\b/i],
+  ['Courtyard', /\bcourtyards?\b/i],
+  ['Entry', /\b(?:entr(?:y|ies|ance|ances)|front doors?)\b/i],
+  ['Garden', /\bgardens?\b/i],
+  ['Gallery', /\bgaller(?:y|ies)\b/i],
+  ['Independence', /\bindependen(?:t|ce|tly)\b/i],
+  ['Landing', /\blandings?\b/i],
+  ['Laundry', /\blaundr(?:y|ies)\b/i],
+  ['Lift', /\blifts?\b/i],
+  ['Privacy', /\bpriva(?:cy|te|tely)\b/i],
+  ['Shared space', /\bshared (?:spaces?|areas?|facilities|amenities|domestic facilities)\b/i],
+  ['Terrace', /\bterraces?\b/i],
+  ['Threshold', /\bthresholds?\b/i],
+  ['Walkway', /\bwalkways?\b/i]
+];
+function keywordsFor(record) {
+  const content = [record.title,record.mix,record.access,record.shared,record.evidence,
+    record.insight,record.interpretation,record.implication,record.question,...(record.answers || [])].join(' ');
+  return vocabulary.filter(([,pattern])=>pattern.test(content)).map(([word])=>word);
+}
+function collectionSummary() {
+  const categories = key => [...new Set(records.map(r=>r[key]).filter(Boolean))].sort();
+  const methods = categories('method');
+  const missing = records.filter(r=>!r.method).length;
+  const countries = categories('country');
+  const stats = [
+    [records.length,'Research points',records.filter(r=>r.number!=null).length+' numbered in the register'],
+    [categories('type').length,'Source types',categories('type').join(' · ')],
+    [methods.length,'Recorded methods', [...methods, ...(missing?[missing+' points without a recorded method']:[])].join(' · ')],
+    [countries.length,'Countries represented', records.filter(r=>r.country==='Australia').length+' points from Australia']
+  ];
+  byId('collection-summary').innerHTML = stats.map(([n,label,note])=>'<div><dt>'+esc(label)+'</dt><dd><strong>'+n+'</strong><span>'+esc(note)+'</span></dd></div>').join('');
+}
+let matrixFilter = '';
+let keywordFilter = '';
+let keywordIndex = new Map();
+function keywordCloud(rows) {
+  const counts = new Map();
+  for (const row of rows) {
+    for (const word of keywordIndex.get(row.id)) counts.set(word,(counts.get(word)||0)+1);
+  }
+  const max = Math.max(1,...counts.values());
+  return [...counts].sort(([a],[b])=>a.localeCompare(b)).map(([word,count])=>
+    '<button data-word="'+esc(word)+'" aria-label="'+esc(word)+', '+count+' data points" aria-pressed="'+(word===keywordFilter)+'" style="--weight:'+Math.sqrt(count/max).toFixed(3)+'">'+esc(word)+' <small>'+count+'</small></button>').join('') || '<p>No indexed keywords in these results.</p>';
+}
+function bindExplorer(id,attribute,select) {
+  byId(id).addEventListener('click',event=>{
+    const button=event.target.closest('button['+attribute+']');
+    if (!button) return;
+    const key=button.getAttribute(attribute);
+    select(key);
+    research();
+    [...byId(id).querySelectorAll('button')].find(b=>b.getAttribute(attribute)===key)?.focus();
+  });
+}
+bindExplorer('driver-matrix','data-category',key=>{matrixFilter=matrixFilter===key?'':key});
+bindExplorer('keyword-cloud','data-word',word=>{keywordFilter=keywordFilter===word?'':word});
+byId('clearExplorers').onclick=()=>{matrixFilter='';keywordFilter='';research()};
+
 function matrixView(rows) {
   const cells = lenses.map((lens, index) => {
     const values = drivers.map(driver => {
@@ -39,7 +107,7 @@ function matrixView(rows) {
   const max = Math.max(1,...cells.flatMap(row=>row.values.map(cell=>cell.count)));
   const headers = drivers.map(d=>'<th scope="col">'+d+'</th>').join('');
   const body = cells.map(({lens,values}) => '<tr><th scope="row">'+lens+'</th>'+values.map(({key,driver,count})=>
-    '<td><button data-category="'+key+'" aria-label="'+driver+' and '+lens+', '+count+' sources" aria-pressed="'+(chartFilter===key)+'" style="--shade:'+count/max*.55+'" '+(!count?'disabled':'')+'>'+count+'</button></td>'
+    '<td><button data-category="'+key+'" aria-label="'+driver+' and '+lens+', '+count+' sources" aria-pressed="'+(matrixFilter===key)+'" style="--shade:'+count/max*.55+'" '+(!count?'disabled':'')+'>'+count+'</button></td>'
   ).join('')+'</tr>').join('');
   return '<p>Select a cell to find sources addressing both a design driver and a research lens. A source can appear under several lenses.</p><div class="matrix-frame"><table class="lens-matrix"><thead><tr><th>Research lens</th>'+headers+'</tr></thead><tbody>'+body+'</tbody></table></div>';
 }
@@ -56,20 +124,15 @@ function countryView(rows) {
 function drawChart(rows) {
   const metric = byId('metric').value;
   const explorer = byId('explorer');
-  const special = metric==='matrix' || metric==='country';
+  const special = metric==='country';
   explorer.hidden = !special;
   document.querySelector('.plot').classList.toggle('explore-plot',special);
   byId('chart').style.display = special ? 'none' : '';
   byId('legend').hidden = special;
   byId('clearMetric').hidden = !chartFilter;
-  let label = chartFilter;
-  if (metric==='matrix' && chartFilter) {
-    const [driver,index] = chartFilter.split('|');
-    label = driver+' / '+lenses[Number(index)];
-  }
-  byId('clearMetric').textContent='Clear filter · '+label;
+  byId('clearMetric').textContent='Clear filter · '+chartFilter;
   if (special) {
-    explorer.innerHTML = metric==='matrix' ? matrixView(rows) : countryView(rows);
+    explorer.innerHTML = countryView(rows);
     return;
   }
   const groups = new Map();
@@ -117,9 +180,17 @@ function research() {
     (!byId('driver').value || byId('driver').value === r.driver) &&
     (!byId('kind').value || byId('kind').value === r.type) &&
     Object.values(r).join(' ').toLowerCase().includes(term));
-  drawChart(base);
-  const rows = base.filter(r=>!chartFilter || categoryMatches(r,byId('metric').value,chartFilter));
-  byId('showMatches').hidden = !chartFilter;
+  const matchesChart = r=>!chartFilter || categoryMatches(r,byId('metric').value,chartFilter);
+  const matchesMatrix = r=>!matrixFilter || categoryMatches(r,'matrix',matrixFilter);
+  const matchesWord = r=>!keywordFilter || keywordIndex.get(r.id).includes(keywordFilter);
+  drawChart(base.filter(r=>matchesMatrix(r) && matchesWord(r)));
+  byId('driver-matrix').innerHTML=matrixView(base.filter(r=>matchesChart(r) && matchesWord(r)));
+  byId('keyword-cloud').innerHTML=keywordCloud(base.filter(r=>matchesChart(r) && matchesMatrix(r)));
+  const rows=base.filter(r=>matchesChart(r) && matchesMatrix(r) && matchesWord(r));
+  const [driver,lensIndex]=matrixFilter.split('|');
+  byId('activeExplorers').textContent=[matrixFilter && driver+' / '+lenses[lensIndex],keywordFilter].filter(Boolean).join(' · ');
+  byId('clearExplorers').hidden=!(matrixFilter || keywordFilter);
+  byId('showMatches').hidden=!(chartFilter || matrixFilter || keywordFilter);
   byId('showMatches').textContent = 'View '+rows.length+' matching '+(rows.length===1?'source':'sources')+' ↓';
   byId('results').innerHTML = rows.map(entry).join('');
   byId('count').textContent = rows.length ? rows.length+' of '+records.length+' sources' : 'No matches. Change the search or filters.';
@@ -131,6 +202,8 @@ async function loadResearch() {
     const response = await fetch('../research.json');
     if (!response.ok) throw Error('Missing collection');
     records = await response.json();
+    keywordIndex = new Map(records.map(r=>[r.id,keywordsFor(r)]));
+    collectionSummary();
     options('lens','All research lenses',lenses);
     options('driver','All drivers',drivers);
     options('kind','All source types',[...new Set(records.map(r=>r.type))].sort());
