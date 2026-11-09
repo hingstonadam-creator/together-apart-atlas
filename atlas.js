@@ -64,7 +64,7 @@ function collectionSummary() {
   const missing = records.filter(r=>!r.method).length;
   const countries = categories('country');
   const stats = [
-    [records.length,'Atlas entries',records.filter(r=>r.number!=null).length+' numbered research points · '+records.filter(r=>r.collection==='Housing Fieldnotes').length+' Fieldnotes sources'],
+    [records.length,'Research points','Selected from the Notion register'],
     [categories('type').length,'Source types',categories('type').join(' · ')],
     [methods.length,'Recorded methods', [...methods, ...(missing?[missing+' points without a recorded method']:[])].join(' · ')],
     [countries.length,'Countries represented', records.filter(r=>r.country==='Australia').length+' points from Australia']
@@ -169,7 +169,7 @@ byId('metric').onchange=()=>{chartFilter='';research()};
 
 const collectedFormat = new Intl.DateTimeFormat('en-AU',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
 function entry(record) {
-  const entryLabel = record.number ? 'Data point '+record.number : (record.collection || 'Unnumbered source');
+  const entryLabel = 'Data point '+record.number;
   const collected = record.dateCollected ? '<time datetime="'+esc(record.dateCollected)+'">'+collectedFormat.format(new Date(record.dateCollected+'T00:00:00Z'))+'</time>' : 'Not recorded';
   const reference = record.exegesisNumber ? '<p>Exegesis manuscript reference · R'+esc(record.exegesisNumber)+'</p>' : '';
   const source = record.url ? '<a href="'+esc(record.url)+'" target="_blank" rel="noopener">Original source ↗</a>' : 'Source recorded in the Graduate Project register. No public link supplied.';

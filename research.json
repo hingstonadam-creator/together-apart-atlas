@@ -27,7 +27,8 @@
       "A printable profile still requires testing after firing.",
       "Connect the early screen experiment to the later question of how much shade a dwelling threshold needs.",
       "Compare two screen depths at a west-facing entry and mark shade, views and clearance."
-    ]
+    ],
+    "notionPageId": "3b4501e234668079a4c9c1630453f573"
   },
   {
     "id": "register-2",
@@ -60,7 +61,8 @@
       "One winter visit cannot establish summer comfort.",
       "Read the visit alongside Gehl’s repeatable observations of public life.",
       "Trace the approach from the western path to a dwelling entrance and mark where a person can pause in shade."
-    ]
+    ],
+    "notionPageId": "3b4501e234668056ac51d5ae16ac6873"
   },
   {
     "id": "register-3",
@@ -90,7 +92,8 @@
       "This sample cannot represent all neighbours or establish attitudes to multigenerational housing.",
       "The survey belongs to the earlier civic programme and raises a methodological question about whose views are represented.",
       "For a housing study, ask separate questions about sharing a route, sharing a room and choosing whether to visit."
-    ]
+    ],
+    "notionPageId": "3b7501e2346680e09ceac3f93ef18819"
   },
   {
     "id": "register-5",
@@ -122,7 +125,8 @@
       "A moving component still needs an identifiable user and an accessible means of operation.",
       "The earlier kinetic façade work raises a domestic question about who controls exposure at a front door.",
       "Draw a resident operating a screen from the entry alcove and trace the effect on privacy and the adjacent walkway."
-    ]
+    ],
+    "notionPageId": "3b7501e234668059937fc5501526452f"
   },
   {
     "id": "register-13",
@@ -152,7 +156,8 @@
       "A proposed resource exchange is not a demonstrated operating system.",
       "This technical brief explains the starting programme before the project shifted to housing.",
       "Trace proposed infrastructure separately from domestic access and identify where each route reaches the public edge."
-    ]
+    ],
+    "notionPageId": "3b7501e2346681278f79e1f1e61598f8"
   },
   {
     "id": "register-14",
@@ -185,7 +190,8 @@
       "A visually open edge can still leave the terms of access unclear.",
       "Compare an institutional courtyard with the approach to a residential entry pavilion.",
       "Draw the setback, public route and dwelling boundary together, identifying who can pause at each edge."
-    ]
+    ],
+    "notionPageId": "3b7501e234668107b2c1d5cd34881734"
   },
   {
     "id": "register-21",
@@ -217,7 +223,8 @@
       "The climatic performance of this school cannot be assumed for an Adelaide apartment building.",
       "The roof section offers a precedent for a sheltered external walkway.",
       "Draw the path of air and the limits of shade in a section through the gallery roof and entry alcove."
-    ]
+    ],
+    "notionPageId": "3bb501e234668055a977e9a45a07d8d9"
   },
   {
     "id": "register-34",
@@ -250,7 +257,8 @@
       "An accessible route alone says little about where someone might comfortably sit.",
       "Read the entrance, sitting edge and front room as consecutive parts of one arrival.",
       "Draw the private threshold and an occupied seat beside it while retaining a clear through-route."
-    ]
+    ],
+    "notionPageId": "3be501e23466810197edd9fc037952ed"
   },
   {
     "id": "register-42",
@@ -283,7 +291,8 @@
       "A list of shared facilities does not describe residents’ access to the neighbourhood.",
       "Connect the building’s communal spaces to the wider walking network.",
       "Follow a resident from their front door to a neighbourhood destination, recording exposed and sheltered portions."
-    ]
+    ],
+    "notionPageId": "3bf501e23466800382d9dd486c7defb1"
   },
   {
     "id": "register-45",
@@ -316,7 +325,8 @@
       "The presence of a screen does not establish privacy at every viewing angle.",
       "The bay study relates the dimensions of a private outdoor edge to sightlines and summer exposure.",
       "Compare balcony depth and sightlines at a typical dwelling bay facing a shared route."
-    ]
+    ],
+    "notionPageId": "3bf501e2346681b892c2d9fe4b755aae"
   },
   {
     "id": "register-54",
@@ -348,7 +358,8 @@
       "A recommendation for the T1 data-centre façade does not establish performance in the housing scheme.",
       "Compare the consultation with the winter site visit and the orientation of the external walkways.",
       "Draw a west-facing access section and identify the pedestrian, sources of reflected heat and available shade."
-    ]
+    ],
+    "notionPageId": "3c0501e2346680a6a68fc9e2635f51a4"
   },
   {
     "id": "register-85",
@@ -381,7 +392,8 @@
       "A drawing can show room to stop. It cannot establish how often people stop there.",
       "Pair observation points with the walking route identified during the Southwark site visit.",
       "Set up a repeatable observation of movement and pauses on the existing public path, recording time and weather."
-    ]
+    ],
+    "notionPageId": "3ca501e23466817f92ace843cdf98e09"
   },
   {
     "id": "p101",
@@ -418,7 +430,8 @@
     ],
     "country": "Australia",
     "exegesisNumber": 101,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e2346681aeaddcf438acabe8ad"
   },
   {
     "id": "p102",
@@ -454,7 +467,8 @@
     ],
     "country": "Australia",
     "exegesisNumber": 102,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e2346681a7be35e8c1dff306f1"
   },
   {
     "id": "p103",
@@ -491,7 +505,8 @@
     ],
     "country": "Netherlands",
     "exegesisNumber": 103,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e23466818da921d09158c60777"
   },
   {
     "id": "p104",
@@ -527,7 +542,8 @@
     ],
     "country": "Australia",
     "exegesisNumber": 104,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e2346681f3ad8cc7ad6593b375"
   },
   {
     "id": "p105",
@@ -563,7 +579,8 @@
     ],
     "country": "Spain",
     "exegesisNumber": 105,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e2346681f3a814fbf2300bb0ce"
   },
   {
     "id": "p106",
@@ -599,7 +616,8 @@
     ],
     "country": "United Kingdom",
     "exegesisNumber": 106,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e2346681e884ebf57be8352fd6"
   },
   {
     "id": "p107",
@@ -636,7 +654,8 @@
     ],
     "country": "Switzerland",
     "exegesisNumber": 107,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e23466812491eed2d102a77f6b"
   },
   {
     "id": "p108",
@@ -672,7 +691,8 @@
     ],
     "country": "Denmark",
     "exegesisNumber": 108,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e23466812c9193e56c6137b84f"
   },
   {
     "id": "p109",
@@ -708,7 +728,8 @@
     ],
     "country": "Switzerland",
     "exegesisNumber": 109,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e234668188ae27ec0099d3d4e7"
   },
   {
     "id": "p110",
@@ -744,7 +765,8 @@
     ],
     "country": "Netherlands",
     "exegesisNumber": 110,
-    "dateCollected": "2026-10-22"
+    "dateCollected": "2026-10-22",
+    "notionPageId": "400501e2346681fab886fe29f341cfd8"
   },
   {
     "id": "register-101",
@@ -777,178 +799,7 @@
       "Neither reference establishes a multigenerational occupancy model. Ivry remains a lead requiring more precise identification.",
       "Compare the optional connection between family homes with the independently accessible route between front doors.",
       "Trace who controls the connection between two homes, then test how someone can pass the planted threshold independently."
-    ]
-  },
-  {
-    "id": "source-1",
-    "title": "One roof, three generations",
-    "type": "Built project",
-    "author": "Jacinta Cleary · Sanctuary, 2025",
-    "location": "North-west Sydney, NSW",
-    "mix": "Family home + self-contained two-bedroom apartment",
-    "access": "Common entry and courtyard lead to individual front doors.",
-    "shared": "Backyard and pool serve both households.",
-    "quality": "Project profile with architect interview. Documents the arrangement, with limited evidence on daily use.",
-    "evidence": "One courtyard serves two independent homes, each with its own entrance.",
-    "interpretation": "A shared arrival space could make short visits possible while preserving a clear invitation threshold.",
-    "implication": "Draw the S/M pair at 1:100. Trace returning home, visiting family and passing a closed front door.",
-    "question": "Can either household reach its door without looking into the other living room?",
-    "url": "https://renew.org.au/sanctuary-magazine/house-profiles/mini-profile-one-roof-three-generations/",
-    "lenses": [
-      1,
-      2,
-      3
     ],
-    "driver": "Define",
-    "country": "Australia",
-    "dateCollected": null,
-    "collection": "Housing Fieldnotes"
-  },
-  {
-    "id": "source-2",
-    "title": "Apartment Design Guide",
-    "type": "Report",
-    "author": "NSW Government · Part 4, §4K",
-    "location": "New South Wales",
-    "mix": "Studios to family apartments in the illustrated section.",
-    "access": "Figure 4K.4 uses split-level apartments to reduce common circulation.",
-    "shared": "Larger units can occupy levels with greater outdoor space.",
-    "quality": "Government design guidance. Transfer to Adelaide requires local testing.",
-    "evidence": "Section 4K recommends varied unit sizes and flexible configurations across life stages.",
-    "interpretation": "A section through S, L and XL may reveal opportunities missed in a typical floor plan.",
-    "implication": "Draw an S above an L alongside a two-storey XL. Mark every entry and step-free route.",
-    "question": "Which household relationships remain practical when a resident cannot use stairs?",
-    "url": "https://www.planning.nsw.gov.au/sites/default/files/2023-03/apartment-design-guide.pdf#page=107",
-    "lenses": [
-      0,
-      1,
-      2
-    ],
-    "driver": "Define",
-    "country": "Australia",
-    "dateCollected": null,
-    "collection": "Housing Fieldnotes"
-  },
-  {
-    "id": "source-3",
-    "title": "Terracotta House",
-    "type": "Built project",
-    "author": "Austin Maynard Architects · Project account",
-    "location": "Melbourne, VIC",
-    "mix": "Two independent houses with a shared pavilion",
-    "access": "The shared building sits between the homes.",
-    "shared": "Central pavilion combines laundry, guest accommodation and social uses.",
-    "quality": "Architect account establishes program and arrangement. Actual use frequency is unmeasured.",
-    "evidence": "Two households share a garden and a third building containing everyday amenities.",
-    "interpretation": "A shared destination between dwellings could support visits without opening either home.",
-    "implication": "Place the laundry and a seat on the courtyard route. Draw a direct bypass for residents heading home.",
-    "question": "Who controls access when the shared room is used by a guest?",
-    "url": "https://www.maynardarchitects.com/all-projects/terracotta",
-    "lenses": [
-      1,
-      2,
-      3
-    ],
-    "driver": "Mediate",
-    "country": "Australia",
-    "dateCollected": null,
-    "collection": "Housing Fieldnotes"
-  },
-  {
-    "id": "source-4",
-    "title": "Changing perceptions of family",
-    "type": "Paper",
-    "author": "Easthope, Liu, Burnley & Judd · Journal of Sociology",
-    "location": "Australia",
-    "mix": "Multigenerational households in the study",
-    "access": "Outside the study’s architectural scope.",
-    "shared": "Reported experiences of living together.",
-    "quality": "Peer-reviewed empirical study. Survey of 392 people, 21 diaries and 21 follow-up interviews. The sample concerns co-residence.",
-    "evidence": "The study examines how residents understand family through the experience of cohabitation.",
-    "interpretation": "Related households living across a landing may share some routines while negotiating different boundaries.",
-    "implication": "Use two household timetables to test the S/M entry arrangement during visits, departures and periods of retreat.",
-    "question": "Which observations about co-residence transfer to relatives in separate dwellings?",
-    "url": "https://journals.sagepub.com/doi/10.1177/1440783316635850",
-    "lenses": [
-      3,
-      1
-    ],
-    "driver": "Define",
-    "country": "Australia",
-    "dateCollected": null,
-    "collection": "Housing Fieldnotes"
-  },
-  {
-    "id": "source-5",
-    "title": "Nightingale Marrickville",
-    "type": "Built project",
-    "author": "SJB · Nightingale Housing",
-    "location": "Marrickville, NSW",
-    "mix": "54 small-footprint Teilhaus rental apartments",
-    "access": "Entry geometry needs a plan check.",
-    "shared": "Shared laundries, garden terrace, dining and living spaces.",
-    "quality": "Provider account documents amenities and unit count. Resident outcomes require separate evidence.",
-    "evidence": "Small dwellings are paired with several shared domestic facilities.",
-    "interpretation": "Clustering everyday tasks near a shared route may give residents a reason to linger.",
-    "implication": "Overlay laundry trips and direct lift-to-door routes on the external walkway plan.",
-    "question": "Can someone collect washing and return home without crossing a group activity?",
-    "url": "https://www.nightingalehousing.org/project/nightingale-marrickville",
-    "lenses": [
-      2,
-      3
-    ],
-    "driver": "Mediate",
-    "country": "Australia",
-    "dateCollected": null,
-    "collection": "Housing Fieldnotes"
-  },
-  {
-    "id": "source-6",
-    "title": "Multi-generation households in Australian cities",
-    "type": "Report",
-    "author": "Liu & Easthope · AHURI Final Report 181",
-    "location": "Australian cities",
-    "mix": "Census-defined households sharing a dwelling",
-    "access": "Census records do not describe entrance arrangements.",
-    "shared": "Household data do not map shared-space use.",
-    "quality": "Longitudinal census analysis, 1981–2006. Historical categories constrain comparison with neighbouring households.",
-    "evidence": "The report tracks changing household composition using multiple Australian censuses.",
-    "interpretation": "Separate dwellings occupied by relatives can fall outside a co-residence measure.",
-    "implication": "Record dwelling count and family relationship separately in the Southwark occupancy diagrams.",
-    "question": "What local evidence would support the proposed share of S dwellings?",
-    "url": "https://www.be.unsw.edu.au/sites/default/files/upload/research/centres/cf/publications/ahuriprojectreports/AHURI_Final_Report_No181.pdf",
-    "lenses": [
-      1,
-      3
-    ],
-    "driver": "Define",
-    "country": "Australia",
-    "dateCollected": null,
-    "collection": "Housing Fieldnotes"
-  },
-  {
-    "id": "source-7",
-    "title": "Intergenerational Cottage",
-    "type": "Built project",
-    "author": "main frank · Project account",
-    "location": "Hobart, TAS",
-    "mix": "Extended cottage accommodating changing family configurations",
-    "access": "Separate entries allow households to arrive independently.",
-    "shared": "Communal garden and private deck offer different degrees of contact.",
-    "quality": "Designer account describes changes in household use. No independent occupancy study is cited.",
-    "evidence": "The project accommodates family changes through separate entries and a combination of shared and private outdoor space.",
-    "interpretation": "A private outdoor retreat may remain important even where relatives share a garden.",
-    "implication": "Furnish the XL dwelling for two stages of family life. Preserve access to a private outdoor seat in both.",
-    "question": "Which room can change use without moving plumbing or blocking circulation?",
-    "url": "https://www.mainfrank.com/intergenerational-cottage/",
-    "lenses": [
-      0,
-      2,
-      3
-    ],
-    "driver": "Extend",
-    "country": "Australia",
-    "dateCollected": null,
-    "collection": "Housing Fieldnotes"
+    "notionPageId": "400501e23466812e8363f9c0b27aeb0b"
   }
 ]

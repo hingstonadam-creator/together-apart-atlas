@@ -16,7 +16,7 @@ The working six-storey scheme tests S beside M and above L. XL may span two leve
 
 ## Research and classification
 
-Use [100 Points of Research in Notion](https://app.notion.com/p/d7491c0a79fa4720b5332f0ec267ea73) as the research register. Each row holds one research point. A paper or built project can support several points. Both the default table and Research Point List sort by **Display Number**, ascending. Preserve that number when tracing a finding back to Notion.
+Use [100 Points of Research in Notion](https://app.notion.com/p/d7491c0a79fa4720b5332f0ec267ea73) as the sole source for atlas research records and chapter reading lists. For each refresh, match every published record by its stable Notion page ID, refresh its display number and properties, and exclude unmatched or archived rows. Publish the curated snapshot to GitHub Pages after verification. Each row holds one research point. A paper or built project can support several points. Both the default table and Research Point List sort by **Display Number**, ascending. Preserve that number when tracing a finding back to Notion.
 
 | Existing Notion fields | How to use them |
 | --- | --- |
