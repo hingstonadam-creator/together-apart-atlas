@@ -73,3 +73,5 @@
 .chapter-body .image-placeholder{width:min(100%,400px);aspect-ratio:4/3;min-height:0}
 .chapter-copy{max-width:800px}
 @media(max-width:760px){.chapter-body .image-placeholder{width:min(100%,400px);min-height:145px}}
+
+.research-dashboard-cta{border-top:2px solid var(--clay);margin:2rem 0;padding-top:1.3rem}
