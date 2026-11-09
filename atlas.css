@@ -88,3 +88,6 @@
 
 /* Compare the three design drivers in one cover row, retaining the full plans. */
 .plates.design-driver-cover{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.4rem,2vw,1rem);align-items:start}.design-driver-cover figure{min-width:0}.design-driver-cover img{width:100%;height:auto;max-height:none;object-fit:contain}.design-driver-cover figcaption{text-align:center;font-weight:700;font-size:clamp(.6rem,1.2vw,.75rem);letter-spacing:.06em}
+
+/* Exegesis figure replacements preserve complete renders in both reading layouts. */
+.manuscript-image{margin:0;min-width:0}.manuscript-image img,.chapter-render img{display:block;width:100%;height:auto}.manuscript-image figcaption,.chapter-render figcaption{margin-top:.55rem;line-height:1.5}.reading .chapter-render{margin:1.5rem 0 2rem}
