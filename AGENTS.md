@@ -29,6 +29,31 @@ Use [100 Points of Research in Notion](https://app.notion.com/p/d7491c0a79fa4720
 
 Prioritise substantive Australian papers, reports and documented built projects. Use international precedents where they clarify a design decision. Keep the earlier T1 façade research centre available for the exegesis history. Keep ARCH 5004 documentation separate.
 
+## Six-question framework
+
+Show all six questions on the main page in their original order, with a short explanation of how each evaluates a data point. Use the same headings for the answers in every entry. The headings come from the [6 Question Template](https://app.notion.com/p/3bb501e23466803a81a8ee00e0ed63b4). For housing entries, frame relevance around proximity, household independence and control over daily contact.
+
+| Question | What the answer should establish |
+| --- | --- |
+| 01 — What is it? | Identify the source, project or observation and its context. |
+| 02 — Why is it relevant? | Explain which part of the project inquiry this point informs. |
+| 03 — What did I learn? | Give a specific finding and identify the evidence that supports it. |
+| 04 — What does it challenge? | Name the assumption that the finding calls into question and explain why. |
+| 05 — What does it connect to? | Link a related data point, reading, site observation or drawing and explain the relationship. |
+| 06 — What could architecture do with this? | Translate the finding into one spatial decision or design test. State what to check in plan or section. |
+
+## Research entry format
+
+1. **Header.** Show the data point number (`Display Number`), title (`Research Point`), Type and Method (`Research Method`), in that order. Keep the original number when sorting or filtering.
+2. **Key insight.** Lead with the finding in one or two sentences. Follow it with a direct quotation when the source provides relevant, verifiable wording. Credit the source and give the page, figure or location where available. Render paraphrases as ordinary prose.
+3. **Six answers.** Show each numbered question with its own answer. Use the Notion entry body and supporting properties. Keep gaps visible as “Not yet recorded” and preserve open questions. Never infer a missing number, method, quotation or answer.
+
+## Research dashboard
+
+Make the interactive visualisation the main element of the research dashboard. Let readers choose the field to explore. Start with **Research Method** as a pie chart and offer **Type** and **Reliability** as alternative breakdowns. Count individual data points from the same published dataset used by the entry list. Include an “Unrecorded” category for missing values.
+
+Selecting a slice or its keyboard-accessible legend item filters the list by that exact field and value. For example, selecting **Precedent analysis** shows entries whose Research Method is Precedent analysis. Show the active filter and matching count, and provide a clear control to remove it. Keep other categories available so readers can switch directly between them. Changing the breakdown clears the previous chart selection and preserves independent search filters. The selected category count must match the number of displayed entries.
+
 ## Atlas content and publishing
 
 - Organise browsing around adaptable layouts, relationships between dwelling sizes, shared circulation, and independence within shared territory.
