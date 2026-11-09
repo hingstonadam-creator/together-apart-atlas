@@ -2,7 +2,7 @@ const byId = id => document.getElementById(id);
 const esc = value => String(value ?? 'Unknown').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const drivers = ['Define','Extend','Mediate'];
 const lenses = ['Adaptable layouts','Dwelling relationships','Shared circulation','Independence and community'];
-const fields = {location:'Location',mix:'Dwelling mix',access:'Access strategy',shared:'Shared spaces',evidence:'Documented evidence',quality:'Evidence quality',interpretation:'Tentative interpretation',implication:'Southwark drawing test',question:'Open question'};
+const fields = {location:'Location',mix:'Dwelling mix',access:'Access strategy',shared:'Shared spaces',evidence:'Documented evidence',quality:'Recorded reliability',information:'Information collected',connectionNote:'Connection note',themes:'Themes',threads:'Research threads',collections:'Exegesis collection',interpretation:'Tentative interpretation',implication:'Southwark drawing test',question:'Open question'};
 let records = [];
 const wideResearchLayout = window.matchMedia('(min-width: 761px)');
 document.querySelectorAll('.research-panel').forEach(panel => { panel.open = wideResearchLayout.matches; });
@@ -25,12 +25,24 @@ let chartFilter = '';
 function categoryMatches(record, metric, category) {
   if (metric === 'matrix') {
     const [driver, lens] = category.split('|');
-    return record.driver === driver && record.lenses.includes(Number(lens));
+    return (record.drivers || [record.driver]).includes(driver) && record.lenses.includes(Number(lens));
   }
   return (record[metric] || 'Unrecorded') === category;
 }
 // Group common grammatical forms of the same architectural term.
 const vocabulary = [
+  ['Data centre', /\bdata cent(?:re|er)s?\b/i],
+  ['Heat recovery', /\b(?:heat recovery|waste heat|recovered heat)\b/i],
+  ['Cooling', /\bcooling\b/i],
+  ['Energy', /\benerg(?:y|ies)\b/i],
+  ['Thermal comfort', /\bthermal comfort\b/i],
+  ['Water', /\bwater\b/i],
+  ['Fabrication', /\b(?:fabrication|3d print(?:ing|ed)?)\b/i],
+  ['Terracotta', /\bterracotta\b/i],
+  ['Material', /\bmaterials?\b/i],
+  ['Sensors', /\bsensors?\b/i],
+  ['Public space', /\bpublic (?:space|realm|edge)s?\b/i],
+  ['Research', /\b(?:research|living lab(?:oratory)?|prototype)s?\b/i],
   ['Access', /\baccess(?:ible|ibility)?\b/i],
   ['Adaptability', /\badapt(?:able|ation|ability|ive)?\b/i],
   ['Balcony', /\bbalcon(?:y|ies)\b/i],
@@ -55,7 +67,7 @@ const vocabulary = [
 ];
 function keywordsFor(record) {
   const content = [record.title,record.mix,record.access,record.shared,record.evidence,
-    record.insight,record.interpretation,record.implication,record.question,...(record.answers || [])].join(' ');
+    record.insight,record.information,record.interpretation,record.implication,record.question,...(record.themes || []),...(record.threads || []),...(record.keywords || []),...(record.answers || [])].join(' ');
   return vocabulary.filter(([,pattern])=>pattern.test(content)).map(([word])=>word);
 }
 function collectionSummary() {
@@ -64,7 +76,7 @@ function collectionSummary() {
   const missing = records.filter(r=>!r.method).length;
   const countries = categories('country');
   const stats = [
-    [records.length,'Research points','Selected from the Notion register'],
+    [records.length,'Research points','All active entries in the Notion register'],
     [categories('type').length,'Source types',categories('type').join(' · ')],
     [methods.length,'Recorded methods', [...methods, ...(missing?[missing+' points without a recorded method']:[])].join(' · ')],
     [countries.length,'Countries represented', records.filter(r=>r.country==='Australia').length+' points from Australia']
@@ -111,7 +123,7 @@ function matrixView(rows) {
   const body = cells.map(({lens,values}) => '<tr><th scope="row">'+lens+'</th>'+values.map(({key,driver,count})=>
     '<td><button data-category="'+key+'" aria-label="'+driver+' and '+lens+', '+count+' sources" aria-pressed="'+(matrixFilter===key)+'" style="--shade:'+count/max*.55+'" '+(!count?'disabled':'')+'>'+count+'</button></td>'
   ).join('')+'</tr>').join('');
-  return '<p>Select a cell to find sources addressing both a design driver and a research lens. A source can appear under several lenses. Earlier records without a housing driver or lens are excluded from this matrix.</p><div class="matrix-frame"><table class="lens-matrix"><thead><tr><th>Research lens</th>'+headers+'</tr></thead><tbody>'+body+'</tbody></table></div>';
+  return '<p>Select a cell to find sources addressing both a design driver and a research lens. Housing lenses are indexed from the recorded text. Driver labels appear only where the design application explicitly names DEFINE, EXTEND or MEDIATE. Entries without a matching label or housing lens are excluded from this matrix.</p><div class="matrix-frame"><table class="lens-matrix"><thead><tr><th>Research lens</th>'+headers+'</tr></thead><tbody>'+body+'</tbody></table></div>';
 }
 function countryView(rows) {
   const counts = new Map();
@@ -167,17 +179,17 @@ document.querySelector('.plot').addEventListener('click',event=>{
 });
 byId('metric').onchange=()=>{chartFilter='';research()};
 
-const collectedFormat = new Intl.DateTimeFormat('en-AU',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
+const collectedFormat = new Intl.DateTimeFormat('en-AU',{day:'numeric',month:'short',year:'numeric',timeZone:'Australia/Adelaide'});
 function entry(record) {
-  const entryLabel = 'Data point '+record.number;
-  const collected = record.dateCollected ? '<time datetime="'+esc(record.dateCollected)+'">'+collectedFormat.format(new Date(record.dateCollected+'T00:00:00Z'))+'</time>' : 'Not recorded';
+  const entryLabel = record.number == null ? 'Data point · number not recorded' : 'Data point '+record.number;
+  const collected = record.dateCollected ? '<time datetime="'+esc(record.dateCollected)+'">'+collectedFormat.format(new Date(record.dateCollected.length === 10 ? record.dateCollected+'T00:00:00Z' : record.dateCollected))+'</time>' : 'Not recorded';
   const reference = record.exegesisNumber ? '<p>Exegesis manuscript reference · R'+esc(record.exegesisNumber)+'</p>' : '';
   const source = record.url ? '<a href="'+esc(record.url)+'" target="_blank" rel="noopener">Original source ↗</a>' : 'Source recorded in the Graduate Project register. No public link supplied.';
-  const terms = Object.entries(fields).map(([key,title]) => '<dt>'+title+'</dt><dd>'+esc(record[key])+'</dd>').join('');
+  const terms = Object.entries(fields).map(([key,title]) => '<dt>'+title+'</dt><dd>'+esc(Array.isArray(record[key]) ? (record[key].join(' · ') || 'Unknown') : record[key])+'</dd>').join('');
   const answers=record.answers || [record.location+' · '+record.type, null, record.evidence, null, null, record.implication];
   const answerList=questions.map(([title],i)=>'<li><strong>'+title+'</strong><p>'+esc(answers[i] || 'Not yet recorded')+'</p></li>').join('');
   const quote=record.quote ? '<blockquote>'+esc(record.quote)+'<cite> — '+esc(record.author)+(record.quoteLocation?', '+esc(record.quoteLocation):'')+'</cite></blockquote>' : '';
-  return '<details><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><div class="entry"><p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+'<h3>Key insight</h3><p>'+esc(record.insight || record.interpretation)+'</p>'+quote+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details><p>'+source+'</p></div></details>';
+  return '<details><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><div class="entry"><p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+'<h3>Key insight</h3><p>'+esc(record.insight || record.interpretation || 'Not yet recorded')+'</p>'+quote+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details><p>'+source+'</p></div></details>';
 }
 function research() {
   const term = byId('search').value.trim().toLowerCase();
@@ -186,7 +198,7 @@ function research() {
   byId('filter-count').textContent = activeControls ? '('+activeControls+' active)' : '';
   const base = records.filter(r =>
     (!lens || r.lenses.includes(lenses.indexOf(lens))) &&
-    (!byId('driver').value || byId('driver').value === r.driver) &&
+    (!byId('driver').value || (r.drivers || [r.driver]).includes(byId('driver').value)) &&
     (!byId('kind').value || byId('kind').value === r.type) &&
     Object.values(r).join(' ').toLowerCase().includes(term));
   const matchesChart = r=>!chartFilter || categoryMatches(r,byId('metric').value,chartFilter);
@@ -221,3 +233,4 @@ async function loadResearch() {
   } catch { byId('status').innerHTML = 'The research collection could not load. <button type="button">Retry</button>'; byId('status').querySelector('button').onclick=loadResearch; }
 }
 loadResearch();
+

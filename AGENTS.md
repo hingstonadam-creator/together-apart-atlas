@@ -16,7 +16,7 @@ The working six-storey scheme tests S beside M and above L. XL may span two leve
 
 ## Research and classification
 
-Use [100 Points of Research in Notion](https://app.notion.com/p/d7491c0a79fa4720b5332f0ec267ea73) as the sole source for atlas research records and chapter reading lists. For each refresh, match every published record by its stable Notion page ID, refresh its display number and properties, and exclude unmatched or archived rows. Publish the curated snapshot to GitHub Pages after verification. Each row holds one research point. A paper or built project can support several points. Both the default table and Research Point List sort by **Display Number**, ascending. Preserve that number when tracing a finding back to Notion.
+Use [100 Points of Research in Notion](https://app.notion.com/p/d7491c0a79fa4720b5332f0ec267ea73) as the sole source for atlas research records and chapter reading lists. For each refresh, match every published record by its stable Notion page ID, refresh its display number and properties, and exclude unmatched or archived rows. Publish a complete snapshot of all active database rows to GitHub Pages after verification. Do not limit refreshes to the previously published subset. Each row holds one research point. A paper or built project can support several points. Both the default table and Research Point List sort by **Display Number**, ascending. Preserve that number when tracing a finding back to Notion.
 
 | Existing Notion fields | How to use them |
 | --- | --- |
@@ -100,7 +100,7 @@ Selecting a slice or its keyboard-accessible legend item filters the list by tha
 - In research entries, show location, documented dwelling mix, access strategy, shared spaces, evidence quality and the architectural implication. Mark missing facts as “Unknown” and keep each citation attached to its finding.
 - Distinguish **confirmed evidence**, **tentative interpretation** and **open question**. A landing drawn beside two doors establishes proximity. A claim about residents regularly meeting there needs evidence of use.
 - Relate findings to DEFINE, EXTEND or MEDIATE and link the design argument to its supporting sources in the Exegesis.
-- Keep the site compatible with static hosting on GitHub Pages and its repository subpath. Use a curated snapshot for publication. Check navigation, assets, filters and chapter links from the deployed base path when changing them. Keep unpublished research and credentials out of public assets.
+- Keep the site compatible with static hosting on GitHub Pages and its repository subpath. Use a complete snapshot of all active Notion rows for publication; exclude archived rows. Check navigation, assets, filters and chapter links from the deployed base path when changing them. Keep unpublished research and credentials out of public assets.
 
 ## Drawings and editorial work
 
@@ -109,3 +109,4 @@ Write in Australian English, use metric units and retain the project’s termino
 Use three identical plan fragments for DEFINE / EXTEND / MEDIATE. Keep scale and orientation fixed and change only the overlay. Use the latest agreed household colours and distinguish a route from a place where someone stops. For the poster, follow the latest Montserrat layout on one portrait sheet, B0 maximum, with a reading hierarchy at roughly 6 m, 1 m and 0.5 m.
 
 The T3 review is scheduled for 13 November 2026. Prioritise dwelling relationships, routes between front doors, inhabited thresholds and lived-in interiors for that review. Refresh the milestone from the current brief or Adam’s direction once it passes.
+
