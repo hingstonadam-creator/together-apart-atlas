@@ -4,6 +4,8 @@ const drivers = ['Define','Extend','Mediate'];
 const lenses = ['Adaptable layouts','Dwelling relationships','Shared circulation','Independence and community'];
 const fields = {location:'Location',mix:'Dwelling mix',access:'Access strategy',shared:'Shared spaces',evidence:'Documented evidence',quality:'Evidence quality',interpretation:'Tentative interpretation',implication:'Southwark drawing test',question:'Open question'};
 let records = [];
+const wideResearchLayout = window.matchMedia('(min-width: 761px)');
+document.querySelectorAll('.research-panel').forEach(panel => { panel.open = wideResearchLayout.matches; });
 
 function options(id, first, values) {
   byId(id).replaceChildren(new Option(first,''));
@@ -62,7 +64,7 @@ function collectionSummary() {
   const missing = records.filter(r=>!r.method).length;
   const countries = categories('country');
   const stats = [
-    [records.length,'Research points',records.filter(r=>r.number!=null).length+' numbered in the register'],
+    [records.length,'Atlas entries',records.filter(r=>r.number!=null).length+' numbered research points · '+records.filter(r=>r.collection==='Housing Fieldnotes').length+' Fieldnotes sources'],
     [categories('type').length,'Source types',categories('type').join(' · ')],
     [methods.length,'Recorded methods', [...methods, ...(missing?[missing+' points without a recorded method']:[])].join(' · ')],
     [countries.length,'Countries represented', records.filter(r=>r.country==='Australia').length+' points from Australia']
@@ -167,6 +169,7 @@ byId('metric').onchange=()=>{chartFilter='';research()};
 
 const collectedFormat = new Intl.DateTimeFormat('en-AU',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
 function entry(record) {
+  const entryLabel = record.number ? 'Data point '+record.number : (record.collection || 'Unnumbered source');
   const collected = record.dateCollected ? '<time datetime="'+esc(record.dateCollected)+'">'+collectedFormat.format(new Date(record.dateCollected+'T00:00:00Z'))+'</time>' : 'Not recorded';
   const reference = record.exegesisNumber ? '<p>Exegesis manuscript reference · R'+esc(record.exegesisNumber)+'</p>' : '';
   const source = record.url ? '<a href="'+esc(record.url)+'" target="_blank" rel="noopener">Original source ↗</a>' : 'Source recorded in the Graduate Project register. No public link supplied.';
@@ -174,11 +177,13 @@ function entry(record) {
   const answers=record.answers || [record.location+' · '+record.type, null, record.evidence, null, null, record.implication];
   const answerList=questions.map(([title],i)=>'<li><strong>'+title+'</strong><p>'+esc(answers[i] || 'Not yet recorded')+'</p></li>').join('');
   const quote=record.quote ? '<blockquote>'+esc(record.quote)+'<cite> — '+esc(record.author)+(record.quoteLocation?', '+esc(record.quoteLocation):'')+'</cite></blockquote>' : '';
-  return '<details><summary><small>'+esc(record.number ? 'Data point '+record.number : 'Data point number unrecorded')+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><div class="entry"><p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+'<h3>Key insight</h3><p>'+esc(record.insight || record.interpretation)+'</p>'+quote+'<ol class="answers">'+answerList+'</ol><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details><p>'+source+'</p></div></details>';
+  return '<details><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><div class="entry"><p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+'<h3>Key insight</h3><p>'+esc(record.insight || record.interpretation)+'</p>'+quote+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details><p>'+source+'</p></div></details>';
 }
 function research() {
   const term = byId('search').value.trim().toLowerCase();
   const lens = byId('lens').value;
+  const activeControls = [term,lens,byId('driver').value,byId('kind').value].filter(Boolean).length;
+  byId('filter-count').textContent = activeControls ? '('+activeControls+' active)' : '';
   const base = records.filter(r =>
     (!lens || r.lenses.includes(lenses.indexOf(lens))) &&
     (!byId('driver').value || byId('driver').value === r.driver) &&

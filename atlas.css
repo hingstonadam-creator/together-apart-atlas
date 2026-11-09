@@ -50,3 +50,10 @@
 #driver-matrix button[aria-pressed=true]{outline:2px solid var(--ink);outline-offset:-2px}
 .explorer-status button{font:inherit;padding:.4em .75em;background:transparent;border:1px solid var(--line);cursor:pointer}
 @media(max-width:800px){.exploration{grid-template-columns:1fr}#collection-summary{grid-template-columns:1fr 1fr}}
+
+.research-panel > summary,.entry-questions > summary{min-height:44px;box-sizing:border-box}
+.research-panel > .filters{margin-top:0}
+.research-panel > #framework{padding-left:1.6rem;columns:2}
+.research-panel > #framework li{break-inside:avoid;padding:.4rem}
+.research-panel > #framework span{display:block;font-size:.9em;line-height:1.45}
+@media(max-width:760px){.research-panel > #framework{columns:1}}

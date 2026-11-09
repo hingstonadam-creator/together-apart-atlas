@@ -801,7 +801,8 @@
     ],
     "driver": "Define",
     "country": "Australia",
-    "dateCollected": null
+    "dateCollected": null,
+    "collection": "Housing Fieldnotes"
   },
   {
     "id": "source-2",
@@ -825,7 +826,8 @@
     ],
     "driver": "Define",
     "country": "Australia",
-    "dateCollected": null
+    "dateCollected": null,
+    "collection": "Housing Fieldnotes"
   },
   {
     "id": "source-3",
@@ -849,7 +851,8 @@
     ],
     "driver": "Mediate",
     "country": "Australia",
-    "dateCollected": null
+    "dateCollected": null,
+    "collection": "Housing Fieldnotes"
   },
   {
     "id": "source-4",
@@ -872,7 +875,8 @@
     ],
     "driver": "Define",
     "country": "Australia",
-    "dateCollected": null
+    "dateCollected": null,
+    "collection": "Housing Fieldnotes"
   },
   {
     "id": "source-5",
@@ -895,7 +899,8 @@
     ],
     "driver": "Mediate",
     "country": "Australia",
-    "dateCollected": null
+    "dateCollected": null,
+    "collection": "Housing Fieldnotes"
   },
   {
     "id": "source-6",
@@ -918,7 +923,8 @@
     ],
     "driver": "Define",
     "country": "Australia",
-    "dateCollected": null
+    "dateCollected": null,
+    "collection": "Housing Fieldnotes"
   },
   {
     "id": "source-7",
@@ -942,6 +948,7 @@
     ],
     "driver": "Extend",
     "country": "Australia",
-    "dateCollected": null
+    "dateCollected": null,
+    "collection": "Housing Fieldnotes"
   }
 ]
