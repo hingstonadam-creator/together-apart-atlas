@@ -109,7 +109,7 @@ function matrixView(rows) {
   const body = cells.map(({lens,values}) => '<tr><th scope="row">'+lens+'</th>'+values.map(({key,driver,count})=>
     '<td><button data-category="'+key+'" aria-label="'+driver+' and '+lens+', '+count+' sources" aria-pressed="'+(matrixFilter===key)+'" style="--shade:'+count/max*.55+'" '+(!count?'disabled':'')+'>'+count+'</button></td>'
   ).join('')+'</tr>').join('');
-  return '<p>Select a cell to find sources addressing both a design driver and a research lens. A source can appear under several lenses.</p><div class="matrix-frame"><table class="lens-matrix"><thead><tr><th>Research lens</th>'+headers+'</tr></thead><tbody>'+body+'</tbody></table></div>';
+  return '<p>Select a cell to find sources addressing both a design driver and a research lens. A source can appear under several lenses. Earlier records without a housing driver or lens are excluded from this matrix.</p><div class="matrix-frame"><table class="lens-matrix"><thead><tr><th>Research lens</th>'+headers+'</tr></thead><tbody>'+body+'</tbody></table></div>';
 }
 function countryView(rows) {
   const counts = new Map();
@@ -165,12 +165,16 @@ document.querySelector('.plot').addEventListener('click',event=>{
 });
 byId('metric').onchange=()=>{chartFilter='';research()};
 
+const collectedFormat = new Intl.DateTimeFormat('en-AU',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
 function entry(record) {
+  const collected = record.dateCollected ? '<time datetime="'+esc(record.dateCollected)+'">'+collectedFormat.format(new Date(record.dateCollected+'T00:00:00Z'))+'</time>' : 'Not recorded';
+  const reference = record.exegesisNumber ? '<p>Exegesis manuscript reference · R'+esc(record.exegesisNumber)+'</p>' : '';
+  const source = record.url ? '<a href="'+esc(record.url)+'" target="_blank" rel="noopener">Original source ↗</a>' : 'Source recorded in the Graduate Project register. No public link supplied.';
   const terms = Object.entries(fields).map(([key,title]) => '<dt>'+title+'</dt><dd>'+esc(record[key])+'</dd>').join('');
   const answers=record.answers || [record.location+' · '+record.type, null, record.evidence, null, null, record.implication];
   const answerList=questions.map(([title],i)=>'<li><strong>'+title+'</strong><p>'+esc(answers[i] || 'Not yet recorded')+'</p></li>').join('');
   const quote=record.quote ? '<blockquote>'+esc(record.quote)+'<cite> — '+esc(record.author)+(record.quoteLocation?', '+esc(record.quoteLocation):'')+'</cite></blockquote>' : '';
-  return '<details><summary><small>'+esc(record.number ? 'Data point '+record.number : 'Data point number unrecorded')+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+'</span></summary><div class="entry"><p>'+esc(record.author)+'</p><h3>Key insight</h3><p>'+esc(record.insight || record.interpretation)+'</p>'+quote+'<ol class="answers">'+answerList+'</ol><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details><p><a href="'+esc(record.url)+'" target="_blank" rel="noopener">Original source ↗</a></p></div></details>';
+  return '<details><summary><small>'+esc(record.number ? 'Data point '+record.number : 'Data point number unrecorded')+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><div class="entry"><p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+'<h3>Key insight</h3><p>'+esc(record.insight || record.interpretation)+'</p>'+quote+'<ol class="answers">'+answerList+'</ol><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details><p>'+source+'</p></div></details>';
 }
 function research() {
   const term = byId('search').value.trim().toLowerCase();

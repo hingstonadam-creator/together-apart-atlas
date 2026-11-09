@@ -1,7 +1,391 @@
 [
   {
+    "id": "register-1",
+    "number": 1,
+    "title": "Terracotta Component Development",
+    "dateCollected": "2026-08-06",
+    "type": "Journal Article",
+    "method": "Literature review",
+    "author": "Mohamed El Aabbas et al.",
+    "location": "Laboratory testing of printed terracotta components.",
+    "country": null,
+    "driver": "",
+    "lenses": [],
+    "reliability": "High",
+    "quality": "High in the research register. A printable profile still requires testing after firing.",
+    "evidence": "Layer height and cavity geometry affect the performance of printed terracotta.",
+    "interpretation": "Connect the early screen experiment to the later question of how much shade a dwelling threshold needs.",
+    "insight": "Layer height and cavity geometry affect the performance of printed terracotta.",
+    "implication": "Compare two screen depths at a west-facing entry and mark shade, views and clearance.",
+    "question": null,
+    "url": null,
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Experimental study of extrusion-based 3D printing of local clay/terracotta construction components.",
+      "Direct evidence for using robotic fabrication to tailor lower-carbon façade components with thermal performance.",
+      "Layer height and cavity geometry affect the performance of printed terracotta.",
+      "A printable profile still requires testing after firing.",
+      "Connect the early screen experiment to the later question of how much shade a dwelling threshold needs.",
+      "Compare two screen depths at a west-facing entry and mark shade, views and clearance."
+    ]
+  },
+  {
+    "id": "register-2",
+    "number": 2,
+    "title": "Site Visit",
+    "dateCollected": "2026-08-06",
+    "type": "Project",
+    "method": "Site observation",
+    "author": "Graduate Project site observation",
+    "location": "Southwark Grounds, Adelaide; midwinter daytime observation.",
+    "country": "Australia",
+    "driver": "Extend",
+    "lenses": [
+      2,
+      3
+    ],
+    "reliability": "Medium",
+    "quality": "Medium in the research register. One winter visit cannot establish summer comfort.",
+    "evidence": "The winter walk located a shaded northern edge and an exposed western path used to reach Bloom Café and the river crossing.",
+    "interpretation": "Read the visit alongside Gehl’s repeatable observations of public life.",
+    "insight": "The winter walk located a shaded northern edge and an exposed western path used to reach Bloom Café and the river crossing.",
+    "implication": "Trace the approach from the western path to a dwelling entrance and mark where a person can pause in shade.",
+    "question": null,
+    "url": null,
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Winter site observation of thermal conditions, material exposure, movement and public-edge opportunities.",
+      "Provides direct site evidence for testing a climate-responsive building edge against pedestrian heat exposure and public-realm comfort.",
+      "The winter walk located a shaded northern edge and an exposed western path used to reach Bloom Café and the river crossing.",
+      "One winter visit cannot establish summer comfort.",
+      "Read the visit alongside Gehl’s repeatable observations of public life.",
+      "Trace the approach from the western path to a dwelling entrance and mark where a person can pause in shade."
+    ]
+  },
+  {
+    "id": "register-3",
+    "number": 3,
+    "title": "Survey — Sample, familiarity and initial perception",
+    "dateCollected": "2026-08-09",
+    "type": "Survey",
+    "method": "Survey",
+    "author": "23 anonymous, self-selected survey respondents (4–7 August 2026)",
+    "location": "Southwark Grounds / urban university or mixed-use precinct; anonymous online survey.",
+    "country": "Australia",
+    "driver": "",
+    "lenses": [],
+    "reliability": "Low",
+    "quality": "Low in the research register. This sample cannot represent all neighbours or establish attitudes to multigenerational housing.",
+    "evidence": "An anonymous, self-selected survey of 23 people recorded mixed familiarity with data centres and a cautious initial reaction.",
+    "interpretation": "The survey belongs to the earlier civic programme and raises a methodological question about whose views are represented.",
+    "insight": "An anonymous, self-selected survey of 23 people recorded mixed familiarity with data centres and a cautious initial reaction.",
+    "implication": "For a housing study, ask separate questions about sharing a route, sharing a room and choosing whether to visit.",
+    "question": null,
+    "url": null,
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "A synthesis of survey sample profile, familiarity and immediate reaction to data centres.",
+      "Establishes the knowledge and perception baseline for testing a civic, environmentally accountable public interface.",
+      "An anonymous, self-selected survey of 23 people recorded mixed familiarity with data centres and a cautious initial reaction.",
+      "This sample cannot represent all neighbours or establish attitudes to multigenerational housing.",
+      "The survey belongs to the earlier civic programme and raises a methodological question about whose views are represented.",
+      "For a housing study, ask separate questions about sharing a route, sharing a room and choosing whether to visit."
+    ]
+  },
+  {
+    "id": "register-5",
+    "number": 5,
+    "title": "Two Blue Jumpers Ep.2",
+    "dateCollected": "2026-08-09",
+    "type": "Practitioner",
+    "method": "Other",
+    "author": "Tom Kundig; Dan Rubinstein",
+    "location": "Podcast / architectural precedent reflection.",
+    "country": null,
+    "driver": "Extend",
+    "lenses": [
+      3
+    ],
+    "reliability": "Medium",
+    "quality": "Medium in the research register. A moving component still needs an identifiable user and an accessible means of operation.",
+    "evidence": "A hand-operated building element can make the way a resident adjusts an edge visible and understandable.",
+    "interpretation": "The earlier kinetic façade work raises a domestic question about who controls exposure at a front door.",
+    "insight": "A hand-operated building element can make the way a resident adjusts an edge visible and understandable.",
+    "implication": "Draw a resident operating a screen from the entry alcove and trace the effect on privacy and the adjacent walkway.",
+    "question": null,
+    "url": null,
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Reflective podcast discussion on Tom Kundig’s kinetic architecture and tactile building mechanisms.",
+      "Supports the experiential and civic dimension of a façade or threshold, alongside technical performance.",
+      "A hand-operated building element can make the way a resident adjusts an edge visible and understandable.",
+      "A moving component still needs an identifiable user and an accessible means of operation.",
+      "The earlier kinetic façade work raises a domestic question about who controls exposure at a front door.",
+      "Draw a resident operating a screen from the entry alcove and trace the effect on privacy and the adjacent walkway."
+    ]
+  },
+  {
+    "id": "register-13",
+    "number": 13,
+    "title": "Athanor — Federated Data Centre as Urban Resource Ecology",
+    "dateCollected": "2026-08-09",
+    "type": "Technical",
+    "method": "Technical analysis",
+    "author": "ARCH 5004 / ARCH 6004",
+    "location": "Athanor studio proposition; district-scale data-centre resource ecology.",
+    "country": "Australia",
+    "driver": "",
+    "lenses": [],
+    "reliability": "High",
+    "quality": "High in the research register. A proposed resource exchange is not a demonstrated operating system.",
+    "evidence": "The studio dossier proposes recovering rejected heat for nearby uses at district scale.",
+    "interpretation": "This technical brief explains the starting programme before the project shifted to housing.",
+    "insight": "The studio dossier proposes recovering rejected heat for nearby uses at district scale.",
+    "implication": "Trace proposed infrastructure separately from domestic access and identify where each route reaches the public edge.",
+    "question": null,
+    "url": null,
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Studio dossier framing a district-scale, federated data centre as shared urban infrastructure.",
+      "Sets the project’s core infrastructure/public-interface rationale and identifies heat-reuse programs a responsive façade can support.",
+      "The studio dossier proposes recovering rejected heat for nearby uses at district scale.",
+      "A proposed resource exchange is not a demonstrated operating system.",
+      "This technical brief explains the starting programme before the project shifted to housing.",
+      "Trace proposed infrastructure separately from domestic access and identify where each route reaches the public edge."
+    ]
+  },
+  {
+    "id": "register-14",
+    "number": 14,
+    "title": "Design Strategies of Sharing Spaces in the Adaptive Reuse of Industrial Heritage Buildings",
+    "dateCollected": "2026-08-09",
+    "type": "Conference Paper",
+    "method": "Literature review",
+    "author": "Ding Ding, Yaqing Yu and Jia Zhang",
+    "location": "Deakin University Waterfront Campus, Geelong. Case study published in the ICSEIA 2024 proceedings.",
+    "country": "Australia",
+    "driver": "Mediate",
+    "lenses": [
+      2,
+      3
+    ],
+    "reliability": "Medium",
+    "quality": "Medium in the research register. A visually open edge can still leave the terms of access unclear.",
+    "evidence": "The Geelong study identifies split, layer, time-sharing and differentiation as strategies for shared space.",
+    "interpretation": "Compare an institutional courtyard with the approach to a residential entry pavilion.",
+    "insight": "The Geelong study identifies split, layer, time-sharing and differentiation as strategies for shared space.",
+    "implication": "Draw the setback, public route and dwelling boundary together, identifying who can pause at each edge.",
+    "question": null,
+    "url": "https://doi.org/10.2991/978-94-6463-429-7_19",
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Case study of spatial strategies for sharing spaces in an adapted industrial-heritage building.",
+      "Provides an urban-interface framework for connecting a secured, industrial-type building with Southwark’s heritage fabric and public realm.",
+      "The Geelong study identifies split, layer, time-sharing and differentiation as strategies for shared space.",
+      "A visually open edge can still leave the terms of access unclear.",
+      "Compare an institutional courtyard with the approach to a residential entry pavilion.",
+      "Draw the setback, public route and dwelling boundary together, identifying who can pause at each edge."
+    ]
+  },
+  {
+    "id": "register-21",
+    "number": 21,
+    "title": "Gando Primary School",
+    "dateCollected": "2026-08-13",
+    "type": "Project",
+    "method": "Precedent analysis",
+    "author": "Francis Kéré; Community of Gando.",
+    "location": "Gando, Burkina Faso; completed 2001.",
+    "country": "Burkina Faso",
+    "driver": "Extend",
+    "lenses": [
+      2
+    ],
+    "reliability": "High",
+    "quality": "High in the research register. The climatic performance of this school cannot be assumed for an Adelaide apartment building.",
+    "evidence": "At Gando Primary School, a lifted roof and perforated ceiling create a ventilated gap above the occupied rooms.",
+    "interpretation": "The roof section offers a precedent for a sheltered external walkway.",
+    "insight": "At Gando Primary School, a lifted roof and perforated ceiling create a ventilated gap above the occupied rooms.",
+    "implication": "Draw the path of air and the limits of shade in a section through the gallery roof and entry alcove.",
+    "question": null,
+    "url": "https://www.kerearchitecture.com/work/building/gando-primary-school-3",
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Climate-responsive primary school using local earth-based construction, a raised roof and passive ventilation.",
+      "Precedent for a façade/roof system that improves comfort through material, section and passive airflow while remaining legible and locally buildable.",
+      "At Gando Primary School, a lifted roof and perforated ceiling create a ventilated gap above the occupied rooms.",
+      "The climatic performance of this school cannot be assumed for an Adelaide apartment building.",
+      "The roof section offers a precedent for a sheltered external walkway.",
+      "Draw the path of air and the limits of shade in a section through the gallery roof and entry alcove."
+    ]
+  },
+  {
+    "id": "register-34",
+    "number": 34,
+    "title": "Christopher Alexander — A Pattern Language",
+    "dateCollected": "2026-08-17",
+    "type": "Book",
+    "method": "Literature review",
+    "author": "Christopher Alexander, Sara Ishikawa, Murray Silverstein et al.",
+    "location": "Architectural and urban design theory; used here to analyse thresholds, positive outdoor space and gradients of access.",
+    "country": null,
+    "driver": "Mediate",
+    "lenses": [
+      2,
+      3
+    ],
+    "reliability": "High",
+    "quality": "High in the research register. An accessible route alone says little about where someone might comfortably sit.",
+    "evidence": "Alexander and colleagues describe connected spatial patterns for entrances, outdoor rooms, sitting places and gradients of access.",
+    "interpretation": "Read the entrance, sitting edge and front room as consecutive parts of one arrival.",
+    "insight": "Alexander and colleagues describe connected spatial patterns for entrances, outdoor rooms, sitting places and gradients of access.",
+    "implication": "Draw the private threshold and an occupied seat beside it while retaining a clear through-route.",
+    "question": null,
+    "url": "https://www.oup.com.au/books/general-interest/art-technology/9780195019193",
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Pattern-language framework for recurring spatial relationships that support humane everyday environments.",
+      "Strongly supports the inquiry into how façades affect the public interface. It provides a human-scale framework for combining public legibility, security, thermal comfort and occupation at the building edge.",
+      "Alexander and colleagues describe connected spatial patterns for entrances, outdoor rooms, sitting places and gradients of access.",
+      "An accessible route alone says little about where someone might comfortably sit.",
+      "Read the entrance, sitting edge and front room as consecutive parts of one arrival.",
+      "Draw the private threshold and an occupied seat beside it while retaining a clear through-route."
+    ]
+  },
+  {
+    "id": "register-42",
+    "number": 42,
+    "title": "Alexandra Vondeling: The Neighborhood IS the Amenity",
+    "dateCollected": "2026-08-17",
+    "type": "Practitioner",
+    "method": "Video / Lecture",
+    "author": "Alexandra Vondeling / Opticos; The Building Culture Podcast",
+    "location": "Urban design and housing discussion; used here to connect building edges, shade, shared outdoor space and neighbourhood-scale amenity.",
+    "country": null,
+    "driver": "Mediate",
+    "lenses": [
+      2,
+      3
+    ],
+    "reliability": "Medium",
+    "quality": "Medium in the research register. A list of shared facilities does not describe residents’ access to the neighbourhood.",
+    "evidence": "Vondeling relates the value of medium-density housing to the surrounding streets, paths, amenities and landscape.",
+    "interpretation": "Connect the building’s communal spaces to the wider walking network.",
+    "insight": "Vondeling relates the value of medium-density housing to the surrounding streets, paths, amenities and landscape.",
+    "implication": "Follow a resident from their front door to a neighbourhood destination, recording exposed and sheltered portions.",
+    "question": null,
+    "url": "https://www.buildingculture.com/podcast/50-alexandra-vondeling",
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Podcast discussion of missing-middle housing, car-light urbanism, streetscape design and neighbourhood amenity.",
+      "Supports evaluating the data-centre façade by the pedestrian environment and neighbourhood connections it creates, not only by envelope performance.",
+      "Vondeling relates the value of medium-density housing to the surrounding streets, paths, amenities and landscape.",
+      "A list of shared facilities does not describe residents’ access to the neighbourhood.",
+      "Connect the building’s communal spaces to the wider walking network.",
+      "Follow a resident from their front door to a neighbourhood destination, recording exposed and sheltered portions."
+    ]
+  },
+  {
+    "id": "register-45",
+    "number": 45,
+    "title": "Studio Apartments / The Wedge — Hill Thalis",
+    "dateCollected": "2026-08-17",
+    "type": "Project",
+    "method": "Precedent analysis",
+    "author": "Hill Thalis Architecture + Urban Projects",
+    "location": "Dulwich Hill, Sydney, NSW, Australia; triangular site opposite rail and light rail.",
+    "country": "Australia",
+    "driver": "Extend",
+    "lenses": [
+      0,
+      3
+    ],
+    "reliability": "High",
+    "quality": "High in the research register. The presence of a screen does not establish privacy at every viewing angle.",
+    "evidence": "The Wedge uses balconies, blades and screens to give a compact apartment street wall depth.",
+    "interpretation": "The bay study relates the dimensions of a private outdoor edge to sightlines and summer exposure.",
+    "insight": "The Wedge uses balconies, blades and screens to give a compact apartment street wall depth.",
+    "implication": "Compare balcony depth and sightlines at a typical dwelling bay facing a shared route.",
+    "question": null,
+    "url": "https://www.hillthalis.com.au/projects/the-wedge",
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Compact urban housing using a five-storey street wall, balconies, concrete blades and louvre screens to control sun, ventilation, privacy and street scale.",
+      "Useful analogue for a computational façade where repeated components vary to perform multiple environmental and public-interface functions.",
+      "The Wedge uses balconies, blades and screens to give a compact apartment street wall depth.",
+      "The presence of a screen does not establish privacy at every viewing angle.",
+      "The bay study relates the dimensions of a private outdoor edge to sightlines and summer exposure.",
+      "Compare balcony depth and sightlines at a typical dwelling bay facing a shared route."
+    ]
+  },
+  {
+    "id": "register-54",
+    "number": 54,
+    "title": "Interview with Ehsan Sharifi",
+    "dateCollected": "2026-08-18",
+    "type": "Practitioner",
+    "method": "Interview",
+    "author": "Dr Ehsan Sharifi",
+    "location": "Graduate Project consultation, Southwark Grounds / data-centre proposal, 18 August 2026.",
+    "country": "Australia",
+    "driver": "Extend",
+    "lenses": [
+      2
+    ],
+    "reliability": "High",
+    "quality": "High in the research register. A recommendation for the T1 data-centre façade does not establish performance in the housing scheme.",
+    "evidence": "The expert consultation recommended assessing solar exposure, wind and proximity to pedestrians separately for each elevation.",
+    "interpretation": "Compare the consultation with the winter site visit and the orientation of the external walkways.",
+    "insight": "The expert consultation recommended assessing solar exposure, wind and proximity to pedestrians separately for each elevation.",
+    "implication": "Draw a west-facing access section and identify the pedestrian, sources of reflected heat and available shade.",
+    "question": null,
+    "url": null,
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "Expert design consultation on data-centre façades, pedestrian thermal comfort and site-specific environmental response.",
+      "Provides an expert basis for translating a computational façade into measurable, site-specific pedestrian-comfort outcomes rather than a generic patterned skin.",
+      "The expert consultation recommended assessing solar exposure, wind and proximity to pedestrians separately for each elevation.",
+      "A recommendation for the T1 data-centre façade does not establish performance in the housing scheme.",
+      "Compare the consultation with the winter site visit and the orientation of the external walkways.",
+      "Draw a west-facing access section and identify the pedestrian, sources of reflected heat and available shade."
+    ]
+  },
+  {
+    "id": "register-85",
+    "number": 85,
+    "title": "Gehl — Public Space Public Life",
+    "dateCollected": "2026-08-28",
+    "type": "Website",
+    "method": "Literature review",
+    "author": "Gehl",
+    "location": "Gehl; international.",
+    "country": null,
+    "driver": "Mediate",
+    "lenses": [
+      2,
+      3
+    ],
+    "reliability": "High",
+    "quality": "High in the research register. A drawing can show room to stop. It cannot establish how often people stop there.",
+    "evidence": "Gehl’s public-life approach uses repeated observations to relate spatial conditions to patterns of use.",
+    "interpretation": "Pair observation points with the walking route identified during the Southwark site visit.",
+    "insight": "Gehl’s public-life approach uses repeated observations to relate spatial conditions to patterns of use.",
+    "implication": "Set up a repeatable observation of movement and pauses on the existing public path, recording time and weather.",
+    "question": null,
+    "url": "https://gehlpeople.com/projects/",
+    "context": "Earlier civic-edge enquiry",
+    "answers": [
+      "A public-life research and design practice.",
+      "Repeated observations give the western-edge proposal a baseline against which to assess later use.",
+      "Gehl’s public-life approach uses repeated observations to relate spatial conditions to patterns of use.",
+      "A drawing can show room to stop. It cannot establish how often people stop there.",
+      "Pair observation points with the walking route identified during the Southwark site visit.",
+      "Set up a repeatable observation of movement and pauses on the existing public path, recording time and weather."
+    ]
+  },
+  {
     "id": "p101",
-    "number": 101,
+    "number": 91,
     "title": "Charles House",
     "author": "Austin Maynard Architects",
     "type": "Project",
@@ -13,13 +397,13 @@
     ],
     "location": "Kew, Melbourne, Australia",
     "mix": "One adaptable family house",
-    "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Shared home / future grandparent suite. Kew, Melbourne, Australia; 2017; One adaptable family house.",
+    "access": "Ground-floor suite with wheelchair-friendly garden access. Independent cooking and entry require further plan evidence.",
+    "shared": "Shared family rooms connect differentiated domestic zones. Rooms can open together or close as needs change.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "Linked house-like volumes accommodate a growing family. A ground-floor music/living room can become a grandparent apartment with its own bathroom and wheelchair-friendly garden access.",
     "interpretation": "Use XL as a home with two credible daily routines, rather than a large apartment with an extra bedroom.",
     "question": "Can two generations each keep their own daily routine in the XL dwelling?",
-    "implication": "Draw XL in three states: young family; grandparent co-residence; adult-child independence.",
+    "implication": "Draw XL in three states: young family; grandparent co-residence; adult-child independence. DEFINE. Compare the entries, cooking facilities and places to retreat in XL as the household changes.",
     "url": "https://andrew-maynard-mref.squarespace.com/iii/",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -30,30 +414,32 @@
       "Linked house-like volumes accommodate a growing family. A ground-floor music/living room can become a grandparent apartment with its own bathroom and wheelchair-friendly garden access.\n\nConnection: Shared family rooms connect differentiated domestic zones. Rooms can open together or close as needs change.\n\nPrivacy reading: A separable ground-floor suite offers retreat within the larger home; the degree of independent cooking and entry requires further plan checking.",
       "Adaptable rooms alone do not establish two fully autonomous dwellings. Test services, entry and acoustic separation in each state.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to S–M and XL domestic arrangements.",
-      "Draw XL in three states: young family; grandparent co-residence; adult-child independence."
+      "Draw XL in three states: young family; grandparent co-residence; adult-child independence. DEFINE. Compare the entries, cooking facilities and places to retreat in XL as the household changes."
     ],
-    "country": "Australia"
+    "country": "Australia",
+    "exegesisNumber": 101,
+    "dateCollected": "2026-10-22"
   },
   {
     "id": "p102",
-    "number": 102,
+    "number": 92,
     "title": "Mahogany House",
     "author": "R ARCHITECTURE",
     "type": "Project",
-    "driver": "Extend",
+    "driver": "Mediate",
     "lenses": [
       1,
       3
     ],
     "location": "Mount Waverley, Melbourne, Australia",
     "mix": "One house / two domestic pods",
-    "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Related households with a shared centre. Mount Waverley, Melbourne, Australia; 2023; One house / two domestic pods.",
+    "access": "Common entrance linking the main and grandparents’ pods.",
+    "shared": "A common entrance and lounge join the two pods; the courtyard provides a shared outlook.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "A two-storey main pod and single-storey grandparents' pod sit either side of a courtyard. The grandparents have two bedrooms, a bathroom, lounge and kitchenette.",
     "interpretation": "A shared threshold can connect two homes while their living rooms remain distinct.",
     "question": "Can either household pass the shared threshold and withdraw to its own living room?",
-    "implication": "Compare direct-facing and offset living-room windows around an S–M shared front yard.",
+    "implication": "Compare direct-facing and offset living-room windows around an S–M shared front yard. MEDIATE. Check sightlines from an occupied living room across the shared front yard.",
     "url": "https://rarchitecture.com.au/projects/mahogany-house/",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -64,13 +450,15 @@
       "A two-storey main pod and single-storey grandparents' pod sit either side of a courtyard. The grandparents have two bedrooms, a bathroom, lounge and kitchenette.\n\nConnection: A common entrance and lounge join the two pods; the courtyard provides a shared outlook.\n\nPrivacy reading: Dedicated living and service spaces allow grandparents to withdraw without occupying the main household's rooms.",
       "Courtyard-facing windows can still expose private life. Separation of mass does not prove visual or acoustic privacy.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to S–M and XL domestic arrangements.",
-      "Compare direct-facing and offset living-room windows around an S–M shared front yard."
+      "Compare direct-facing and offset living-room windows around an S–M shared front yard. MEDIATE. Check sightlines from an occupied living room across the shared front yard."
     ],
-    "country": "Australia"
+    "country": "Australia",
+    "exegesisNumber": 102,
+    "dateCollected": "2026-10-22"
   },
   {
     "id": "p103",
-    "number": 103,
+    "number": 93,
     "title": "3 Generation House",
     "author": "BETA office for architecture and the city",
     "type": "Project",
@@ -82,13 +470,13 @@
     ],
     "location": "Buiksloterham, Amsterdam, Netherlands",
     "mix": "Two stacked apartments / 450 m²",
-    "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Independent family homes with future reallocation. Buiksloterham, Amsterdam, Netherlands; 2018; Two stacked apartments / 450 m².",
-    "interpretation": "This is the closest match to the S-above-L rule: vertical proximity needs an independent accessible route.",
+    "access": "Shared entrance and lift to the upper apartment.",
+    "shared": "Shared arrival and short vertical proximity support contact without a compulsory shared living room.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "Two apartments share an entrance. The upper grandparents' apartment has a lift, level floors and wider doors. A room can transfer between apartments; future studios are anticipated.",
+    "interpretation": "This is the closest match to your S-above-L rule: vertical proximity needs an independent accessible route.",
     "question": "Can a grandparent visit family one floor below by lift and return through their own front door?",
-    "implication": "Draw S-above-L with the lift route, optional family link and a closed-link state.",
+    "implication": "Draw S-above-L with the lift route, optional family link and a closed-link state. DEFINE. Trace both front doors and the lift journey with the family link closed.",
     "url": "https://beta-office.com/project/3-generation-house/",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -99,13 +487,15 @@
       "Two apartments share an entrance. The upper grandparents' apartment has a lift, level floors and wider doors. A room can transfer between apartments; future studios are anticipated.\n\nConnection: Shared arrival and short vertical proximity support contact without a compulsory shared living room.\n\nPrivacy reading: Separate apartment boundaries preserve daily autonomy. The circulation arrangement permits future changes to the division of space.",
       "A private stair alone would not offer equivalent access. Adaptation must preserve independent entrances and services.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Directly tests S above L.",
-      "Draw S-above-L with the lift route, optional family link and a closed-link state."
+      "Draw S-above-L with the lift route, optional family link and a closed-link state. DEFINE. Trace both front doors and the lift journey with the family link closed."
     ],
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "exegesisNumber": 103,
+    "dateCollected": "2026-10-22"
   },
   {
     "id": "p104",
-    "number": 104,
+    "number": 94,
     "title": "Veil + Co. House",
     "author": "Kirsten Johnstone Architecture",
     "type": "Project",
@@ -116,13 +506,13 @@
     ],
     "location": "Currimundi, Sunshine Coast, Australia",
     "mix": "Main home + secondary dwelling on one lot",
-    "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Detached family accommodation along a covered route. Currimundi, Sunshine Coast, Australia; Built; documented in 2025 award; Main home + secondary dwelling on one lot.",
+    "access": "Covered walkway between the main home and secondary accommodation.",
+    "shared": "The covered route acts as a small domestic street linking separate volumes.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "A secondary dwelling, garage and main home are joined by a covered walkway. The secondary accommodation can serve grandparents, adult children or work uses; offset battens address shade and overlooking.",
     "interpretation": "Translate the covered street into a sheltered gallery with distinct front doors and places to pause.",
     "question": "Can someone stop at an entry without blocking the sheltered route?",
-    "implication": "Draw a gallery-to-front-yard section in open and screened states, including rain cover and a clear bypass.",
+    "implication": "Draw a gallery-to-front-yard section in open and screened states, including rain cover and a clear bypass. EXTEND. Mark room to sit beside the entry and the clear walking route past it.",
     "url": "https://good-design.org/projects/veil-co-house/",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -133,13 +523,15 @@
       "A secondary dwelling, garage and main home are joined by a covered walkway. The secondary accommodation can serve grandparents, adult children or work uses; offset battens address shade and overlooking.\n\nConnection: The covered route acts as a small domestic street linking separate volumes.\n\nPrivacy reading: Physical separation and screened edges distinguish homes while preserving a route between them.",
       "Do not copy the garage into your no-carparking brief. Screens require orientation-specific testing; they do not establish acoustic separation.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to S–M and XL domestic arrangements.",
-      "Draw a gallery-to-front-yard section in open and screened states, including rain cover and a clear bypass."
+      "Draw a gallery-to-front-yard section in open and screened states, including rain cover and a clear bypass. EXTEND. Mark room to sit beside the entry and the clear walking route past it."
     ],
-    "country": "Australia"
+    "country": "Australia",
+    "exegesisNumber": 104,
+    "dateCollected": "2026-10-22"
   },
   {
     "id": "p105",
-    "number": 105,
+    "number": 95,
     "title": "La Borda",
     "author": "Lacol",
     "type": "Project",
@@ -150,13 +542,13 @@
     ],
     "location": "Barcelona, Spain",
     "mix": "28 cooperative homes",
-    "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Mixed-household community / shared domestic facilities. Barcelona, Spain; 2018; 28 cooperative homes.",
+    "access": "Circulation is organised around a central courtyard.",
+    "shared": "Daily facilities and courtyard circulation extend domestic activity beyond individual homes.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "Homes of 40, 60 and 75 m² are combined with collective kitchen-dining, laundry, guest, care and outdoor spaces organised around a central courtyard.",
     "interpretation": "Make shared laundry a useful, accessible destination; do not require a resident to socialise to perform a necessary task.",
     "question": "Can a resident collect washing without joining a gathering?",
-    "implication": "Locate laundry on an everyday route with a quiet bypass, seating and a management note.",
+    "implication": "Locate laundry on an everyday route with a quiet bypass, seating and a management note. MEDIATE. Trace a resident carrying washing past an occupied seat and back home.",
     "url": "https://lacol.coop/en/projectes/la-borda/",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -167,30 +559,32 @@
       "Homes of 40, 60 and 75 m² are combined with collective kitchen-dining, laundry, guest, care and outdoor spaces organised around a central courtyard.\n\nConnection: Daily facilities and courtyard circulation extend domestic activity beyond individual homes.\n\nPrivacy reading: Private dwelling interiors remain distinguishable from the communal programme. Courtyard-facing access introduces a privacy condition to examine, not a proven privacy outcome.",
       "Cooperative governance is part of the model. Shared provision cannot be credited with cost or care benefits without operational evidence.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
-      "Locate laundry on an everyday route with a quiet bypass, seating and a management note."
+      "Locate laundry on an everyday route with a quiet bypass, seating and a management note. MEDIATE. Trace a resident carrying washing past an occupied seat and back home."
     ],
-    "country": "Spain"
+    "country": "Spain",
+    "exegesisNumber": 105,
+    "dateCollected": "2026-10-22"
   },
   {
     "id": "p106",
-    "number": 106,
+    "number": 96,
     "title": "Marmalade Lane",
     "author": "Mole Architects; TOWN / Trivselhus",
     "type": "Project",
-    "driver": "Extend",
+    "driver": "Define",
     "lenses": [
       2,
       3
     ],
     "location": "Cambridge, United Kingdom",
     "mix": "42 houses and apartments",
-    "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Intergenerational cohousing neighbourhood. Cambridge, United Kingdom; 2018; 42 houses and apartments.",
+    "access": "Shared lane serving a group of terraces and apartments.",
+    "shared": "The lane, garden and common house offer encounters at different levels of commitment.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "Terraces and apartments frame shared gardens. A common house provides dining, guest rooms, laundry and other facilities. Residents include young families, retired people and households of different ages.",
     "interpretation": "Give the cluster a recognisable shared address, but retain each home's own door and outdoor retreat.",
     "question": "Where can a household sit outside while choosing how much contact to have?",
-    "implication": "Test the same four-home cluster with related families and unrelated households.",
+    "implication": "Test the same four-home cluster with related families and unrelated households. DEFINE. Trace a visitor to each front door when the neighbouring household is unrelated.",
     "url": "https://www.archdaily.com/918201/marmalade-lane-cohousing-development-mole-architects",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -201,13 +595,15 @@
       "Terraces and apartments frame shared gardens. A common house provides dining, guest rooms, laundry and other facilities. Residents include young families, retired people and households of different ages.\n\nConnection: The lane, garden and common house offer encounters at different levels of commitment.\n\nPrivacy reading: Self-contained homes retain domestic retreat while collective functions occupy identifiable separate places.",
       "A self-selecting cohousing group is not equivalent to all future residents. Translate the spatial options without assuming universal participation.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
-      "Test the same four-home cluster with related families and unrelated households."
+      "Test the same four-home cluster with related families and unrelated households. DEFINE. Trace a visitor to each front door when the neighbouring household is unrelated."
     ],
-    "country": "United Kingdom"
+    "country": "United Kingdom",
+    "exegesisNumber": 106,
+    "dateCollected": "2026-10-22"
   },
   {
     "id": "p107",
-    "number": 107,
+    "number": 97,
     "title": "Giesserei",
     "author": "Galli Rudolf Architekten; Gesewo",
     "type": "Project",
@@ -219,13 +615,13 @@
     ],
     "location": "Winterthur, Switzerland",
     "mix": "155 apartments / six-storey courtyard block",
-    "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Mixed-generation cooperative with varied dwelling types. Winterthur, Switzerland; 2013; 155 apartments / six-storey courtyard block.",
+    "access": "Eight stairwells serve 155 apartments.",
+    "shared": "Small access groups sit within a larger collective courtyard and ground-floor programme.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "Two long six-storey wings and lower links enclose a courtyard. Eight stairwells serve 155 apartments; varied dwelling types, rentable extra rooms and loggias support different living arrangements.",
     "interpretation": "A large building can contain several small neighbourhoods. Group S/M/L around a legible landing rather than one anonymous corridor.",
     "question": "How many front doors share a landing, and who can see into them?",
-    "implication": "Compare a cluster landing and long gallery for homes served, route length and sightlines.",
+    "implication": "Compare a cluster landing and long gallery for homes served, route length and sightlines. MEDIATE. Trace a passing neighbour’s sightline into each entry from the landing.",
     "url": "https://galli-rudolf.ch/de/projects/Mehrgenerationenhaus-Giesserei",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -236,17 +632,19 @@
       "Two long six-storey wings and lower links enclose a courtyard. Eight stairwells serve 155 apartments; varied dwelling types, rentable extra rooms and loggias support different living arrangements.\n\nConnection: Small access groups sit within a larger collective courtyard and ground-floor programme.\n\nPrivacy reading: Dwelling boundaries and loggia layers mediate contact; screens and depth give the edge more than one condition.",
       "Continuous exterior layers can also create overlooking. Room variety needs allocation rules and management.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
-      "Compare a cluster landing and long gallery for homes served, route length and sightlines."
+      "Compare a cluster landing and long gallery for homes served, route length and sightlines. MEDIATE. Trace a passing neighbour’s sightline into each entry from the landing."
     ],
-    "country": "Switzerland"
+    "country": "Switzerland",
+    "exegesisNumber": 107,
+    "dateCollected": "2026-10-22"
   },
   {
     "id": "p108",
-    "number": 108,
+    "number": 98,
     "title": "Generationernes Hus",
     "author": "RUM and ERIK Arkitekter; Sweco engineering",
     "type": "Project",
-    "driver": "Define",
+    "driver": "Mediate",
     "lenses": [
       1,
       3
@@ -254,12 +652,12 @@
     "location": "Aarhus, Denmark",
     "mix": "304 homes plus care and childcare",
     "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Mixed-generation housing with staffed care. Aarhus, Denmark; 2020; 304 homes plus care and childcare.",
+    "shared": "Common activities link different populations while smaller neighbourhoods organise everyday life.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "Youth, family, disability, senior and nursing-home dwellings share a development with childcare and common facilities. Care homes are grouped in smaller clusters with staff support.",
     "interpretation": "Distinguish informal neighbourly help from professional care. Your family cluster can support proximity without becoming an aged-care facility.",
     "question": "Do visitors and care workers reach the intended home directly?",
-    "implication": "Map voluntary family contact separately from deliveries, visitors and any future care visit.",
+    "implication": "Map voluntary family contact separately from deliveries, visitors and any future care visit. MEDIATE. Identify which door each household controls during a family or care visit.",
     "url": "https://www.swecogroup.com/portfolio/buildings-and-urban-areas/house-of-generations/",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -270,17 +668,19 @@
       "Youth, family, disability, senior and nursing-home dwellings share a development with childcare and common facilities. Care homes are grouped in smaller clusters with staff support.\n\nConnection: Common activities link different populations while smaller neighbourhoods organise everyday life.\n\nPrivacy reading: Individual homes and care clusters create nested territories; private retreat and staff access must coexist.",
       "Co-location does not prove interaction. Operational staffing cannot be replaced by architecture or unpaid family labour.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
-      "Map voluntary family contact separately from deliveries, visitors and any future care visit."
+      "Map voluntary family contact separately from deliveries, visitors and any future care visit. MEDIATE. Identify which door each household controls during a family or care visit."
     ],
-    "country": "Denmark"
+    "country": "Denmark",
+    "exegesisNumber": 108,
+    "dateCollected": "2026-10-22"
   },
   {
     "id": "p109",
-    "number": 109,
+    "number": 99,
     "title": "Hunziker Areal / mehr als wohnen",
     "author": "Futurafrosch + Duplex masterplan; five architecture teams",
     "type": "Project",
-    "driver": "Mediate",
+    "driver": "Extend",
     "lenses": [
       2,
       3
@@ -288,12 +688,12 @@
     "location": "Zurich, Switzerland",
     "mix": "13 buildings / approximately 1,200 residents",
     "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Mixed-age cooperative neighbourhood. Zurich, Switzerland; 2014–2015; 13 buildings / approximately 1,200 residents.",
+    "shared": "Shared rooms and outdoor spaces distribute collective life across the neighbourhood instead of relying on one social centre.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "The neighbourhood combines different housing forms, shared facilities, rentable extra rooms and workspaces. The cooperative describes age and social diversity as part of everyday life.",
     "interpretation": "Offer several degrees of connection: independent home, family cluster, shared building and public street.",
     "question": "Who can enter each shared space, and who looks after it?",
-    "implication": "Assign each shared space a user group, catchment and responsible manager; remove redundant facilities.",
+    "implication": "Assign each shared space a user group, catchment and responsible manager; remove redundant facilities. EXTEND. Mark the occupied depth of each cluster threshold and the route alongside it.",
     "url": "https://www.mehralswohnen.ch/hunziker-areal/das-areal",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -304,13 +704,15 @@
       "The neighbourhood combines different housing forms, shared facilities, rentable extra rooms and workspaces. The cooperative describes age and social diversity as part of everyday life.\n\nConnection: Shared rooms and outdoor spaces distribute collective life across the neighbourhood instead of relying on one social centre.\n\nPrivacy reading: A range of dwelling forms allows different degrees of sharing; ordinary private homes remain part of the mix.",
       "Do not transfer the resources of a 13-building cooperative directly to one six-storey project.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
-      "Assign each shared space a user group, catchment and responsible manager; remove redundant facilities."
+      "Assign each shared space a user group, catchment and responsible manager; remove redundant facilities. EXTEND. Mark the occupied depth of each cluster threshold and the route alongside it."
     ],
-    "country": "Switzerland"
+    "country": "Switzerland",
+    "exegesisNumber": 109,
+    "dateCollected": "2026-10-22"
   },
   {
     "id": "p110",
-    "number": 110,
+    "number": 100,
     "title": "Strandeiland M3",
     "author": "BETA with LEVS, MEESVISSER and DELVA; client AM",
     "type": "Project",
@@ -321,13 +723,13 @@
     ],
     "location": "Amsterdam, Netherlands",
     "mix": "Part of a 344-home collaborative development",
-    "access": "Unknown",
-    "shared": "Unknown",
-    "quality": "Medium · project documentation. Resident outcomes have not been verified.",
-    "evidence": "Planned intergenerational block / managed age mix. Amsterdam, Netherlands; Definitive design; programme 2023–2027; Part of a 344-home collaborative development.",
-    "interpretation": "The spatial cluster also needs an occupancy strategy if adjacent S and M homes are intended for related households.",
+    "access": "Arcades are part of the proposed access arrangement.",
+    "shared": "Arcades and shared landscape are designed to support encounters near homes.",
+    "quality": "Medium · Paraphrase of linked project account; no measured privacy or care outcome established.",
+    "evidence": "BETA's block proposes flexible homes, generous arcades, a planted courtyard and health facilities. De Alliantie is to manage the generational mix in part of the rental housing.",
+    "interpretation": "Your spatial cluster also needs an occupancy strategy if adjacent S and M homes are intended for related households.",
     "question": "How could related households secure adjacent dwellings over time?",
-    "implication": "Test allocation, turnover and unrelated occupancy without changing the architectural shell.",
+    "implication": "Test allocation, turnover and unrelated occupancy without changing the architectural shell. DEFINE. Check each home’s independent arrival and routine after a change of tenancy.",
     "url": "https://beta-office.com/project/strandeiland-m3/",
     "method": "Precedent analysis",
     "reliability": "Medium",
@@ -338,9 +740,44 @@
       "BETA's block proposes flexible homes, generous arcades, a planted courtyard and health facilities. De Alliantie is to manage the generational mix in part of the rental housing.\n\nConnection: Arcades and shared landscape are designed to support encounters near homes.\n\nPrivacy reading: Flexible dwelling plans retain private interiors; detailed privacy performance is not established by the published account.",
       "This is design-intent evidence, not a completed or post-occupancy precedent. The 344 figure covers the collaborative development, not BETA's block alone.",
       "The Inhabited Street; independent home → family cluster → mixed-age community. Relevant to shared circulation, outdoor territory and management.",
-      "Test allocation, turnover and unrelated occupancy without changing the architectural shell."
+      "Test allocation, turnover and unrelated occupancy without changing the architectural shell. DEFINE. Check each home’s independent arrival and routine after a change of tenancy."
     ],
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "exegesisNumber": 110,
+    "dateCollected": "2026-10-22"
+  },
+  {
+    "id": "register-101",
+    "number": 101,
+    "title": "Experimental housing and urban-passage precedent leads",
+    "dateCollected": "2026-10-22",
+    "type": "Project",
+    "method": "Precedent analysis",
+    "author": "Adam Hingston / Graduate Project research consolidation",
+    "location": "Utrecht and international urban-passage precedents",
+    "country": null,
+    "driver": "Mediate",
+    "lenses": [
+      1,
+      2
+    ],
+    "reliability": "Medium",
+    "quality": "Medium in the research register. Neither reference establishes a multigenerational occupancy model. Ivry remains a lead requiring more precise identification.",
+    "evidence": "The October record pairs interlocking family territories at Double House with the protected urban passage in the Red Jars study.",
+    "interpretation": "Compare the optional connection between family homes with the independently accessible route between front doors.",
+    "insight": "The October record pairs interlocking family territories at Double House with the protected urban passage in the Red Jars study.",
+    "implication": "Trace who controls the connection between two homes, then test how someone can pass the planted threshold independently.",
+    "question": null,
+    "url": "https://www.mvrdv.com/projects/164/double-house-utrecht",
+    "context": "October housing research leads",
+    "answers": [
+      "Double House Utrecht, the Street of 1000 Red Jars and Ivry terracing widened the formal and spatial reference set.",
+      "3 Generation House for adjustable household boundaries; Veil + Co. for a domestic street; Giesserei for collective space at scale.",
+      "The October record pairs interlocking family territories at Double House with the protected urban passage in the Red Jars study.",
+      "Neither reference establishes a multigenerational occupancy model. Ivry remains a lead requiring more precise identification.",
+      "Compare the optional connection between family homes with the independently accessible route between front doors.",
+      "Trace who controls the connection between two homes, then test how someone can pass the planted threshold independently."
+    ]
   },
   {
     "id": "source-1",
@@ -363,7 +800,8 @@
       3
     ],
     "driver": "Define",
-    "country": "Australia"
+    "country": "Australia",
+    "dateCollected": null
   },
   {
     "id": "source-2",
@@ -386,7 +824,8 @@
       2
     ],
     "driver": "Define",
-    "country": "Australia"
+    "country": "Australia",
+    "dateCollected": null
   },
   {
     "id": "source-3",
@@ -409,7 +848,8 @@
       3
     ],
     "driver": "Mediate",
-    "country": "Australia"
+    "country": "Australia",
+    "dateCollected": null
   },
   {
     "id": "source-4",
@@ -431,7 +871,8 @@
       1
     ],
     "driver": "Define",
-    "country": "Australia"
+    "country": "Australia",
+    "dateCollected": null
   },
   {
     "id": "source-5",
@@ -453,7 +894,8 @@
       3
     ],
     "driver": "Mediate",
-    "country": "Australia"
+    "country": "Australia",
+    "dateCollected": null
   },
   {
     "id": "source-6",
@@ -475,7 +917,8 @@
       3
     ],
     "driver": "Define",
-    "country": "Australia"
+    "country": "Australia",
+    "dateCollected": null
   },
   {
     "id": "source-7",
@@ -498,6 +941,7 @@
       3
     ],
     "driver": "Extend",
-    "country": "Australia"
+    "country": "Australia",
+    "dateCollected": null
   }
 ]

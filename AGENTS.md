@@ -70,7 +70,7 @@ Show all six questions on the Research page in their original order, with a shor
 
 ## Research entry format
 
-1. **Header.** Show the data point number (`Display Number`), title (`Research Point`), Type and Method (`Research Method`), in that order. Keep the original number when sorting or filtering.
+1. **Header.** Show the data point number (`Display Number`), title (`Research Point`), Type and Method (`Research Method`), followed by Date collected. Use the Notion collection timestamp in Adelaide local time. Show “Not recorded” when the collection date is missing. Preserve earlier manuscript reference numbers when the live register is renumbered. Keep the original number when sorting or filtering.
 2. **Key insight.** Lead with the finding in one or two sentences. Follow it with a direct quotation when the source provides relevant, verifiable wording. Credit the source and give the page, figure or location where available. Render paraphrases as ordinary prose.
 3. **Six answers.** Show each numbered question with its own answer. Use the Notion entry body and supporting properties. Keep gaps visible as “Not yet recorded” and preserve open questions. Never infer a missing number, method, quotation or answer.
 
