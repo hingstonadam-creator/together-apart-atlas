@@ -85,3 +85,6 @@
 
 /* Home chapter figures retain the full drawing and image proportions. */
 .chapter-body .chapter-image{width:min(100%,400px);margin:0}.chapter-image img{display:block;width:100%;height:auto}.chapter-image figcaption{margin-top:.55rem;line-height:1.4}
+
+/* Compare the three design drivers in one cover row, retaining the full plans. */
+.plates.design-driver-cover{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.4rem,2vw,1rem);align-items:start}.design-driver-cover figure{min-width:0}.design-driver-cover img{width:100%;height:auto;max-height:none;object-fit:contain}.design-driver-cover figcaption{text-align:center;font-weight:700;font-size:clamp(.6rem,1.2vw,.75rem);letter-spacing:.06em}
