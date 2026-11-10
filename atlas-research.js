@@ -150,6 +150,9 @@ const collectedFormat = new Intl.DateTimeFormat('en-AU',{day:'numeric',month:'sh
 function entry(record) {
   const entryLabel = record.number == null ? 'Data point · number not recorded' : 'Data point '+record.number;
   const collected = record.dateCollected ? '<time datetime="'+esc(record.dateCollected)+'">'+collectedFormat.format(new Date(record.dateCollected.length === 10 ? record.dateCollected+'T00:00:00Z' : record.dateCollected))+'</time>' : 'Not recorded';
+  return '<details id="source-'+esc(record.id)+'"><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary></details>';
+}
+function entryBody(record) {
   const reference = record.exegesisNumber ? '<p>Exegesis manuscript reference · R'+esc(record.exegesisNumber)+'</p>' : '';
   const source = record.url ? '<a href="'+esc(record.url)+'" target="_blank" rel="noopener">Original source ↗</a>' : 'Source recorded in the Graduate Project register. No public link supplied.';
   const notion = record.notionPageId ? '<a href="'+esc(atlasNotionUrl(record))+'" target="_blank" rel="noopener">Open in Notion ↗</a>' : 'Notion page ID not recorded.';
@@ -161,9 +164,16 @@ function entry(record) {
   const interpretation = atlasEvidenceBlock('Tentative interpretation',record.interpretation,'interpretation','This is an application or reading of the evidence, not the evidence itself.');
   const implication = atlasEvidenceBlock('Design implication',record.implication,'implication','A proposed spatial consequence to test in plan or section.');
   const openQuestion = atlasEvidenceBlock('Open question',record.question,'question','Not yet recorded where the register leaves this field blank.');
-  return '<details id="source-'+esc(record.id)+'"><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><article class="entry">'+verified+'<p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+quote+'<p>'+source+' &nbsp; '+notion+'</p>'+implication+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><div class="entry-evidence-sections">'+interpretation+openQuestion+'</div><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details>'+
-    '<p><a href="#atlas-title">Return to top ↑</a></p></article></details>';
+  return '<article class="entry">'+verified+'<p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+quote+'<p>'+source+' &nbsp; '+notion+'</p>'+implication+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><div class="entry-evidence-sections">'+interpretation+openQuestion+'</div><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details>'+
+    '<p><a href="#atlas-title">Return to top ↑</a></p></article>';
 }
+// Load the article when opened; the full numbered register stays available.
+byId('results').addEventListener('toggle', event => {
+  const panel = event.target;
+  if (!panel.open || panel.parentElement !== byId('results') || panel.querySelector('article')) return;
+  const record = records.find(row => panel.id === 'source-'+row.id);
+  if (record) panel.insertAdjacentHTML('beforeend', entryBody(record));
+}, true);
 const selectedThemes = new Set();
 let allThemes = [];
 function research() {
@@ -264,6 +274,7 @@ function hideAtlasPreview() {
 }
 const network = byId('atlas-map');
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+const compactNetwork = matchMedia('(max-width: 820px), (pointer: coarse)');
 const positions = new Map();
 let simulation;
 let animation;
@@ -273,16 +284,20 @@ let suppressClick = false;
 function renderNetwork() {
   cancelAnimationFrame(animation);
   dragged = null;
-  const width = Math.max(340,network.parentElement.clientWidth);
-  const height = Math.max(400,Math.min(660, width*.85),Math.ceil(visibleRows.length*1500/width));
-  network.setAttribute('viewBox','0 0 '+width+' '+height);
+  const compact = compactNetwork.matches;
+  const width = compact ? 360 : Math.max(340,network.parentElement.clientWidth);
   const themes = allThemes;
   const activeDrivers = drivers.filter(driver=>visibleRows.some(row=>atlasDrivers(row).includes(driver)));
   const groups = [...themes,...activeDrivers];
+  const firstPointY = 26 + Math.ceil(groups.length / 3) * 44;
+  const height = compact ? firstPointY + Math.ceil(visibleRows.length / 9) * 38 + 12 :
+    Math.max(400,Math.min(660,width*.85),Math.ceil(visibleRows.length*1500/width));
+  network.setAttribute('viewBox','0 0 '+width+' '+height);
   const hubs = groups.map((name,i)=>{
     const angle = i*2*Math.PI/groups.length-Math.PI/2;
     return {id:'hub-'+i,name,group:i<themes.length?'atlas-theme':'driver',fixed:true,
-      x:width/2+Math.cos(angle)*(width/2-66),y:height/2+Math.sin(angle)*(height/2-48)};
+      x:compact ? 60+(i%3)*120 : width/2+Math.cos(angle)*(width/2-66),
+      y:compact ? 16+Math.floor(i/3)*44 : height/2+Math.sin(angle)*(height/2-48)};
   });
   const links = [];
   const points = visibleRows.map((row,i)=>{
@@ -291,6 +306,7 @@ function renderNetwork() {
     const saved = positions.get(row.id);
     const node = {id:row.id,row,vx:0,vy:0,x:saved?saved.x*width:width/2+Math.cos(angle)*width*.28,
       y:saved?saved.y*height:height/2+Math.sin(angle)*height*.28};
+    if (compact) {node.x=20+(i%9)*40;node.y=firstPointY+Math.floor(i/9)*38;}
     connected.forEach(hub=>links.push({node,hub}));
     return node;
   });
@@ -306,7 +322,8 @@ function renderNetwork() {
   [...points,...hubs].forEach((node,i)=>{node.el=network.lastElementChild.children[i]});
   links.forEach((link,i)=>{link.el=network.firstElementChild.children[i]});
   simulation={width,height,points,hubs,links};
-  settleNetwork();
+  if (compact) paintNetwork();
+  else settleNetwork();
   emphasize(selectedId);
   hideAtlasPreview();
   renderSelection();
@@ -393,7 +410,7 @@ network.addEventListener('keydown',event=>{
 });
 network.addEventListener('pointerdown',event=>{
   const el=event.target.closest('[data-record-id]');
-  if(!el || event.button!==0) return;
+  if(compactNetwork.matches || !el || event.button!==0) return;
   dragged={node:simulation.points.find(n=>n.id===el.dataset.recordId),x:event.clientX,y:event.clientY,pointer:event.pointerId};
   suppressClick=false;
   el.setPointerCapture(event.pointerId);
@@ -415,7 +432,7 @@ function endDrag() {
 network.addEventListener('pointerup',endDrag);
 network.addEventListener('pointercancel',endDrag);
 function inspectNode(event) {
-  if(dragged) return;
+  if(compactNetwork.matches || dragged) return;
   const el=event.target.closest('[data-record-id],[data-group]');
   if(!el) {emphasize(selectedId);hideAtlasPreview();return}
   const node=el.dataset.recordId?simulation.points.find(n=>n.id===el.dataset.recordId):simulation.hubs.find(n=>n.el===el);
@@ -427,9 +444,16 @@ function inspectNode(event) {
 network.addEventListener('pointerover',inspectNode);
 network.addEventListener('focusin',inspectNode);
 for(const event of ['pointerleave','focusout']) network.addEventListener(event,()=>{emphasize(selectedId);hideAtlasPreview()});
-let lastWidth;
-new ResizeObserver(([entry])=>{
-  if(lastWidth!==entry.contentRect.width) {lastWidth=entry.contentRect.width;renderNetwork()}
+let resizeTimer;
+function resizeNetwork() {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    if (records.length) renderNetwork();
+  }, 160);
+}
+compactNetwork.addEventListener('change',resizeNetwork);
+new ResizeObserver(() => {
+  if (!compactNetwork.matches && simulation && network.parentElement.clientWidth !== simulation.width) resizeNetwork();
 }).observe(network.parentElement);
 
 async function loadResearch() {
