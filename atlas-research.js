@@ -112,30 +112,10 @@ function matrixView(rows) {
   ).join('')+'</tr>').join('');
   return '<p>Select a cell to find sources addressing both a design driver and a research lens. Housing lenses are indexed from the recorded text. Driver labels appear only where the design application explicitly names DEFINE, EXTEND or MEDIATE. Entries without a matching label or housing lens are excluded from this matrix.</p><div class="matrix-frame"><table class="lens-matrix"><thead><tr><th>Research lens</th>'+headers+'</tr></thead><tbody>'+body+'</tbody></table></div>';
 }
-function countryView(rows) {
-  const counts = new Map();
-  for (const r of rows) {
-    const country = r.country || 'Unrecorded';
-    counts.set(country,(counts.get(country)||0)+1);
-  }
-  const ranked = [...counts].sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0]));
-  const bars = ranked.map(([country,count])=>'<button data-category="'+esc(country)+'" aria-pressed="'+(chartFilter===country)+'"><span>'+esc(country)+'</span><span class="track"><i style="width:'+100*count/ranked[0][1]+'%"></i></span><strong>'+count+'</strong></button>').join('');
-  return '<p>Select a country to see the projects and publications recorded there. Bar length shows the number of sources in this collection.</p><div class="country-bars">'+(bars || 'No countries match the current filters.')+'</div>';
-}
 function drawChart(rows) {
   const metric = byId('metric').value;
-  const explorer = byId('explorer');
-  const special = metric==='country';
-  explorer.hidden = !special;
-  document.querySelector('.plot').classList.toggle('explore-plot',special);
-  byId('chart').style.display = special ? 'none' : '';
-  byId('legend').hidden = special;
   byId('clearMetric').hidden = !chartFilter;
   byId('clearMetric').textContent='Clear filter · '+chartFilter;
-  if (special) {
-    explorer.innerHTML = countryView(rows);
-    return;
-  }
   const groups = new Map();
   for (const row of rows) {
     const key = row[metric] || 'Unrecorded';
@@ -207,14 +187,13 @@ function research() {
   byId('activeExplorers').textContent=[matrixFilter && driver+' / '+lenses[lensIndex],keywordFilter].filter(Boolean).join(' · ');
   byId('clearExplorers').hidden=!(matrixFilter || keywordFilter);
   const filters = [term, theme, driverFilter, lens, kind, chartFilter, matrixFilter && driver+' / '+lenses[lensIndex], keywordFilter].filter(Boolean);
-  const count = rows.length+' of '+records.length+' sources';
+  const count = rows.length+' of '+records.length+' points in the network';
   byId('chart-status').textContent = [count,...filters].join(' · ');
-  byId('atlas-clear').hidden = byId('reset-register').hidden = filters.length === 0;
+  byId('atlas-clear').hidden = filters.length === 0;
   visibleRows = rows;
   if (!rows.some(record => record.id === selectedId)) selectedId = rows[0]?.id;
   renderNetwork();
-  byId('results').innerHTML = rows.map(entry).join('');
-  byId('count').textContent = rows.length ? rows.length+' of '+records.length+' sources' : 'No matches. Change the search or filters.';
+
 }
 document.querySelector('.filters').addEventListener('change',research);
 let selectedId;
@@ -224,7 +203,7 @@ function clearFilters() {
   chartFilter = matrixFilter = keywordFilter = '';
   research();
 }
-byId('atlas-clear').onclick = byId('reset-register').onclick = clearFilters;
+byId('atlas-clear').onclick = clearFilters;
 byId('atlas-search').oninput = research;
 byId('driver').onchange = byId('atlas-theme').onchange = research;
 const atlasDriverColours = {Define:'#a95d46',Extend:'#687f70',Mediate:'#516f8c'};
@@ -450,6 +429,8 @@ async function loadResearch() {
     records = await response.json();
     keywordIndex = new Map(records.map(r=>[r.id,keywordsFor(r)]));
     records.sort((a,b)=>(a.number ?? Infinity)-(b.number ?? Infinity));
+    byId('results').innerHTML = records.map(entry).join('');
+    byId('count').textContent = records.length+' research points';
     options('atlas-theme','All themes',[...new Set(records.flatMap(atlasThemesFor))].sort());
     options('lens','All research lenses',lenses);
     options('driver','All drivers',drivers);

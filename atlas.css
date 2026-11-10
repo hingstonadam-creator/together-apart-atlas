@@ -30,18 +30,11 @@
 .chapter-nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
 @media(max-width:650px){.plates{display:grid}.chapter-links{columns:1}}
 
-.plot.explore-plot {display:block}
 .matrix-frame {overflow-x:auto}
 .lens-matrix {border-collapse:collapse;width:min(100%,680px);table-layout:fixed}
 .lens-matrix th,.lens-matrix td {min-width:0;border:0;padding:3px;text-align:center;font-size:.9rem;background:transparent}
 .lens-matrix th:first-child {width:36%;text-align:left}
 .lens-matrix button {width:100%;min-height:42px;cursor:pointer;background:rgba(169,93,70,var(--shade));color:var(--ink);border:1px solid var(--line);font:inherit}
-.country-bars {max-width:640px}
-.country-bars button {background:transparent;color:var(--ink);border:1px solid transparent;padding:7px 5px;display:grid;align-items:center;gap:12px;grid-template-columns:minmax(6rem,1fr) 2fr 2ch;width:100%;cursor:pointer;text-align:left;font:inherit}
-.country-bars .track {height:.75rem;background:var(--light)}
-.country-bars i {height:100%;display:block;background:#687f70}
-#explorer button[aria-pressed=true] {outline:2px solid var(--ink);outline-offset:-2px}
-#explorer button:disabled {cursor:default;opacity:.55}
 #showMatches {display:inline-block;padding:.6rem 0}
 
 #collection-summary {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.25rem;margin:2rem 0}
@@ -633,7 +626,7 @@ button,input,select,textarea,svg text {font-family:var(--site-font)}
 @media(max-width:1050px) {
   .network-workbench {grid-template-columns:minmax(0,1fr)}
   .network-breakdown {padding:1rem 0 0;border-left:0;border-top:1px solid var(--line)}
-  .network-breakdown .plot:not(.explore-plot) {display:grid;grid-template-columns:minmax(5rem,.6fr) 1fr;align-items:start}
+  .network-breakdown .plot {display:grid;grid-template-columns:minmax(5rem,.6fr) 1fr;align-items:start}
 }
 @media(max-width:600px) {
   .network-controls label {flex:1 1 42%;min-width:0}

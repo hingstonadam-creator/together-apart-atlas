@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research | Together, Apart.</title><link rel="stylesheet" href="../atlas.css?v=force-1"><script defer src="../exegesis/reader.js?v=edition"></script></head><body class="journal research-journal">
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research | Together, Apart.</title><link rel="stylesheet" href="../atlas.css?v=full-register"><script defer src="../exegesis/reader.js?v=edition"></script></head><body class="journal research-journal">
 <header class="masthead"><a class="brand" href="../">Adam Hingston</a><nav aria-label="Main navigation"><a href="../">Home</a><a href="../exegesis/">Exegesis</a><a href="./" aria-current="page">Research</a><a href="../data-centre/">Data centre</a><a href="../about/">About</a></nav></header>
 <main><nav class="index-rail" aria-label="Page contents">
 <button class="index-toggle" type="button" aria-expanded="false" aria-controls="index-links" hidden><span>Contents</span><span class="current-label">Introduction</span></button>
@@ -11,19 +11,19 @@
 <div class="study-field" id="research">
 <section id="research-atlas" aria-labelledby="atlas-title">
 <p class="eyebrow">Research atlas</p><h1 id="atlas-title" tabindex="-1">Research network</h1>
-<p>Drag a numbered research point to explore its connections, or select it to read the finding. Solid lines connect points to their themes. Dotted lines connect them to recorded design drivers. Select a hub or pie slice to filter the map and register.</p>
+<p>Drag a numbered research point to explore its connections, or select it to read the finding. Solid lines connect points to their themes. Dotted lines connect them to recorded design drivers. Select a hub or pie slice to filter the network.</p>
 <div class="network-controls">
-<label>Search sources<input type="search" id="atlas-search" placeholder="Title, finding or place"></label>
+<label>Search the network<input type="search" id="atlas-search" placeholder="Title, finding or place"></label>
 <label>Theme<select id="atlas-theme"><option value="">All themes</option></select></label>
 <label>Design driver<select id="driver"></select></label>
 <button type="button" id="atlas-clear" hidden>Clear all filters</button>
 </div>
-<div class="network-status"><p id="chart-status" role="status"></p><a id="showMatches" href="#sources">View sources ↓</a></div>
+<div class="network-status"><p id="chart-status" role="status"></p><a id="showMatches" href="#sources">View full source register ↓</a></div>
 <div class="network-workbench">
 <div class="atlas-map-wrap"><svg id="atlas-map" role="group" aria-label="Research network"></svg>
 <div id="atlas-preview" class="atlas-preview" role="tooltip" hidden></div></div>
-<aside class="network-breakdown" id="dashboard"><h2>Filter by chart</h2><label>Breakdown <select id="metric"><option value="method">Research method</option><option value="type">Source type</option><option value="reliability">Reliability</option><option value="country">Geographic coverage</option></select></label>
-<div class="plot"><div id="explorer" hidden></div><svg id="chart" viewBox="0 0 200 200" aria-label="Research breakdown" role="img"></svg><div><div id="legend"></div><button id="clearMetric" hidden>Clear chart filter</button></div></div></aside>
+<aside class="network-breakdown" id="dashboard"><h2>Filter by chart</h2><label>Breakdown <select id="metric"><option value="method">Research method</option><option value="type">Source type</option><option value="reliability">Reliability</option></select></label>
+<div class="plot"><svg id="chart" viewBox="0 0 200 200" aria-label="Research breakdown" role="img"></svg><div><div id="legend"></div><button id="clearMetric" hidden>Clear chart filter</button></div></div></aside>
 </div>
 <article id="atlas-detail" class="network-selection" aria-live="polite"></article>
 </section>
@@ -34,8 +34,8 @@
 <div class="explorer-status"><span id="activeExplorers"></span><button hidden id="clearExplorers">Clear matrix and keyword filters</button></div>
 </section>
 <section id="sources"><p class="eyebrow">Notion research register</p><h2>Source register</h2>
-<p class="fine-print">Research points in display-number order. Collection dates use Adelaide local time.</p>
+<p class="fine-print">The complete collection, in display-number order. Collection dates use Adelaide local time.</p>
 <details id="six-questions"><summary>Six questions for each data point</summary><ol id="framework"></ol></details>
-<div class="network-status"><span id="count" role="status"></span><button id="reset-register" hidden>Show all sources</button></div>
+<div class="network-status"><span id="count" role="status"></span></div>
 <div id="results"></div></section><p id="status" role="status"></p>
-</div></main><footer>Adam Hingston   /   ARCH 6004 <span>Southwark Grounds · Kaurna Country</span></footer><script src="../atlas-research.js?v=entry-top" defer></script></body></html>
+</div></main><footer>Adam Hingston   /   ARCH 6004 <span>Southwark Grounds · Kaurna Country</span></footer><script src="../atlas-research.js?v=full-register" defer></script></body></html>
