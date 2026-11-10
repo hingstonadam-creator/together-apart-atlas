@@ -117,3 +117,217 @@
 .atlas-groups{border-top:1px solid var(--line);margin-top:2rem;padding-top:1.2rem}.atlas-groups-heading{display:flex;justify-content:space-between;gap:1rem;align-items:end}.atlas-groups-heading h3{font-size:1.7rem}.atlas-groups-heading p{font-size:.86rem;max-width:46ch}.atlas-theme-group{border-top:1px solid var(--line)}.atlas-theme-group>summary{display:flex;justify-content:space-between;gap:1rem}.atlas-theme-group>summary small{color:#56574e;text-transform:none;letter-spacing:0}.atlas-theme-group ol{columns:2;margin:0;padding:0 0 1rem;list-style:none}.atlas-theme-group li{break-inside:avoid}.atlas-record-link{width:100%;display:flex;gap:.65rem;align-items:baseline;padding:.45rem .3rem;border:0;border-bottom:1px solid var(--line);background:transparent;color:inherit;text-align:left;font:inherit;cursor:pointer}.atlas-record-link:hover{background:var(--paper)}.atlas-record-link span{min-width:3.4rem;color:var(--clay);font-size:.7rem;font-weight:700}
 @media(max-width:900px){.atlas-intro,.atlas-layout{grid-template-columns:1fr}.atlas-detail{position:relative;top:auto;max-height:none}.atlas-groups-heading{align-items:start;flex-direction:column}}
 @media(max-width:760px){.atlas-filterbar{align-items:stretch;flex-direction:column}.atlas-filterbar label{max-width:100%}.atlas-intro{gap:1rem}.atlas-status-key{display:grid;grid-template-columns:1fr}.atlas-theme-group ol{columns:1}#atlas-map{min-height:420px}}
+
+/* Home: courtyard cover, exegesis introduction and six linked chapters. */
+#overview {
+  padding: 0;
+}
+
+#overview .hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+}
+
+#overview .hero img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+}
+
+#overview .hero figcaption {
+  padding: .5rem 0;
+  color: var(--clay);
+}
+
+#overview .hero > div {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  column-gap: 4vw;
+  align-items: end;
+  border-block: 1px solid var(--line);
+  padding: clamp(1.25rem, 3vw, 3rem) 0;
+}
+
+#overview .hero .eyebrow {
+  grid-column: 1 / -1;
+  margin: 0 0 .8rem;
+}
+
+#overview .hero h1 {
+  grid-row: span 2;
+  margin: 0;
+  font-size: clamp(3.4rem, 8vw, 7.5rem);
+}
+
+#overview .hero-subtitle {
+  margin: 0;
+  line-height: 1.12;
+}
+
+#overview .hero-subtitle + p {
+  align-self: start;
+  margin: .6rem 0 0;
+}
+
+#overview .home-exegesis {
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  background: var(--paper);
+  margin: 0;
+  padding: clamp(2rem, 4vw, 4rem) 0;
+}
+
+#overview .chapter-index {
+  display: block;
+}
+
+#overview .chapter-index ol {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#overview .exegesis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 0 3rem;
+  border-block-start: 1px solid var(--line);
+  border-inline-start: 1px solid var(--line);
+}
+
+#overview .chapter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.8rem);
+  border: 0;
+  border-block-end: 1px solid var(--line);
+  border-inline-end: 1px solid var(--line);
+}
+
+#overview .chapter-content,
+#overview .chapter-body {
+  display: contents;
+}
+
+#overview .chapterlabel {
+  order: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+#overview .chapter-image,
+#overview .image-placeholder {
+  order: 1;
+  width: 100%;
+  min-height: 0;
+  margin: 0;
+}
+
+#overview .chapter-image img,
+#overview .image-placeholder {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+#overview .chapter-image img {
+  height: auto;
+}
+
+#overview .chapter h2 {
+  order: 2;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 2.25vw, 2.25rem);
+  line-height: 1.05;
+}
+
+#overview .chapter-copy {
+  order: 3;
+}
+
+#overview .chapter-copy p {
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Extend the title link to the panel while keeping secondary links usable. */
+#overview .chapter h2 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+#overview .chapter-copy a {
+  position: relative;
+  z-index: 1;
+}
+
+#overview .chapter h2 a:hover,
+#overview .chapter h2 a:focus-visible {
+  color: var(--clay);
+  text-decoration: underline;
+}
+
+#overview .chapter h2 a:focus-visible::after {
+  outline: 2px solid var(--clay);
+  outline-offset: -2px;
+}
+
+/* Closing feature: supplied figure followed by a heading and native details rows. */
+#overview .home-dwellings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-block: 1px solid var(--line);
+  gap: clamp(1.5rem, 4vw, 4rem);
+}
+
+#overview .home-dwellings > figure {
+  order: 0;
+  margin: 0;
+}
+
+#overview .home-dwellings img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#overview .home-dwellings summary {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+#overview .home-dwellings details[open] > summary {
+  color: var(--clay);
+}
+
+@media (max-width: 960px) {
+  #overview .exegesis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  #overview .hero > div,
+  #overview .home-exegesis,
+  #overview .home-dwellings {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #overview .hero h1 {
+    grid-row: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #overview .exegesis {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
