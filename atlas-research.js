@@ -174,46 +174,73 @@ byId('results').addEventListener('toggle', event => {
   const record = records.find(row => panel.id === 'source-'+row.id);
   if (record) panel.insertAdjacentHTML('beforeend', entryBody(record));
 }, true);
-const selectedThemes = new Set();
+const selectedNodes = new Map();
+let displayedRows = [];
+let matchingIds = new Set();
+
+function toggleNode(group,value) {
+  const key = group+'|'+value;
+  if (selectedNodes.delete(key)) return;
+  let label = value;
+  let matches;
+  if (group==='source') {
+    const source = records.find(row=>row.id===value);
+    const themes = new Set(source.themes || []);
+    const sourceDrivers = new Set(atlasDrivers(source));
+    label = 'Point '+(source.number ?? source.title);
+    matches = row=>row.id===value || (row.themes || []).some(theme=>themes.has(theme)) ||
+      atlasDrivers(row).some(driver=>sourceDrivers.has(driver));
+  } else if (group==='driver') {
+    matches = row=>atlasDrivers(row).includes(value);
+  } else {
+    matches = row=>atlasThemesFor(row).includes(value);
+  }
+  selectedNodes.set(key,{label,matches});
+}
 let allThemes = [];
 function research() {
   const term = byId('atlas-search').value.trim().toLowerCase();
-  const themes = [...selectedThemes];
+  const selections = [...selectedNodes.values()];
   const matchAll = byId('theme-match').value === 'all';
   const driverFilter = byId('driver').value;
   const lens = byId('lens').value;
   const kind = byId('kind').value;
-  const base = records.filter(record =>
+  const pool = records.filter(record =>
     (!term || atlasSearchable(record).includes(term)) &&
-    (!themes.length || (matchAll ? themes.every(theme=>atlasThemesFor(record).includes(theme)) : themes.some(theme=>atlasThemesFor(record).includes(theme)))) &&
     (!driverFilter || atlasDrivers(record).includes(driverFilter)) &&
     (!lens || record.lenses.includes(lenses.indexOf(lens))) &&
     (!kind || record.type === kind));
+  const base = pool.filter(row=>!selections.length || (matchAll ? selections.every(node=>node.matches(row)) : selections.some(node=>node.matches(row))));
   const matchesChart = r=>!chartFilter || categoryMatches(r,byId('metric').value,chartFilter);
   const matchesMatrix = r=>!matrixFilter || categoryMatches(r,'matrix',matrixFilter);
   const matchesWord = r=>!keywordFilter || keywordIndex.get(r.id).includes(keywordFilter);
   drawChart(base.filter(r=>matchesMatrix(r) && matchesWord(r)));
   byId('driver-matrix').innerHTML=matrixView(base.filter(r=>matchesChart(r) && matchesWord(r)));
   byId('keyword-cloud').innerHTML=keywordCloud(base.filter(r=>matchesChart(r) && matchesMatrix(r)));
-  const rows=base.filter(r=>matchesChart(r) && matchesMatrix(r) && matchesWord(r));
+  const otherFilters = r=>matchesChart(r) && matchesMatrix(r) && matchesWord(r);
+  const rows=base.filter(otherFilters);
+  matchingIds = new Set(rows.map(row=>row.id));
+  displayedRows = pool.filter(otherFilters);
+  // Keep selected sources reachable even when a secondary filter excludes them.
+  for (const row of records) {
+    if (selectedNodes.has('source|'+row.id) && !displayedRows.includes(row)) displayedRows.push(row);
+  }
   const [driver,lensIndex]=matrixFilter.split('|');
   byId('activeExplorers').textContent=[matrixFilter && driver+' / '+lenses[lensIndex],keywordFilter].filter(Boolean).join(' · ');
   byId('clearExplorers').hidden=!(matrixFilter || keywordFilter);
-  const filters = [term, themes.join(matchAll ? ' AND ' : ' OR '), driverFilter, lens, kind, chartFilter, matrixFilter && driver+' / '+lenses[lensIndex], keywordFilter].filter(Boolean);
-  const count = rows.length+' of '+records.length+' points in the network';
+  const filters = [term, selections.map(node=>node.label).join(matchAll ? ' AND ' : ' OR '), driverFilter, lens, kind, chartFilter, matrixFilter && driver+' / '+lenses[lensIndex], keywordFilter].filter(Boolean);
+  const count = rows.length+' of '+records.length+' matching points';
   byId('chart-status').textContent = [count,...filters].join(' · ');
   byId('atlas-clear').hidden = filters.length === 0;
-  visibleRows = rows;
-  if (!rows.some(record => record.id === selectedId)) selectedId = rows[0]?.id;
+  if (!matchingIds.has(selectedId) && !selectedNodes.has('source|'+selectedId)) selectedId = rows[0]?.id;
   renderNetwork();
 
 }
 document.querySelector('.filters').addEventListener('change',research);
 let selectedId;
-let visibleRows = [];
 function clearFilters() {
   for (const id of ['atlas-search','driver','lens','kind']) byId(id).value = '';
-  selectedThemes.clear();
+  selectedNodes.clear();
   byId('theme-match').value = 'all';
   chartFilter = matrixFilter = keywordFilter = '';
   research();
@@ -251,7 +278,7 @@ function atlasSearchable(record) {
   return Object.values(record).map(value => Array.isArray(value) ? value.join(' ') : value || '').join(' ').toLowerCase();
 }
 function renderSelection() {
-  const record = visibleRows.find(row => row.id === selectedId);
+  const record = displayedRows.find(row => row.id === selectedId);
   const detail = byId('atlas-detail');
   if (!record) {
     detail.textContent = 'No matching sources. Clear a filter to broaden the network.';
@@ -287,11 +314,11 @@ function renderNetwork() {
   const compact = compactNetwork.matches;
   const width = compact ? 360 : Math.max(340,network.parentElement.clientWidth);
   const themes = allThemes;
-  const activeDrivers = drivers.filter(driver=>visibleRows.some(row=>atlasDrivers(row).includes(driver)));
+  const activeDrivers = drivers.filter(driver=>records.some(row=>atlasDrivers(row).includes(driver)));
   const groups = [...themes,...activeDrivers];
   const firstPointY = 26 + Math.ceil(groups.length / 3) * 44;
-  const height = compact ? firstPointY + Math.ceil(visibleRows.length / 9) * 38 + 12 :
-    Math.max(400,Math.min(660,width*.85),Math.ceil(visibleRows.length*1500/width));
+  const height = compact ? firstPointY + Math.ceil(displayedRows.length / 9) * 38 + 12 :
+    Math.max(400,Math.min(660,width*.85),Math.ceil(displayedRows.length*1500/width));
   network.setAttribute('viewBox','0 0 '+width+' '+height);
   const hubs = groups.map((name,i)=>{
     const angle = i*2*Math.PI/groups.length-Math.PI/2;
@@ -300,7 +327,7 @@ function renderNetwork() {
       y:compact ? 16+Math.floor(i/3)*44 : height/2+Math.sin(angle)*(height/2-48)};
   });
   const links = [];
-  const points = visibleRows.map((row,i)=>{
+  const points = displayedRows.map((row,i)=>{
     const connected = hubs.filter(hub=>(hub.group==='driver'?atlasDrivers(row):atlasThemesFor(row)).includes(hub.name));
     const angle = i*2.4;
     const saved = positions.get(row.id);
@@ -314,9 +341,9 @@ function renderNetwork() {
   const elements = [...points,...hubs].map(node=>{
     if (node.fixed) {
       const colour=node.group==='driver'?atlasDriverColours[node.name]:colours[Math.max(0,allThemes.indexOf(node.name))%colours.length];
-      return '<g tabindex="0" role="button" data-group="'+node.group+'" data-value="'+esc(node.name)+'" aria-label="Filter by '+esc(node.name)+'" aria-pressed="'+(node.group==='atlas-theme' ? selectedThemes.has(node.name) : byId('driver').value===node.name)+'" class="force-hub"><circle r="10" fill="'+colour+'"/><text text-anchor="middle" y="24">'+esc(node.name)+'</text></g>';
+      return '<g tabindex="0" role="button" data-group="'+node.group+'" data-value="'+esc(node.name)+'" aria-label="Filter by '+esc(node.name)+'" aria-pressed="'+selectedNodes.has(node.group+'|'+node.name)+'" class="force-hub"><circle r="10" fill="'+colour+'"/><text text-anchor="middle" y="24">'+esc(node.name)+'</text></g>';
     }
-    return '<g tabindex="0" role="button" class="net-point" data-record-id="'+esc(node.id)+'" aria-label="'+esc((node.row.number ?? '')+' '+node.row.title)+'"><circle r="10"/><text text-anchor="middle" y="3.5">'+esc(node.row.number ?? '·')+'</text><title>'+esc(node.row.title)+'</title></g>';
+    return '<g tabindex="0" role="button" class="net-point'+(matchingIds.has(node.id)?'':' outside-selection')+'" data-record-id="'+esc(node.id)+'" aria-label="'+esc((node.row.number ?? '')+' '+node.row.title)+'"><circle r="10"/><text text-anchor="middle" y="3.5">'+esc(node.row.number ?? '·')+'</text><title>'+esc(node.row.title)+'</title></g>';
   });
   network.innerHTML='<g>'+edges.join('')+'</g><g>'+elements.join('')+'</g>';
   [...points,...hubs].forEach((node,i)=>{node.el=network.lastElementChild.children[i]});
@@ -330,9 +357,9 @@ function renderNetwork() {
 }
 function emphasize(id) {
   for (const {hub,node,el} of simulation.links) {
-    el.classList.toggle('lit',id===hub.id || id===node.id);
+    el.classList.toggle('lit',id===hub.id || id===node.id || (matchingIds.has(node.id) && (selectedNodes.has('source|'+node.id) || selectedNodes.has(hub.group+'|'+hub.name))));
   }
-  simulation.points.forEach(node=>node.el.setAttribute('aria-pressed',String(node.id===selectedId)));
+  simulation.points.forEach(node=>node.el.setAttribute('aria-pressed',String(selectedNodes.has('source|'+node.id))));
 }
 function stepNetwork() {
   const {points,hubs,links,width,height} = simulation;
@@ -388,21 +415,14 @@ function settleNetwork() {
 function activateNode(event) {
   const el=event.target.closest('[data-record-id],[data-group]');
   if(!el) return;
-  if(el.dataset.group==='atlas-theme') {
-    const theme=el.dataset.value;
-    if(selectedThemes.has(theme)) selectedThemes.delete(theme);
-    else selectedThemes.add(theme);
-    research();
-    simulation.hubs.find(hub=>hub.group==='atlas-theme' && hub.name===theme)?.el.focus({preventScroll:true});
-  } else if(el.dataset.group) {
-    const select=byId(el.dataset.group);
-    select.value=select.value===el.dataset.value?'':el.dataset.value;
-    research();
-    select.focus({preventScroll:true});
-  } else {
-    selectedId=el.dataset.recordId;
-    emphasize(selectedId);renderSelection();hideAtlasPreview();
-  }
+  const group = el.dataset.group || 'source';
+  const value = el.dataset.value || el.dataset.recordId;
+  toggleNode(group,value);
+  if (group==='source') selectedId=value;
+  research();
+  const target = group==='source' ? simulation.points.find(node=>node.id===value) :
+    simulation.hubs.find(node=>node.group===group && node.name===value);
+  target?.el.focus({preventScroll:true});
 }
 network.addEventListener('click',event=>{if(!suppressClick) activateNode(event)});
 network.addEventListener('keydown',event=>{

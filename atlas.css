@@ -652,3 +652,6 @@ button,input,select,textarea,svg text {font-family:var(--site-font)}
   .network-workbench .net-point circle {r:14px}
   .network-workbench .atlas-preview {display:none}
 }
+
+.network-workbench .net-point.outside-selection:not([aria-pressed=true]) {opacity:.36}
+.network-workbench .net-point.outside-selection:is(:hover,:focus-visible) {opacity:1}
