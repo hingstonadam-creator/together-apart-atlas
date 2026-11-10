@@ -653,5 +653,7 @@ button,input,select,textarea,svg text {font-family:var(--site-font)}
   .network-workbench .atlas-preview {display:none}
 }
 
-.network-workbench .net-point.outside-selection:not([aria-pressed=true]) {opacity:.36}
-.network-workbench .net-point.outside-selection:is(:hover,:focus-visible) {opacity:1}
+#node-selections {display:flex;flex-wrap:wrap;gap:.4rem}
+#node-selections:not(:empty) {margin-bottom:1rem}
+#node-selections button {font:inherit;font-size:.8rem;color:var(--clay);border:1px solid var(--line);background:var(--paper);padding:.4rem .65rem;cursor:pointer}
+.record-tags {font-size:.83rem;max-width:65ch}

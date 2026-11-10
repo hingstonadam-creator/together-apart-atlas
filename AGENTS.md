@@ -115,6 +115,9 @@ Show all six questions on the Research page in their original order, with a shor
 
 ## Research dashboard
 
+Use the Notion multi-select properties Project Relevance and Design Strategy for the network and every source entry. Keep research-tags.json aligned by stable ID on every refresh. Store the recorded tags as projectRelevance and designStrategy arrays. Mirror the named strategies in drivers for existing consumers. Preserve an explicit None in designStrategy and omit it from relationship edges. Keep legacy Theme values as source metadata. Draw only matching points and their connected hubs, while keeping the full source register accessible.
+
+
 Make the interactive visualisation the main element of the research dashboard. Let readers choose the field to explore. Start with **Research Method** as a pie chart and offer **Type** and **Reliability** as alternative breakdowns. Count individual data points from the same published dataset used by the entry list. Include an “Unrecorded” category for missing values.
 
 Selecting a slice or its keyboard-accessible legend item filters the list by that exact field and value. For example, selecting **Precedent analysis** shows entries whose Research Method is Precedent analysis. Show the active filter and matching count, and provide a clear control to remove it. Keep other categories available so readers can switch directly between them. Changing the breakdown clears the previous chart selection and preserves independent search filters. The selected category count must match the number of displayed entries.

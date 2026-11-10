@@ -110,7 +110,7 @@ function matrixView(rows) {
   const body = cells.map(({lens,values}) => '<tr><th scope="row">'+lens+'</th>'+values.map(({key,driver,count})=>
     '<td><button data-category="'+key+'" aria-label="'+driver+' and '+lens+', '+count+' sources" aria-pressed="'+(matrixFilter===key)+'" style="--shade:'+count/max*.55+'" '+(!count?'disabled':'')+'>'+count+'</button></td>'
   ).join('')+'</tr>').join('');
-  return '<p>Select a cell to find sources addressing both a design driver and a research lens. Housing lenses are indexed from the recorded text. Driver labels appear only where the design application explicitly names DEFINE, EXTEND or MEDIATE. Entries without a matching label or housing lens are excluded from this matrix.</p><div class="matrix-frame"><table class="lens-matrix"><thead><tr><th>Research lens</th>'+headers+'</tr></thead><tbody>'+body+'</tbody></table></div>';
+  return '<p>Select a cell to find sources addressing both a design driver and a research lens. Housing lenses are indexed from the recorded text. Design strategies follow the recorded Notion tags. Entries without a matching label or housing lens are excluded from this matrix.</p><div class="matrix-frame"><table class="lens-matrix"><thead><tr><th>Research lens</th>'+headers+'</tr></thead><tbody>'+body+'</tbody></table></div>';
 }
 function drawChart(rows) {
   const metric = byId('metric').value;
@@ -153,6 +153,7 @@ function entry(record) {
   return '<details id="source-'+esc(record.id)+'"><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary></details>';
 }
 function entryBody(record) {
+  if (record.indexOnly) return '<article class="entry">'+tagDetails(record)+'<p>The full research entry is pending publication.</p><p><a href="#atlas-title">Return to top ↑</a></p></article>';
   const reference = record.exegesisNumber ? '<p>Exegesis manuscript reference · R'+esc(record.exegesisNumber)+'</p>' : '';
   const source = record.url ? '<a href="'+esc(record.url)+'" target="_blank" rel="noopener">Original source ↗</a>' : 'Source recorded in the Graduate Project register. No public link supplied.';
   const notion = record.notionPageId ? '<a href="'+esc(atlasNotionUrl(record))+'" target="_blank" rel="noopener">Open in Notion ↗</a>' : 'Notion page ID not recorded.';
@@ -164,7 +165,7 @@ function entryBody(record) {
   const interpretation = atlasEvidenceBlock('Tentative interpretation',record.interpretation,'interpretation','This is an application or reading of the evidence, not the evidence itself.');
   const implication = atlasEvidenceBlock('Design implication',record.implication,'implication','A proposed spatial consequence to test in plan or section.');
   const openQuestion = atlasEvidenceBlock('Open question',record.question,'question','Not yet recorded where the register leaves this field blank.');
-  return '<article class="entry">'+verified+'<p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+quote+'<p>'+source+' &nbsp; '+notion+'</p>'+implication+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><div class="entry-evidence-sections">'+interpretation+openQuestion+'</div><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details>'+
+  return '<article class="entry">'+verified+tagDetails(record)+'<p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+quote+'<p>'+source+' &nbsp; '+notion+'</p>'+implication+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><div class="entry-evidence-sections">'+interpretation+openQuestion+'</div><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details>'+
     '<p><a href="#atlas-title">Return to top ↑</a></p></article>';
 }
 // Load the article when opened; the full numbered register stays available.
@@ -185,10 +186,10 @@ function toggleNode(group,value) {
   let matches;
   if (group==='source') {
     const source = records.find(row=>row.id===value);
-    const themes = new Set(source.themes || []);
+    const themes = new Set(source.projectRelevance || []);
     const sourceDrivers = new Set(atlasDrivers(source));
     label = 'Point '+(source.number ?? source.title);
-    matches = row=>row.id===value || (row.themes || []).some(theme=>themes.has(theme)) ||
+    matches = row=>row.id===value || (row.projectRelevance || []).some(theme=>themes.has(theme)) ||
       atlasDrivers(row).some(driver=>sourceDrivers.has(driver));
   } else if (group==='driver') {
     matches = row=>atlasDrivers(row).includes(value);
@@ -207,7 +208,7 @@ function research() {
   const kind = byId('kind').value;
   const pool = records.filter(record =>
     (!term || atlasSearchable(record).includes(term)) &&
-    (!driverFilter || atlasDrivers(record).includes(driverFilter)) &&
+    (!driverFilter || record.designStrategy.includes(driverFilter)) &&
     (!lens || record.lenses.includes(lenses.indexOf(lens))) &&
     (!kind || record.type === kind));
   const base = pool.filter(row=>!selections.length || (matchAll ? selections.every(node=>node.matches(row)) : selections.some(node=>node.matches(row))));
@@ -220,11 +221,9 @@ function research() {
   const otherFilters = r=>matchesChart(r) && matchesMatrix(r) && matchesWord(r);
   const rows=base.filter(otherFilters);
   matchingIds = new Set(rows.map(row=>row.id));
-  displayedRows = pool.filter(otherFilters);
-  // Keep selected sources reachable even when a secondary filter excludes them.
-  for (const row of records) {
-    if (selectedNodes.has('source|'+row.id) && !displayedRows.includes(row)) displayedRows.push(row);
-  }
+  displayedRows = rows;
+  byId('node-selections').innerHTML = [...selectedNodes].map(([key,node])=>
+    '<button type="button" data-remove-node="'+esc(key)+'" aria-label="Remove '+esc(node.label)+'">'+esc(node.label)+' ×</button>').join('');
   const [driver,lensIndex]=matrixFilter.split('|');
   byId('activeExplorers').textContent=[matrixFilter && driver+' / '+lenses[lensIndex],keywordFilter].filter(Boolean).join(' · ');
   byId('clearExplorers').hidden=!(matrixFilter || keywordFilter);
@@ -232,7 +231,7 @@ function research() {
   const count = rows.length+' of '+records.length+' matching points';
   byId('chart-status').textContent = [count,...filters].join(' · ');
   byId('atlas-clear').hidden = filters.length === 0;
-  if (!matchingIds.has(selectedId) && !selectedNodes.has('source|'+selectedId)) selectedId = rows[0]?.id;
+  if (!matchingIds.has(selectedId)) selectedId = rows[0]?.id;
   renderNetwork();
 
 }
@@ -245,6 +244,21 @@ function clearFilters() {
   chartFilter = matrixFilter = keywordFilter = '';
   research();
 }
+byId('add-tag').onchange = event => {
+  const value=event.target.value;
+  const group=drivers.includes(value)?'driver':'atlas-theme';
+  if(value && !selectedNodes.has(group+'|'+value)) toggleNode(group,value);
+  event.target.value='';
+  research();
+};
+byId('node-selections').addEventListener('click', event=>{
+  const button=event.target.closest('[data-remove-node]');
+  if(button) {
+    selectedNodes.delete(button.dataset.removeNode);
+    research();
+    byId('add-tag').focus();
+  }
+});
 byId('atlas-clear').onclick = clearFilters;
 byId('atlas-search').oninput = research;
 byId('driver').onchange = byId('theme-match').onchange = research;
@@ -259,12 +273,13 @@ function atlasText(value, fallback='Not yet recorded') {
   return value !== null && value !== undefined && String(value).trim() !== '' ? esc(value) : esc(fallback);
 }
 function atlasDrivers(record) {
-  const source = Array.isArray(record.drivers) && record.drivers.length ? record.drivers : (record.driver ? [record.driver] : []);
-  return [...new Set(source.filter(driver => drivers.includes(driver)))];
+  return (record.designStrategy || []).filter(tag=>drivers.includes(tag));
 }
 function atlasThemesFor(record) {
-  const values = Array.isArray(record.themes) ? record.themes.filter(Boolean) : [];
-  return values.length ? [...new Set(values)] : ['Theme not recorded'];
+  return record.projectRelevance || [];
+}
+function tagDetails(record) {
+  return '<dl class="record-tags"><dt>Project Relevance</dt><dd>'+atlasText(record.projectRelevance,'Unrecorded')+'</dd><dt>Design Strategy</dt><dd>'+atlasText(record.designStrategy,'Unrecorded')+'</dd></dl>';
 }
 function atlasNotionUrl(record) {
   const pageId = record.notionPageId || '';
@@ -284,7 +299,7 @@ function renderSelection() {
     detail.textContent = 'No matching sources. Clear a filter to broaden the network.';
     return;
   }
-  detail.innerHTML = '<p class="eyebrow">Selected source · '+esc(record.number ?? 'Unnumbered')+'</p><h3>'+esc(record.title)+'</h3><p>'+atlasText(record.insight || record.evidence)+'</p><a href="#source-'+esc(record.id)+'">Read the full entry →</a>';
+  detail.innerHTML = '<p class="eyebrow">Selected source · '+esc(record.number ?? 'Unnumbered')+'</p><h3>'+esc(record.title)+'</h3><p>'+atlasText(record.insight || record.evidence,record.indexOnly?'Full entry pending publication.':'Not recorded')+'</p>'+tagDetails(record)+'<a href="#source-'+esc(record.id)+'">Read the full entry →</a>';
 }
 byId('atlas-detail').addEventListener('click',event => {
   if (event.target.closest('a')) byId('source-'+selectedId).open = true;
@@ -309,13 +324,22 @@ let inView = true;
 let dragged;
 let suppressClick = false;
 
+function hubLabel(name) {
+  const lines=[''];
+  for (const word of name.split(' ')) {
+    const i=lines.length-1;
+    if (lines[i] && lines[i].length+word.length>16) lines.push(word);
+    else lines[i]+=(lines[i]?' ':'')+word;
+  }
+  return lines.map((line,i)=>'<tspan x="0" dy="'+(i?11:0)+'">'+esc(line)+'</tspan>').join('');
+}
 function renderNetwork() {
   cancelAnimationFrame(animation);
   dragged = null;
   const compact = compactNetwork.matches;
   const width = compact ? 360 : Math.max(340,network.parentElement.clientWidth);
-  const themes = allThemes;
-  const activeDrivers = drivers.filter(driver=>records.some(row=>atlasDrivers(row).includes(driver)));
+  const themes = allThemes.filter(tag=>displayedRows.some(row=>atlasThemesFor(row).includes(tag)));
+  const activeDrivers = drivers.filter(driver=>displayedRows.some(row=>atlasDrivers(row).includes(driver)));
   const groups = [...themes,...activeDrivers];
   const height = compact ? 510 :
     Math.max(400,Math.min(660,width*.85),Math.ceil(displayedRows.length*1500/width));
@@ -340,9 +364,9 @@ function renderNetwork() {
   const elements = [...points,...hubs].map(node=>{
     if (node.fixed) {
       const colour=node.group==='driver'?atlasDriverColours[node.name]:colours[Math.max(0,allThemes.indexOf(node.name))%colours.length];
-      return '<g tabindex="0" role="button" data-group="'+node.group+'" data-value="'+esc(node.name)+'" aria-label="Filter by '+esc(node.name)+'" aria-pressed="'+selectedNodes.has(node.group+'|'+node.name)+'" class="force-hub"><circle r="10" fill="'+colour+'"/><text text-anchor="middle" y="24">'+esc(node.name)+'</text></g>';
+      return '<g tabindex="0" role="button" data-group="'+node.group+'" data-value="'+esc(node.name)+'" aria-label="Filter by '+esc(node.name)+'" aria-pressed="'+selectedNodes.has(node.group+'|'+node.name)+'" class="force-hub"><circle r="10" fill="'+colour+'"/><text text-anchor="middle" y="24">'+hubLabel(node.name)+'</text></g>';
     }
-    return '<g tabindex="0" role="button" class="net-point'+(matchingIds.has(node.id)?'':' outside-selection')+'" data-record-id="'+esc(node.id)+'" aria-label="'+esc((node.row.number ?? '')+' '+node.row.title)+'"><circle r="10"/><text text-anchor="middle" y="3.5">'+esc(node.row.number ?? '·')+'</text><title>'+esc(node.row.title)+'</title></g>';
+    return '<g tabindex="0" role="button" class="net-point" data-record-id="'+esc(node.id)+'" aria-label="'+esc((node.row.number ?? '')+' '+node.row.title)+'"><circle r="10"/><text text-anchor="middle" y="3.5">'+esc(node.row.number ?? '·')+'</text><title>'+esc(node.row.title)+'</title></g>';
   });
   network.innerHTML='<g>'+edges.join('')+'</g><g>'+elements.join('')+'</g>';
   [...points,...hubs].forEach((node,i)=>{node.el=network.lastElementChild.children[i]});
@@ -514,17 +538,28 @@ new ResizeObserver(() => {
 
 async function loadResearch() {
   try {
-    const response = await fetch('../research.json');
-    if (!response.ok) throw Error('Missing collection');
-    records = await response.json();
+    const [snapshot,tags] = await Promise.all(['research.json','research-tags.json'].map(async file=>{
+      const response=await fetch('../'+file);
+      if (!response.ok) throw Error('Missing collection');
+      return response.json();
+    }));
+    const published = new Map(snapshot.map(row=>[row.id,row]));
+    records = tags.map(tag=>{
+      const prior = published.get(tag.id);
+      // A renamed aggregate can now describe a single precedent. Keep its old prose out.
+      const body = prior?.title===tag.title ? prior : {indexOnly:true,lenses:[],type:null};
+      const named = tag.designStrategy.filter(value=>drivers.includes(value));
+      return {...body,...tag,drivers:named,driver:named[0] || ''};
+    });
     keywordIndex = new Map(records.map(r=>[r.id,keywordsFor(r)]));
     records.sort((a,b)=>(a.number ?? Infinity)-(b.number ?? Infinity));
     byId('results').innerHTML = records.map(entry).join('');
     byId('count').textContent = records.length+' research points';
     allThemes = [...new Set(records.flatMap(atlasThemesFor))].sort();
     options('lens','All research lenses',lenses);
-    options('driver','All drivers',drivers);
-    options('kind','All source types',[...new Set(records.map(r=>r.type))].sort());
+    options('driver','All strategies',[...drivers,'None']);
+    options('add-tag','Choose a tag', [...allThemes,...drivers]);
+    options('kind','All source types',[...new Set(records.map(r=>r.type).filter(Boolean))].sort());
     byId('status').textContent='';
     research();
   } catch { byId('status').innerHTML = 'The research collection could not load. <button type="button">Retry</button>'; byId('status').querySelector('button').onclick=loadResearch; }
