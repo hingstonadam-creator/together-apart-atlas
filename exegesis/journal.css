@@ -1,0 +1,84 @@
+/* The journal shares the site's type stack and colour variables from atlas.css. */
+.journal {
+  --gutter: clamp(1rem, 2.8vw, 3rem);
+  --rail: clamp(6rem, 10vw, 9rem);
+  --measure: 64ch;
+  color: var(--ink);
+  background: var(--paper);
+}
+.journal > header, .journal main, .journal > footer {
+  width: min(90%, 78rem);
+  margin-inline: auto;
+}
+.journal > header {min-height: 3.6rem; padding-block: .6rem}
+.journal main {padding-block: var(--gutter) 4rem}
+.journal main a {color: var(--clay)}
+.journal a:focus-visible {outline: 3px solid var(--clay); outline-offset: 3px}
+.journal main .action {color: var(--paper); background: var(--clay)}
+.journal main p {max-width: var(--measure); font-size: clamp(1rem, 1.24vw, 1.16rem); line-height: 1.75}
+.journal main .eyebrow, .j-number, .j-fig-label, .j-slot {
+  font: 600 .72rem/1.4 ui-monospace, monospace;
+  text-transform: uppercase; letter-spacing: .08em;
+}
+.journal main .eyebrow, .j-number, .j-fig-label {color: var(--clay)}
+.j-jump, .j-manuscript, .j-intro {padding: 0}
+.j-chapter {
+  display: grid;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  column-gap: var(--gutter);
+  border-top: 1px solid var(--line);
+  margin: 2rem 0 4rem;
+  padding-top: 1.5rem;
+  scroll-margin-top: 2rem;
+}
+.j-chapter > * {grid-column: 2; min-width: 0}
+.j-chapter > .j-number {grid-column: 1; padding-top: .7rem}
+.j-title, .j-cover h1, .j-manuscript > h1 {
+  font-size: clamp(2.65rem, 6.6vw, 6rem);
+  font-weight: 750; text-transform: uppercase;
+  line-height: .97; letter-spacing: -.06em; margin: 0 0 1.5rem;
+}
+.journal .j-title a {color: var(--ink); text-decoration: none}
+.j-chapter h3 {font-size: clamp(1.35rem, 2.3vw, 2.2rem); margin: 1.4em 0 .4em; max-width: 32ch}
+.j-chapter p {margin: .5em 0 .8em}
+.j-chapter .j-question {margin: .8rem 0; padding: 1.2rem 1.6rem; border-left: 3px solid var(--clay); background: var(--light); max-width: 33ch; font-size: clamp(1.4rem, 2.6vw, 2.5rem); line-height: 1.2; letter-spacing: -.035em}
+.j-figure {margin: 1.2rem 0 2rem; min-width: 0}
+.j-enlarge, .j-enlarge img {display: block; width: 100%; height: auto}
+.j-enlarge {cursor: zoom-in}
+.j-figure figcaption {margin-top: .55rem; border-top: 1px solid var(--line); padding-top: .55rem; font: inherit; font-size: .82rem; line-height: 1.45; text-transform: none; letter-spacing: normal}
+.j-fig-label {display: inline-block; margin-right: 1em}
+.j-chapter > .j-figure figcaption, .j-unit .j-figure figcaption {position: relative}
+.j-chapter > .j-figure .j-fig-label, .j-unit .j-fig-label {position: absolute; right: 100%; width: var(--rail); margin-right: var(--gutter)}
+.j-slot {display: grid; place-items: center; min-height: 10rem; background: var(--paper); border: 1px solid var(--line); color: var(--ink)}
+.j-spread, .j-pair, .j-index {display: grid; grid-template-columns: minmax(0,1.25fr) minmax(0,1fr); gap: var(--gutter); align-items: start}
+.j-spread {padding-block: .8rem}
+.j-spread > figure {grid-column: 2; margin: .55rem 0}
+.j-pair {grid-template-columns: repeat(2,minmax(0,1fr))}
+.j-pair .j-slot, #proposal .j-slot {min-height: clamp(13rem, 23vw, 21rem)}
+.j-unit > .j-figure {max-width: 100%}
+#reflection .j-unit {max-width: var(--measure)}
+#reflection .j-slot {min-height: 4rem}
+#design-approach > .j-figure {width: min(100%, 38rem)}
+.j-cover {position: relative; margin: 0 var(--gutter) 2.5rem 0; padding-top: 1.6rem}
+.j-cover .j-figure {margin: 0}
+.j-cover h1 {position: absolute; right: calc(-1 * var(--gutter)); top: 0; margin: 0; padding: .1em .3em .2em; background: var(--paper)}
+.j-index {border-top: 1px solid var(--line); padding-top: var(--gutter)}
+.j-index .chapter-index {display: block; margin: 0; padding: 0}
+.j-index .chapter-index li {border-bottom: 1px solid var(--line)}
+.j-intro > .j-figure {margin-left: calc(var(--rail) + var(--gutter))}
+.journal .chapter-nav {display: flex; flex-wrap: wrap; gap: 1.4rem; justify-content: space-between; border-top: 1px solid var(--line)}
+@media (max-width: 760px) {
+  .journal > header nav {flex-wrap: wrap}
+  .j-chapter, .j-spread, .j-pair, .j-index {display: block}
+  .j-number {display: block; margin-bottom: .7rem}
+  .j-cover {display: flex; flex-direction: column; margin: 0 0 2rem; padding: 0}
+  .j-cover h1 {position: static; padding: 1rem 0 0}
+  .j-chapter > .j-figure .j-fig-label, .j-unit .j-fig-label {position: static; width: auto; margin-right: 1em}
+  .j-intro > .j-figure {margin-left: 0}
+  .j-index aside {margin-top: 2rem}
+  .j-spread > figure {margin-bottom: 1.4rem}
+}
+@media (min-width: 761px) and (max-width: 1120px) {
+  .j-spread {display: block}
+  .j-spread > figure {max-width: var(--measure)}
+}
