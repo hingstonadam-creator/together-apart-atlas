@@ -305,6 +305,7 @@ const compactNetwork = matchMedia('(max-width: 820px), (pointer: coarse)');
 const positions = new Map();
 let simulation;
 let animation;
+let inView = true;
 let dragged;
 let suppressClick = false;
 
@@ -316,15 +317,14 @@ function renderNetwork() {
   const themes = allThemes;
   const activeDrivers = drivers.filter(driver=>records.some(row=>atlasDrivers(row).includes(driver)));
   const groups = [...themes,...activeDrivers];
-  const firstPointY = 26 + Math.ceil(groups.length / 3) * 44;
-  const height = compact ? firstPointY + Math.ceil(displayedRows.length / 9) * 38 + 12 :
+  const height = compact ? 510 :
     Math.max(400,Math.min(660,width*.85),Math.ceil(displayedRows.length*1500/width));
   network.setAttribute('viewBox','0 0 '+width+' '+height);
   const hubs = groups.map((name,i)=>{
     const angle = i*2*Math.PI/groups.length-Math.PI/2;
     return {id:'hub-'+i,name,group:i<themes.length?'atlas-theme':'driver',fixed:true,
-      x:compact ? 60+(i%3)*120 : width/2+Math.cos(angle)*(width/2-66),
-      y:compact ? 16+Math.floor(i/3)*44 : height/2+Math.sin(angle)*(height/2-48)};
+      x:width/2+Math.cos(angle)*(width/2-66),
+      y:height/2+Math.sin(angle)*(height/2-48)};
   });
   const links = [];
   const points = displayedRows.map((row,i)=>{
@@ -333,11 +333,10 @@ function renderNetwork() {
     const saved = positions.get(row.id);
     const node = {id:row.id,row,vx:0,vy:0,x:saved?saved.x*width:width/2+Math.cos(angle)*width*.28,
       y:saved?saved.y*height:height/2+Math.sin(angle)*height*.28};
-    if (compact) {node.x=20+(i%9)*40;node.y=firstPointY+Math.floor(i/9)*38;}
-    connected.forEach(hub=>links.push({node,hub}));
+    connected.forEach(hub=>links.push({node,hub,selected:selectedNodes.has(hub.group+'|'+hub.name),lit:false}));
     return node;
   });
-  const edges = links.map(({hub})=>'<line class="force-edge '+(hub.group==='driver'?'driver-edge':'')+'"/>');
+  const edges = compact ? ['force-edge','force-edge driver-edge','force-edge lit','force-edge driver-edge lit'].map(cls=>'<path class="'+cls+'"/>') : links.map(({hub})=>'<line class="force-edge '+(hub.group==='driver'?'driver-edge':'')+'"/>');
   const elements = [...points,...hubs].map(node=>{
     if (node.fixed) {
       const colour=node.group==='driver'?atlasDriverColours[node.name]:colours[Math.max(0,allThemes.indexOf(node.name))%colours.length];
@@ -347,25 +346,27 @@ function renderNetwork() {
   });
   network.innerHTML='<g>'+edges.join('')+'</g><g>'+elements.join('')+'</g>';
   [...points,...hubs].forEach((node,i)=>{node.el=network.lastElementChild.children[i]});
-  links.forEach((link,i)=>{link.el=network.firstElementChild.children[i]});
-  simulation={width,height,points,hubs,links};
-  if (compact) paintNetwork();
-  else settleNetwork();
+  if (!compact) links.forEach((link,i)=>{link.el=network.firstElementChild.children[i]});
+  simulation={width,height,points,hubs,links,compact};
   emphasize(selectedId);
+  settleNetwork();
   hideAtlasPreview();
   renderSelection();
 }
 function emphasize(id) {
-  for (const {hub,node,el} of simulation.links) {
-    el.classList.toggle('lit',id===hub.id || id===node.id || (matchingIds.has(node.id) && (selectedNodes.has('source|'+node.id) || selectedNodes.has(hub.group+'|'+hub.name))));
+  if (!simulation) return;
+  for (const link of simulation.links) {
+    const {hub,node} = link;
+    link.lit=id===hub.id || id===node.id || (matchingIds.has(node.id) && (selectedNodes.has('source|'+node.id) || link.selected));
+    if (link.el) link.el.classList.toggle('lit',link.lit);
   }
   simulation.points.forEach(node=>node.el.setAttribute('aria-pressed',String(selectedNodes.has('source|'+node.id))));
 }
 function stepNetwork() {
   const {points,hubs,links,width,height} = simulation;
-  for (const {node,hub} of links) {
+  for (const {node,hub,selected} of links) {
     const dx=hub.x-node.x, dy=hub.y-node.y, dist=Math.max(1,Math.hypot(dx,dy));
-    const pull=(dist-54)/dist*(hub.group==='driver'?.002:.007);
+    const pull=(dist-54)/dist*(hub.group==='driver'?.002:.007)*(selected?1.65:1);
     node.vx+=dx*pull;
     node.vy+=dy*pull;
   }
@@ -393,25 +394,57 @@ function stepNetwork() {
 function paintNetwork() {
   const {points,hubs,links,width,height}=simulation;
   for(const node of [...points,...hubs]) node.el.setAttribute('transform','translate('+node.x.toFixed(1)+' '+node.y.toFixed(1)+')');
-  for(const {node,hub,el} of links) {
-    el.setAttribute('x1',node.x);el.setAttribute('y1',node.y);
-    el.setAttribute('x2',hub.x);el.setAttribute('y2',hub.y);
+  if (simulation.compact) {
+    // Batch mobile links by appearance instead of updating every SVG line.
+    const paths = ['','','',''];
+    for(const {node,hub,lit} of links) {
+      const index=(hub.group==='driver'?1:0)+(lit?2:0);
+      paths[index]+='M'+Math.round(node.x)+' '+Math.round(node.y)+'L'+Math.round(hub.x)+' '+Math.round(hub.y);
+    }
+    paths.forEach((d,i)=>network.firstElementChild.children[i].setAttribute('d',d));
+  } else {
+    for(const {node,hub,el} of links) {
+      el.setAttribute('x1',node.x);el.setAttribute('y1',node.y);
+      el.setAttribute('x2',hub.x);el.setAttribute('y2',hub.y);
+    }
   }
   for(const node of points) positions.set(node.id,{x:node.x/width,y:node.y/height});
 }
 function settleNetwork() {
   cancelAnimationFrame(animation);
-  if(reducedMotion.matches) {
-    for(let i=0;i<80;i++) stepNetwork();
-    paintNetwork();return;
+  if (!simulation || !inView || document.hidden) return;
+  if (reducedMotion.matches) {
+    for(let i=0;i<32;i++) stepNetwork();
+    paintNetwork();
+    return;
   }
-  let frames=0;
-  function tick() {
-    stepNetwork();paintNetwork();
-    if(++frames<165 || dragged) animation=requestAnimationFrame(tick);
+  const compact = simulation.compact;
+  let remaining = compact ? 64 : 165;
+  let previous = -Infinity;
+  function tick(time) {
+    if (document.hidden || !inView) return;
+    if (!compact || time-previous >= 32) {
+      previous=time;
+      stepNetwork();
+      paintNetwork();
+      remaining--;
+    }
+    if (remaining>0) animation=requestAnimationFrame(tick);
   }
-  tick();
+  tick(performance.now());
 }
+function syncActivity() {
+  cancelAnimationFrame(animation);
+  dragged=null;
+  if (inView && !document.hidden && simulation) settleNetwork();
+}
+new IntersectionObserver(([entry])=>{
+  if (inView!==entry.isIntersecting) {
+    inView=entry.isIntersecting;
+    syncActivity();
+  }
+}).observe(network);
+document.addEventListener('visibilitychange',syncActivity);
 function activateNode(event) {
   const el=event.target.closest('[data-record-id],[data-group]');
   if(!el) return;
@@ -430,7 +463,7 @@ network.addEventListener('keydown',event=>{
 });
 network.addEventListener('pointerdown',event=>{
   const el=event.target.closest('[data-record-id]');
-  if(compactNetwork.matches || !el || event.button!==0) return;
+  if(!el || !event.isPrimary || event.button!==0) return;
   dragged={node:simulation.points.find(n=>n.id===el.dataset.recordId),x:event.clientX,y:event.clientY,pointer:event.pointerId};
   suppressClick=false;
   el.setPointerCapture(event.pointerId);
@@ -441,16 +474,19 @@ network.addEventListener('pointermove',event=>{
   const pos=new DOMPoint(event.clientX,event.clientY).matrixTransform(network.getScreenCTM().inverse());
   dragged.node.x=Math.max(13,Math.min(simulation.width-13,pos.x));
   dragged.node.y=Math.max(13,Math.min(simulation.height-13,pos.y));
-  if(!suppressClick) {suppressClick=true;hideAtlasPreview();settleNetwork()}
-  paintNetwork();
+  if(!suppressClick) {suppressClick=true;hideAtlasPreview()}
+  // Coalesce touch events into a single display update.
+  cancelAnimationFrame(animation);
+  animation=requestAnimationFrame(()=>{stepNetwork();paintNetwork()});
 });
-function endDrag() {
-  if(!dragged) return;
+function endDrag(event) {
+  if(!dragged || event.pointerId!==dragged.pointer) return;
   dragged=null;
   if(suppressClick) {settleNetwork();setTimeout(()=>{suppressClick=false},0)}
 }
 network.addEventListener('pointerup',endDrag);
 network.addEventListener('pointercancel',endDrag);
+network.addEventListener('lostpointercapture',endDrag);
 function inspectNode(event) {
   if(compactNetwork.matches || dragged) return;
   const el=event.target.closest('[data-record-id],[data-group]');

@@ -647,9 +647,9 @@ button,input,select,textarea,svg text {font-family:var(--site-font)}
   .home .dwelling-spread p {padding-bottom:.5rem}
 }
 @media(max-width:820px), (pointer:coarse) {
-  .network-workbench .net-point {touch-action:auto;cursor:pointer}
-  .network-workbench .force-edge:not(.lit) {display:none}
-  .network-workbench .net-point circle {r:14px}
+  .network-workbench .net-point {touch-action:none;cursor:grab}
+  .network-workbench .force-edge {fill:none;pointer-events:none}
+  .network-workbench .net-point circle {r:11px}
   .network-workbench .atlas-preview {display:none}
 }
 
