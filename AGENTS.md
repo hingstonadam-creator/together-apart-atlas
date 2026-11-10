@@ -31,11 +31,36 @@ Prioritise substantive Australian papers, reports and documented built projects.
 
 ## Site navigation and exegesis
 
-Use four main pages in this order: Home, Exegesis, Research and About. Home keeps its opening title, question and courtyard image, followed by the scrollable illustrated overview. Each chapter heading and contents item links to the corresponding chapter subpage.
+Keep the four main pages in order — Home, Exegesis, Research and About. The Research navigation item opens the atlas dashboard. The Research panel on Home opens chapter 02 of the exegesis. Link each exegesis contents item to its corresponding chapter subpage.
 
 Exegesis presents the complete public-facing manuscript as one continuous read. Provide individually addressable chapters in the same order: Position, Research, Design approach, Development, Proposal and Reflection. Keep each chapter consistent with its passage in the continuous version. Include relevant project images, captions and further reading drawn from the atlas. Keep draft production notes and private source links out of the public document.
 
 Research retains its dashboard, six-question framework and source filters. Place architectural implications inside their research entries. About holds Adam’s short profile and verified social links. Add further accounts when Adam supplies the URLs.
+
+## Home landing page
+
+Keep the existing project title, opening question and supplied courtyard cover image together at the top. Follow them with a visual contents page for the exegesis. Use the reference landing page’s warm ivory ground, near-black type, fine grey rules and restrained vermilion accents. Use tightly spaced uppercase headings, small monospaced chapter numbers, square corners and generous space around each figure. Apply accent colours to the interface while preserving the colours in supplied drawings.
+
+Arrange six chapter panels in three columns and two rows on wide screens, reducing to two columns and then one as space narrows. Preserve the reading order below. Give each panel its chapter number, an image slot, the exact title and a short introduction drawn from the current manuscript. Use these editorial prompts when choosing the introduction.
+
+| Chapter | Title and destination | Editorial focus |
+| --- | --- | --- |
+| 01 | [Position](https://hingstonadam.github.io/together-apart-atlas/exegesis/position/) | Introduce the question of proximity between households with independent front doors and routines. |
+| 02 | [Research](https://hingstonadam.github.io/together-apart-atlas/exegesis/research/) | Introduce a documented finding that informs the housing inquiry. |
+| 03 | [Design approach](https://hingstonadam.github.io/together-apart-atlas/exegesis/design-approach/) | Explain how DEFINE, EXTEND and MEDIATE guide a decision in plan or section. |
+| 04 | [Development](https://hingstonadam.github.io/together-apart-atlas/exegesis/development/) | Trace a revision through dated drawings and explain what prompted it. |
+| 05 | [Proposal](https://hingstonadam.github.io/together-apart-atlas/exegesis/proposal/) | Introduce the current dwelling arrangements, giving priority to related households in independent homes. |
+| 06 | [Reflection](https://hingstonadam.github.io/together-apart-atlas/exegesis/reflection/) | Identify what the design has demonstrated and a question the manuscript leaves open. |
+
+Make each panel one keyboard-accessible link with a visible focus state. Keep titles and introductions as selectable text outside the images. Verify that the Research panel opens chapter 02 and the Research navigation item opens the atlas dashboard.
+
+Close Home with a split layout. Place one supplied project image beside the heading **Ways of living together, apart** and three ruled accordion rows for Stacked homes, Side-by-side homes and XL dwelling. Open Stacked homes by default. Draw each description from the current Proposal chapter and finish with an **Explore the proposal** link to chapter 05. On narrow screens, stack the image above the text.
+
+### Supplied images only
+
+Adam supplies all imagery. Use existing approved project assets or files he provides. Do not generate images, draw substitute diagrams, source stock imagery or recreate missing artwork in code. While artwork is pending, reserve its space with a plain ivory HTML placeholder, a fine grey border and a short text label such as “Chapter 04 image”. Keep placeholder-instruction PNGs out of public pages.
+
+Preserve the proportions, annotations and credits of supplied drawings. Fit the full figure inside its slot and write alt text describing the actual image once supplied. Continue exporting optimised copies from supplied masters through the existing publishing workflow.
 
 ## Website drawing files
 
@@ -109,4 +134,3 @@ Write in Australian English, use metric units and retain the project’s termino
 Use three identical plan fragments for DEFINE / EXTEND / MEDIATE. Keep scale and orientation fixed and change only the overlay. Use the latest agreed household colours and distinguish a route from a place where someone stops. For the poster, follow the latest Montserrat layout on one portrait sheet, B0 maximum, with a reading hierarchy at roughly 6 m, 1 m and 0.5 m.
 
 The T3 review is scheduled for 13 November 2026. Prioritise dwelling relationships, routes between front doors, inhabited thresholds and lived-in interiors for that review. Refresh the milestone from the current brief or Adam’s direction once it passes.
-
