@@ -582,3 +582,60 @@ button,input,select,textarea,svg text {font-family:var(--site-font)}
   .about-journal main {padding-top:2rem}
   .research-journal .atlas-layout {grid-template-columns:minmax(0,1fr)}
 }
+
+/* Research network and its linked breakdown */
+.research-journal #research-atlas {padding-top:0}
+.research-journal .network-controls {
+  display:flex;flex-wrap:wrap;align-items:end;gap:.75rem;
+  margin-top:1.6rem;padding:1rem 0;border-block:1px solid var(--line);
+}
+.network-controls label,.network-breakdown label {
+  display:grid;gap:.35rem;font-weight:600;font-size:.78rem;
+}
+.network-controls label:first-child {flex:1 1 13rem}
+.network-controls :is(input,select),.network-breakdown select,
+.network-status button,.network-controls button {
+  font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);
+  min-height:2.6rem;padding:.5rem .75rem;max-width:100%;
+}
+.network-controls button,.network-status button {cursor:pointer;color:var(--clay);font-size:.8rem}
+.network-status {display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap;padding:.85rem 0;font-size:.83rem}
+.network-status p {margin:0}
+.network-workbench {display:grid;grid-template-columns:minmax(0,1fr) minmax(12.5rem,24%);gap:1.15rem;align-items:start}
+.network-workbench .atlas-map-wrap {background:var(--paper)}
+.network-workbench #atlas-map {min-height:0;height:auto}
+.force-edge {stroke:var(--ink);stroke-width:.8;opacity:.13;pointer-events:none}
+.force-edge.driver-edge {stroke:var(--clay);stroke-dasharray:3 3;opacity:.3}
+.force-edge.lit {stroke:var(--clay);stroke-width:2;opacity:1}
+.force-hub {cursor:pointer}
+.force-hub circle {stroke:var(--paper);stroke-width:2}
+.force-hub:is(:focus-visible,:hover,[aria-pressed=true]) circle {stroke:var(--ink)}
+.force-hub text {font-size:10px;font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3px}
+.net-point {cursor:grab;touch-action:none}
+.net-point:active {cursor:grabbing}
+.net-point circle {fill:var(--paper);stroke:var(--line)}
+.net-point text {font-size:10px;fill:var(--ink);font-variant-numeric:tabular-nums}
+.net-point[aria-pressed=true] circle {fill:var(--clay);stroke:var(--clay)}
+.net-point[aria-pressed=true] text {fill:var(--paper)}
+.net-point:is(:hover,:focus-visible) circle {stroke:var(--ink);stroke-width:2}
+.network-breakdown {border-left:1px solid var(--line);padding-left:1rem}
+.network-breakdown h2 {margin:0 0 .85rem;font-size:1.35rem}
+.network-breakdown .plot {display:block;margin:.75rem 0 0}
+.network-breakdown #chart {width:min(100%,9rem);margin:.75rem auto;display:block}
+.network-breakdown #legend button {width:100%;border:0;border-bottom:1px solid var(--line);margin:0;padding:.45rem .15rem;font-size:.8rem}
+.network-breakdown #legend button[aria-pressed=true] {outline:none;background:var(--light);font-weight:700}
+.network-breakdown #legend button:focus-visible {outline:2px solid var(--clay)}
+.network-selection {padding:1.25rem clamp(1rem,3vw,2rem);background:var(--light);border-left:3px solid var(--clay);margin:1rem 0}
+.network-selection h3 {font-size:clamp(1.2rem,2.5vw,1.9rem)}
+.research-journal :is(#additional-filters,#sources) {border-top:1px solid var(--line)}
+.research-journal .explorer-status:has(button[hidden]) {display:none}
+.network-workbench .atlas-preview {top:auto;bottom:.5rem}
+@media(max-width:1050px) {
+  .network-workbench {grid-template-columns:minmax(0,1fr)}
+  .network-breakdown {padding:1rem 0 0;border-left:0;border-top:1px solid var(--line)}
+  .network-breakdown .plot:not(.explore-plot) {display:grid;grid-template-columns:minmax(5rem,.6fr) 1fr;align-items:start}
+}
+@media(max-width:600px) {
+  .network-controls label {flex:1 1 42%;min-width:0}
+  .network-controls label:first-child {flex-basis:100%}
+}
