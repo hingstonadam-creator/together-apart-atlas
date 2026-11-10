@@ -194,7 +194,7 @@ function entry(record) {
   const interpretation = atlasEvidenceBlock('Tentative interpretation',record.interpretation,'interpretation','This is an application or reading of the evidence, not the evidence itself.');
   const implication = atlasEvidenceBlock('Design implication',record.implication,'implication','A proposed spatial consequence to test in plan or section.');
   const openQuestion = atlasEvidenceBlock('Open question',record.question,'question','Not yet recorded where the register leaves this field blank.');
-  return '<details><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><div class="entry"><p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+verified+quote+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><div class="entry-evidence-sections">'+interpretation+implication+openQuestion+'</div><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details><p>'+source+' &nbsp; '+notion+'</p></div></details>';
+  return '<details><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><article class="entry">'+verified+'<p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+quote+'<p>'+source+' &nbsp; '+notion+'</p>'+implication+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><div class="entry-evidence-sections">'+interpretation+openQuestion+'</div><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details></article></details>';
 }
 function research() {
   const term = byId('search').value.trim().toLowerCase();
@@ -216,6 +216,7 @@ function research() {
   const [driver,lensIndex]=matrixFilter.split('|');
   byId('activeExplorers').textContent=[matrixFilter && driver+' / '+lenses[lensIndex],keywordFilter].filter(Boolean).join(' · ');
   byId('clearExplorers').hidden=!(matrixFilter || keywordFilter);
+  byId('chart-status').textContent = [chartFilter, matrixFilter && driver+' / '+lenses[lensIndex], keywordFilter].filter(Boolean).concat(rows.length+' of '+records.length+' sources').join(' · ');
   byId('showMatches').hidden=!(chartFilter || matrixFilter || keywordFilter);
   byId('showMatches').textContent = 'View '+rows.length+' matching '+(rows.length===1?'source':'sources')+' ↓';
   byId('results').innerHTML = rows.map(entry).join('');

@@ -31,12 +31,13 @@ document.addEventListener('keydown', event => {
 
 if (continuous) {
   function updateChapter() {
-    const boundary = compact.matches ? toggle.offsetHeight + 28 : 40;
+    const boundary = compact.matches ? Math.max(toggle.offsetHeight + 28, 98) : 40;
     let active = -1;
     for (let i = 0; i < chapters.length; i++) {
       if (chapters[i].getBoundingClientRect().top > boundary) break;
       active = i;
     }
+    if (window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) active = links.length - 1;
     links.forEach((link, i) => {
       if (i === active) link.setAttribute('aria-current', 'location');
       else link.removeAttribute('aria-current');
