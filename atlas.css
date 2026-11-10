@@ -603,6 +603,8 @@ button,input,select,textarea,svg text {font-family:var(--site-font)}
 .force-hub {cursor:pointer}
 .force-hub circle {stroke:var(--paper);stroke-width:2}
 .force-hub:is(:focus-visible,:hover,[aria-pressed=true]) circle {stroke:var(--ink)}
+.force-hub[aria-pressed=true] circle {stroke:var(--clay);stroke-width:4}
+.force-hub[aria-pressed=true] text {fill:var(--clay);text-decoration:underline}
 .force-hub text {font-size:10px;font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3px}
 .net-point {cursor:grab;touch-action:none}
 .net-point:active {cursor:grabbing}
