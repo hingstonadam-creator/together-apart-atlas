@@ -82,3 +82,43 @@
   .j-spread {display: block}
   .j-spread > figure {max-width: var(--measure)}
 }
+
+/* Site masthead and chapter navigation */
+.journal > .masthead {
+  width: 100%; min-height: 0; padding: 14px clamp(18px, 2.6vw, 46px);
+  flex-flow: row nowrap; align-items: center; justify-content: space-between;
+  gap: 1rem; border-bottom: 1px solid var(--line);
+}
+.masthead .brand {font-size: 1rem; letter-spacing: -.045em; white-space: nowrap}
+.masthead nav {justify-content: flex-end; flex-wrap: wrap; gap: .45rem 1rem}
+.masthead nav a {padding: 0; font-size: .9rem}
+.masthead [aria-current] {color: var(--clay); box-shadow: none}
+.journal main .action {border-radius: 7px}
+.j-cover h1, .j-manuscript > h1 {text-transform: none}
+.j-title {font-size: clamp(2.5rem, 5.2vw, 4.75rem)}
+.journal .chapter-index ol {display: block; margin: 0; padding-left: 1.8em}
+.journal .chapter-index li {padding: 0}
+.chapter-index li::marker {color: var(--clay); font: .78rem ui-monospace, monospace}
+.chapter-index li a {display: block; padding: .7em 0}
+.reader-bar {
+  position: sticky; top: 0; z-index: 4; display: flex; justify-content: space-between;
+  align-items: center; gap: 1rem; padding: .45rem 0; background: var(--paper);
+  border-bottom: 1px solid var(--line); font-size: .9rem;
+}
+.reader-bar details {position: relative; border: 0}
+.reader-bar summary {font: inherit; font-weight: 650; padding: .65rem .8rem; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 7px; color: var(--ink)}
+.reader-list {position: absolute; top: calc(100% + 4px); width: min(18rem,84vw);
+  max-height: 58vh; overflow-y: auto; background: var(--paper); border: 1px solid var(--line);
+  border-radius: 10px; box-shadow: 0 5px 15px #28282320; padding: .4rem}
+.reader-list a {display: block; padding: .6rem .8rem}
+.reader-list a:hover,.reader-list [aria-current] {background: var(--light); box-shadow: none}
+.j-chapter {scroll-margin-top: 5rem}
+.reader-bar + .j-chapter {margin-top: 0; border-top: 0}
+.journal .chapter-nav {align-items: center; margin: 2rem 0; gap: .6rem; padding-top: 1rem}
+.chapter-nav a {padding: .7rem .9rem; border: 1px solid var(--line); border-radius: 7px}
+.chapter-nav a[href$="#contents"] {border-color: transparent}
+@media(max-width:600px){
+  .masthead nav a,.reader-bar a {font-size:.8rem}
+  .masthead nav {column-gap:.65rem}
+}
