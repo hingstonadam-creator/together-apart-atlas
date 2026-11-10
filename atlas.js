@@ -185,11 +185,16 @@ function entry(record) {
   const collected = record.dateCollected ? '<time datetime="'+esc(record.dateCollected)+'">'+collectedFormat.format(new Date(record.dateCollected.length === 10 ? record.dateCollected+'T00:00:00Z' : record.dateCollected))+'</time>' : 'Not recorded';
   const reference = record.exegesisNumber ? '<p>Exegesis manuscript reference · R'+esc(record.exegesisNumber)+'</p>' : '';
   const source = record.url ? '<a href="'+esc(record.url)+'" target="_blank" rel="noopener">Original source ↗</a>' : 'Source recorded in the Graduate Project register. No public link supplied.';
-  const terms = Object.entries(fields).map(([key,title]) => '<dt>'+title+'</dt><dd>'+esc(Array.isArray(record[key]) ? (record[key].join(' · ') || 'Unknown') : record[key])+'</dd>').join('');
+  const notion = record.notionPageId ? '<a href="'+esc(atlasNotionUrl(record))+'" target="_blank" rel="noopener">Open in Notion ↗</a>' : 'Notion page ID not recorded.';
+  const terms = Object.entries(fields).map(([key,title]) => '<dt>'+title+'</dt><dd>'+atlasText(record[key], 'Unknown')+'</dd>').join('');
   const answers=record.answers || [record.location+' · '+record.type, null, record.evidence, null, null, record.implication];
   const answerList=questions.map(([title],i)=>'<li><strong>'+title+'</strong><p>'+esc(answers[i] || 'Not yet recorded')+'</p></li>').join('');
   const quote=record.quote ? '<blockquote>'+esc(record.quote)+'<cite> — '+esc(record.author)+(record.quoteLocation?', '+esc(record.quoteLocation):'')+'</cite></blockquote>' : '';
-  return '<details><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><div class="entry"><p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+'<h3>Key insight</h3><p>'+esc(record.insight || record.interpretation || 'Not yet recorded')+'</p>'+quote+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details><p>'+source+'</p></div></details>';
+  const verified = atlasEvidenceBlock('Verified finding',record.insight,'verified','The recorded Key Insight is shown separately from interpretation.');
+  const interpretation = atlasEvidenceBlock('Tentative interpretation',record.interpretation,'interpretation','This is an application or reading of the evidence, not the evidence itself.');
+  const implication = atlasEvidenceBlock('Design implication',record.implication,'implication','A proposed spatial consequence to test in plan or section.');
+  const openQuestion = atlasEvidenceBlock('Open question',record.question,'question','Not yet recorded where the register leaves this field blank.');
+  return '<details><summary><small>'+esc(entryLabel)+'</small>'+esc(record.title)+'<span>'+'Type · '+esc(record.type)+' / Method · '+esc(record.method || 'Not yet recorded')+' / Date collected · '+collected+'</span></summary><div class="entry"><p>'+esc(record.author)+'</p>'+reference+(record.context?'<p>'+esc(record.context)+'</p>':'')+verified+quote+'<details class="entry-questions" '+(wideResearchLayout.matches?'open':'')+'><summary>Six questions and answers</summary><ol class="answers">'+answerList+'</ol></details><div class="entry-evidence-sections">'+interpretation+implication+openQuestion+'</div><details><summary>Evidence and spatial details</summary><dl>'+terms+'</dl></details><p>'+source+' &nbsp; '+notion+'</p></div></details>';
 }
 function research() {
   const term = byId('search').value.trim().toLowerCase();
@@ -218,6 +223,233 @@ function research() {
 }
 document.querySelector('.filters').addEventListener('change',research);
 byId('search').addEventListener('input',research);
+
+const atlasState = {driver:'',theme:'',search:'',selected:''};
+let atlasInitialised = false;
+const atlasDriverColours = {Define:'#a95d46',Extend:'#687f70',Mediate:'#516f8c'};
+const atlasThemeColours = ['#a95d46','#687f70','#516f8c','#aa8a48','#796981','#766c5d','#547c82','#93706a'];
+
+function atlasText(value, fallback='Not yet recorded') {
+  if (Array.isArray(value)) {
+    const values = value.filter(item => item !== null && item !== undefined && String(item).trim() !== '');
+    return values.length ? esc(values.join(' · ')) : esc(fallback);
+  }
+  return value !== null && value !== undefined && String(value).trim() !== '' ? esc(value) : esc(fallback);
+}
+function atlasDrivers(record) {
+  const source = Array.isArray(record.drivers) && record.drivers.length ? record.drivers : (record.driver ? [record.driver] : []);
+  return [...new Set(source.filter(driver => drivers.includes(driver)))];
+}
+function atlasThemesFor(record) {
+  const values = Array.isArray(record.themes) ? record.themes.filter(Boolean) : [];
+  return values.length ? [...new Set(values)] : ['Theme not recorded'];
+}
+function atlasNotionUrl(record) {
+  const pageId = record.notionPageId || '';
+  return pageId ? 'https://www.notion.so/'+pageId.split('-').join('') : '';
+}
+function atlasEvidenceBlock(label,value,kind,note) {
+  const missing = value === null || value === undefined || (Array.isArray(value) && !value.length) || String(value).trim() === '';
+  return '<section class="atlas-evidence-card '+kind+(missing?' placeholder':'')+'"><h4>'+esc(label)+(missing?' <span class="atlas-placeholder-label">PLACEHOLDER</span>':'')+'</h4><p>'+atlasText(value)+'</p><small>'+esc(note)+'</small></section>';
+}
+function atlasSearchable(record) {
+  return Object.values(record).map(value => Array.isArray(value) ? value.join(' ') : value || '').join(' ').toLowerCase();
+}
+function atlasFilteredRows() {
+  const term = atlasState.search.trim().toLowerCase();
+  return records.filter(record =>
+    (!atlasState.driver || atlasDrivers(record).includes(atlasState.driver)) &&
+    (!atlasState.theme || atlasThemesFor(record).includes(atlasState.theme)) &&
+    (!term || atlasSearchable(record).includes(term))
+  );
+}
+function atlasBadge(label,colour) {
+  return '<span class="atlas-badge" style="--badge-colour:'+colour+'">'+esc(label)+'</span>';
+}
+function atlasDetail(record) {
+  if (!record) return '<p class="eyebrow">Selected data point</p><h3>No matching point</h3><p>Clear an atlas filter to return to the full register.</p>';
+  const rowLabel = record.number == null ? 'Data point · number not recorded' : 'Data point '+record.number;
+  const driverBadges = atlasDrivers(record).map(driver => atlasBadge(driver.toUpperCase(),atlasDriverColours[driver])).join('');
+  const themeBadges = atlasThemesFor(record).map((theme,index) => atlasBadge(theme,atlasThemeColours[index % atlasThemeColours.length])).join('');
+  const sourceMeta = [record.author,record.type,record.method].filter(Boolean).map(esc).join(' · ') || 'Source details not recorded';
+  const sourceLink = record.url ? '<a href="'+esc(record.url)+'" target="_blank" rel="noopener">Original source ↗</a>' : '<span>Original source link not supplied</span>';
+  const notionLink = record.notionPageId ? '<a href="'+esc(atlasNotionUrl(record))+'" target="_blank" rel="noopener">Open this data point in Notion ↗</a>' : '<span>Direct Notion link not recorded</span>';
+  const notes = [
+    ['Location',record.location],
+    ['Dwelling mix',record.mix],
+    ['Access strategy',record.access],
+    ['Shared spaces',record.shared],
+    ['Information collected',record.information],
+    ['Connection note',record.connectionNote]
+  ].map(([label,value]) => '<dt>'+label+'</dt><dd>'+atlasText(value,'Unknown')+'</dd>').join('');
+  return '<div class="atlas-detail-head"><p class="eyebrow">'+esc(rowLabel)+'</p><h3>'+esc(record.title)+'</h3><p class="atlas-detail-meta">'+sourceMeta+'</p><div class="atlas-badges">'+driverBadges+themeBadges+'</div></div>'+
+    '<div class="atlas-meta-grid"><div><span>Evidence quality</span><strong>'+atlasText(record.reliability || record.quality,'Unassessed')+'</strong></div><div><span>Collected</span><strong>'+atlasText(record.dateCollected,'Not recorded')+'</strong></div></div>'+
+    atlasEvidenceBlock('Verified finding',record.insight,'verified','Recorded Key Insight from the Notion snapshot; read with the evidence below.')+
+    atlasEvidenceBlock('Documented evidence',record.evidence,'verified','Evidence / quote recorded against this data point.')+
+    (record.quote ? '<blockquote>'+esc(record.quote)+(record.quoteLocation?' <cite>· '+esc(record.quoteLocation)+'</cite>':'')+'</blockquote>' : '')+
+    atlasEvidenceBlock('Tentative interpretation',record.interpretation,'interpretation','An interpretation is not presented as verified evidence.')+
+    atlasEvidenceBlock('Design implication',record.implication,'implication','A proposed Southwark Grounds drawing test, not a claim about the source.')+
+    atlasEvidenceBlock('Open question',record.question,'question','Kept visible so gaps in the research remain legible.')+
+    '<section class="atlas-notes"><h4>Notes</h4><dl>'+notes+'</dl></section>'+
+    '<section class="atlas-links"><h4>Source links</h4><p>'+sourceLink+'</p><p>'+notionLink+'</p></section>';
+}
+function atlasPreview(record) {
+  if (!record) return;
+  const finding = record.insight || record.evidence || 'Verified finding not yet recorded.';
+  const driver = atlasDrivers(record).map(item => item.toUpperCase()).join(' · ') || 'No driver recorded';
+  byId('atlas-preview').innerHTML = '<p class="eyebrow">'+esc(record.number == null ? 'Data point' : 'Data point '+record.number)+'</p><strong>'+esc(record.title)+'</strong><p>'+esc(finding)+'</p><small>'+esc(driver)+'</small>';
+  byId('atlas-preview').hidden = false;
+}
+function hideAtlasPreview() {
+  byId('atlas-preview').hidden = true;
+}
+function atlasSelect(recordId,scrollToDetail) {
+  const record = records.find(item => item.id === recordId);
+  if (!record) return;
+  atlasState.selected = record.id;
+  renderAtlas();
+  if (scrollToDetail) byId('atlas-detail').scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+function atlasNodePosition(index) {
+  const columns = 12;
+  return {x:72+(index % columns)*76,y:370+Math.floor(index / columns)*48};
+}
+function renderAtlasMap(rows) {
+  const width = 980;
+  const columns = 12;
+  const height = Math.max(560,390+Math.ceil(rows.length / columns)*48);
+  const themeNames = [...new Set(rows.flatMap(atlasThemesFor))].sort((a,b)=>a.localeCompare(b));
+  const themePositions = new Map(themeNames.map((theme,index) => {
+    const span = themeNames.length > 1 ? 820/(themeNames.length-1) : 0;
+    return [theme,{x:themeNames.length > 1 ? 80+index*span : 490,y:225}];
+  }));
+  const driverPositions = {Define:{x:170,y:72},Extend:{x:490,y:72},Mediate:{x:810,y:72}};
+  const positions = new Map(rows.map((record,index) => [record.id,atlasNodePosition(index)]));
+  const edges = [];
+  rows.forEach(record => {
+    const node = positions.get(record.id);
+    atlasThemesFor(record).forEach(theme => {
+      const target = themePositions.get(theme);
+      edges.push('<line class="atlas-edge theme-edge" x1="'+node.x+'" y1="'+node.y+'" x2="'+target.x+'" y2="'+target.y+'"></line>');
+    });
+    atlasDrivers(record).forEach(driver => {
+      const target = driverPositions[driver];
+      edges.push('<line class="atlas-edge driver-edge" x1="'+node.x+'" y1="'+node.y+'" x2="'+target.x+'" y2="'+target.y+'"></line>');
+    });
+  });
+  const driverNodes = drivers.map(driver => '<g class="atlas-driver-node" aria-label="'+driver+' driver"><circle cx="'+driverPositions[driver].x+'" cy="'+driverPositions[driver].y+'" r="34" fill="'+atlasDriverColours[driver]+'"></circle><text x="'+driverPositions[driver].x+'" y="'+(driverPositions[driver].y+4)+'" text-anchor="middle">'+driver.toUpperCase()+'</text></g>').join('');
+  const themeNodes = themeNames.map((theme,index) => {
+    const point = themePositions.get(theme);
+    const count = rows.filter(record => atlasThemesFor(record).includes(theme)).length;
+    return '<g class="atlas-theme-node" tabindex="0" role="button" data-atlas-theme="'+esc(theme)+'" aria-label="Theme '+esc(theme)+', '+count+' data points"><circle cx="'+point.x+'" cy="'+point.y+'" r="24" fill="'+atlasThemeColours[index % atlasThemeColours.length]+'"></circle><text x="'+point.x+'" y="'+(point.y+4)+'" text-anchor="middle">'+esc(String(index+1).padStart(2,'0'))+'</text><title>'+esc(theme)+' · '+count+' data points</title></g>';
+  }).join('');
+  const dataNodes = rows.map(record => {
+    const point = positions.get(record.id);
+    const driver = atlasDrivers(record)[0];
+    const colour = driver ? atlasDriverColours[driver] : '#8c877a';
+    const selected = atlasState.selected === record.id;
+    const label = record.number == null ? 'Data point' : 'Data point '+record.number;
+    return '<g class="atlas-node'+(selected?' selected':'')+'" tabindex="0" role="button" data-record-id="'+esc(record.id)+'" aria-selected="'+selected+'" aria-label="'+esc(label+' · '+record.title)+'" style="--node-colour:'+colour+'"><circle cx="'+point.x+'" cy="'+point.y+'" r="'+(selected?10:7)+'"></circle><text x="'+point.x+'" y="'+(point.y+3)+'" text-anchor="middle">'+esc(record.number == null ? '·' : record.number)+'</text><title>'+esc(label+' · '+record.title)+'</title></g>';
+  }).join('');
+  byId('atlas-map').setAttribute('viewBox','0 0 '+width+' '+height);
+  byId('atlas-map').innerHTML = '<g class="atlas-edges">'+edges.join('')+'</g><g class="atlas-drivers">'+driverNodes+'</g><g class="atlas-theme-nodes">'+themeNodes+'</g><g class="atlas-data-nodes">'+dataNodes+'</g>';
+}
+function renderAtlasThemes(rows) {
+  const groups = new Map();
+  rows.forEach(record => atlasThemesFor(record).forEach(theme => {
+    if (!groups.has(theme)) groups.set(theme,[]);
+    groups.get(theme).push(record);
+  }));
+  const html = [...groups.entries()].sort(([a],[b])=>a.localeCompare(b)).map(([theme,items]) => {
+    const list = items.sort((a,b)=>(a.number ?? 9999)-(b.number ?? 9999)).map(record => '<li><button type="button" data-atlas-record-id="'+esc(record.id)+'"><span>'+esc(record.number == null ? 'DP' : 'DP '+String(record.number).padStart(3,'0'))+'</span>'+esc(record.title)+'</button></li>').join('');
+    return '<details class="atlas-theme-group" '+(atlasState.theme===theme?'open':'')+'><summary><span>'+esc(theme)+'</span><small>'+items.length+' '+(items.length===1?'point':'points')+'</small></summary><ol>'+list+'</ol></details>';
+  }).join('');
+  byId('atlas-themes').innerHTML = html || '<p>No research themes match the current filters.</p>';
+}
+function renderAtlas() {
+  const rows = atlasFilteredRows();
+  if (!rows.some(record => record.id === atlasState.selected)) atlasState.selected = rows[0]?.id || '';
+  renderAtlasMap(rows);
+  renderAtlasThemes(rows);
+  const selected = rows.find(record => record.id === atlasState.selected);
+  byId('atlas-detail').innerHTML = atlasDetail(selected);
+  byId('atlas-map-status').textContent = rows.length+' of '+records.length+' data points shown. Driver links appear only where DEFINE, EXTEND or MEDIATE are recorded.';
+  byId('atlas-clear').hidden = !(atlasState.driver || atlasState.theme || atlasState.search);
+  document.querySelectorAll('[data-atlas-driver]').forEach(button => {
+    button.setAttribute('aria-pressed',String((button.dataset.atlasDriver || '') === atlasState.driver));
+  });
+  byId('atlas-theme').value = atlasState.theme;
+}
+function initAtlas() {
+  if (!atlasInitialised) {
+    const themeSelect = byId('atlas-theme');
+    [...new Set(records.flatMap(atlasThemesFor))].sort((a,b)=>a.localeCompare(b)).forEach(theme => themeSelect.add(new Option(theme,theme)));
+    document.querySelectorAll('[data-atlas-driver]').forEach(button => button.addEventListener('click',() => {
+      atlasState.driver = button.dataset.atlasDriver || '';
+      renderAtlas();
+    }));
+    byId('atlas-search').addEventListener('input',event => {
+      atlasState.search = event.target.value;
+      renderAtlas();
+    });
+    byId('atlas-theme').addEventListener('change',event => {
+      atlasState.theme = event.target.value;
+      renderAtlas();
+    });
+    byId('atlas-clear').addEventListener('click',() => {
+      atlasState.driver='';atlasState.theme='';atlasState.search='';atlasState.selected='';
+      byId('atlas-search').value='';
+      renderAtlas();
+    });
+    byId('atlas-map').addEventListener('mouseover',event => {
+      const node=event.target.closest('[data-record-id]');
+      if (node) atlasPreview(records.find(record => record.id===node.dataset.recordId));
+      const theme=event.target.closest('[data-atlas-theme]');
+      if (theme) {
+        const name=theme.dataset.atlasTheme;
+        const count=atlasFilteredRows().filter(record => atlasThemesFor(record).includes(name)).length;
+        byId('atlas-preview').innerHTML='<p class="eyebrow">Research theme</p><strong>'+esc(name)+'</strong><p>'+count+' data points currently connect to this theme.</p><small>Select the theme node to filter.</small>';
+        byId('atlas-preview').hidden=false;
+      }
+    });
+    byId('atlas-map').addEventListener('mouseleave',hideAtlasPreview);
+    byId('atlas-map').addEventListener('focusin',event => {
+      const node=event.target.closest('[data-record-id]');
+      if (node) atlasPreview(records.find(record => record.id===node.dataset.recordId));
+    });
+    byId('atlas-map').addEventListener('focusout',hideAtlasPreview);
+    byId('atlas-map').addEventListener('click',event => {
+      const node=event.target.closest('[data-record-id]');
+      if (node) return atlasSelect(node.dataset.recordId,true);
+      const theme=event.target.closest('[data-atlas-theme]');
+      if (theme) {
+        atlasState.theme=theme.dataset.atlasTheme;
+        atlasState.selected='';
+        renderAtlas();
+      }
+    });
+    byId('atlas-map').addEventListener('keydown',event => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      const node=event.target.closest('[data-record-id]');
+      const theme=event.target.closest('[data-atlas-theme]');
+      if (!node && !theme) return;
+      event.preventDefault();
+      if (node) atlasSelect(node.dataset.recordId,true);
+      if (theme) {
+        atlasState.theme=theme.dataset.atlasTheme;
+        atlasState.selected='';
+        renderAtlas();
+      }
+    });
+    byId('atlas-themes').addEventListener('click',event => {
+      const button=event.target.closest('[data-atlas-record-id]');
+      if (button) atlasSelect(button.dataset.atlasRecordId,true);
+    });
+    atlasInitialised = true;
+  }
+  renderAtlas();
+}
+
 async function loadResearch() {
   try {
     const response = await fetch('../research.json');
@@ -225,6 +457,7 @@ async function loadResearch() {
     records = await response.json();
     keywordIndex = new Map(records.map(r=>[r.id,keywordsFor(r)]));
     collectionSummary();
+    initAtlas();
     options('lens','All research lenses',lenses);
     options('driver','All drivers',drivers);
     options('kind','All source types',[...new Set(records.map(r=>r.type))].sort());

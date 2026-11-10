@@ -1,6 +1,56 @@
 <!doctype html>
 <html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research | Together, Apart.</title><link rel="stylesheet" href="../atlas.css"></head><body>
 <header><a class="brand" href="../"><span class="brand-together">Together,</span><em class="brand-apart">Apart.</em></a><nav aria-label="Main navigation"><a href="../">Home</a><a href="../exegesis/">Exegesis</a><a aria-current="page" href="../research/">Research</a><a href="../data-centre/">Data centre</a><a href="../about/">About</a></nav></header>
-<main><section id="research"><p class="eyebrow">Research atlas</p><h1>Research</h1><p>Explore the Notion research register through its recorded method, source type, evidence quality, place and design drivers. Each data point answers six prompts that connect a source to a possible spatial test.</p><p class="fine-print">The complete active Notion register, refreshed 10 November 2026. Collection dates use Adelaide local time. Missing information remains marked in each entry.</p><dl id="collection-summary" aria-label="Published collection summary"></dl><div class="dashboard"><div><h2>Research dashboard</h2><label>Visualise by <select id="metric"><option value="method">Research method</option><option value="type">Source type</option><option value="reliability">Reliability</option><option value="country">Geographic coverage</option></select></label></div><p class="chart-instructions">Choose what to visualise, then select a slice of the chart to filter the research points by that category. Select the active slice again or use “Clear chart filter” to remove the filter.</p><div class="plot"><div id="explorer" hidden></div><svg id="chart" viewBox="0 0 200 200" aria-label="Research breakdown" role="img"></svg><div><div id="legend"></div><button id="clearMetric" hidden>Clear chart filter</button><a id="showMatches" href="#count" hidden></a></div></div></div><div class="exploration"><section><h2>Design driver × research lens</h2><div id="driver-matrix"></div></section><section><h2>Keyword cloud</h2><p>Select a term to filter the data points. Larger words appear in more records. Related forms are grouped and each record counts once per term.</p><div id="keyword-cloud"></div></section></div><div class="explorer-status"><span role="status" id="activeExplorers"></span> <button hidden id="clearExplorers">Clear matrix and keyword filters</button></div><details class="research-panel"><summary>Six questions for each data point</summary><p class="framework-intro">The six questions make each entry useful for design: they establish what the source is, why it matters, what it shows, what it challenges, how it connects to other evidence, and what spatial decision could be tested. Expand the list for the prompts used on every point.</p><ol id="framework"></ol></details><details class="research-panel"><summary>Search and filters <small id="filter-count"></small></summary><div class="filters"><label>Search<input id="search" type="search" placeholder="Project, place or keyword"></label><label>Research lens<select id="lens"></select></label><label>Driver<select id="driver"></select></label><label>Source type<select id="kind"></select></label></div></details><div class="sectionhead"><span id="count" role="status"></span></div><div id="results"></div></section>
+<main><section id="research"><p class="eyebrow">Research atlas</p><h1>Research</h1><p>Explore the Notion research register through its recorded method, source type, evidence quality, place and design drivers. Each data point answers six prompts that connect a source to a possible spatial test.</p><p class="fine-print">The complete active Notion register, refreshed 10 November 2026. Collection dates use Adelaide local time. Missing information remains marked in each entry.</p>
+<section class="research-atlas" id="research-atlas" aria-labelledby="atlas-title">
+  <div class="atlas-intro">
+    <div>
+      <p class="eyebrow">Interactive atlas</p>
+      <h2 id="atlas-title">Research network</h2>
+      <p>Move from the full register to a specific finding. Large nodes are data points; theme nodes group recurring research questions; DEFINE, EXTEND and MEDIATE show only the design drivers recorded against a point.</p>
+    </div>
+    <div class="atlas-controls">
+      <label>Search the atlas<input id="atlas-search" type="search" placeholder="Title, place, finding or theme"></label>
+      <button type="button" id="atlas-clear" hidden>Clear atlas filters</button>
+    </div>
+  </div>
+  <div class="atlas-status-key" aria-label="How to read the atlas">
+    <span class="atlas-key verified-key"><i></i>Verified finding / evidence recorded</span>
+    <span class="atlas-key interpretation-key"><i></i>Tentative interpretation</span>
+    <span class="atlas-key placeholder-key"><i></i>Placeholder / not yet recorded</span>
+  </div>
+  <div class="atlas-filterbar">
+    <div class="atlas-driver-filters" role="group" aria-label="Filter by design driver">
+      <span class="atlas-filter-label">Driver</span>
+      <button type="button" data-atlas-driver="" aria-pressed="true">All</button>
+      <button type="button" data-atlas-driver="Define" aria-pressed="false">DEFINE</button>
+      <button type="button" data-atlas-driver="Extend" aria-pressed="false">EXTEND</button>
+      <button type="button" data-atlas-driver="Mediate" aria-pressed="false">MEDIATE</button>
+    </div>
+    <label>Research theme<select id="atlas-theme"><option value="">All themes</option></select></label>
+  </div>
+  <div class="atlas-layout">
+    <div class="atlas-map-wrap">
+      <svg id="atlas-map" viewBox="0 0 980 560" role="img" aria-label="Interactive research network"></svg>
+      <div id="atlas-preview" class="atlas-preview" role="tooltip" hidden></div>
+      <p id="atlas-map-status" class="atlas-map-status" role="status"></p>
+    </div>
+    <aside id="atlas-detail" class="atlas-detail" aria-live="polite">
+      <p class="eyebrow">Selected data point</p>
+      <h3>Choose a node to inspect the record</h3>
+      <p>Hover over a node for a quick preview, then select it to open the verified finding, source, evidence quality, design implication and notes.</p>
+    </aside>
+  </div>
+  <div class="atlas-groups">
+    <div class="atlas-groups-heading">
+      <div>
+        <p class="eyebrow">Browse by theme</p>
+        <h3>Research themes</h3>
+      </div>
+      <p>Expand a theme to see its data points. Selecting a point opens the same detail panel as the network.</p>
+    </div>
+    <div id="atlas-themes"></div>
+  </div>
+</section><dl id="collection-summary" aria-label="Published collection summary"></dl><div class="dashboard"><div><h2>Research dashboard</h2><label>Visualise by <select id="metric"><option value="method">Research method</option><option value="type">Source type</option><option value="reliability">Reliability</option><option value="country">Geographic coverage</option></select></label></div><p class="chart-instructions">Choose what to visualise, then select a slice of the chart to filter the research points by that category. Select the active slice again or use “Clear chart filter” to remove the filter.</p><div class="plot"><div id="explorer" hidden></div><svg id="chart" viewBox="0 0 200 200" aria-label="Research breakdown" role="img"></svg><div><div id="legend"></div><button id="clearMetric" hidden>Clear chart filter</button><a id="showMatches" href="#count" hidden></a></div></div></div><div class="exploration"><section><h2>Design driver × research lens</h2><div id="driver-matrix"></div></section><section><h2>Keyword cloud</h2><p>Select a term to filter the data points. Larger words appear in more records. Related forms are grouped and each record counts once per term.</p><div id="keyword-cloud"></div></section></div><div class="explorer-status"><span role="status" id="activeExplorers"></span> <button hidden id="clearExplorers">Clear matrix and keyword filters</button></div><details class="research-panel"><summary>Six questions for each data point</summary><p class="framework-intro">The six questions make each entry useful for design: they establish what the source is, why it matters, what it shows, what it challenges, how it connects to other evidence, and what spatial decision could be tested. Expand the list for the prompts used on every point.</p><ol id="framework"></ol></details><details class="research-panel"><summary>Search and filters <small id="filter-count"></small></summary><div class="filters"><label>Search<input id="search" type="search" placeholder="Project, place or keyword"></label><label>Research lens<select id="lens"></select></label><label>Driver<select id="driver"></select></label><label>Source type<select id="kind"></select></label></div></details><div class="sectionhead"><span id="count" role="status"></span></div><div id="results"></div></section>
 <p id="status" role="status"></p></main><footer>Adam Hingston &nbsp; / &nbsp; ARCH 6004 <span>Southwark Grounds · Kaurna Country</span></footer><script src="../atlas.js" defer></script></body></html>
 
