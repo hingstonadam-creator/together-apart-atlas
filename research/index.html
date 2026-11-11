@@ -1,33 +1,33 @@
 <!doctype html>
-<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research | Together, Apart.</title><link rel="stylesheet" href="../atlas.css?v=recorded-tags"><script defer src="../exegesis/reader.js?v=edition"></script></head><body class="journal research-journal">
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research | Together, Apart.</title><link rel="stylesheet" href="../atlas.css?v=interface-20261111"><script defer src="../exegesis/reader.js?v=edition"></script></head><body class="journal research-journal"><a class="skip-link" href="#main-content">Skip to content</a>
 <header class="masthead"><a class="brand" href="../">Adam Hingston</a><nav aria-label="Main navigation"><a href="../">Home</a><a href="../exegesis/">Exegesis</a><a href="./" aria-current="page">Research</a><a href="../data-centre/">Data centre</a><a href="../about/">About</a></nav></header>
-<main><nav class="index-rail" aria-label="Page contents">
+<main id="main-content"><nav class="index-rail" aria-label="Page contents">
 <button class="index-toggle" type="button" aria-expanded="false" aria-controls="index-links" hidden><span>Contents</span><span class="current-label">Introduction</span></button>
 <div id="index-links"><p class="rail-heading">Contents</p>
 <a href="#research-atlas" data-chapter="research-atlas"><span class="ordinal">01</span><span>Research network</span></a>
 <a href="#additional-filters" data-chapter="additional-filters"><span class="ordinal">02</span><span>Further filters</span></a>
-<a href="#sources" data-chapter="sources"><span class="ordinal">03</span><span>Source register</span></a>
+<a href="#matching-sources" data-chapter="matching-sources"><span class="ordinal">03</span><span>Matching sources</span></a>
+<a href="#sources" data-chapter="sources"><span class="ordinal">04</span><span>Full register</span></a>
 </div></nav>
 <div class="study-field" id="research">
 <section id="research-atlas" aria-labelledby="atlas-title">
 <p class="eyebrow">Research atlas</p><h1 id="atlas-title" tabindex="-1">Research network</h1>
-<p>Tap a project relevance tag, design strategy or numbered point to filter the map. Solid lines show project relevance and dotted lines show design strategies. Only matching points and their connections are drawn.</p>
-<div class="network-controls">
+<p>Search for a source or choose a project relevance tag or design strategy. Read the matching findings below, or explore their relationships in the network.</p>
+<a class="skip-network" href="#matching-sources">Go to matching sources ↓</a><div class="network-controls">
 <label>Search the network<input type="search" id="atlas-search" placeholder="Title, finding or place"></label>
-<label>Match selections<select id="theme-match"><option value="all">All selected nodes</option><option value="any">Any selected node</option></select></label>
-<label>Add a node<select id="add-tag"></select></label>
+<label id="match-mode" hidden>Combine selected tags<select id="theme-match"><option value="all">Match all tags</option><option value="any">Match any tag</option></select></label>
+<label>Project relevance or strategy<select id="add-tag"></select></label>
 <label>Design strategy<select id="driver"></select></label>
 <button type="button" id="atlas-clear" hidden>Clear all filters</button>
 </div>
-<div class="network-status"><p id="chart-status" role="status"></p><a id="showMatches" href="#sources">View full source register ↓</a></div>
-<div id="node-selections" aria-label="Selected nodes"></div>
+<div class="network-status"><p id="chart-status" role="status"></p><a id="showMatches" href="#matching-sources">Read matching sources ↓</a></div>
+<div id="node-selections" aria-label="Active filters"></div>
 <div class="network-workbench">
-<div class="atlas-map-wrap"><svg id="atlas-map" role="group" aria-label="Research network"></svg>
-<div id="atlas-preview" class="atlas-preview" role="tooltip" hidden></div></div>
+<details id="network-view"><summary>Explore the network</summary><p class="fine-print" id="network-help">Select a numbered point to read its finding. Select a labelled hub to filter by that tag. Solid lines show project relevance; dotted lines show design strategies. Keyboard: arrow keys move between points and tags; Enter selects.</p><a class="skip-network" href="#matching-sources">Skip network and read matching sources ↓</a><div class="atlas-map-wrap"><svg id="atlas-map" role="group" aria-label="Research network" aria-describedby="network-help"></svg><div id="atlas-preview" class="atlas-preview" role="tooltip" hidden></div></div></details>
 <aside class="network-breakdown" id="dashboard"><h2>Filter by chart</h2><label>Breakdown <select id="metric"><option value="method">Research method</option><option value="type">Source type</option><option value="reliability">Reliability</option></select></label>
 <div class="plot"><svg id="chart" viewBox="0 0 200 200" aria-label="Research breakdown" role="img"></svg><div><div id="legend"></div><button id="clearMetric" hidden>Clear chart filter</button></div></div></aside>
 </div>
-<article id="atlas-detail" class="network-selection" aria-live="polite"></article>
+<article id="atlas-detail" class="network-selection" aria-live="polite" hidden></article>
 </section>
 <section id="additional-filters"><h2>Further filters</h2>
 <details id="search-filters"><summary>Research lens and source type</summary><div class="filters"><label>Research lens<select id="lens"></select></label><label>Source type<select id="kind"></select></label></div></details>
@@ -35,9 +35,10 @@
 <details id="keywords"><summary>Keywords</summary><div id="keyword-cloud"></div></details>
 <div class="explorer-status"><span id="activeExplorers"></span><button hidden id="clearExplorers">Clear matrix and keyword filters</button></div>
 </section>
-<section id="sources"><p class="eyebrow">Notion research register</p><h2>Source register</h2>
+<section id="matching-sources" aria-labelledby="matching-title"><h2 id="matching-title" tabindex="-1">Matching sources</h2><p id="matching-count" role="status"></p><ol id="matching-list" class="matching-list"></ol><button type="button" id="more-matches" hidden>Show more sources</button><p><a href="#sources">Browse the complete source register ↓</a></p></section>
+<section id="sources"><p class="eyebrow">Notion research register</p><h2>Full source register</h2>
 <p class="fine-print">The complete collection, in display-number order. Collection dates use Adelaide local time.</p>
 <details id="six-questions"><summary>Six questions for each data point</summary><ol id="framework"></ol></details>
 <div class="network-status"><span id="count" role="status"></span></div>
 <div id="results"></div></section><p id="status" role="status"></p>
-</div></main><footer>Adam Hingston   /   ARCH 6004 <span>Southwark Grounds · Kaurna Country</span></footer><script src="../atlas-research.js?v=recorded-tags" defer></script></body></html>
+</div></main><footer>Adam Hingston   /   ARCH 6004 <span>Southwark Grounds · Kaurna Country</span></footer><script src="../atlas-research.js?v=interface-20261111" defer></script></body></html>

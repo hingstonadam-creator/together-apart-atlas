@@ -188,7 +188,7 @@ function toggleNode(group,value) {
     const source = records.find(row=>row.id===value);
     const themes = new Set(source.projectRelevance || []);
     const sourceDrivers = new Set(atlasDrivers(source));
-    label = 'Point '+(source.number ?? source.title);
+    label = 'Related to point '+(source.number ?? source.title);
     matches = row=>row.id===value || (row.projectRelevance || []).some(theme=>themes.has(theme)) ||
       atlasDrivers(row).some(driver=>sourceDrivers.has(driver));
   } else if (group==='driver') {
@@ -222,8 +222,8 @@ function research() {
   const rows=base.filter(otherFilters);
   matchingIds = new Set(rows.map(row=>row.id));
   displayedRows = rows;
-  byId('node-selections').innerHTML = [...selectedNodes].map(([key,node])=>
-    '<button type="button" data-remove-node="'+esc(key)+'" aria-label="Remove '+esc(node.label)+'">'+esc(node.label)+' ×</button>').join('');
+  renderFilterChips();
+  byId('match-mode').hidden = selectedNodes.size < 2;
   const [driver,lensIndex]=matrixFilter.split('|');
   byId('activeExplorers').textContent=[matrixFilter && driver+' / '+lenses[lensIndex],keywordFilter].filter(Boolean).join(' · ');
   byId('clearExplorers').hidden=!(matrixFilter || keywordFilter);
@@ -231,8 +231,11 @@ function research() {
   const count = rows.length+' of '+records.length+' matching points';
   byId('chart-status').textContent = [count,...filters].join(' · ');
   byId('atlas-clear').hidden = filters.length === 0;
-  if (!matchingIds.has(selectedId)) selectedId = rows[0]?.id;
+  if (!matchingIds.has(selectedId)) selectedId = undefined;
+  visibleMatches = 12;
+  renderMatches();
   renderNetwork();
+  saveResearchState();
 
 }
 document.querySelector('.filters').addEventListener('change',research);
@@ -240,6 +243,7 @@ let selectedId;
 function clearFilters() {
   for (const id of ['atlas-search','driver','lens','kind']) byId(id).value = '';
   selectedNodes.clear();
+  selectedId=undefined;
   byId('theme-match').value = 'all';
   chartFilter = matrixFilter = keywordFilter = '';
   research();
@@ -252,12 +256,18 @@ byId('add-tag').onchange = event => {
   research();
 };
 byId('node-selections').addEventListener('click', event=>{
-  const button=event.target.closest('[data-remove-node]');
-  if(button) {
-    selectedNodes.delete(button.dataset.removeNode);
-    research();
-    byId('add-tag').focus();
+  const button=event.target.closest('[data-remove-node],[data-clear-filter]');
+  if (!button) return;
+  if (button.hasAttribute('data-remove-node')) selectedNodes.delete(button.dataset.removeNode);
+  else {
+    const key=button.dataset.clearFilter;
+    if (key==='chart') chartFilter='';
+    else if (key==='matrix') matrixFilter='';
+    else if (key==='keyword') keywordFilter='';
+    else byId(key).value='';
   }
+  research();
+  byId('add-tag').focus();
 });
 byId('atlas-clear').onclick = clearFilters;
 byId('atlas-search').oninput = research;
@@ -296,13 +306,16 @@ function renderSelection() {
   const record = displayedRows.find(row => row.id === selectedId);
   const detail = byId('atlas-detail');
   if (!record) {
-    detail.textContent = 'No matching sources. Clear a filter to broaden the network.';
+    detail.hidden = true;
+    detail.replaceChildren();
     return;
   }
-  detail.innerHTML = '<p class="eyebrow">Selected source · '+esc(record.number ?? 'Unnumbered')+'</p><h3>'+esc(record.title)+'</h3><p>'+atlasText(record.insight || record.evidence,record.indexOnly?'Full entry pending publication.':'Not recorded')+'</p>'+tagDetails(record)+'<a href="#source-'+esc(record.id)+'">Read the full entry →</a>';
+  detail.hidden = false;
+  detail.innerHTML = '<p class="eyebrow">Selected source · '+esc(record.number ?? 'Unnumbered')+'</p><h3>'+esc(record.title)+'</h3><p>'+atlasText(record.insight || record.evidence,record.indexOnly?'Full entry pending publication.':'Not recorded')+'</p>'+tagDetails(record)+'<div class="selection-actions"><a href="#source-'+esc(record.id)+'">Read the full entry →</a><button type="button" data-related-source="'+esc(record.id)+'">Explore related points</button></div><p class="fine-print">Related points share at least one project relevance tag or design strategy with this source.</p>';
 }
 byId('atlas-detail').addEventListener('click',event => {
-  if (event.target.closest('a')) byId('source-'+selectedId).open = true;
+  const button=event.target.closest('[data-related-source]');
+  if (button) {toggleNode('source',button.dataset.relatedSource);research();}
 });
 function atlasPreview(record) {
   if (!record) return;
@@ -369,7 +382,11 @@ function renderNetwork() {
     return '<g tabindex="0" role="button" class="net-point" data-record-id="'+esc(node.id)+'" aria-label="'+esc((node.row.number ?? '')+' '+node.row.title)+'"><circle r="10"/><text text-anchor="middle" y="3.5">'+esc(node.row.number ?? '·')+'</text><title>'+esc(node.row.title)+'</title></g>';
   });
   network.innerHTML='<g>'+edges.join('')+'</g><g>'+elements.join('')+'</g>';
-  [...points,...hubs].forEach((node,i)=>{node.el=network.lastElementChild.children[i]});
+  const tabId = points.some(node=>node.id===selectedId) ? selectedId : points[0]?.id || hubs[0]?.id;
+  [...points,...hubs].forEach((node,i)=>{
+    node.el=network.lastElementChild.children[i];
+    node.el.setAttribute('tabindex',node.id===tabId?'0':'-1');
+  });
   if (!compact) links.forEach((link,i)=>{link.el=network.firstElementChild.children[i]});
   simulation={width,height,points,hubs,links,compact};
   emphasize(selectedId);
@@ -384,7 +401,7 @@ function emphasize(id) {
     link.lit=id===hub.id || id===node.id || (matchingIds.has(node.id) && (selectedNodes.has('source|'+node.id) || link.selected));
     if (link.el) link.el.classList.toggle('lit',link.lit);
   }
-  simulation.points.forEach(node=>node.el.setAttribute('aria-pressed',String(selectedNodes.has('source|'+node.id))));
+  simulation.points.forEach(node=>node.el.setAttribute('aria-pressed',String(selectedId===node.id)));
 }
 function stepNetwork() {
   const {points,hubs,links,width,height} = simulation;
@@ -436,7 +453,7 @@ function paintNetwork() {
 }
 function settleNetwork() {
   cancelAnimationFrame(animation);
-  if (!simulation || !inView || document.hidden) return;
+  if (!simulation || !inView || document.hidden || !byId('network-view').open) return;
   if (reducedMotion.matches) {
     for(let i=0;i<32;i++) stepNetwork();
     paintNetwork();
@@ -474,8 +491,8 @@ function activateNode(event) {
   if(!el) return;
   const group = el.dataset.group || 'source';
   const value = el.dataset.value || el.dataset.recordId;
-  toggleNode(group,value);
   if (group==='source') selectedId=value;
+  else toggleNode(group,value);
   research();
   const target = group==='source' ? simulation.points.find(node=>node.id===value) :
     simulation.hubs.find(node=>node.group===group && node.name===value);
@@ -483,11 +500,20 @@ function activateNode(event) {
 }
 network.addEventListener('click',event=>{if(!suppressClick) activateNode(event)});
 network.addEventListener('keydown',event=>{
-  if(event.key==='Enter'||event.key===' ') {event.preventDefault();activateNode(event)}
+  if(event.key==='Enter'||event.key===' ') {event.preventDefault();activateNode(event);return}
+  if (!['ArrowRight','ArrowDown','ArrowLeft','ArrowUp','Home','End'].includes(event.key)) return;
+  const nodes=[...network.querySelectorAll('[data-record-id],[data-group]')];
+  const index=nodes.indexOf(event.target.closest('[data-record-id],[data-group]'));
+  if (index<0) return;
+  event.preventDefault();
+  const next=event.key==='Home'?0:event.key==='End'?nodes.length-1:
+    (index+(['ArrowRight','ArrowDown'].includes(event.key)?1:-1)+nodes.length)%nodes.length;
+  nodes.forEach((node,i)=>node.setAttribute('tabindex',i===next?'0':'-1'));
+  nodes[next].focus();
 });
 network.addEventListener('pointerdown',event=>{
   const el=event.target.closest('[data-record-id]');
-  if(!el || !event.isPrimary || event.button!==0) return;
+  if(!el || compactNetwork.matches || !event.isPrimary || event.button!==0) return;
   dragged={node:simulation.points.find(n=>n.id===el.dataset.recordId),x:event.clientX,y:event.clientY,pointer:event.pointerId};
   suppressClick=false;
   el.setPointerCapture(event.pointerId);
@@ -536,6 +562,119 @@ new ResizeObserver(() => {
   if (!compactNetwork.matches && simulation && network.parentElement.clientWidth !== simulation.width) resizeNetwork();
 }).observe(network.parentElement);
 
+
+let visibleMatches = 12;
+function renderMatches() {
+  byId('matching-count').textContent = displayedRows.length+' of '+records.length+' research points'+(displayedRows.length ? '' : '. Remove a filter or try another search.');
+  byId('matching-list').innerHTML = displayedRows.slice(0,visibleMatches).map(record=>
+    '<li><span class="match-number">Point '+esc(record.number ?? '—')+'</span><h3><a href="#source-'+esc(record.id)+'">'+esc(record.title)+'</a></h3><p>'+esc(record.insight || record.evidence || (record.indexOnly?'Full entry pending publication.':'Finding not yet recorded.'))+'</p><button type="button" data-inspect-source="'+esc(record.id)+'">Show in network</button></li>'
+  ).join('');
+  byId('more-matches').hidden = displayedRows.length <= visibleMatches;
+  byId('more-matches').textContent = 'Show '+Math.min(12,displayedRows.length-visibleMatches)+' more sources';
+}
+byId('more-matches').onclick=()=>{
+  const previous=visibleMatches;
+  visibleMatches+=12;
+  renderMatches();
+  byId('matching-list').children[previous]?.querySelector('a')?.focus();
+};
+byId('matching-list').addEventListener('click',event=>{
+  const button=event.target.closest('[data-inspect-source]');
+  if (!button) return;
+  selectedId=button.dataset.inspectSource;
+  byId('network-view').open=true;
+  renderNetwork();
+  saveResearchState();
+  byId('network-view').scrollIntoView({block:'start',behavior:'auto'});
+  simulation.points.find(node=>node.id===selectedId)?.el.focus({preventScroll:true});
+});
+function renderFilterChips() {
+  const chips=[...selectedNodes].map(([key,node])=>'<button type="button" data-remove-node="'+esc(key)+'" aria-label="Remove '+esc(node.label)+'">'+esc(node.label)+' ×</button>');
+  const values=[
+    ['atlas-search','Search: '+byId('atlas-search').value,byId('atlas-search').value],
+    ['driver','Strategy: '+byId('driver').value,byId('driver').value],
+    ['lens','Lens: '+byId('lens').value,byId('lens').value],
+    ['kind','Type: '+byId('kind').value,byId('kind').value],
+    ['chart',byId('metric').selectedOptions[0].text+': '+chartFilter,chartFilter],
+    ['matrix','Matrix: '+matrixFilter.replace('|',' / '),matrixFilter],
+    ['keyword','Keyword: '+keywordFilter,keywordFilter]
+  ];
+  for (const [key,label,value] of values) if (String(value).trim()) chips.push('<button type="button" data-clear-filter="'+key+'" aria-label="Remove '+esc(label)+'">'+esc(label)+' ×</button>');
+  byId('node-selections').innerHTML=chips.join('');
+}
+const stateFields = {q:'atlas-search',strategy:'driver',lens:'lens',type:'kind',breakdown:'metric',match:'theme-match'};
+function saveResearchState() {
+  const url=new URL(location.href);
+  for (const [key,id] of Object.entries(stateFields)) {
+    const value=byId(id).value;
+    if (value && !((key==='breakdown' && value==='method') || (key==='match' && value==='all'))) url.searchParams.set(key,value);
+    else url.searchParams.delete(key);
+  }
+  for (const [key,value] of [['category',chartFilter],['matrix',matrixFilter],['keyword',keywordFilter],['selected',selectedId || '']]) {
+    if(value) url.searchParams.set(key,value); else url.searchParams.delete(key);
+  }
+  url.searchParams.delete('node');
+  for(const key of selectedNodes.keys()) url.searchParams.append('node',key);
+  if (url.href!==location.href) history.replaceState(null,'',url);
+}
+function restoreResearchState() {
+  const params=new URL(location.href).searchParams;
+  for (const [key,id] of Object.entries(stateFields)) {
+    const control=byId(id);
+    const value=params.get(key) || (key==='breakdown'?'method':key==='match'?'all':'');
+    control.value=control.tagName==='SELECT' && ![...control.options].some(option=>option.value===value)?control.options[0].value:value;
+  }
+  chartFilter=params.get('category') || '';
+  if (!records.some(row=>categoryMatches(row,byId('metric').value,chartFilter))) chartFilter='';
+  matrixFilter=params.get('matrix') || '';
+  if (matrixFilter && !drivers.some(driver=>lenses.some((_,i)=>driver+'|'+i===matrixFilter))) matrixFilter='';
+  keywordFilter=params.get('keyword') || '';
+  if (!vocabulary.some(([word])=>word===keywordFilter)) keywordFilter='';
+  selectedNodes.clear();
+  for(const key of params.getAll('node')) {
+    const split=key.indexOf('|');
+    const group=key.slice(0,split),value=key.slice(split+1);
+    if ((group==='source' && records.some(row=>row.id===value)) || (group==='driver' && drivers.includes(value)) || (group==='atlas-theme' && allThemes.includes(value))) {
+      if(!selectedNodes.has(key)) toggleNode(group,value);
+    }
+  }
+  selectedId=records.some(row=>row.id===params.get('selected'))?params.get('selected'):undefined;
+}
+function openSourceFromHash() {
+  let id;
+  try {id=decodeURIComponent(location.hash.slice(1))} catch {return}
+  if (!id.startsWith('source-')) return;
+  const panel=byId(id);
+  if (!panel || panel.parentElement!==byId('results')) return;
+  panel.open=true;
+  requestAnimationFrame(()=>{
+    panel.scrollIntoView({block:'start',behavior:'auto'});
+    panel.querySelector('summary').focus({preventScroll:true});
+  });
+}
+document.addEventListener('click',event=>{
+  const link=event.target.closest('a[href^="#source-"]');
+  if (!link) return;
+  const panel=byId(link.getAttribute('href').slice(1));
+  if(panel) panel.open=true;
+  if(link.hash===location.hash) openSourceFromHash();
+});
+window.addEventListener('hashchange',openSourceFromHash);
+window.addEventListener('popstate',()=>{
+  if (!records.length) return;
+  restoreResearchState();
+  research();
+  openSourceFromHash();
+});
+byId('network-view').open=!compactNetwork.matches;
+byId('network-view').addEventListener('toggle',()=>{
+  if(byId('network-view').open && records.length) renderNetwork();
+  else cancelAnimationFrame(animation);
+});
+compactNetwork.addEventListener('change',()=>{
+  byId('network-view').open=!compactNetwork.matches;
+});
+
 async function loadResearch() {
   try {
     const [snapshot,tags] = await Promise.all(['research.json','research-tags.json'].map(async file=>{
@@ -561,7 +700,9 @@ async function loadResearch() {
     options('add-tag','Choose a tag', [...allThemes,...drivers]);
     options('kind','All source types',[...new Set(records.map(r=>r.type).filter(Boolean))].sort());
     byId('status').textContent='';
+    restoreResearchState();
     research();
+    openSourceFromHash();
   } catch { byId('status').innerHTML = 'The research collection could not load. <button type="button">Retry</button>'; byId('status').querySelector('button').onclick=loadResearch; }
 }
 loadResearch();
