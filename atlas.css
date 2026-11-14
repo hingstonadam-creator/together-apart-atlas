@@ -757,3 +757,10 @@ input,textarea {caret-color:var(--clay)}
 .research-journey .journey-thread strong {font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--clay)}
 .journal .research-journey .journey-thread p {font-size:.85rem;margin:.3rem 0}
 .research-journey figcaption {margin-top:1.25rem}
+
+/* Connected research journey flowchart. */
+.journal .research-flowchart {max-width:none;border:0;padding:0}
+.research-flowchart .journey-scroll {overflow-x:auto;max-width:100%}
+.journal .research-flowchart svg {display:block;width:100%;min-width:640px;height:auto;max-height:none}
+.research-flowchart figcaption {max-width:64ch}
+@media print {.research-flowchart .journey-scroll {overflow:visible}.journal .research-flowchart svg {min-width:0}}
