@@ -1,0 +1,80 @@
+[
+  {
+    "key": "charles-house",
+    "number": 91,
+    "title": "Charles House",
+    "architect": "Austin Maynard Architects",
+    "photographer": "Peter Bennetts",
+    "source_page": "https://www.maynardarchitects.com/all-projects/charles",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6a03f5d253760e4386f8bdf2/1779686932336-RYDO84QFXIOXW543MBTU/170122+Charles+0670.jpg",
+    "retrieved": "2026-11-15",
+    "annotation_credit": "Analytical overlays: Adam Hingston, 2026. Photo reading, not a measured survey.",
+    "note": "Framed openings give adjoining rooms a distinct edge while maintaining a view towards the garden. The photograph supports a reading of spatial sequence; the architect's account, rather than this image alone, establishes how rooms can adapt for different generations.",
+    "notion_url": "https://app.notion.com/400501e2346681aeaddcf438acabe8ad"
+  },
+  {
+    "key": "mahogany-house",
+    "number": 92,
+    "title": "Mahogany House",
+    "architect": "R ARCHITECTURE",
+    "photographer": "CM Photography / Chris Murray",
+    "source_page": "https://rarchitecture.com.au/projects/mahogany-house/",
+    "image_url": "https://rarchitecture.com.au/wp-content/uploads/2023/04/MAHOGANY-23-1.jpg",
+    "retrieved": "2026-11-15",
+    "annotation_credit": "Analytical overlays: Adam Hingston, 2026. Photo reading, not a measured survey.",
+    "note": "The courtyard holds an outdoor table between glazed building edges. It offers a way to study the relationship between separate quarters and a shared setting. This reading does not establish the privacy or access arrangements hidden from the photograph.",
+    "notion_url": "https://app.notion.com/400501e2346681a7be35e8c1dff306f1"
+  },
+  {
+    "key": "three-generation-house",
+    "number": 93,
+    "title": "3 Generation House",
+    "architect": "BETA office for architecture and the city",
+    "photographer": "Ossip van Duivenbode",
+    "source_page": "https://beta-office.com/project/3-generation-house/",
+    "image_url": "https://beta-office.com/wp-content/uploads/003-three-generation-house/beta-three-generation-house-buiksloterham-photo-interior-kitchen-yellow-staircase-image-Ossip-van-Duivenbode.jpg",
+    "retrieved": "2026-11-15",
+    "annotation_credit": "Analytical overlays: Adam Hingston, 2026. Photo reading, not a measured survey.",
+    "note": "The staircase sits directly beside a dining and kitchen area. BETA documents two stacked apartments and provision for changing household arrangements. This interior view explains the presence of circulation in daily life; it does not show the complete independent entrance or lift journey.",
+    "notion_url": "https://app.notion.com/400501e23466818da921d09158c60777"
+  },
+  {
+    "key": "veil-and-co-house",
+    "number": 94,
+    "title": "Veil + Co. House",
+    "architect": "Kirsten Johnstone Architecture",
+    "photographer": "Alanna Jayne McTiernan",
+    "source_page": "https://www.kjarchitecture.com.au/projects/veil-and-co-house",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5e1513e15deaf13355687ab7/1e800ffb-6481-426b-83ad-3d054384fdd5/_DSC84931aAJM.jpg",
+    "retrieved": "2026-11-15",
+    "annotation_credit": "Analytical overlays: Adam Hingston, 2026. Photo reading, not a measured survey.",
+    "note": "The covered walkway connects separate parts of the house while openings retain control at the building edge. Its value for Together, Apart lies in the combination of shelter, a clear route and recognisable thresholds. Dimensions and accessibility cannot be established from the photograph.",
+    "notion_url": "https://app.notion.com/400501e2346681f3ad8cc7ad6593b375"
+  },
+  {
+    "key": "la-borda",
+    "number": 95,
+    "title": "La Borda",
+    "architect": "Lacol",
+    "photographer": "Lluc Miralles",
+    "source_page": "https://www.archdaily.com/922184/la-borda-lacol",
+    "image_url": "https://images.adsttc.com/media/images/5d42/0ce6/284d/d1db/a300/00e2/large_jpg/FI_-_Lluc_Miralles_(7)_-.jpg?1564609755",
+    "retrieved": "2026-11-15",
+    "annotation_credit": "Analytical overlays: Adam Hingston, 2026. Photo reading, not a measured survey.",
+    "note": "Doors, plants and galleries face a shared internal courtyard. The photograph makes the relationship between a dwelling edge and collective circulation visible. It offers a question for the proposal: how can an occupied entrance sit beside a route that remains available to others?",
+    "notion_url": "https://app.notion.com/400501e2346681f3a814fbf2300bb0ce"
+  },
+  {
+    "key": "marmalade-lane",
+    "number": 96,
+    "title": "Marmalade Lane",
+    "architect": "Mole Architects",
+    "photographer": "David Butler",
+    "source_page": "https://www.archdaily.com/918201/marmalade-lane-cohousing-development-mole-architects",
+    "image_url": "https://images.adsttc.com/media/images/5cf0/a479/284d/d119/c700/0017/large_jpg/20190411_marmalade_lane_0261.jpg?1559274584",
+    "retrieved": "2026-11-15",
+    "annotation_credit": "Analytical overlays: Adam Hingston, 2026. Photo reading, not a measured survey.",
+    "note": "The lane is framed by housing, planting and low edges used for sitting. The photograph records a shared pedestrian setting, rather than proving how often neighbours interact. For Together, Apart, the useful comparison is between the route through a cluster and the territory immediately beside each home.",
+    "notion_url": "https://app.notion.com/400501e2346681e884ebf57be8352fd6"
+  }
+]

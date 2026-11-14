@@ -799,3 +799,20 @@ img {-webkit-user-drag:none}
 .drawing-register ul {columns:2;column-gap:2rem;padding-left:1.2rem}
 .drawing-register li {break-inside:avoid;margin:.5rem 0}
 @media(max-width:600px){.drawing-register ul{columns:1}}
+
+/* Chapter contents and credited precedent studies, 15 November 2026. */
+.exegesis-contents {padding-top:clamp(2rem,5vw,5rem);padding-bottom:4rem}
+.exegesis-contents h1 {text-transform:uppercase}
+.exegesis-chapter-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;margin-top:3rem;align-items:stretch}
+.exegesis-chapter {display:block;border-top:1px solid var(--line);padding:1rem 0;text-decoration:none}
+.exegesis-chapter img {display:block;width:100%;height:17rem;object-fit:contain;background:var(--paper);margin:1rem 0}
+.exegesis-chapter h2 {font-size:clamp(1.5rem,3vw,2.4rem)}
+.precedent-studies {grid-column:1/-1;padding-top:1.5rem;border-top:1px solid var(--line)}
+.precedent-study {padding:2rem 0;border-bottom:1px solid var(--line)}
+.precedent-study h4 {font-size:1.4rem;margin:.5rem 0}
+.precedent-study img {width:100%;height:auto;display:block}
+.precedent-credit {font-size:.78rem;line-height:1.6;max-width:80ch}
+.precedent-reading {max-width:66ch}
+@media(max-width:650px){.exegesis-chapter-grid{grid-template-columns:1fr}.exegesis-chapter img{height:auto;max-height:22rem}}
+.journal main.exegesis-contents{display:block}.journal .exegesis-chapter-grid{display:grid}.precedent-study figure{margin:1rem 0}.precedent-credit{text-transform:none;letter-spacing:0}.precedent-legend{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.82rem}
+.precedent-study{scroll-margin-top:6rem}

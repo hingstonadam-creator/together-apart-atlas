@@ -116,7 +116,7 @@ Prioritise substantive Australian papers, reports and documented built projects.
 
 Keep the four main pages in order — Home, Exegesis, Research and About. The Research navigation item opens the atlas dashboard. The Research panel on Home opens chapter 02 of the exegesis. Link each exegesis contents item to its corresponding chapter subpage.
 
-Exegesis presents the complete public-facing manuscript as one continuous read. Provide individually addressable chapters in the same order: Position, Research, Design approach, Development, Proposal and Reflection. Keep each chapter consistent with its passage in the continuous version. Include relevant project images, captions and further reading drawn from the atlas. Keep draft production notes and private source links out of the public document.
+Exegesis opens as a compact contents page with six individually addressable chapters: Position, Research, Design approach, Development, Proposal and Reflection. Do not restore a continuous-manuscript option; Adam removed it on 15 November 2026. Include relevant project images, captions and further reading drawn from the atlas. Keep draft production notes and private source links out of the public document.
 
 Research retains its dashboard, six-question framework and source filters. Place architectural implications inside their research entries. About holds Adam’s short profile and verified social links. Add further accounts when Adam supplies the URLs.
 
@@ -141,7 +141,7 @@ Close Home with a split layout. Place one supplied project image beside the head
 
 ### Supplied images only
 
-Adam supplies all imagery. Use existing approved project assets or files he provides. Do not generate images, draw substitute diagrams, source stock imagery or recreate missing artwork in code. While artwork is pending, reserve its space with a plain ivory HTML placeholder, a fine grey border and a short text label such as “Chapter 04 image”. Keep placeholder-instruction PNGs out of public pages.
+Use existing approved project assets or files Adam provides. Adam authorised credited photographs from his database precedents and editable analytical colour overlays on 15 November 2026; retain original photographs, individual credits and source records alongside derivatives. Do not generate images, draw substitute diagrams, source stock imagery or recreate missing artwork in code. While artwork is pending, reserve its space with a plain ivory HTML placeholder, a fine grey border and a short text label such as “Chapter 04 image”. Keep placeholder-instruction PNGs out of public pages.
 
 Preserve the proportions, annotations and credits of supplied drawings. Fit the full figure inside its slot and write alt text describing the actual image once supplied. Continue exporting optimised copies from supplied masters through the existing publishing workflow.
 
