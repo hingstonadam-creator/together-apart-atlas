@@ -11,6 +11,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Research + evaluation methods",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -51,8 +59,8 @@
     ],
     "keywords": [],
     "quote": "“3D printing terracotta components with clay as the primary material is both feasible and viable.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:04.326Z"
+    "quoteLocation": "Saved Readwise highlights link to source PDF pages 3, 7, 8 and 9. Specimen preparation and printing parameters are linked to pages 3 and 9; verify the printed-page numbering before quotation.",
+    "sourceUpdatedAt": "2026-11-10T06:12:02.697Z"
   },
   {
     "id": "notion-3b4501e234668056ac51d5ae16ac6873",
@@ -66,6 +74,14 @@
     "country": "Australia",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Site + neighbourhood",
+      "Climate + environmental comfort",
+      "Access + everyday movement"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -89,7 +105,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "Connects the observed western pedestrian route to the public-space observation method and the later heat-comfort design tests. The site notes are the primary record; observation date and measured weather conditions are not recorded.",
     "themes": [
       "Public Interface",
       "Heat + Energy",
@@ -106,7 +122,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Southwark Grounds site visit; west pedestrian path to Bloom café and river bridge; north river/tree edge; south access street; east service lane.",
-    "sourceUpdatedAt": "2026-11-09T01:26:53.200Z"
+    "sourceUpdatedAt": "2026-11-10T06:12:03.301Z"
   },
   {
     "id": "notion-3b7501e2346680e09ceac3f93ef18819",
@@ -120,6 +136,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Research + evaluation methods",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Low",
     "quality": "Low",
@@ -160,8 +184,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:26:53.681Z"
+    "quoteLocation": "Saved survey notes and question-cluster synthesis: Sample, familiarity and initial perception. Anonymous online responses, 4–7 August 2026; 23 self-selected respondents.",
+    "sourceUpdatedAt": "2026-11-10T06:12:03.952Z"
   },
   {
     "id": "notion-3b7501e2346680ffa0e0c3597f0cfe0e",
@@ -175,6 +199,15 @@
     "country": "Australia",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Operation + stewardship",
+      "Access + everyday movement",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -198,7 +231,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "Connects secure circulation, servicing and cooling constraints to the Athanor data-centre proposal and heat-reuse studies. Primary evidence is the tour notes on this page; facility identity and tour date remain unspecified.",
     "themes": [
       "Data Centres",
       "Heat + Energy",
@@ -218,7 +251,7 @@
     "keywords": [],
     "quote": "“Water goes outside then in rather than inside to prevent a water leak.”",
     "quoteLocation": "Tour notes: data halls, staging area, roof plant and security thresholds.",
-    "sourceUpdatedAt": "2026-11-09T01:26:54.231Z"
+    "sourceUpdatedAt": "2026-11-10T06:12:04.725Z"
   },
   {
     "id": "notion-3b7501e234668059937fc5501526452f",
@@ -226,16 +259,24 @@
     "title": "Two Blue Jumpers Ep.2",
     "dateCollected": "2026-08-09T05:40:27.586Z",
     "type": "Practitioner",
-    "method": "Other",
+    "method": "Video / Lecture",
     "author": "Tom Kundig; Dan Rubinstein",
     "location": "Podcast / architectural precedent reflection.",
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Public life + active edges",
+      "Material + construction systems"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
-    "reliability": "Medium",
-    "quality": "Medium",
-    "evidence": "“Where you touch a building, that is the handshake with the building.”",
+    "reliability": "Low",
+    "quality": "Low",
+    "evidence": "“Where you touch a building, that is the handshake with the building.” Tom Kundig, The Grand Tourist opening clip, saved Snipd timestamp 00:00:00. The Two Blue Jumpers title is unresolved.",
     "information": "Kundig frames tactile, hand-operated mechanisms as architectural ‘handshakes’ that make ordinary interactions memorable; projects also balance prospect and refuge.",
     "interpretation": null,
     "insight": "The public interface can be more than an environmental filter: operable, legible details can create memorable agency and connection.",
@@ -246,7 +287,7 @@
     "answers": [
       "Reflective podcast discussion on Tom Kundig’s kinetic architecture and tactile building mechanisms.",
       "Supports the experiential and civic dimension of a façade or threshold, alongside technical performance.",
-      "Kundig frames tactile, hand-operated mechanisms as architectural ‘handshakes’ that make ordinary interactions memorable; projects also balance prospect and refuge. “Where you touch a building, that is the handshake with the building.” The public interface can be more than an environmental filter: operable, legible details can create memorable agency and connection.",
+      "Kundig frames tactile, hand-operated mechanisms as architectural ‘handshakes’ that make ordinary interactions memorable; projects also balance prospect and refuge. The saved notes attribute “Where you touch a building, that is the handshake with the building” to Kundig. The quotation is present in the linked The Grand Tourist transcript’s opening clip at 00:00:00. Its connection to the title “Two Blue Jumpers Ep.2” remains unresolved. The public interface can be more than an environmental filter: operable, legible details can create memorable agency and connection.",
       "A moving façade gives pedestrians limited agency if they cannot tell who operates it or what its movement changes.",
       "Kundig’s exposed mechanisms offer a detail-scale comparison for a user-operated threshold. Tom Kundig: Making Memories With Architecture (data point 11)",
       "Develop one or two visibly operable or responsive threshold elements whose movement, material and logic are understandable to pedestrians."
@@ -255,7 +296,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "The tactile-mechanism quotation is traceable to the linked Kundig/The Grand Tourist transcript. The original Two Blue Jumpers episode identity is still unresolved; these titles require source reconciliation.",
     "themes": [
       "Public Interface",
       "Material + Tectonics"
@@ -271,9 +312,9 @@
       "01 · Position + Problem"
     ],
     "keywords": [],
-    "quote": "“Where you touch a building, that is the handshake with the building.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:26:54.883Z"
+    "quote": null,
+    "quoteLocation": "Quotation recovered in The Grand Tourist, “Tom Kundig: Making Memories With Architecture”, saved opening clip at 00:00:00. The source of the “Two Blue Jumpers Ep.2” title remains unconfirmed.",
+    "sourceUpdatedAt": "2026-11-10T06:38:03.645Z"
   },
   {
     "id": "notion-3b7501e2346680e9a945c3b36f7d62db",
@@ -287,6 +328,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Research + evaluation methods",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -329,8 +378,8 @@
     ],
     "keywords": [],
     "quote": "“Moldless, saving expenses in wasted materials and increasing the possibility for part customization.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:09.069Z"
+    "quoteLocation": "Saved Readwise highlights “First, our technique is moldless…” and “passively activated thermal mass panels”; printed page numbers are absent from the saved passages.",
+    "sourceUpdatedAt": "2026-11-10T06:38:04.231Z"
   },
   {
     "id": "notion-3b7501e2346680449fcdcf7611066c12",
@@ -344,6 +393,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Material + construction systems",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -382,8 +439,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:05.987Z"
+    "quoteLocation": "Saved Readwise trade-off passages link to PDF page anchor 17. The saved excerpts discuss renovation, replacement and demolition; the EcoSphere-specific description requires checking against the full paper.",
+    "sourceUpdatedAt": "2026-11-10T06:38:04.863Z"
   },
   {
     "id": "notion-3b7501e23466809d858dfef9cdedc3b3",
@@ -397,6 +454,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Research + evaluation methods",
+      "Site + neighbourhood"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -437,8 +502,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:07.917Z"
+    "quoteLocation": "Recorded talk/podcast linked in Citation / Link; timestamp for the selected finding has not been captured.",
+    "sourceUpdatedAt": "2026-11-10T06:12:05.807Z"
   },
   {
     "id": "notion-3b7501e2346680239e87ed8b05712f1d",
@@ -452,6 +517,13 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -492,8 +564,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:05.537Z"
+    "quoteLocation": "Saved Readwise passages on forecasting variable generation and demand, ACM Computing Surveys 55(2), Article 42 (February 2022). Printed page locator is absent from the saved highlights.",
+    "sourceUpdatedAt": "2026-11-10T06:38:05.520Z"
   },
   {
     "id": "notion-3b7501e23466807384d5f57274b66490",
@@ -507,6 +579,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Climate + environmental comfort",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -544,8 +624,8 @@
     ],
     "keywords": [],
     "quote": "“What your building is shaped like” matters less than “what is it made of and how.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:06.454Z"
+    "quoteLocation": "Recorded talk/podcast linked in Citation / Link; timestamp for the selected finding has not been captured.",
+    "sourceUpdatedAt": "2026-11-10T06:12:06.883Z"
   },
   {
     "id": "notion-3b7501e2346680ffb04df3f106cdfa9c",
@@ -559,6 +639,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Material + construction systems",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -599,8 +687,8 @@
     ],
     "keywords": [],
     "quote": "“Where you touch a building, that is the handshake with the building.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:10.063Z"
+    "quoteLocation": "The Grand Tourist, “Tom Kundig: Making Memories With Architecture”; saved Snipd opening clip at 00:00:00, “Make Touchpoints Memorable” (a2ab0d7c-7378-459e-83ac-89bf50cb465c).",
+    "sourceUpdatedAt": "2026-11-10T06:38:06.289Z"
   },
   {
     "id": "notion-3b7501e2346681dbb958f31cf6710519",
@@ -614,6 +702,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Research + evaluation methods",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -656,8 +752,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:13.141Z"
+    "quoteLocation": "Saved Readwise highlights “The primary objective…” and “Building Information Modelling (BIM)”. The second passage has PDF anchors 13 and 14; the objective passage lacks a page locator.",
+    "sourceUpdatedAt": "2026-11-10T06:38:06.786Z"
   },
   {
     "id": "notion-3b7501e2346681278f79e1f1e61598f8",
@@ -671,9 +767,17 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Climate + environmental comfort",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
-    "reliability": "High",
-    "quality": "High",
+    "reliability": "Medium",
+    "quality": "Medium",
     "evidence": "If data-centre heat can warm surrounding homes and cool the street, a federated data centre can become part of the fabric of the city rather than infrastructure hidden at its edge.",
     "information": "The dossier positions data centres as energy-intensive but potentially productive civic infrastructure. It proposes sharing rejected heat with homes, greenhouses, vertical farming, bathing and light-industrial processes, within a low-rise Southwark Grounds project connected to landscape, housing and heritage.",
     "interpretation": null,
@@ -715,8 +819,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:12.285Z"
+    "quoteLocation": "Athanor studio dossier linked through Readwise. Project-position document; page number for this design proposition remains unrecorded.",
+    "sourceUpdatedAt": "2026-11-10T06:12:07.831Z"
   },
   {
     "id": "notion-3b7501e234668107b2c1d5cd34881734",
@@ -728,8 +832,18 @@
     "author": "Ding Ding, Yaqing Yu and Jia Zhang",
     "location": "Deakin University Waterfront Campus, Geelong. Case study published in the ICSEIA 2024 proceedings.",
     "country": null,
-    "driver": "",
-    "drivers": [],
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Public life + active edges",
+      "Access + everyday movement",
+      "Site + neighbourhood"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -770,7 +884,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "pp. 176–183",
-    "sourceUpdatedAt": "2026-11-09T01:27:11.355Z"
+    "sourceUpdatedAt": "2026-11-10T04:48:57.886Z"
   },
   {
     "id": "notion-3b7501e23466801a8b99e7e94d4f7e1d",
@@ -784,6 +898,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Research + evaluation methods",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -807,7 +929,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "Connects terracotta component development to outsourced printing, hand finishing and firing. Informal discussion notes provide the account; attribution is limited to “Hana”.",
     "themes": [
       "Material + Tectonics"
     ],
@@ -820,8 +942,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:01.122Z"
+    "quoteLocation": "Discussion notes held in this research page, six-question sections 01 and 03. Exact conversation date and recording/transcript are not recorded.",
+    "sourceUpdatedAt": "2026-11-10T06:12:08.532Z"
   },
   {
     "id": "notion-3b8501e2346681edb4b7e69c246532f8",
@@ -835,6 +957,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Public life + active edges",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -874,7 +1004,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Online video; specific timestamps were not captured",
-    "sourceUpdatedAt": "2026-11-09T01:27:01.786Z"
+    "sourceUpdatedAt": "2026-11-10T04:48:58.767Z"
   },
   {
     "id": "notion-3b8501e2346681319dead3f36bf66175",
@@ -888,6 +1018,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Public life + active edges",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -930,7 +1068,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Online video; specific timestamps were not captured",
-    "sourceUpdatedAt": "2026-11-09T01:27:02.236Z"
+    "sourceUpdatedAt": "2026-11-10T04:48:59.202Z"
   },
   {
     "id": "notion-3b8501e23466812486c7e96813485048",
@@ -944,6 +1082,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Access + everyday movement",
+      "Site + neighbourhood",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -986,7 +1132,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Online video; specific timestamps were not captured",
-    "sourceUpdatedAt": "2026-11-09T01:27:02.747Z"
+    "sourceUpdatedAt": "2026-11-10T04:48:59.613Z"
   },
   {
     "id": "notion-3b8501e23466818198d6d374d1fd53e7",
@@ -998,8 +1144,18 @@
     "author": "Elena Madison / TEDx Talks",
     "location": "TEDxSpringfield talk.",
     "country": null,
-    "driver": "",
-    "drivers": [],
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Public life + active edges",
+      "Research + evaluation methods",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -1039,7 +1195,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Online video; specific timestamps were not captured",
-    "sourceUpdatedAt": "2026-11-09T01:27:03.262Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:00.037Z"
   },
   {
     "id": "notion-3b8501e23466804ebaa7eaa8bf15bb9f",
@@ -1053,6 +1209,13 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -1093,7 +1256,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Online video; specific timestamps were not captured",
-    "sourceUpdatedAt": "2026-11-09T01:27:03.812Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:00.942Z"
   },
   {
     "id": "notion-3bb501e234668055a977e9a45a07d8d9",
@@ -1107,6 +1270,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Climate + environmental comfort",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1148,8 +1319,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:16.437Z"
+    "quoteLocation": "Kéré Architecture project text, paragraphs on clay/cement bricks and the raised roof/perforated brick ceiling; accompanying axonometry, section, plan and roof-detail captions.",
+    "sourceUpdatedAt": "2026-11-10T06:38:07.274Z"
   },
   {
     "id": "notion-3bb501e2346680b7a72fd7f8ff779858",
@@ -1163,6 +1334,14 @@
     "country": "Australia",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Material + construction systems",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1206,8 +1385,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:19.476Z"
+    "quoteLocation": "DesignInc project account, paragraphs beginning “Architecturally, CH2 displays its environmental strategies…” and “Discreet innovations…”.",
+    "sourceUpdatedAt": "2026-11-10T06:38:07.802Z"
   },
   {
     "id": "notion-3bb501e23466806ca1a8fd77efbd5f91",
@@ -1221,6 +1400,13 @@
     "country": "Germany",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1262,7 +1448,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:18.429Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:02.460Z"
   },
   {
     "id": "notion-3bb501e234668040b8ebe39089ca1c5f",
@@ -1276,6 +1462,14 @@
     "country": "Austria",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Material + construction systems",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1317,8 +1511,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:15.097Z"
+    "quoteLocation": "Museum Joanneum, “BIX media facade”, introductory account and the 56×25 / 926 technical data under “John Dekron interview”.",
+    "sourceUpdatedAt": "2026-11-10T06:38:08.950Z"
   },
   {
     "id": "notion-3bb501e23466805fb0e1c0fbea4775ef",
@@ -1332,6 +1526,15 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Material + construction systems",
+      "Architectural experience + identity",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1373,8 +1576,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:17.505Z"
+    "quoteLocation": "AHR project account, “A unique and inspiring look”, describing the folding mashrabiya units and solar control.",
+    "sourceUpdatedAt": "2026-11-10T06:38:09.499Z"
   },
   {
     "id": "notion-3bb501e2346680dd992ed28108a64159",
@@ -1388,6 +1591,14 @@
     "country": "France",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Material + construction systems",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1431,8 +1642,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:20.644Z"
+    "quoteLocation": "Jean Nouvel project text, paragraphs on the south façade’s motorised diaphragms and the role of light.",
+    "sourceUpdatedAt": "2026-11-10T06:38:10.068Z"
   },
   {
     "id": "notion-3bb501e23466803799a4fda97fd2a2d9",
@@ -1442,10 +1653,18 @@
     "type": "Project",
     "method": "Precedent analysis",
     "author": "Studio RAP.",
-    "location": "Amsterdam, Netherlands; completed 2024.",
+    "location": "P.C. Hooftstraat, Amsterdam, Netherlands; boutique façade. Completion year needs a dated project source.",
     "country": "Netherlands",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Research + evaluation methods",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1458,7 +1677,7 @@
     "url": "https://studiorap.nl/Ceramic-House",
     "context": null,
     "answers": [
-      "Residential renovation in which computational design and robotic production generate bespoke 3D-printed ceramic façade tiles.",
+      "A boutique façade on Amsterdam’s P.C. Hooftstraat, designed and produced by Studio RAP using bespoke 3D-printed ceramic tiles.",
       "Direct fabrication precedent for your terracotta façade investigation and for treating patterned surface as public-facing environmental architecture.",
       "A digitally generated ornamental tile field is translated into individually produced ceramic pieces, using robotic additive manufacture to make complex surface variation feasible. Robotic ceramic fabrication can move beyond prototype scale to deliver detailed, materially rich façade systems with controlled variation.",
       "Bespoke tile faces need not require bespoke fixing and replacement procedures for every tile.",
@@ -1488,8 +1707,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:14.168Z"
+    "quoteLocation": "Studio RAP project text, opening project description and “Algorithmic design”; boutique façade on P.C. Hooftstraat.",
+    "sourceUpdatedAt": "2026-11-10T06:38:11.017Z"
   },
   {
     "id": "notion-3bb501e2346680f9a4efe001687e0512",
@@ -1503,6 +1722,14 @@
     "country": "Switzerland",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Architectural experience + identity",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1544,8 +1771,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:22.571Z"
+    "quoteLocation": "DS+R project text, “architecture of atmosphere” and paragraphs describing wind, temperature and humidity effects on the fog.",
+    "sourceUpdatedAt": "2026-11-10T06:38:11.709Z"
   },
   {
     "id": "notion-3bb501e2346680e6865edd229fc3dff5",
@@ -1559,6 +1786,13 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1601,7 +1835,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:21.611Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:05.448Z"
   },
   {
     "id": "notion-3bb501e234668085b9ced46b2244fb6e",
@@ -1615,6 +1849,13 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1653,7 +1894,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:13.682Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:05.822Z"
   },
   {
     "id": "notion-3bb501e234668089af8cc98489430df6",
@@ -1667,6 +1908,13 @@
     "country": "France",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -1707,7 +1955,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:14.650Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:06.285Z"
   },
   {
     "id": "notion-3bb501e234668055a2dac20a82aa60a9",
@@ -1721,6 +1969,14 @@
     "country": "Netherlands",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Architectural experience + identity",
+      "Site + neighbourhood"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1760,8 +2016,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:15.578Z"
+    "quoteLocation": "MVRDV Crystal Houses project description, paragraphs on glass masonry and the transition to traditional brickwork.",
+    "sourceUpdatedAt": "2026-11-10T06:38:12.527Z"
   },
   {
     "id": "notion-3bb501e234668028bde2eb593ff3ce92",
@@ -1775,6 +2031,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Architectural experience + identity",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -1815,8 +2079,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:17.027Z"
+    "quoteLocation": "MVRDV Tiffany Façade Beijing project description, paragraphs on oblique views and detachable glass fins/brackets.",
+    "sourceUpdatedAt": "2026-11-10T06:38:13.101Z"
   },
   {
     "id": "notion-3be501e23466810197edd9fc037952ed",
@@ -1828,18 +2092,28 @@
     "author": "Christopher Alexander, Sara Ishikawa, Murray Silverstein et al.",
     "location": "Architectural and urban design theory; used here to analyse thresholds, positive outdoor space and gradients of access.",
     "country": null,
-    "driver": "",
-    "drivers": [],
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Public life + active edges",
+      "Access + everyday movement"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
     "lenses": [],
-    "reliability": "High",
-    "quality": "High",
+    "reliability": "Medium",
+    "quality": "Medium",
     "evidence": "Supplementary thematic highlights based on the book’s pattern-language approach. Exact quotations and page references should be verified from the user’s copy before direct citation.",
     "information": "Supplementary highlights relevant to the project: Alexander’s pattern-language approach treats recurring spatial relationships as a connected system for supporting everyday human activity. Particularly useful themes are entrances, edges, arcades, outdoor rooms, sitting space, shade, transitions, positive outdoor space and gradients of intimacy/access. Together these suggest that a façade should not be read as an isolated surface, but as part of a sequence of recognisable spatial conditions that help people understand where they may approach, pause, enter, gather or remain outside. His emphasis on gradations between public, semi-public and private space is especially relevant to secure infrastructure, because it supports a non-binary relationship between invitation and restriction. His concept of positive outdoor space also shifts attention to the micro-space immediately beside the building, where enclosure, shade, seating, openings and adjoining uses determine whether the edge becomes occupiable public territory.",
     "interpretation": null,
     "insight": "The façade can operate as a pattern system: a layered threshold that simultaneously communicates access, creates positive outdoor space, and supports pedestrian comfort rather than acting as a simple boundary.",
     "implication": "Translate a small family of Alexander-like spatial patterns into computational façade rules: deep shaded thresholds, sheltered sitting edges, visible entrances, transitional planting, niches, semi-public outdoor rooms and graduated screening. Parametric variation can tune depth, porosity and material concentration according to orientation, heat exposure, desired public occupation and security level. Test each façade section by the quality of the 0–5 m public zone it creates, not only by internal envelope performance.",
     "question": null,
-    "url": null,
+    "url": "https://www.oup.com.au/books/general-interest/art-technology/9780195019193",
     "context": null,
     "answers": [
       "A Pattern Language is Christopher Alexander and collaborators’ catalogue of recurring spatial patterns intended to support humane, everyday environments. Rather than prescribing a single architectural style, it describes relationships between buildings, streets, thresholds, rooms and outdoor spaces that can be combined into larger systems.",
@@ -1853,7 +2127,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "Book-based interpretation connecting entrance transitions, sitting edges and gradients of access to the Southwark threshold. Publisher listing identifies the book; quoted passages and edition-specific pages remain to be checked.",
     "themes": [
       "Public Interface"
     ],
@@ -1870,7 +2144,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "A Pattern Language — patterns concerning entrances, building edges, positive outdoor space, outdoor rooms, sitting space and gradients of intimacy/access",
-    "sourceUpdatedAt": "2026-11-09T01:27:17.940Z"
+    "sourceUpdatedAt": "2026-11-10T06:12:09.017Z"
   },
   {
     "id": "notion-3be501e2346681efa478d093597c749c",
@@ -1884,6 +2158,13 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Site + neighbourhood"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -1893,12 +2174,12 @@
     "insight": "The façade communicates what kind of institution the building is. Environmental performance and public perception need to be designed together if infrastructure is to feel civic rather than defensive or alien.",
     "implication": "Evaluate façade options against paired criteria: environmental performance and perceived character. Use depth, texture, rhythm, visible environmental processes and human-scale articulation to make the data centre legible and approachable without disguising its infrastructural identity. Computational variation should respond to local conditions—orientation, pedestrian routes, shade demand, neighbouring uses and site history—rather than generating arbitrary complexity. Treat contextual belonging and public legibility as design-performance criteria alongside carbon, thermal and fabrication metrics.",
     "question": null,
-    "url": null,
+    "url": "https://www.alaindebotton.com/architecture/",
     "context": null,
     "answers": [
       "The Architecture of Happiness is Alain de Botton’s exploration of the emotional and cultural effects of architecture. The book considers why particular buildings and places affect us, how architecture expresses values and character, and how our sense of beauty is shaped by context, memory and association.",
       "My project asks how the façade of a data centre can improve its public interface. de Botton’s argument is useful because it shows that environmental performance alone does not determine whether people experience a building positively. A façade can provide shade and reduce heat while still communicating exclusion, indifference or hostility. The project therefore needs to design both physical comfort and perceived character.",
-      "People read buildings emotionally and culturally, often through small cues of scale, material, rhythm, openness and detail. The exterior communicates what sort of place a building is and whether people feel they belong near it. I also learnt that architectural identity is relational: the data centre will be read against Southwark’s industrial history, the new mixed-use precinct, the river landscape and the everyday scale of future residential life.",
+      "People read buildings emotionally and culturally, often through small cues of scale, material, rhythm, openness and detail. The exterior communicates what sort of place a building is and whether people feel they belong near it. Architectural identity could be considered relationally: the data centre will be read against Southwark’s industrial history, the new mixed-use precinct, the river landscape and the everyday scale of future residential life.",
       "It challenges the idea that technical optimisation can be separated from architectural experience. It also challenges the assumption that computational complexity automatically produces architectural value. A robotically fabricated façade may be efficient or visually distinctive, but if its character feels arbitrary or alien to its setting it can weaken the civic argument of the project.",
       "This connects to Public Interface, Project Position, Material + Tectonics, Robotic Fabrication and the broader Gaddie-pitch question of making a federated data centre understandable and acceptable to the people living beside it. It also connects to The Australian Ugliness, Humanise and Why Architecture Matters, which each question how architectural character affects public experience.",
       "Evaluate façade options against two linked sets of criteria: environmental performance—shade, radiant heat, airflow, material quantity and carbon—and public character—human scale, invitation, texture, rhythm, legibility and contextual belonging. Use computational variation only where it responds to real site conditions such as orientation, pedestrian routes, shade demand, security and neighbouring uses, so the façade feels like civic infrastructure rather than an autonomous formal object."
@@ -1907,7 +2188,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "Connects architectural character and emotional response to the reading of the Southwark street edge. Author’s book account supports the subject; detailed claims remain thematic interpretations until checked against the book.",
     "themes": [
       "Public Interface"
     ],
@@ -1924,7 +2205,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "The Architecture of Happiness — discussions of architectural character, emotion, beauty, association, context and belonging",
-    "sourceUpdatedAt": "2026-11-09T01:27:18.968Z"
+    "sourceUpdatedAt": "2026-11-10T06:12:09.537Z"
   },
   {
     "id": "notion-3be501e2346681488857d5e6b7342136",
@@ -1938,9 +2219,16 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Site + neighbourhood"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
-    "reliability": "High",
-    "quality": "High",
+    "reliability": "Medium",
+    "quality": "Medium",
     "evidence": "Supplementary thematic highlights, not direct quotations. Verify exact passages in your copy before using quotation marks.",
     "information": "Supplementary highlights: cities are experienced through memory, desire, signs, language and perception; the same physical city can hold multiple meanings depending on who experiences it; urban identity is constructed as much through stories and associations as through built form; imagined cities expose hidden qualities of real cities.",
     "interpretation": null,
@@ -1976,7 +2264,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Invisible Cities — recurring themes of cities and memory, desire, signs, exchange, eyes, names and the dead",
-    "sourceUpdatedAt": "2026-11-09T01:27:19.471Z"
+    "sourceUpdatedAt": "2026-11-10T06:12:10.408Z"
   },
   {
     "id": "notion-3be501e2346681ce9abffac199c7c373",
@@ -1990,9 +2278,16 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
-    "reliability": "High",
-    "quality": "High",
+    "reliability": "Medium",
+    "quality": "Medium",
     "evidence": "Supplementary thematic highlights, not direct quotations. Verify exact passages in your copy before using quotation marks.",
     "information": "Supplementary highlights: beauty can emerge through gradations of shadow rather than uniform brightness; material texture and patina become more perceptible in subdued light; transitions between light and dark create atmosphere, depth and anticipation; architecture can work with climate and sensory perception rather than eliminating environmental variation.",
     "interpretation": null,
@@ -2004,7 +2299,7 @@
     "answers": [
       "In Praise of Shadows is Jun’ichirō Tanizaki’s essay on Japanese aesthetics, particularly the qualities created by shadow, subdued light, material surfaces, patina and spatial atmosphere.",
       "The project is investigating pedestrian heat exposure and passive façade design. Tanizaki expands the idea of shade beyond solar control by showing how darkness, depth and changing light can produce atmosphere and sensory richness. This helps frame a shaded public edge as a positive architectural experience rather than merely a response to climate.",
-      "I learnt that comfort and visual richness do not require maximum brightness or transparency. Deep reveals, layered screens and textured materials can make shade spatially legible and desirable. The quality of a façade can therefore come from how it modulates light over time and how those changes affect the perception of material, depth and enclosure.",
+      "Future façade studies could test comfort and visual richness without assuming maximum brightness or transparency. Deep reveals, layered screens and textured materials can make shade spatially legible and desirable. The quality of a façade can therefore come from how it modulates light over time and how those changes affect the perception of material, depth and enclosure.",
       "It challenges the assumption that brighter, more open and more transparent architecture is automatically better. It also challenges the tendency to treat solar shading as a purely technical attachment. For this project, shade itself can become a primary architectural material.",
       "This connects strongly to Urban Heat / Thermal Commons, Climate + Carbon, Material + Tectonics and Robotic Fabrication. It also connects to pedestrian comfort, surface temperature, façade depth and the possibility of using computational geometry to produce graduated rather than binary sun/shade conditions.",
       "Develop a façade of deep, layered and variably porous elements that creates graduated shade along the pedestrian edge. Use environmental analysis to tune depth and spacing for solar protection, then use robotic fabrication to make the resulting shadow, texture and material depth part of the architectural experience rather than treating shading as a separate device."
@@ -2028,7 +2323,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "In Praise of Shadows — discussions of shadow, subdued light, material surfaces, patina and spatial atmosphere",
-    "sourceUpdatedAt": "2026-11-09T01:27:20.072Z"
+    "sourceUpdatedAt": "2026-11-10T06:12:10.943Z"
   },
   {
     "id": "notion-3be501e2346681cb9534c9d491fd5fd0",
@@ -2042,9 +2337,17 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Site + neighbourhood",
+      "Material + construction systems"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
-    "reliability": "High",
-    "quality": "High",
+    "reliability": "Medium",
+    "quality": "Medium",
     "evidence": "Supplementary thematic highlights. Publisher description confirms Boyd’s critique of Australian environments and advocacy for contextually grounded design; verify exact passages and any use of 'featurism' from your copy.",
     "information": "Supplementary highlights: Boyd criticises the accumulation of disconnected decorative features and the lack of coherent design thinking he calls featurism; he links visual disorder to broader cultural habits and commercial strips; he argues for architecture grounded in ideas, climate, place and a genuine Australian identity rather than applied novelty.",
     "interpretation": null,
@@ -2056,7 +2359,7 @@
     "answers": [
       "The Australian Ugliness is Robin Boyd’s critique of Australian built culture and visual environment. A central idea is his criticism of “featurism”—the tendency to assemble conspicuous individual features without a coherent architectural whole.",
       "My project uses computational design and robotic fabrication, both of which can easily produce visually distinctive forms. Boyd provides an important critical test: is the façade genuinely responding to climate, material efficiency, public use and site, or is digital fabrication simply producing another architectural feature?",
-      "I learnt that visual complexity is not the same as architectural richness. A façade becomes more convincing when its formal variation can be traced back to a clear reason—shade, airflow, security, view, pedestrian occupation, material efficiency or context. The project also needs to operate specifically in Adelaide and Southwark rather than presenting a generic parametric language that could be placed anywhere.",
+      "Future façade studies should distinguish visual complexity from architectural richness. A façade becomes more convincing when its formal variation can be traced back to a clear reason—shade, airflow, security, view, pedestrian occupation, material efficiency or context. The project also needs to operate specifically in Adelaide and Southwark rather than presenting a generic parametric language that could be placed anywhere.",
       "It challenges the assumption that novelty or technological sophistication automatically produces good architecture. It also challenges the temptation to use robotic fabrication as an aesthetic identity in itself. If a geometric move cannot be connected to a climatic, social, material or spatial purpose, it risks becoming exactly the kind of disconnected feature Boyd criticises.",
       "This connects to Project Position, Robotic Fabrication, Climate + Carbon, Material + Tectonics and the wider question of architectural identity at Southwark. It also connects to Humanise and The Architecture of Happiness, but acts as a useful counterweight by warning against superficial visual stimulation.",
       "Require every change in façade geometry to have a traceable purpose. Build a design matrix linking variation to solar exposure, airflow, public occupation, security, view, fabrication efficiency or material reduction. If an element cannot demonstrate one of those relationships, remove or simplify it. This makes robotic fabrication a means of producing locally responsive performance rather than a stylistic feature."
@@ -2082,7 +2385,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "The Australian Ugliness — Boyd’s critique of featurism, commercial visual pollution, Australian identity and environmental design",
-    "sourceUpdatedAt": "2026-11-09T01:27:21.131Z"
+    "sourceUpdatedAt": "2026-11-10T06:12:11.485Z"
   },
   {
     "id": "notion-3be501e2346681629f50c8d5f195129f",
@@ -2096,9 +2399,16 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
-    "reliability": "High",
-    "quality": "High",
+    "reliability": "Medium",
+    "quality": "Medium",
     "evidence": "Supplementary thematic highlights based on the book and Humanise campaign descriptions; not direct quotations from the book. Verify exact passages in your copy before quoting.",
     "information": "Supplementary highlights: Heatherwick argues that many contemporary buildings have become monotonous, disposable and emotionally indifferent; building exteriors shape public experience because most people encounter architecture from the outside; visual richness, detail and human-scale variation can make places more engaging; public affection and longevity are linked to sustainability because buildings people value are less readily discarded.",
     "interpretation": null,
@@ -2110,7 +2420,7 @@
     "answers": [
       "Humanise is Thomas Heatherwick’s critique of what he sees as increasingly bland and emotionally disengaging contemporary buildings. He argues for architecture that offers visual interest, human-scale detail and character to the people who encounter it in everyday life.",
       "This is highly relevant to a data centre because the typology is commonly large, secure and visually closed. My project asks whether robotic fabrication and computational design can improve that public interface. Heatherwick’s argument reinforces the idea that the façade should give something to pedestrians even when they have no reason or permission to enter the building.",
-      "I learnt to judge the façade from the perspective of a person moving past it at walking speed rather than only from a distant architectural image. Variation, depth, texture, recognisable entrances and places to pause can make a large infrastructural building feel more legible and human. There is also a useful sustainability connection: if architectural character contributes to long-term public value, durability and affection become part of the environmental argument rather than separate aesthetic concerns.",
+      "Future façade studies could begin with the perspective of a person moving past at walking speed, alongside more distant views. Variation, depth, texture, recognisable entrances and places to pause can make a large infrastructural building feel more legible and human. There is also a useful sustainability connection: if architectural character contributes to long-term public value, durability and affection become part of the environmental argument rather than separate aesthetic concerns.",
       "It challenges the acceptance of blank, repetitive or value-engineered building envelopes as an inevitable result of efficiency. For this project it also challenges the idea that sustainability should produce an austere or purely technical façade. At the same time, Heatherwick’s position needs to be balanced against Boyd’s critique of featurism: visual interest must come from meaningful spatial, environmental or material decisions rather than decoration for its own sake.",
       "This connects directly to Public Interface, Robotic Fabrication, Project Position, Climate + Carbon and Material + Tectonics. It also connects to The Architecture of Happiness, Why Architecture Matters and The Australian Ugliness, creating a useful cluster of readings around character, public perception, visual richness and the difference between meaningful complexity and superficial novelty.",
       "Design the façade from the pedestrian encounter outward: provide changing depth and shadow, tactile material, recognisable thresholds, moments to sit or pause, and visible traces of the building’s environmental systems. Use robotic fabrication to concentrate detail and variation where people actually experience it, while testing each move against durability, material quantity and environmental performance so humanisation does not become unnecessary consumption."
@@ -2135,7 +2445,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Humanise — critique of boring buildings, public-facing architecture, visual complexity, emotion and longevity",
-    "sourceUpdatedAt": "2026-11-09T01:27:22.066Z"
+    "sourceUpdatedAt": "2026-11-10T06:12:12.056Z"
   },
   {
     "id": "notion-3be501e23466816583efd23041adf232",
@@ -2149,9 +2459,16 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
-    "reliability": "High",
-    "quality": "High",
+    "reliability": "Medium",
+    "quality": "Medium",
     "evidence": "Supplementary thematic highlights based on the author and Yale University Press descriptions; not direct quotations from the book. Verify exact passages in your copy before quoting.",
     "information": "Supplementary highlights: architecture matters through its emotional as well as intellectual effects; qualities such as proportion, scale, space, materials, texture, shape, light and memory determine how buildings are experienced; architecture becomes significant when it offers meaning and emotional resonance beyond basic shelter or function.",
     "interpretation": null,
@@ -2163,7 +2480,7 @@
     "answers": [
       "Why Architecture Matters is Paul Goldberger’s exploration of why buildings and places have significance beyond utility. He discusses how architecture affects people through scale, proportion, materials, light, texture, memory and emotional response.",
       "My research risks becoming dominated by measurable criteria such as solar radiation, embodied carbon, material reduction and fabrication efficiency. Goldberger provides a useful counterpoint by arguing that architecture also matters because of how it is experienced. The public interface of the data centre therefore needs to perform environmentally while still producing spatial and emotional value.",
-      "I learnt that technical success does not automatically create architectural significance. People encounter buildings through their bodies and memories: whether an edge feels oppressive or comfortable, whether a material invites touch, whether the scale relates to a pedestrian, and whether light and shadow create memorable conditions. These qualitative effects can be treated as legitimate design criteria rather than as aesthetic additions made after optimisation.",
+      "Future design evaluation should consider architectural significance alongside technical success. People encounter buildings through their bodies and memories: whether an edge feels oppressive or comfortable, whether a material invites touch, whether the scale relates to a pedestrian, and whether light and shadow create memorable conditions. These qualitative effects can be treated as legitimate design criteria rather than as aesthetic additions made after optimisation.",
       "It challenges the idea that measurable performance alone can define a successful façade. It also challenges a workflow where computation determines form first and architectural experience is considered afterward. Instead, qualitative experience should influence the parameters being optimised from the beginning.",
       "This connects to Public Interface, Project Position, Material + Tectonics, pedestrian comfort and the project’s Gaddie-pitch argument that infrastructure should become part of civic life. It connects closely to The Architecture of Happiness, Humanise and In Praise of Shadows, which each add different dimensions of emotional, sensory and public experience.",
       "Add a set of qualitative performance criteria to computational façade testing alongside radiation, carbon and material quantity: perceived scale at walking speed, rhythm, tactile character, depth, light and shadow, invitation, opportunities to pause, and legibility of entrance and use. Use drawings, physical fragments and pedestrian-level prototypes to test these criteria rather than relying only on environmental simulation."
@@ -2186,7 +2503,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Why Architecture Matters — discussions of emotion, proportion, scale, space, materials, texture, light and memory",
-    "sourceUpdatedAt": "2026-11-09T01:27:23.452Z"
+    "sourceUpdatedAt": "2026-11-10T06:12:12.551Z"
   },
   {
     "id": "notion-3be501e23466811cbeccf4a007576f17",
@@ -2200,11 +2517,19 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Site + neighbourhood",
+      "Public life + active edges",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
-    "reliability": "High",
-    "quality": "High",
-    "evidence": "Supplementary thematic highlights based on the authors’ and publisher’s descriptions; not direct quotations from the book. Verify exact passages in your copy before quoting.",
-    "information": "Supplementary highlights: cities are engines of innovation and progress but are also where inequality, social division, pandemics and climate change become concentrated; technological change and online life can weaken physical social connections; more equitable, cohesive and sustainable societies depend on how cities respond to these pressures.",
+    "reliability": "Medium",
+    "quality": "Medium",
+    "evidence": "Paraphrase of recovered Kindle highlights. Location 2706 describes capturing industrial waste heat for district heating; 2679–2682 connect urban housing supply and walkability; 2711 discusses urban green space.",
+    "information": "The recovered highlights discuss increasing housing supply through mid-rise development and reused buildings, walkable neighbourhoods, industrial waste heat used for district heating, and urban green space. These are source findings. Their application to a Southwark data-centre threshold remains a design interpretation.",
     "interpretation": null,
     "insight": "Infrastructure should be evaluated by the urban relationships it creates, not only by the service it delivers. Digital infrastructure can either withdraw from civic life or actively reinforce local community and resilience.",
     "implication": "Use the building edge as shared neighbourhood infrastructure: shade, seating, thermal refuge, learning/interpretive space and visible environmental systems. Test whether the project improves the experience of the surrounding precinct, particularly during heat events, rather than limiting performance assessment to the site boundary.",
@@ -2214,7 +2539,7 @@
     "answers": [
       "Age of the City by Ian Goldin and Tom Lee-Devlin examines the growing importance of cities in shaping economic, social and environmental futures. It considers both the opportunities created by urban concentration and the problems cities intensify, including inequality, climate change, social division and technological disruption.",
       "The studio proposes a district-scale federated data centre embedded within a new mixed-use neighbourhood. This book helps position that decision at an urban scale: the project should not be assessed only as a building or technical facility, but as infrastructure that changes the relationships, resources and public spaces around it.",
-      "I learnt that the value of infrastructure depends partly on how its benefits and burdens are distributed through the city. A data centre consumes energy, produces heat, requires security and occupies valuable urban land, but those conditions can potentially be reorganised to provide local benefits such as shade, thermal refuge, learning, energy exchange and useful public space. The project becomes more credible when its digital role is connected to tangible neighbourhood value.",
+      "Future infrastructure studies could assess value through the distribution of benefits and burdens across the city. A data centre consumes energy, produces heat, requires security and occupies valuable urban land, but those conditions can potentially be reorganised to provide local benefits such as shade, thermal refuge, learning, energy exchange and useful public space. The project becomes more credible when its digital role is connected to tangible neighbourhood value.",
       "It challenges the conventional model of infrastructure as something isolated from public life and evaluated primarily through technical efficiency. It also challenges the idea that digital connectivity can substitute for high-quality physical public environments. For this project, being technologically advanced is not enough if the building weakens the street or concentrates environmental costs locally.",
       "This connects to Data Centre / Infrastructure, Urban Heat / Thermal Commons, Smart Buildings + AI, Project Position, resource ecology and the studio’s federated-data-centre proposition. It also connects the façade research to the larger urban question: whether the building edge can function as neighbourhood climate and social infrastructure.",
       "Treat the data-centre edge as shared neighbourhood infrastructure. Test whether the 0–5 m zone around the building provides shade, lower radiant exposure, seating, thermal refuge, interpretation and visible environmental exchange. Extend performance assessment beyond the site boundary by mapping who benefits from these conditions, when they are available and how they connect to surrounding pedestrian routes and public space."
@@ -2239,8 +2564,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": "Age of the City — themes of urban progress, inequality, social division, technology, community and climate change",
-    "sourceUpdatedAt": "2026-11-09T01:27:24.432Z"
+    "quoteLocation": "Readwise Kindle highlights, ASIN B0BNVSTG2X. Locations 2679 (mid-rise/adaptive reuse), 2682 (walkable suburbs), 2706 (district heating), 2711 (urban green space), and 1828 (shared neighbourhood meal).",
+    "sourceUpdatedAt": "2026-11-10T06:38:56.467Z"
   },
   {
     "id": "notion-3bf501e23466800382d9dd486c7defb1",
@@ -2252,8 +2577,19 @@
     "author": "Alexandra Vondeling / Opticos; The Building Culture Podcast",
     "location": "Urban design and housing discussion; used here to connect building edges, shade, shared outdoor space and neighbourhood-scale amenity.",
     "country": null,
-    "driver": "",
-    "drivers": [],
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Site + neighbourhood",
+      "Access + everyday movement",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
     "lenses": [
       3
     ],
@@ -2265,12 +2601,12 @@
     "insight": "The neighbourhood itself can be the amenity. A building contributes most when its edge strengthens a connected, walkable and comfortable public realm rather than concentrating value inside its property boundary.",
     "implication": "Use façade depth and building massing to create shaded pedestrian routes, sitting areas and shared outdoor rooms connected to surrounding paths and amenities.",
     "question": null,
-    "url": null,
+    "url": "https://share.snipd.com/episode/5e08060d-57dc-41d7-940f-04a90530eedb",
     "context": null,
     "answers": [
       "A Building Culture Podcast conversation with Alexandra Vondeling of Opticos about missing-middle housing, car-light neighbourhoods, streetscape design and the idea that neighbourhood structure itself can become the primary amenity.",
       "Although the discussion centres on housing, it is directly relevant to my project because the data centre sits within a new mixed-use neighbourhood. It reinforces the idea that the building should be judged by how it strengthens the street, pedestrian network and shared outdoor environment around it rather than by the quality of the object in isolation.",
-      "I learnt that density and amenity are inseparable from siting and streetscape. Vondeling repeatedly connects successful neighbourhoods to transit, small-scale commercial activity, parks, trails, reduced parking dominance and building edges that engage the street. The Colesac example is particularly useful because tighter, car-light urban form allows massing to create shade, courtyards and shared spaces. This suggests that public comfort can emerge from the relationship between buildings and the spaces they frame.",
+      "Future housing and public-realm studies could assess density and amenity together with siting and streetscape. Vondeling repeatedly connects successful neighbourhoods to transit, small-scale commercial activity, parks, trails, reduced parking dominance and building edges that engage the street. The Colesac example is particularly useful because tighter, car-light urban form allows massing to create shade, courtyards and shared spaces. This suggests that public comfort can emerge from the relationship between buildings and the spaces they frame.",
       "It challenges the assumption that amenity must be contained inside a building or provided as a discrete programmed facility. It also challenges development models where parking, wide streets and isolated buildings undermine otherwise good density. For my project, it questions whether a public programme attached to the data centre is enough if the surrounding edge and pedestrian environment remain uncomfortable or disconnected.",
       "This connects to Public Interface, Urban Heat / Thermal Commons, Project Position and the Southwark masterplan. It also connects to Alexander’s positive outdoor space, the project’s pedestrian-comfort research, public-realm mapping and the idea of the façade as part of a larger neighbourhood system rather than a self-contained envelope.",
       "Treat the data centre’s immediate public realm as an amenity network rather than leftover setback space. Use massing and façade depth to form shade, sitting areas, courtyards and protected pedestrian routes, and connect these deliberately to neighbouring paths, public transport, landscape and active uses. Test the success of the façade by whether it improves movement and occupation beyond the building boundary."
@@ -2279,7 +2615,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "This connects to Public Interface, Urban Heat / Thermal Commons, Project Position and the Southwark masterplan. It also connects to Alexander’s positive outdoor space, the project’s pedestrian-comfort research, public-realm mapping and the idea of the façade as part of a larger neighbourhood system rather than a self-contained envelope.",
     "themes": [
       "Public Interface",
       "Urban Infrastructure"
@@ -2295,8 +2631,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:25.623Z"
+    "quoteLocation": "Saved Readwise/Snipd transcript highlights. 00:07:04 car-light massing; 00:10:09 missing-middle definition; 00:13:36 streetscape; 00:18:20 neighbourhood nodes and transit.",
+    "sourceUpdatedAt": "2026-11-10T06:12:13.644Z"
   },
   {
     "id": "notion-3bf501e2346680d1b337e5ff501aa242",
@@ -2310,6 +2646,13 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -2319,12 +2662,12 @@
     "insight": "The strongest opportunity is not simply faster or cheaper robots but smarter, feedback-aware fabrication that reduces programming and repetitive labour while preserving design intent and selective hand craft.",
     "implication": "Prototype façade components and feed machine time, toolpath complexity, manual intervention, finishing effort and material use back into the parametric model as optimisation criteria.",
     "question": null,
-    "url": null,
+    "url": "https://share.snipd.com/episode/76296941-b9ab-421d-8760-598346c489cd",
     "context": null,
     "answers": [
       "A Building Culture Podcast interview with Micah Springut of Monumental Labs discussing robotic stone carving, CNC workflows, AI-assisted automation, sensors, craft and the possibility of using advanced fabrication to make carved masonry economically viable again.",
       "This directly relates to my investigation of robotic fabrication as a means of producing a more materially efficient and publicly engaging façade. The interview provides a real production example showing where robotic fabrication is already useful, where labour is still required, and how AI or sensor feedback could change the workflow.",
-      "The key lesson is that robotic fabrication is not automatically an autonomous process. The robots can cut quickly, but significant human expertise is still required to prepare geometry, choose machining strategies, correct errors and finish surfaces. Springut identifies toolpath planning and repetitive machine decisions as areas where AI could reduce labour. I also learnt that the best outcome may be hybrid rather than fully automated: machines handle difficult or repetitive removal while people retain control over design intent and final craft.",
+      "The key lesson is that robotic fabrication is not automatically an autonomous process. The robots can cut quickly, but significant human expertise is still required to prepare geometry, choose machining strategies, correct errors and finish surfaces. Springut identifies toolpath planning and repetitive machine decisions as areas where AI could reduce labour. A future fabrication workflow could test a hybrid approach: machines handle difficult or repetitive removal while people retain control over design intent and final craft.",
       "It challenges the assumption that robotic fabrication simply means replacing craftsmen with machines. It also challenges the idea that the cost of advanced fabrication is primarily the robot itself; in Springut’s account, labour and process knowledge remain dominant. For my project this means that a complicated façade is only credible if the digital-to-fabrication workflow is designed to reduce programming, handling and finishing effort as well as material quantity.",
       "This connects directly to Robotic Fabrication, Smart Buildings + AI, Material + Tectonics, Climate + Carbon and the proposed computational façade workflow. It also connects to Studio RAP, terracotta component development, design-for-manufacture thinking and the question of whether digital fabrication can produce meaningful material richness without excessive cost or waste.",
       "Develop the façade as a fabrication-aware parametric system in which geometry is constrained by real machining or printing operations. Prototype several components and record toolpath complexity, machine time, manual intervention, material removed/added and finishing effort. Use those results as feedback into the Grasshopper model so optimisation considers fabrication labour and machine intelligence alongside shade, thermal performance and material use."
@@ -2333,7 +2676,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "This connects directly to Robotic Fabrication, Smart Buildings + AI, Material + Tectonics, Climate + Carbon and the proposed computational façade workflow. It also connects to Studio RAP, terracotta component development, design-for-manufacture thinking and the question of whether digital fabrication can produce meaningful material richness without excessive cost or waste.",
     "themes": [
       "Material + Tectonics",
       "Public Interface"
@@ -2350,8 +2693,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:26.718Z"
+    "quoteLocation": "Saved Readwise/Snipd transcript highlights. 00:01:39 seven-axis robots; 00:04:10 manual toolpaths and sensing; 00:10:10 hand finishing; 00:18:21 craft.",
+    "sourceUpdatedAt": "2026-11-10T06:12:14.332Z"
   },
   {
     "id": "notion-3bf501e2346681778487ea0567dccec4",
@@ -2365,6 +2708,14 @@
     "country": "Australia",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Public life + active edges",
+      "Material + construction systems",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -2406,8 +2757,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:27.747Z"
+    "quoteLocation": "Wardle, “Regional Revitalisation”, paragraphs on street-level brick chambers and the conservatory linking Mair Street to the public park.",
+    "sourceUpdatedAt": "2026-11-10T06:38:14.919Z"
   },
   {
     "id": "notion-3bf501e2346681b892c2d9fe4b755aae",
@@ -2419,8 +2770,18 @@
     "author": "Hill Thalis Architecture + Urban Projects",
     "location": "Dulwich Hill, Sydney, NSW, Australia; triangular site opposite rail and light rail.",
     "country": "Australia",
-    "driver": "",
-    "drivers": [],
+    "driver": "Extend",
+    "drivers": [
+      "Extend"
+    ],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Material + construction systems",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "Extend"
+    ],
     "lenses": [
       3
     ],
@@ -2464,8 +2825,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:28.869Z"
+    "quoteLocation": "Hill Thalis, The Wedge Studios project account, paragraphs on the shopfront/awning, western porch and passage, rear open galleries and landscaped terraces.",
+    "sourceUpdatedAt": "2026-11-10T06:38:15.539Z"
   },
   {
     "id": "notion-3bf501e234668110a4ebc7145b5f8336",
@@ -2477,8 +2838,18 @@
     "author": "Hames Sharley + DKO Architecture",
     "location": "Glenside, Adelaide, South Australia; inner-city infill adjoining mature trees, heritage buildings and public open space.",
     "country": "Australia",
-    "driver": "",
-    "drivers": [],
+    "driver": "Extend",
+    "drivers": [
+      "Extend"
+    ],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Site + neighbourhood",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "Extend"
+    ],
     "lenses": [
       1
     ],
@@ -2521,8 +2892,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:29.844Z"
+    "quoteLocation": "Hames Sharley project account, design features on bronze screening and paragraphs on mature trees, heritage context and street views.",
+    "sourceUpdatedAt": "2026-11-10T06:38:15.993Z"
   },
   {
     "id": "notion-3bf501e23466814d88f4f13b6054d9b6",
@@ -2534,8 +2905,20 @@
     "author": "Plazibat Architects + Cavcorp Design",
     "location": "Newstead, Brisbane, Queensland, Australia; dense subtropical inner-city setting.",
     "country": "Australia",
-    "driver": "",
-    "drivers": [],
+    "driver": "Extend",
+    "drivers": [
+      "Extend",
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Public life + active edges",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "Extend",
+      "Mediate"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -2577,7 +2960,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:30.878Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:13.358Z"
   },
   {
     "id": "notion-3bf501e2346681868940c2386c0dcf37",
@@ -2589,8 +2972,18 @@
     "author": "CHROFI",
     "location": "Manly, Sydney, NSW, Australia; mixed-use adaptive reuse at the Five Ways intersection.",
     "country": "Australia",
-    "driver": "",
-    "drivers": [],
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Site + neighbourhood",
+      "Public life + active edges",
+      "Access + everyday movement"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
     "lenses": [
       3
     ],
@@ -2632,8 +3025,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:32.048Z"
+    "quoteLocation": "Architect-provided ArchDaily account, paragraphs on the existing setback and wide frontage, the inserted street-aligned addition and protected outdoor dining terrace.",
+    "sourceUpdatedAt": "2026-11-10T06:38:16.657Z"
   },
   {
     "id": "notion-3bf501e2346681b1aa71c4227560c2a4",
@@ -2647,6 +3040,14 @@
     "country": "Australia",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Site + neighbourhood",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -2687,7 +3088,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:33.075Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:14.426Z"
   },
   {
     "id": "notion-3bf501e2346681fab31df5a1aff7b7c8",
@@ -2699,8 +3100,18 @@
     "author": "Candalepas Associates",
     "location": "Surry Hills, Sydney, NSW, Australia; busy Elizabeth Street urban edge.",
     "country": "Australia",
-    "driver": "",
-    "drivers": [],
+    "driver": "Extend",
+    "drivers": [
+      "Extend"
+    ],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Material + construction systems",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "Extend"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -2742,8 +3153,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:34.048Z"
+    "quoteLocation": "Candalepas project account, paragraphs on changing façade colour/shadow, angular views, acoustic provisions and balconies as buffers.",
+    "sourceUpdatedAt": "2026-11-10T06:38:17.158Z"
   },
   {
     "id": "notion-3bf501e23466811c9d30ee89d19c3420",
@@ -2757,6 +3168,14 @@
     "country": "Australia",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Public life + active edges",
+      "Access + everyday movement"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -2798,8 +3217,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:35.190Z"
+    "quoteLocation": "Bates Smart project account, paragraphs on the new laneway and public space connecting the loop road, pedestrian spine and playing field.",
+    "sourceUpdatedAt": "2026-11-10T06:38:17.668Z"
   },
   {
     "id": "notion-3bf501e234668151a113d2ab17dfde48",
@@ -2813,6 +3232,14 @@
     "country": "Australia",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Access + everyday movement",
+      "Architectural experience + identity",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -2852,8 +3279,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:36.408Z"
+    "quoteLocation": "Australian Institute of Architects tour description, “61 York Street Offices”, paragraphs on north/south pedestrian views, the five-storey open entry and enclosed balconies.",
+    "sourceUpdatedAt": "2026-11-10T06:38:18.146Z"
   },
   {
     "id": "notion-3bf501e23466810dac00ed99ea26147b",
@@ -2865,8 +3292,18 @@
     "author": "Harry Seidler & Associates",
     "location": "Sydney CBD, NSW, Australia; major office and public plaza precinct.",
     "country": "Australia",
-    "driver": "",
-    "drivers": [],
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Public life + active edges",
+      "Site + neighbourhood",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -2906,7 +3343,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:37.694Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:16.398Z"
   },
   {
     "id": "notion-3c0501e2346680a6a68fc9e2635f51a4",
@@ -2920,6 +3357,15 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Climate + environmental comfort",
+      "Site + neighbourhood",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -2963,7 +3409,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": "Architecture Design Consultation: Data Centre Facade & Thermal Comfort — meeting notes, 18 August 2026.",
-    "sourceUpdatedAt": "2026-11-09T01:27:38.593Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:16.795Z"
   },
   {
     "id": "notion-3c4501e2346680f3bc6ccfec6833bfe2",
@@ -2977,6 +3423,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Public life + active edges",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -2986,7 +3440,7 @@
     "insight": "Pedestrian comfort is sensory and emotional as well as thermal; a public edge has to offer legible detail, shade, texture and signs of life before its technical purpose can be understood.",
     "implication": "Evaluate the Civic Skin from walking eye-level: combine shade with texture, visual permeability, planting and readable moving components so the technical building does not become a blank, hostile edge.",
     "question": null,
-    "url": null,
+    "url": "https://share.snipd.com/episode/eef22f52-805c-4322-b622-e7f68abe32a0",
     "context": null,
     "answers": [
       "A podcast discussion on cognitive architecture: how sensory cues, visual attention and non-conscious response shape the way people experience buildings and streets.",
@@ -3000,7 +3454,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "Connects to the Southwark site visit, survey concern about visual ugliness, public-interface precedents and the project’s pedestrian-comfort metric.",
     "themes": [
       "Public Interface"
     ],
@@ -3013,8 +3467,8 @@
     ],
     "keywords": [],
     "quote": "“We experience our world before we think about it.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:39.875Z"
+    "quoteLocation": "Saved Readwise/Snipd transcript highlights. 00:16:50 emotional response; 00:26:04 suburban conditions; 00:27:40 biometrics; 00:44:02 human-scale urban spaces.",
+    "sourceUpdatedAt": "2026-11-10T06:12:15.046Z"
   },
   {
     "id": "notion-3c4501e234668114a17ef70f10216323",
@@ -3028,6 +3482,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Research + evaluation methods",
+      "Site + neighbourhood"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [
       1
     ],
@@ -3071,8 +3533,8 @@
     ],
     "keywords": [],
     "quote": "“If it didn’t affect the water quality and life quality of the residents then I would be a lot less against it.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:42.141Z"
+    "quoteLocation": "Saved survey notes and question-cluster synthesis: Locational acceptability by urban context. Anonymous online responses, 4–7 August 2026; 23 self-selected respondents.",
+    "sourceUpdatedAt": "2026-11-10T06:12:15.537Z"
   },
   {
     "id": "notion-3c4501e23466818e8ea0fad2e8beccae",
@@ -3086,6 +3548,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Research + evaluation methods",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Low",
     "quality": "Low",
@@ -3127,8 +3597,8 @@
     ],
     "keywords": [],
     "quote": "“Interactive rather than being a secret site.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:43.327Z"
+    "quoteLocation": "Survey 02–24 child pages under the sample-profile record. Recomputed 10 November 2026 from 23 preserved transparency and acceptance scores: totals 185 and 123, means 8.043 and 5.348, medians 8 and 5; 14 transparency ratings ≥8; 7 acceptance ratings ≥7 and 4 ≤3.",
+    "sourceUpdatedAt": "2026-11-10T06:41:55.778Z"
   },
   {
     "id": "notion-3c4501e2346681ffa0f1e16e9d7e65f6",
@@ -3142,6 +3612,13 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Low",
     "quality": "Low",
@@ -3183,8 +3660,8 @@
     ],
     "keywords": [],
     "quote": "“Faster / cheaper / better access to data. Recycling of waste water / heat exchange in winter … to heat homes.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:44.216Z"
+    "quoteLocation": "Saved survey notes and question-cluster synthesis: Community value proposition. Anonymous online responses, 4–7 August 2026; 23 self-selected respondents.",
+    "sourceUpdatedAt": "2026-11-10T06:12:16.495Z"
   },
   {
     "id": "notion-3c4501e2346681e498d2d11bb54e37d4",
@@ -3198,6 +3675,15 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Climate + environmental comfort",
+      "Operation + stewardship",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Low",
     "quality": "Low",
@@ -3239,8 +3725,8 @@
     ],
     "keywords": [],
     "quote": "“Power consumption and water usage.” “The noise and ugliness of it.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:45.206Z"
+    "quoteLocation": "Saved survey notes and question-cluster synthesis: Environmental and amenity concerns. Anonymous online responses, 4–7 August 2026; 23 self-selected respondents.",
+    "sourceUpdatedAt": "2026-11-10T06:12:17.001Z"
   },
   {
     "id": "notion-3c4501e2346681fdacb4c44bb8d07aab",
@@ -3254,6 +3740,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Climate + environmental comfort",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Low",
     "quality": "Low",
@@ -3295,8 +3789,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:46.315Z"
+    "quoteLocation": "Saved survey notes and question-cluster synthesis: Design priorities for urban data infrastructure. Anonymous online responses, 4–7 August 2026; 23 self-selected respondents.",
+    "sourceUpdatedAt": "2026-11-10T06:12:17.465Z"
   },
   {
     "id": "notion-3c9501e2346680b49248f1893948437c",
@@ -3310,6 +3804,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Operation + stewardship",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -3319,7 +3821,7 @@
     "insight": "For civic infrastructure, AI must remain understandable and contestable: responsibility cannot be transferred to an opaque automated system.",
     "implication": "Design the Civic Skin’s sensing and control as an explainable public system: state what is measured, what response is proposed, who remains accountable and how people can understand or challenge the operation.",
     "question": null,
-    "url": null,
+    "url": "https://share.snipd.com/episode/e8dcbd5b-becb-46f8-9e4e-f065e3b244ff",
     "context": null,
     "answers": [
       "An Economist podcast interview with Yuval Noah Harari on AI agency, trust, governance and human accountability.",
@@ -3333,7 +3835,7 @@
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Primary-source record: retain project notes, recording details or source transcript with this entry; no public URL is required.",
+    "connectionNote": "Connects to the group AI discussion, Andrew’s advice to define AI precisely, and the project’s public-performance sensing and feedback loop.",
     "themes": [
       "Public Interface",
       "Urban Infrastructure"
@@ -3347,8 +3849,8 @@
     ],
     "keywords": [],
     "quote": "“The most important asset in the world is trust.”",
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:46.928Z"
+    "quoteLocation": "Saved Readwise/Snipd transcript highlights. 00:03:06 finance and trust; 00:16:13 consciousness and agency; 00:24:03 personhood; 00:47:17 governance.",
+    "sourceUpdatedAt": "2026-11-10T06:12:17.953Z"
   },
   {
     "id": "notion-3c9501e234668041b6f9db8455998e48",
@@ -3362,6 +3864,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Climate + environmental comfort",
+      "Material + construction systems"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "Medium",
     "quality": "Medium",
@@ -3401,7 +3911,7 @@
     "keywords": [],
     "quote": "“You’re going to need multiple cooling types, even within a single facility.”",
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:47.923Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:20.654Z"
   },
   {
     "id": "notion-3ca501e2346680b399d4ded664f06a59",
@@ -3415,6 +3925,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Architectural experience + identity",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -3452,8 +3970,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:48.923Z"
+    "quoteLocation": "Factum Arte project account, paragraphs on the nine set elements, segmentation for transport and converting Michael Hansmeyer’s high-resolution model into a physical set.",
+    "sourceUpdatedAt": "2026-11-10T06:38:18.687Z"
   },
   {
     "id": "notion-3ca501e23466813789becd18e6b94ac2",
@@ -3467,6 +3985,14 @@
     "country": "Switzerland",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Material + construction systems",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -3506,7 +4032,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:49.901Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:21.543Z"
   },
   {
     "id": "notion-3ca501e23466811e9f86ed704fba86ce",
@@ -3520,11 +4046,19 @@
     "country": "Netherlands",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Material + construction systems",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
-    "evidence": "An intermediate urban test environment helps new systems be trialled before conventional rollout.",
-    "information": "An intermediate urban test environment helps new systems be trialled before conventional rollout.",
+    "evidence": "Paraphrase of the official Green Village homepage. It describes a TU Delft outdoor laboratory where researchers, students, companies and public authorities test sustainable building, energy and climate-adaptation innovations. The public threshold and covered test court proposed for Southwark remain design inferences.",
+    "information": "Audit summary of the official Green Village homepage. It describes a TU Delft outdoor laboratory where researchers, students, companies and public authorities test sustainable building, energy and climate-adaptation innovations. The public threshold and covered test court proposed for Southwark remain design inferences.",
     "interpretation": null,
     "insight": "An intermediate urban test environment helps new systems be trialled before conventional rollout.",
     "implication": "Provide a covered, reconfigurable 1:1 test court beside the public threshold.",
@@ -3558,8 +4092,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:50.909Z"
+    "quoteLocation": "Homepage introduction and “Duurzaam bouwen en renoveren”, “Energiesysteem van de toekomst”, “Klimaatadaptieve wijk” and “Van testen naar toepassen”.",
+    "sourceUpdatedAt": "2026-11-10T06:38:57.425Z"
   },
   {
     "id": "notion-3ca501e23466816d9e45eacbc5ff1ca8",
@@ -3573,6 +4107,14 @@
     "country": "Finland",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Public life + active edges",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -3612,7 +4154,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:51.836Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:22.431Z"
   },
   {
     "id": "notion-3ca501e23466816fa371fbf92f9af1ba",
@@ -3626,6 +4168,14 @@
     "country": "United States",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Architectural experience + identity",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -3665,7 +4215,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:52.446Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:22.872Z"
   },
   {
     "id": "notion-3ca501e2346681b599bfc35c0203d627",
@@ -3679,11 +4229,20 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Access + everyday movement",
+      "Operation + stewardship",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
-    "evidence": "Fabrication access is graded from public learning to supervised making and specialist equipment.",
-    "information": "Fabrication access is graded from public learning to supervised making and specialist equipment.",
+    "evidence": "Paraphrase of Fab Foundation’s mission. It describes access to tools, knowledge and digital fabrication for education and invention. The three-stage access arrangement in the Southwark entry is a proposed workshop organisation that still requires a safety and supervision plan.",
+    "information": "Audit summary of Fab Foundation’s mission. It describes access to tools, knowledge and digital fabrication for education and invention. The three-stage access arrangement in the Southwark entry is a proposed workshop organisation that still requires a safety and supervision plan.",
     "interpretation": null,
     "insight": "Fabrication access is graded from public learning to supervised making and specialist equipment.",
     "implication": "Use a public learning zone, supervised workshop and controlled robot cell.",
@@ -3717,8 +4276,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:53.027Z"
+    "quoteLocation": "Homepage mission statement and education/network sections.",
+    "sourceUpdatedAt": "2026-11-10T06:38:58.257Z"
   },
   {
     "id": "notion-3ca501e23466814d94ead62940e92ed1",
@@ -3732,6 +4291,15 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Material + construction systems",
+      "Operation + stewardship",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -3771,7 +4339,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:53.615Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:23.738Z"
   },
   {
     "id": "notion-3ca501e23466818c826ee9b1e167a452",
@@ -3785,6 +4353,14 @@
     "country": "Germany",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Material + construction systems",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -3824,7 +4400,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:54.305Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:24.161Z"
   },
   {
     "id": "notion-3ca501e23466813088edef6998efe62d",
@@ -3838,6 +4414,15 @@
     "country": "Switzerland",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Material + construction systems",
+      "Access + everyday movement",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -3877,7 +4462,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:54.776Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:24.614Z"
   },
   {
     "id": "notion-3ca501e2346681c4b3a8da963ae45d83",
@@ -3891,6 +4476,15 @@
     "country": "United Kingdom",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Operation + stewardship",
+      "Material + construction systems",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -3930,7 +4524,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:55.263Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:25.069Z"
   },
   {
     "id": "notion-3ca501e23466818ab681feea4745dbba",
@@ -3944,6 +4538,14 @@
     "country": "United Kingdom",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Material + construction systems",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -3983,7 +4585,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:55.800Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:25.790Z"
   },
   {
     "id": "notion-3ca501e234668134a93dfe06d64df5e7",
@@ -3997,11 +4599,19 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Public life + active edges",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
-    "evidence": "Living-lab research involves users in the testing and evaluation of innovations in real contexts.",
-    "information": "Living-lab research involves users in the testing and evaluation of innovations in real contexts.",
+    "evidence": "Paraphrase of ENoLL’s “About ENoLL”. Living labs are described as user-centred innovation ecosystems using co-creation in real-life communities and settings. This supports involving users in evaluation; the method and outcomes of a particular Southwark test still need definition.",
+    "information": "Audit summary of ENoLL’s “About ENoLL”. Living labs are described as user-centred innovation ecosystems using co-creation in real-life communities and settings. This supports involving users in evaluation; the method and outcomes of a particular Southwark test still need definition.",
     "interpretation": null,
     "insight": "Living-lab research involves users in the testing and evaluation of innovations in real contexts.",
     "implication": "Build feedback capture and public review into the façade test process.",
@@ -4033,8 +4643,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:56.312Z"
+    "quoteLocation": "Homepage “About ENoLL” and “What we do”.",
+    "sourceUpdatedAt": "2026-11-10T06:38:59.096Z"
   },
   {
     "id": "notion-3ca501e234668174b11ec5948775e440",
@@ -4048,11 +4658,20 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Material + construction systems",
+      "Operation + stewardship",
+      "Research + evaluation methods",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
-    "evidence": "Local fabrication networks connect design, production, learning and circular material flows.",
-    "information": "Local fabrication networks connect design, production, learning and circular material flows.",
+    "evidence": "Paraphrase of Fab City’s account of local production and global collaboration. The homepage links production, consumption and place across Fab Labs, cities and bioregions. A Southwark material-recovery area is a proposed application requiring its own material-flow study.",
+    "information": "Audit summary of Fab City’s account of local production and global collaboration. The homepage links production, consumption and place across Fab Labs, cities and bioregions. A Southwark material-recovery area is a proposed application requiring its own material-flow study.",
     "interpretation": null,
     "insight": "Local fabrication networks connect design, production, learning and circular material flows.",
     "implication": "Include material recovery and local supplier display within the fabrication programme.",
@@ -4086,8 +4705,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:56.882Z"
+    "quoteLocation": "Homepage introduction and “From FabLabs to Fab Cities” / “Becoming A Fab Locality”.",
+    "sourceUpdatedAt": "2026-11-10T06:38:59.800Z"
   },
   {
     "id": "notion-3ca501e234668145b5c1d7199655863a",
@@ -4101,6 +4720,15 @@
     "country": "Netherlands",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Material + construction systems",
+      "Access + everyday movement",
+      "Earlier data-centre investigation"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4140,7 +4768,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:57.318Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:27.338Z"
   },
   {
     "id": "notion-3ca501e2346681f6aeb9c5f3998efe62",
@@ -4154,11 +4782,18 @@
     "country": "United States",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
-    "evidence": "Comfort can be measured through environmental variables rather than assumed from air temperature alone.",
-    "information": "Comfort can be measured through environmental variables rather than assumed from air temperature alone.",
+    "evidence": "Paraphrase of the CBE Thermal Comfort Tool interface. Its inputs distinguish air temperature, mean radiant temperature, humidity and air speed. The interface includes ASHRAE-55 and EN-16798 calculations. An outdoor footpath assessment needs a method appropriate to outdoor conditions before these tools establish a comfort result.",
+    "information": "Audit summary of the CBE Thermal Comfort Tool interface. Its inputs distinguish air temperature, mean radiant temperature, humidity and air speed. The interface includes ASHRAE-55 and EN-16798 calculations. An outdoor footpath assessment needs a method appropriate to outdoor conditions before these tools establish a comfort result.",
     "interpretation": null,
     "insight": "Comfort can be measured through environmental variables rather than assumed from air temperature alone.",
     "implication": "Use air temperature, humidity, radiant temperature and air movement as monitoring criteria.",
@@ -4192,8 +4827,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:57.860Z"
+    "quoteLocation": "Tool inputs and documentation; ASHRAE-55 / EN-16798 tabs and explanation of fixed mean radiant temperature.",
+    "sourceUpdatedAt": "2026-11-10T06:39:00.666Z"
   },
   {
     "id": "notion-3ca501e2346681529af5f88ca30307b3",
@@ -4207,6 +4842,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Climate + environmental comfort",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4245,7 +4888,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:58.325Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:28.266Z"
   },
   {
     "id": "notion-3ca501e2346681a69277c222c79b0081",
@@ -4259,6 +4902,14 @@
     "country": "United States",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Public life + active edges",
+      "Access + everyday movement"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4297,7 +4948,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:58.832Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:28.770Z"
   },
   {
     "id": "notion-3ca501e2346681e6aa33d4381b7da605",
@@ -4311,6 +4962,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Site + neighbourhood",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4350,7 +5009,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:59.338Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:29.213Z"
   },
   {
     "id": "notion-3ca501e23466811a94b5dbb20cbd4758",
@@ -4364,6 +5023,14 @@
     "country": "Australia",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Site + neighbourhood",
+      "Climate + environmental comfort",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4403,7 +5070,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:27:59.868Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:29.824Z"
   },
   {
     "id": "notion-3ca501e23466813a9d17f067d80dd18a",
@@ -4417,6 +5084,14 @@
     "country": "Australia",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Site + neighbourhood",
+      "Research + evaluation methods"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4456,7 +5131,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:00.496Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:30.291Z"
   },
   {
     "id": "notion-3ca501e234668124a29bd1bb3df70a75",
@@ -4470,6 +5145,14 @@
     "country": null,
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Climate + environmental comfort",
+      "Site + neighbourhood",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4508,7 +5191,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:00.971Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:30.712Z"
   },
   {
     "id": "notion-3ca501e234668180a157d355217be235",
@@ -4520,13 +5203,23 @@
     "author": "Project for Public Spaces",
     "location": "Project for Public Spaces; international.",
     "country": null,
-    "driver": "",
-    "drivers": [],
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Public life + active edges",
+      "Research + evaluation methods",
+      "Access + everyday movement"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
-    "evidence": "Successful public places combine access, comfort, activities and sociability.",
-    "information": "Successful public places combine access, comfort, activities and sociability.",
+    "evidence": "Paraphrase of Project for Public Spaces, “What Makes a Successful Place?”. The account identifies access, activities, comfort/image and sociability as four qualities, then poses observation questions. This gives criteria for a threshold study and does not establish how the Southwark proposal performs.",
+    "information": "Audit summary of Project for Public Spaces, “What Makes a Successful Place?”. The account identifies access, activities, comfort/image and sociability as four qualities, then poses observation questions. This gives criteria for a threshold study and does not establish how the Southwark proposal performs.",
     "interpretation": null,
     "insight": "Successful public places combine access, comfort, activities and sociability.",
     "implication": "Evaluate the threshold through occupation and dwell time as well as thermal data.",
@@ -4558,8 +5251,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:01.422Z"
+    "quoteLocation": "Opening four-qualities account and “Access & Linkages”.",
+    "sourceUpdatedAt": "2026-11-10T06:39:01.358Z"
   },
   {
     "id": "notion-3ca501e23466817f92ace843cdf98e09",
@@ -4571,18 +5264,28 @@
     "author": "Gehl",
     "location": "Gehl; international.",
     "country": null,
-    "driver": "",
-    "drivers": [],
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Public life + active edges",
+      "Research + evaluation methods",
+      "Site + neighbourhood"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
-    "evidence": "Public-space research uses observation to connect spatial conditions to everyday behaviour.",
-    "information": "Public-space research uses observation to connect spatial conditions to everyday behaviour.",
+    "evidence": "Paraphrase of the framework’s tools description: observational methods include counting people moving, mapping stationary activity, intercept surveys and sensory mapping.",
+    "information": "The Urban95 framework names observational tools for studying children and caregivers in public space, including movement counts, stationary activity maps, intercept surveys and sensory mapping. These offer a method to test use over time; the age-specific study design needs adapting for Southwark.",
     "interpretation": null,
     "insight": "Public-space research uses observation to connect spatial conditions to everyday behaviour.",
     "implication": "Set up repeatable observation points along the western edge.",
     "question": null,
-    "url": "https://gehlpeople.com/projects/",
+    "url": "https://www.gehlpeople.com/knowledge-hub/publications/urban95-public-life-data-framework/",
     "context": null,
     "answers": [
       "A public-life research and design practice.",
@@ -4609,8 +5312,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:01.984Z"
+    "quoteLocation": "Gehl / Van Leer Foundation, Urban95 Public Life Data Framework, “Public Life data tools to help you get started”, especially Public Space Public Life Toolkit.",
+    "sourceUpdatedAt": "2026-11-10T06:38:25.539Z"
   },
   {
     "id": "notion-3ca501e2346681ba9335faeedcbbfbce",
@@ -4624,6 +5327,13 @@
     "country": "Netherlands",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Research + evaluation methods",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4662,7 +5372,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:02.561Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:32.127Z"
   },
   {
     "id": "notion-3ca501e234668104a6c1c93a2d0109f2",
@@ -4676,6 +5386,14 @@
     "country": "Sweden",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Climate + environmental comfort",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4715,7 +5433,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:03.189Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:32.540Z"
   },
   {
     "id": "notion-3ca501e23466814fb5dff2b52ed93760",
@@ -4729,11 +5447,19 @@
     "country": "United Kingdom",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Climate + environmental comfort",
+      "Material + construction systems"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
-    "evidence": "Computing can be treated as a distributed source of useful low-grade heat.",
-    "information": "Computing can be treated as a distributed source of useful low-grade heat.",
+    "evidence": "Paraphrase of Heata’s homepage. Distributed computing devices installed in UK homes recover computing heat for domestic hot water. Transferring this system to an adjacent winter public space would require a separate heat-demand and temperature study.",
+    "information": "Audit summary of Heata’s homepage. Distributed computing devices installed in UK homes recover computing heat for domestic hot water. Transferring this system to an adjacent winter public space would require a separate heat-demand and temperature study.",
     "interpretation": null,
     "insight": "Computing can be treated as a distributed source of useful low-grade heat.",
     "implication": "Use the data-centre core as a visible heat source for adjacent winter amenity.",
@@ -4767,8 +5493,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:03.712Z"
+    "quoteLocation": "Homepage introductory account and “How it works” explanation of computing heat used for hot water.",
+    "sourceUpdatedAt": "2026-11-10T06:39:01.959Z"
   },
   {
     "id": "notion-3ca501e2346681b385a4d14da9f8ef21",
@@ -4782,6 +5508,14 @@
     "country": "France",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Climate + environmental comfort",
+      "Material + construction systems"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4821,7 +5555,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:04.200Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:33.583Z"
   },
   {
     "id": "notion-3ca501e23466819f978aff5be8be5f02",
@@ -4835,6 +5569,14 @@
     "country": "Norway",
     "driver": "",
     "drivers": [],
+    "projectRelevance": [
+      "Earlier data-centre investigation",
+      "Climate + environmental comfort",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
+      "None"
+    ],
     "lenses": [],
     "reliability": "High",
     "quality": "High",
@@ -4874,7 +5616,7 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:04.687Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:34.157Z"
   },
   {
     "id": "notion-400501e2346681aeaddcf438acabe8ad",
@@ -4890,6 +5632,13 @@
     "drivers": [
       "Define"
     ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Access + everyday movement"
+    ],
+    "designStrategy": [
+      "Define"
+    ],
     "lenses": [
       0,
       1,
@@ -4903,7 +5652,7 @@
     "insight": "Use XL as a home with two credible daily routines, rather than a large apartment with an extra bedroom.",
     "implication": "Draw XL in three states: young family; grandparent co-residence; adult-child independence. DEFINE. Compare the entries, cooking facilities and places to retreat in XL as the household changes.",
     "question": null,
-    "url": "https://andrew-maynard-mref.squarespace.com/iii/",
+    "url": "https://www.maynardarchitects.com/all-projects/charles",
     "context": null,
     "answers": [
       "Charles House, Austin Maynard Architects. Kew, Melbourne, Australia; 2017. One adaptable family house. Shared home / future grandparent suite.",
@@ -4930,8 +5679,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:05.158Z",
+    "quoteLocation": "Austin Maynard Architects, Charles project text, “Multi-generational & spatial flexibility”; “Sitting/context”; completion data 2017.",
+    "sourceUpdatedAt": "2026-11-10T06:38:27.327Z",
     "exegesisNumber": 101
   },
   {
@@ -4946,6 +5695,14 @@
     "country": "Australia",
     "driver": "Mediate",
     "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Architectural experience + identity",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
       "Mediate"
     ],
     "lenses": [
@@ -4987,8 +5744,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:05.645Z",
+    "quoteLocation": "R Architecture, Mahogany House, “Design”: two courtyard pods, central entrance/lounge and grandparents’ two bedrooms, bathroom, lounge and kitchenette.",
+    "sourceUpdatedAt": "2026-11-10T06:39:02.630Z",
     "exegesisNumber": 102
   },
   {
@@ -5005,6 +5762,14 @@
     "drivers": [
       "Define"
     ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Access + everyday movement",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
+      "Define"
+    ],
     "lenses": [
       0,
       1,
@@ -5016,17 +5781,17 @@
     "evidence": "Paraphrase of linked project account; no measured privacy or care outcome established.",
     "information": "Two apartments share an entrance. The upper grandparents' apartment has a lift, level floors and wider doors. A room can transfer between apartments; future studios are anticipated.",
     "interpretation": null,
-    "insight": "This is the closest match to your S-above-L rule: vertical proximity needs an independent accessible route.",
+    "insight": "Use this precedent to test an S-above-L arrangement with an independent accessible route.",
     "implication": "Draw S-above-L with the lift route, optional family link and a closed-link state. DEFINE. Trace both front doors and the lift journey with the family link closed.",
     "question": null,
     "url": "https://beta-office.com/project/3-generation-house/",
     "context": null,
     "answers": [
       "3 Generation House, BETA office for architecture and the city. Buiksloterham, Amsterdam, Netherlands; 2018. Two stacked apartments / 450 m². Independent family homes with future reallocation.",
-      "This is the closest match to your S-above-L rule: vertical proximity needs an independent accessible route.",
+      "Use this precedent to test an S-above-L arrangement with an independent accessible route.",
       "Two apartments share an entrance. The upper grandparents' apartment has a lift, level floors and wider doors. A room can transfer between apartments; future studios are anticipated.\n\nConnection: Shared arrival and short vertical proximity support contact without a compulsory shared living room.\n\nPrivacy reading: Separate apartment boundaries preserve daily autonomy. The circulation arrangement permits future changes to the division of space.",
       "A private stair alone would not offer equivalent access. Adaptation must preserve independent entrances and services.",
-      "The Inhabited Street; independent home → family cluster → mixed-age community. Directly tests S above L.",
+      "The Inhabited Street; independent home → family cluster → mixed-age community. Could inform a test of S above L.",
       "Draw S-above-L with the lift route, optional family link and a closed-link state. DEFINE. Trace both front doors and the lift journey with the family link closed."
     ],
     "notionPageId": "400501e23466818da921d09158c60777",
@@ -5046,8 +5811,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:06.318Z",
+    "quoteLocation": "BETA, 3 generation house, main project text: communal entrance; upper-apartment elevator, level floors and wider doors; transferable second-floor guest room and double-helix stair.",
+    "sourceUpdatedAt": "2026-11-10T06:39:03.128Z",
     "exegesisNumber": 103
   },
   {
@@ -5062,6 +5827,14 @@
     "country": "Australia",
     "driver": "Extend",
     "drivers": [
+      "Extend"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Access + everyday movement",
+      "Climate + environmental comfort"
+    ],
+    "designStrategy": [
       "Extend"
     ],
     "lenses": [
@@ -5104,8 +5877,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:06.804Z",
+    "quoteLocation": "Good Design, Veil + Co. House, “Challenge” and “Solution”: family accommodation brief, three volumes and covered walkway, offset aluminium-batten screen.",
+    "sourceUpdatedAt": "2026-11-10T06:39:03.759Z",
     "exegesisNumber": 104
   },
   {
@@ -5120,6 +5893,14 @@
     "country": null,
     "driver": "Mediate",
     "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Public life + active edges",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
       "Mediate"
     ],
     "lenses": [
@@ -5162,8 +5943,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:07.608Z",
+    "quoteLocation": "Lacol, La Borda project account: collective housing paradigm and description of 28 homes in 40, 60 and 75 m² types with community spaces. Detailed shared-room list needs its corresponding passage/drawing.",
+    "sourceUpdatedAt": "2026-11-10T06:39:04.296Z",
     "exegesisNumber": 105
   },
   {
@@ -5178,6 +5959,15 @@
     "country": "United Kingdom",
     "driver": "Define",
     "drivers": [
+      "Define"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Site + neighbourhood",
+      "Public life + active edges",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
       "Define"
     ],
     "lenses": [
@@ -5220,8 +6010,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:08.423Z",
+    "quoteLocation": "Architect-provided ArchDaily account, opening paragraphs on 42 homes, shared facilities, gardens and the common house.",
+    "sourceUpdatedAt": "2026-11-10T06:38:30.094Z",
     "exegesisNumber": 106
   },
   {
@@ -5236,6 +6026,15 @@
     "country": "Switzerland",
     "driver": "Mediate",
     "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Access + everyday movement",
+      "Public life + active edges",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
       "Mediate"
     ],
     "lenses": [
@@ -5278,8 +6077,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:09.133Z",
+    "quoteLocation": "Galli Rudolf, Giesserei main project text: courtyard wings and loggias; 43 dwelling types, rentable Joker rooms, 155 apartments and eight stairwells.",
+    "sourceUpdatedAt": "2026-11-10T06:39:04.819Z",
     "exegesisNumber": 107
   },
   {
@@ -5294,6 +6093,15 @@
     "country": "Denmark",
     "driver": "Mediate",
     "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Operation + stewardship",
+      "Access + everyday movement",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
       "Mediate"
     ],
     "lenses": [
@@ -5336,8 +6144,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:09.715Z",
+    "quoteLocation": "Sweco, House of Generations, “A modern home for children, adolescents, adults and the elderly” and detailed unit/cluster descriptions.",
+    "sourceUpdatedAt": "2026-11-10T06:39:05.303Z",
     "exegesisNumber": 108
   },
   {
@@ -5352,6 +6160,14 @@
     "country": "Switzerland",
     "driver": "Extend",
     "drivers": [
+      "Extend"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Public life + active edges",
+      "Operation + stewardship"
+    ],
+    "designStrategy": [
       "Extend"
     ],
     "lenses": [
@@ -5394,8 +6210,8 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:10.351Z",
+    "quoteLocation": "mehr als wohnen, “Das Areal”, main account of living/working provision and low-car sustainability; detailed shared-space claims require the linked “Angebote” / “Allmendräume” accounts.",
+    "sourceUpdatedAt": "2026-11-10T06:39:05.816Z",
     "exegesisNumber": 109
   },
   {
@@ -5410,6 +6226,14 @@
     "country": "Netherlands",
     "driver": "Define",
     "drivers": [
+      "Define"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Operation + stewardship",
+      "Access + everyday movement"
+    ],
+    "designStrategy": [
       "Define"
     ],
     "lenses": [
@@ -5453,22 +6277,32 @@
     ],
     "keywords": [],
     "quote": null,
-    "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:10.942Z",
+    "quoteLocation": "BETA Strandeiland M3 project account, paragraphs distinguishing the 344-home collaboration from BETA’s block, De Alliantie’s generational allocation, arcades and health centre.",
+    "sourceUpdatedAt": "2026-11-10T06:38:31.483Z",
     "exegesisNumber": 110
   },
   {
     "id": "notion-400501e23466812e8363f9c0b27aeb0b",
     "number": 101,
-    "title": "Experimental housing and urban-passage precedent leads",
+    "title": "Double House Utrecht — MVRDV",
     "dateCollected": "2026-10-21T22:45:54.869Z",
     "type": "Project",
     "method": "Precedent analysis",
-    "author": "Adam Hingston / Graduate Project research consolidation",
-    "location": "13–18 October 2026",
-    "country": null,
-    "driver": "Mediate",
+    "author": "MVRDV",
+    "location": "Utrecht, Netherlands",
+    "country": "Netherlands",
+    "driver": "Define",
     "drivers": [
+      "Define",
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Housing need + household change",
+      "Access + everyday movement",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "Define",
       "Mediate"
     ],
     "lenses": [
@@ -5477,27 +6311,162 @@
     ],
     "reliability": "Medium",
     "quality": "Medium",
-    "evidence": "User conversations, 13 and 18 October. Verified: MVRDV, Double House Utrecht; Jean Nouvel's authored project account, Henderson Cifi Tiandi.",
-    "information": "MVRDV's Double House negotiates interlocking territories between two families. Jean Nouvel's Red Jars passage makes a protected urban route and planting into a spatial experience. Neither establishes a multigenerational occupancy model.",
+    "evidence": "Existing research notes cite MVRDV's Double House Utrecht project account. No multigenerational occupancy or measured privacy outcome is established.",
+    "information": "The existing project account describes interlocking territories negotiated between two families.",
     "interpretation": null,
-    "insight": "MVRDV's Double House negotiates interlocking territories between two families. Jean Nouvel's Red Jars passage makes a protected urban route and planting into a spatial experience. Neither establishes a multigenerational occupancy model.",
-    "implication": "Extract one rule per precedent and draw a controlled alternative. Retain Ivry as a formal lead until the precise building and drawings are identified. MEDIATE. Trace who controls passage between interlocking homes and who can pass a planted threshold.",
+    "insight": "Interlocking homes could offer a way to test household boundaries while retaining control over independent daily routines.",
+    "implication": "Draw a controlled alternative with interlocking homes. DEFINE / MEDIATE. Trace independent arrivals, daily routines and who controls each connecting door; compare open-link and closed-link states.",
     "question": null,
     "url": "https://www.mvrdv.com/projects/164/double-house-utrecht",
     "context": null,
     "answers": [
-      "Double House Utrecht, the Street of 1000 Red Jars and Ivry terracing widened the formal and spatial reference set.",
-      "3 Generation House for adjustable household boundaries; Veil + Co. for a domestic street; Giesserei for collective space at scale.",
-      "MVRDV's Double House negotiates interlocking territories between two families. Jean Nouvel's Red Jars passage makes a protected urban route and planting into a spatial experience. Neither establishes a multigenerational occupancy model.",
-      "Formal complexity, planting or terracing is not evidence of care, accessibility or privacy. The exact Ivry building must be identified before making detailed project claims.",
-      "3 Generation House for adjustable household boundaries; Veil + Co. for a domestic street; Giesserei for collective space at scale.",
-      "Extract one rule per precedent and draw a controlled alternative. Retain Ivry as a formal lead until the precise building and drawings are identified. MEDIATE. Trace who controls passage between interlocking homes and who can pass a planted threshold."
+      "A two-family housing precedent for investigating interlocking domestic territories.",
+      "Could inform alternatives for related but independent households and adjustable domestic boundaries.",
+      "The existing project account describes interlocking territories negotiated between two families.\n\nInterlocking homes could offer a way to test household boundaries while retaining control over independent daily routines.",
+      "Interlocking form does not establish multigenerational occupancy, accessible independent entry, acoustic separation or privacy. These would need separate tests.",
+      "Compare adjustable household boundaries with 3 Generation House (data point 93).",
+      "Draw a controlled alternative with interlocking homes. DEFINE / MEDIATE. Trace independent arrivals, daily routines and who controls each connecting door; compare open-link and closed-link states."
     ],
     "notionPageId": "400501e23466812e8363f9c0b27aeb0b",
     "mix": null,
     "access": null,
     "shared": null,
-    "connectionNote": "Research leads; mechanisms verified selectively",
+    "connectionNote": "Documented spatial mechanism; potential transfer to multigenerational housing remains a design interpretation.",
+    "themes": [
+      "Housing + Care"
+    ],
+    "threads": [
+      "Project Position",
+      "Domestic Agency + Thresholds",
+      "Multigenerational Living"
+    ],
+    "collections": [
+      "04 · Methods + Design Strategy"
+    ],
+    "keywords": [],
+    "quote": null,
+    "quoteLocation": "MVRDV Double House Utrecht project description, opening two-family site brief and paragraph on the dividing wall and interlocking volumes.",
+    "sourceUpdatedAt": "2026-11-10T06:38:31.991Z"
+  },
+  {
+    "id": "notion-413501e23466812eb7fbfe95dcd9e0d1",
+    "number": 102,
+    "title": "Street of 1000 Red Jars — Henderson Cifi Tiandi",
+    "dateCollected": "2026-11-09T21:20:45.532Z",
+    "type": "Project",
+    "method": "Precedent analysis",
+    "author": "Ateliers Jean Nouvel",
+    "location": "Shanghai, China; between Ma Dang and Dan Shui streets, former French Concession. Completed 2021.",
+    "country": null,
+    "driver": "Extend",
+    "drivers": [
+      "Extend",
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Public life + active edges",
+      "Access + everyday movement",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "Extend",
+      "Mediate"
+    ],
+    "lenses": [
+      1,
+      2,
+      3
+    ],
+    "reliability": "Medium",
+    "quality": "Medium",
+    "evidence": "Paraphrase of Jean Nouvel’s project account: a covered commercial shortcut connects Ma Dang and Dan Shui streets. A two-level passage has overhead walkways and planting in rows of earthenware jars.",
+    "information": "The Shanghai mixed-use project links two street entrances by a high, narrow, covered passage. Shops on two levels, overhead walkways, bridges and planted earthenware jars shape the route. The account describes spatial intent; it provides no measured housing or care outcomes.",
+    "interpretation": null,
+    "insight": "A protected, planted route could help test how circulation becomes an inhabitable threshold with places to pass and pause.",
+    "implication": "Draw a protected, planted passage as a controlled alternative. EXTEND / MEDIATE. Trace who can pass each threshold, where someone can pause, and how an independent route remains clear beside occupied space.",
+    "question": null,
+    "url": "https://www.archdaily.com/961565/henderson-cifi-tiandi-ateliers-jean-nouvel",
+    "context": null,
+    "answers": [
+      "An urban-passage precedent for investigating a protected route, planting and spatial sequence.",
+      "Could inform a domestic street and the relationship between public passage, shared thresholds and private entries.",
+      "The Shanghai mixed-use project links two street entrances by a high, narrow, covered passage. Shops on two levels, overhead walkways, bridges and planted earthenware jars shape the route. The account describes spatial intent; it provides no measured housing or care outcomes.\n\nA protected, planted route could help test how circulation becomes an inhabitable threshold with places to pass and pause.",
+      "An urban passage does not establish a multigenerational occupancy model. Planting and enclosure alone do not establish accessibility, thermal comfort, privacy or successful shared use.",
+      "Compare the domestic route with Veil + Co. House (data point 94) and the relationship between local access and collective space with Giesserei (data point 97).",
+      "Draw a protected, planted passage as a controlled alternative. EXTEND / MEDIATE. Trace who can pass each threshold, where someone can pause, and how an independent route remains clear beside occupied space."
+    ],
+    "notionPageId": "413501e23466812eb7fbfe95dcd9e0d1",
+    "mix": null,
+    "access": null,
+    "shared": null,
+    "connectionNote": "Spatial reference for passage and planting; housing and care implications would require separate investigation.",
+    "themes": [
+      "Housing + Care"
+    ],
+    "threads": [
+      "Project Position",
+      "Domestic Agency + Thresholds",
+      "Multigenerational Living"
+    ],
+    "collections": [
+      "04 · Methods + Design Strategy"
+    ],
+    "keywords": [],
+    "quote": null,
+    "quoteLocation": "Jean Nouvel’s authored project text, “The street of 1000 red jars”, published by ArchDaily on 13 May 2021.",
+    "sourceUpdatedAt": "2026-11-10T06:12:23.703Z"
+  },
+  {
+    "id": "notion-413501e23466817c8375e269daca76ed",
+    "number": 103,
+    "title": "Ivry-sur-Seine terraced housing — research lead",
+    "dateCollected": "2026-11-09T21:20:45.532Z",
+    "type": "Project",
+    "method": "Precedent analysis",
+    "author": "Architect and precise building to be confirmed",
+    "location": "Ivry-sur-Seine, France; exact building to be identified.",
+    "country": "France",
+    "driver": "Extend",
+    "drivers": [
+      "Extend",
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Architectural experience + identity",
+      "Access + everyday movement",
+      "Public life + active edges"
+    ],
+    "designStrategy": [
+      "Extend",
+      "Mediate"
+    ],
+    "lenses": [
+      2,
+      3
+    ],
+    "reliability": "Low",
+    "quality": "Low",
+    "evidence": "Research lead from user conversations on 13 and 18 October 2026. Exact Ivry building and primary source remain unconfirmed.",
+    "information": "The existing notes refer to Ivry terracing but do not identify the precise building or provide verified project drawings.",
+    "interpretation": null,
+    "insight": "Terracing could frame questions about private outdoor territory, shared routes and overlooking. Project-specific conclusions require an identified building and drawings.",
+    "implication": "Identify the precise Ivry building and obtain reliable plans and sections. Then extract one documented spatial rule and draw a controlled alternative. EXTEND / MEDIATE. Test outdoor-space boundaries, overlooking and independent access.",
+    "question": null,
+    "url": null,
+    "context": null,
+    "answers": [
+      "A research lead for investigating terraced housing, domestic outdoor territory and collective circulation.",
+      "Could inform alternatives for the relationship between independent homes, outdoor extensions and shared circulation.",
+      "The existing notes refer to Ivry terracing but do not identify the precise building or provide verified project drawings.\n\nTerracing could frame questions about private outdoor territory, shared routes and overlooking. Project-specific conclusions require an identified building and drawings.",
+      "Formal complexity, planting or terracing is not evidence of care, accessibility or privacy. Identify the exact building before making detailed project claims.",
+      "Compare collective space at scale with Giesserei (data point 97). Use the comparison to formulate questions rather than attribute unverified features to Ivry.",
+      "Identify the precise Ivry building and obtain reliable plans and sections. Then extract one documented spatial rule and draw a controlled alternative. EXTEND / MEDIATE. Test outdoor-space boundaries, overlooking and independent access."
+    ],
+    "notionPageId": "413501e23466817c8375e269daca76ed",
+    "mix": null,
+    "access": null,
+    "shared": null,
+    "connectionNote": "Unverified precedent lead; retain as an open research question until the project and drawings are identified.",
     "themes": [
       "Housing + Care"
     ],
@@ -5512,6 +6481,140 @@
     "keywords": [],
     "quote": null,
     "quoteLocation": null,
-    "sourceUpdatedAt": "2026-11-09T01:28:11.448Z"
+    "sourceUpdatedAt": "2026-11-10T04:49:41.004Z"
+  },
+  {
+    "id": "notion-413501e2346681719678ea58194f313b",
+    "number": 104,
+    "title": "Jane Jacobs — The Death and Life of Great American Cities",
+    "dateCollected": "2026-11-09T21:35:16.111Z",
+    "type": "Book",
+    "method": "Literature review",
+    "author": "Jane Jacobs",
+    "location": "United States; urban neighbourhoods and everyday street life.",
+    "country": "United States",
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Public life + active edges",
+      "Site + neighbourhood",
+      "Access + everyday movement"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
+    "lenses": [
+      3
+    ],
+    "reliability": "Medium",
+    "quality": "Medium",
+    "evidence": "Paraphrase of Jacobs’s arguments on sidewalk safety and mixed primary uses; no direct quotation.",
+    "information": "Jacobs links street safety to clear public–private boundaries, buildings facing the street and regular sidewalk use. Shops and other destinations give people reasons to pass and linger; uses with different daily rhythms can sustain activity beyond a single busy period.",
+    "interpretation": null,
+    "insight": "Passive surveillance depends on people having reasons to occupy buildings and public space. Mixed uses should bring people onto the same routes at different times, rather than remain separate labels on a plan.",
+    "implication": "Test the bakery, deli, laundry, workshop and residential entries against morning, midday, afternoon and evening use. Map public routes, occupied frontages, sightlines and quiet periods. Keep the courtyard approach legible and welcoming, with places to sit without purchasing and clear boundaries to private homes.",
+    "question": null,
+    "url": "https://www.penguinrandomhouse.ca/books/86058/the-death-and-life-of-great-american-cities-by-jane-jacobs/9780679644330/excerpt",
+    "context": null,
+    "answers": [
+      "Jane Jacobs’s 1961 book examines how everyday street life, mixed uses and relationships between buildings and public space support urban vitality.",
+      "Could inform an inhabited street at Southwark Grounds, where active building edges and useful public routes support informal observation and repeated use. Public space could become easier to understand and use when entrances, everyday destinations and occupied rooms address it directly.",
+      "Jacobs links street safety to clear public–private boundaries, buildings facing the street and regular sidewalk use. Shops and other destinations give people reasons to pass and linger; uses with different daily rhythms can sustain activity beyond a single busy period.\n\nPassive surveillance depends on people having reasons to occupy buildings and public space. Mixed uses should bring people onto the same routes at different times, rather than remain separate labels on a plan.",
+      "An open space is not necessarily an active one. Visibility alone provides little informal oversight if surrounding rooms are unoccupied or people have no reason to use the route. A busy lunchtime does not establish activity across the day. Public invitation should be combined with clear household boundaries and opportunities for privacy.",
+      "Compare reasons to pass and stay with Project for Public Spaces — What Makes a Great Place? (data point 84) and test actual daily patterns using Gehl — Public Space Public Life (data point 85). Consider the neighbourhood as an amenity alongside Alexandra Vondeling: The Neighborhood IS the Amenity (data point 42).",
+      "Test the bakery, deli, laundry, workshop and residential entries against morning, midday, afternoon and evening use. Map public routes, occupied frontages, sightlines and quiet periods. Keep the courtyard approach legible and welcoming, with places to sit without purchasing and clear boundaries to private homes.\n\nMEDIATE. Draw the same ground-floor plan at four times of day, showing likely users, open facilities, occupied rooms and areas with little overlooking. Check the route after commercial uses close, and test how screening can protect domestic privacy while retaining useful outlook."
+    ],
+    "notionPageId": "413501e2346681719678ea58194f313b",
+    "mix": null,
+    "access": null,
+    "shared": null,
+    "connectionNote": "Interpretive application of Jacobs’s observational urban theory; the proposed design tests do not establish measured safety outcomes. Confirm page numbers against the edition used before direct quotation.",
+    "themes": [
+      "Housing + Care",
+      "Public Interface"
+    ],
+    "threads": [
+      "Domestic Agency + Thresholds",
+      "Multigenerational Living",
+      "Project Position"
+    ],
+    "collections": [
+      "03 · State of the Art",
+      "04 · Methods + Design Strategy"
+    ],
+    "keywords": [],
+    "quote": null,
+    "quoteLocation": "Chapters 2, 5 and 8; page numbers depend on edition.",
+    "sourceUpdatedAt": "2026-11-10T04:49:41.447Z"
+  },
+  {
+    "id": "notion-413501e23466811dbbb4cc46bb36be0e",
+    "number": 105,
+    "title": "Ferrars & York — Archimarathon: everyday details and shared circulation",
+    "dateCollected": "2026-11-09T21:38:06.738Z",
+    "type": "Project",
+    "method": "Video / Lecture",
+    "author": "Archimarathon — Kevin Hui and Andrew Maynard; Six Degrees Architects / HIP V. HYPE",
+    "location": "Ferrars & York, South Melbourne, Victoria, Australia.",
+    "country": "Australia",
+    "driver": "Mediate",
+    "drivers": [
+      "Mediate"
+    ],
+    "projectRelevance": [
+      "Access + everyday movement",
+      "Public life + active edges",
+      "Material + construction systems",
+      "Architectural experience + identity"
+    ],
+    "designStrategy": [
+      "Mediate"
+    ],
+    "lenses": [
+      2,
+      3
+    ],
+    "reliability": "Medium",
+    "quality": "Medium",
+    "evidence": "User-reported viewing themes and user-supplied video link; paraphrase only. Verify timestamps before attributing detailed statements to the presenters.",
+    "information": "Adam identifies six discussion themes: encouraging bicycle transport; mailbox location; artwork; door location; passive surveillance; and sound dampening. Project-team documentation for Ferrars & York confirms bicycle parking, open walkways, a shared rooftop, stained-glass arrival details and attention to acoustic comfort. Adam has supplied the video link. The positions or specifications discussed have not been independently verified.",
+    "interpretation": null,
+    "insight": "Everyday details could shape how residents move, encounter neighbours and feel at home. Bicycle access, mail collection, entry placement, visual interest and acoustic comfort should be tested together with shared circulation.",
+    "implication": "Compare bicycle and pedestrian arrival routes; test mailbox and artwork locations as everyday destinations; study front-door positions and sightlines; and develop an acoustic section between shared circulation and private rooms. Evaluate each option for convenient use, optional contact, privacy and quiet.",
+    "question": null,
+    "url": "https://www.youtube.com/watch?v=eSTc7-DRaFM",
+    "context": null,
+    "answers": [
+      "Archimarathon viewing notes on Ferrars & York, a HIP V. HYPE apartment building in South Melbourne designed with Six Degrees Architects.\n\nFerrars & York is a six-storey, 22-apartment building in South Melbourne, designed with HIP V. HYPE and completed in 2022. Its architect documents open access walkways, a communal rooftop, a ground-floor bicycle shop and stained-glass details at arrival.",
+      "The discussion could inform how Together, Apart combines independent homes with useful shared routes. It directs attention to small decisions that affect daily behaviour: where a bicycle goes, where mail is collected, what someone sees at arrival, and whether shared activity disturbs a private room.",
+      "Viewing themes supplied by Adam: encouraging bicycle transport, mailbox location, artwork, door location, passive surveillance and sound dampening.\n\nThe project team confirms bicycle parking, open walkways and attention to acoustic comfort. The architect also documents stained glass at arrival. The exact mailbox arrangement, door positions and sound-dampening detail discussed in the video remain unverified.\n\nEveryday details could shape how residents move, encounter neighbours and feel at home. Bicycle access, mail collection, entry placement, visual interest and acoustic comfort should be tested together with shared circulation.",
+      "A bicycle rack alone does not establish convenient bicycle use. A shared mailbox area does not necessarily create welcome contact if it causes congestion or exposes private entries. Overlooking can support informal observation while also affecting privacy.\n\nAcoustic absorption within a shared space and sound insulation between spaces address different problems. A visually open gallery should be tested for conversation, footsteps and door noise as well as sightlines.",
+      "Compare everyday occupation and passive surveillance with Jane Jacobs — The Death and Life of Great American Cities (data point 104).\n\nCompare sheltered domestic circulation with Veil + Co. House (data point 94) and small access groups with Giesserei (data point 97).",
+      "| Theme | Proposed design test for Southwark Grounds |\n| --- | --- |\n| Bicycle transport | Trace the journey from street to secure storage and home, including doors, turning space and carrying shopping. Compare its convenience with other arrival modes. |\n| Mailbox location | Compare mail collection beside the main entry and beside a shared daily route. Test delivery access, shelter, stopping space and a clear bypass. |\n| Artwork | Test artwork as a shared address or point of interest at arrival. Check how it is encountered from both the street and residential route. |\n| Door location | Compare offset and directly opposing entries. Trace door swings, passing movement and views into private rooms. |\n| Passive surveillance | Map views from occupied rooms and shared routes towards entries and public space, alongside screening that protects domestic privacy. |\n| Sound dampening | Draw the gallery-to-home section. Identify potential sources, transmission paths and receiving rooms before comparing surface absorption, buffering, seals and separating construction. |\n\nMEDIATE. Draw one cluster plan and section combining all six tests. Compare morning, daytime and evening routines, including a resident who wants to pass through without socialising."
+    ],
+    "notionPageId": "413501e23466811dbbb4cc46bb36be0e",
+    "mix": null,
+    "access": null,
+    "shared": null,
+    "connectionNote": "Building identity and video link confirmed by Adam. Video title recalled approximately as “Test drive an apartment”. Themes are user-reported and supported in part by project-team documentation; exact title, publication date, timestamps and detailed video claims have not been independently verified. Proposed applications are design interpretations.",
+    "themes": [
+      "Housing + Care",
+      "Public Interface"
+    ],
+    "threads": [
+      "Domestic Agency + Thresholds",
+      "Multigenerational Living",
+      "Project Position"
+    ],
+    "collections": [
+      "03 · State of the Art",
+      "04 · Methods + Design Strategy"
+    ],
+    "keywords": [],
+    "quote": null,
+    "quoteLocation": "Video supplied by Adam: eSTc7-DRaFM. Title recalled approximately as “Test drive an apartment”; timestamps not yet verified.",
+    "sourceUpdatedAt": "2026-11-10T04:49:41.920Z"
   }
 ]
