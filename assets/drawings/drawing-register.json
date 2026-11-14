@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-15",
+  "reference": "06_Final Submission/00_Additional Deliverables/261112__T3_Final Poster.indd",
+  "applications": "InDesign 2027 and Illustrator 2027",
+  "drawings": [
+    {
+      "master": "Drawings/20261115/01-stacked-homes-plans.pdf",
+      "destination": "assets/drawings/01-stacked-homes-plans.pdf",
+      "preview": "assets/exegesis/drawings/01-stacked-homes-plans.webp",
+      "caption": "Stacked homes — L + S"
+    },
+    {
+      "master": "Drawings/20261115/02-stacked-homes-upper-plan.pdf",
+      "destination": "assets/drawings/02-stacked-homes-upper-plan.pdf",
+      "preview": "assets/exegesis/drawings/02-stacked-homes-upper-plan.webp",
+      "caption": "Upper-home terrace study"
+    },
+    {
+      "master": "Drawings/20261115/03-side-by-side-homes-plan.pdf",
+      "destination": "assets/drawings/03-side-by-side-homes-plan.pdf",
+      "preview": "assets/exegesis/drawings/03-side-by-side-homes-plan.webp",
+      "caption": "Side-by-side homes — M + S"
+    },
+    {
+      "master": "Drawings/20261115/04-joint-xl-home-plan.pdf",
+      "destination": "assets/drawings/04-joint-xl-home-plan.pdf",
+      "preview": "assets/exegesis/drawings/04-joint-xl-home-plan.webp",
+      "caption": "Joint home — XL"
+    },
+    {
+      "master": "Drawings/20261115/05-ground-floor-plan.pdf",
+      "destination": "assets/drawings/05-ground-floor-plan.pdf",
+      "preview": "assets/exegesis/drawings/05-ground-floor-plan.webp",
+      "caption": "Ground floor — public life around the courtyard"
+    },
+    {
+      "master": "Drawings/20261115/06-level-2-plan.pdf",
+      "destination": "assets/drawings/06-level-2-plan.pdf",
+      "preview": "assets/exegesis/drawings/06-level-2-plan.webp",
+      "caption": "Level 2 — family connections and shared walkways"
+    },
+    {
+      "master": "Drawings/20261115/07-level-3-plan.pdf",
+      "destination": "assets/drawings/07-level-3-plan.pdf",
+      "preview": "assets/exegesis/drawings/07-level-3-plan.webp",
+      "caption": "Level 3 — connected terraces and independent entrances"
+    },
+    {
+      "master": "Drawings/20261115/08-building-section.pdf",
+      "destination": "assets/drawings/08-building-section.pdf",
+      "preview": "assets/exegesis/drawings/08-building-section.webp",
+      "caption": "Building section — independent homes and shared spaces"
+    },
+    {
+      "master": "Drawings/20261115/09-inhabited-edge-section.pdf",
+      "destination": "assets/drawings/09-inhabited-edge-section.pdf",
+      "preview": "assets/exegesis/drawings/09-inhabited-edge-section.webp",
+      "caption": "Section through the inhabited edge"
+    },
+    {
+      "master": "Drawings/20261115/10-resource-exchange-section.pdf",
+      "destination": "assets/drawings/10-resource-exchange-section.pdf",
+      "preview": "assets/exegesis/drawings/10-resource-exchange-section.webp",
+      "caption": "Independent homes, shared infrastructure"
+    },
+    {
+      "master": "Drawings/20261115/11-define-domestic-independence.pdf",
+      "destination": "assets/drawings/11-define-domestic-independence.pdf",
+      "preview": "assets/exegesis/drawings/11-define-domestic-independence.webp",
+      "caption": "DEFINE — Domestic Independence"
+    },
+    {
+      "master": "Drawings/20261115/12-extend-domestic-territory.pdf",
+      "destination": "assets/drawings/12-extend-domestic-territory.pdf",
+      "preview": "assets/exegesis/drawings/12-extend-domestic-territory.webp",
+      "caption": "EXTEND — Domestic Territory"
+    },
+    {
+      "master": "Drawings/20261115/13-mediate-collective-relationships.pdf",
+      "destination": "assets/drawings/13-mediate-collective-relationships.pdf",
+      "preview": "assets/exegesis/drawings/13-mediate-collective-relationships.webp",
+      "caption": "MEDIATE — Collective Relationships"
+    },
+    {
+      "master": "Drawings/20261115/14-site-and-precinct-context.pdf",
+      "destination": "assets/drawings/14-site-and-precinct-context.pdf",
+      "preview": "assets/exegesis/drawings/14-site-and-precinct-context.webp",
+      "caption": "Site and precinct context"
+    },
+    {
+      "master": "Drawings/20261115/15-large-home-reference-plan.pdf",
+      "destination": "assets/drawings/15-large-home-reference-plan.pdf",
+      "preview": "assets/exegesis/drawings/15-large-home-reference-plan.webp",
+      "caption": "Large-home reference plan"
+    }
+  ]
+}

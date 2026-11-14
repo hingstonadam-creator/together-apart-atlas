@@ -790,3 +790,12 @@ img,picture,svg,canvas {
   user-select:none;
 }
 img {-webkit-user-drag:none}
+
+/* Poster drawing exports, 15 November 2026 */
+.drawing-figure > a {display:block;cursor:zoom-in;background:#fff}
+.drawing-figure img {display:block;width:100%;height:auto;object-fit:contain}
+.drawing-figure figcaption a {white-space:normal;text-decoration:underline;text-underline-offset:.2em}
+.drawing-register {grid-column:1/-1;border-top:1px solid var(--line);padding-top:1.5rem}
+.drawing-register ul {columns:2;column-gap:2rem;padding-left:1.2rem}
+.drawing-register li {break-inside:avoid;margin:.5rem 0}
+@media(max-width:600px){.drawing-register ul{columns:1}}
