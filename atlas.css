@@ -495,7 +495,7 @@ button,input,select,textarea,svg text {font-family:var(--site-font)}
 .j-question {font-size:1.18rem;line-height:1.5;color:var(--ink);margin:1.25rem 0}
 .j-figure {margin:1.25rem 0 var(--gap);min-width:0}
 .j-enlarge,.j-enlarge img {display:block;width:100%;height:auto}
-.j-enlarge {cursor:zoom-in}
+.j-enlarge {cursor:default}
 .j-figure figcaption {margin-top:.6rem;font-size:.78rem;text-transform:none;letter-spacing:0;line-height:1.5}
 .j-fig-label {margin-right:1em}
 .j-slot {display:grid;place-items:center;min-height:7rem;border:1px solid var(--line);background:var(--paper)}
@@ -782,3 +782,11 @@ input,textarea {caret-color:var(--clay)}
 .journal .research-flowchart svg {display:block;width:100%;min-width:640px;height:auto;max-height:none}
 .research-flowchart figcaption {max-width:64ch}
 @media print {.research-flowchart .journey-scroll {overflow:visible}.journal .research-flowchart svg {min-width:0}}
+
+/* Image interaction deterrents; these do not provide access control. */
+img,picture,svg,canvas {
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  user-select:none;
+}
+img {-webkit-user-drag:none}
