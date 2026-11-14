@@ -816,3 +816,5 @@ img {-webkit-user-drag:none}
 @media(max-width:650px){.exegesis-chapter-grid{grid-template-columns:1fr}.exegesis-chapter img{height:auto;max-height:22rem}}
 .journal main.exegesis-contents{display:block}.journal .exegesis-chapter-grid{display:grid}.precedent-study figure{margin:1rem 0}.precedent-credit{text-transform:none;letter-spacing:0}.precedent-legend{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.82rem}
 .precedent-study{scroll-margin-top:6rem}
+
+.card-credit{display:block;font-size:.7rem;line-height:1.45;letter-spacing:0;text-transform:none;margin:.5rem 0;color:var(--muted-ink,#56574e)}
