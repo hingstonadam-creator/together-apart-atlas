@@ -14,6 +14,89 @@ Give priority to related households living in independent dwellings, each with i
 
 The working six-storey scheme tests S beside M and above L. XL may span two levels. Verify dimensions, bedroom counts and dwelling mix against current plans. For a vertical pairing, trace the journey between actual front doors by lift and stair. Keep the single-loaded walkway passable when the entry is occupied. Test furniture, sightlines and daily activities before adding partitions to a sparse plan.
 
+## Narrative for project communication — updated 14 November 2026
+
+Apply this narrative across presentation scripts, poster text, movement-path annotations, render briefs, captions, exegesis passages and website content. Adapt its length and register to the medium. Use the latest drawing to verify every route and threshold. The family story describes proposed use, not evidence of observed behaviour.
+
+### Central proposition and voice
+
+Lead with the different ways people welcome others into their homes: some visits are arranged and hosted; familiar relationships become part of everyday life through sharing meals, making tea and dropping in to help. Wanting independence does not remove the need for one another.
+
+Together, Apart explores how **apartment living** can support closeness between generations while maintaining separate, independent homes. Different-sized dwellings, private stairs, shared balconies and thresholds let households choose how their lives connect. This offers an alternative to extending a family house or adding another dwelling on the same block.
+
+Use Adam’s preferred phrase “apartment living” in the spoken introduction. Write in clear, natural Australian English. Prefer concrete actions and spatial choices over abstract claims. Avoid forced phrases such as “to make this concrete”, “it is important” and “facilities”, and avoid repeatedly using “for example”. Do not make the back-door metaphor the opening line.
+
+Working presentation opening:
+
+> We welcome people into our homes in different ways. Some visits are arranged and hosted; other relationships are woven into everyday life — sharing a meal, making a cup of tea or dropping in to help.
+>
+> Those relationships matter because wanting independence doesn’t mean we stop needing one another.
+>
+> Together, Apart explores how apartment living can support that closeness between generations while maintaining separate, independent homes. It offers an alternative to extending a family house or adding another dwelling on the same block. Through different-sized dwellings, private stairs and shared balconies, the project creates places where households can choose how their lives connect.
+
+### One family as the narrative thread
+
+Follow parents and their daughter living downstairs, with the grandparents in the independent home above. Both homes retain independent entrances and domestic routines; a private stair connects them. Keep the family recognisable across related renders, including consistent appearance and clothing.
+
+| Moment | Action | Architectural explanation |
+| --- | --- | --- |
+| Visiting grandparents | The daughter goes upstairs to visit her grandparents. | The private stair makes a familiar visit possible between independent homes. The upper threshold and door retain control over access and privacy. |
+| Buying lunch | The daughter and a grandparent collect bread and food for lunch, pausing to greet a neighbour outside the bakery and deli. | Everyday errands connect residents with street life and the wider neighbourhood. Show entrances, seating and the actual route. |
+| Going out together | Parents, daughter and grandparents visit an exhibition beside the courtyard and workshop. | Shared cultural space gives the courtyard a purpose beyond circulation and supports activity beyond the individual dwelling. |
+| Returning home | Family members return to their separate apartments while other residents chat or sit quietly outside. | Residents can participate, pass through or retreat. Separate homes and optional contact remain legible. |
+
+Each moment must explain a design decision visible in a plan, section or render. Use three or four moments as needed; the family need not use every programme in one day. Describe the laundry, workshop, bakery, deli and bar where they contribute to the argument, rather than forcing each into the itinerary.
+
+### Three dwelling relationships — preserve these distinctions
+
+| Arrangement | What is shared | Where independence or retreat sits |
+| --- | --- | --- |
+| Stacked homes | A private stair connects the family’s homes across levels. | Two fully independent dwellings with their own entrances; doors control the connection. |
+| Side-by-side homes | A smaller and a medium apartment share a joined balcony, with a screen mediating their boundary. | Two independent dwellings retain their entrances and control over contact through the balcony connection. |
+| Joint home / XL dwelling | Generations share living spaces within one dwelling. | Grandparents have a private retreat. The entrance threshold provides a place to pause and direct access to the retreat without passing through the rest of the household. |
+
+Do not invent a fourth “walkway dwelling type”. Building walkways are circulation, not another member of this comparison. Do not describe the joined balcony as merely waving across separate balconies. Do not describe the joint home as two independent dwellings.
+
+After explaining the private stair, compare the other two arrangements through what changes in sharing, access and privacy, then return to the family’s journey. The joint home remains a secondary demonstration of the same question.
+
+### Presentation and poster hierarchy
+
+The spoken presentation is approximately seven minutes. Distribute the story through the architectural explanation rather than telling the complete itinerary at the beginning.
+
+| Time | Focus |
+| --- | --- |
+| 0:00–0:45 | Familiarity, independence and the project proposition. |
+| 0:45–2:15 | Introduce the family; explain the private stair through the plan and render. |
+| 2:15–3:15 | Compare side-by-side homes and the joint home. |
+| 3:15–4:30 | Follow the family to the bakery, deli and courtyard exhibition. |
+| 4:30–5:30 | Use overall plans and section to explain site organisation, circulation and levels. |
+| 5:30–6:15 | Explain the data centre and proposed resource exchanges as supporting systems. |
+| 6:15–7:00 | Return to separate homes and the choice between interaction and retreat. |
+
+DEFINE, EXTEND and MEDIATE structure the architectural explanation. Introduce them through the spatial choices already shown; they need not lead the opening. Keep the housing relationship primary and give the data centre a supporting role.
+
+The poster can be explored independently of the spoken route. Pair each dwelling plan with a render that explains its particular relationship. Give the staircase pairing the clearest emphasis. Use a second view only when it adds a distinct spatial explanation.
+
+### Render direction
+
+Use four main scenes: the private stair visit; the bakery and deli frontage; the courtyard exhibition; and the view across multiple residential levels on returning home. In the last scene, combine the family moving towards separate dwellings with other residents choosing conversation or quiet. Leave some balconies unoccupied.
+
+Supporting views may explain the joined balcony and its screen, or the joint home’s entrance pause and direct retreat access, where plans alone are insufficient. Preserve the architecture. Position people and objects so the relevant stair, landing, doors, screen and routes remain readable. Use the same family across the main scenes. Narrative briefs do not override the supplied-image rules for website work.
+
+### Movement-path text for 1:100 plans
+
+Use short, everyday phrases that mark an action or a choice at its actual location. Keep approximately three or four labels per arrangement and distinguish movement from stopping. First-person captions can convey the resident’s experience; keep the speaker clear when a route changes household. Place screen and retreat captions at the actual decision points.
+
+Working text to adapt to the drawn route:
+
+- **Stacked homes:** “Upstairs to visit Nan and Pop.” / “A familiar arrival at their door.” / “Back downstairs when lunch is ready.” / “Home again, with room for our own routines.”
+- **Side-by-side homes:** “Out onto the balcony for a chat.” / “Across to share a cup of tea.” / “Open the screen to come together.” / “Close it for time to ourselves.”
+- **Joint home:** “Home through a shared entrance.” / “A moment to pause before joining everyone.” / “Straight to the retreat for some quiet.” / “Back together for a shared meal.”
+- **Ground floor:** “Downstairs for bread and something for lunch.” / “Stop for a chat outside the deli.” / “Across the courtyard to see the exhibition together.” / “Back upstairs to our separate homes.”
+- **Independent entry route:** “Our own front door, on our own schedule.”
+
+Use these as adaptable narrative captions, not room names or verified claims about future residents. Retain only captions supported by the particular drawing.
+
 ## Research and classification
 
 Use [100 Points of Research in Notion](https://app.notion.com/p/d7491c0a79fa4720b5332f0ec267ea73) as the sole source for atlas research records and chapter reading lists. For each refresh, match every published record by its stable Notion page ID, refresh its display number and properties, and exclude unmatched or archived rows. Publish a complete snapshot of all active database rows to GitHub Pages after verification. Do not limit refreshes to the previously published subset. Each row holds one research point. A paper or built project can support several points. Both the default table and Research Point List sort by **Display Number**, ascending. Preserve that number when tracing a finding back to Notion.
